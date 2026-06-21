@@ -1,8 +1,11 @@
 .form {
-  display: flex;
-  gap: 1rem;
   width: 100%;
   max-width: 44rem;
+}
+
+.row {
+  display: flex;
+  gap: 1rem;
 }
 
 .form input {
@@ -20,6 +23,18 @@
   outline: none;
   border-color: var(--crest);
   box-shadow: 0 0 0 3px rgba(245, 196, 81, 0.15);
+}
+
+.form input:disabled,
+.form button:disabled {
+  opacity: 0.6;
+  cursor: not-allowed;
+}
+
+.error {
+  margin-top: 0.9rem;
+  font-size: 1.3rem;
+  color: #ff8a8a;
 }
 
 .success {
@@ -40,7 +55,7 @@
 }
 
 @media (max-width: 560px) {
-  .form {
+  .row {
     flex-direction: column;
   }
 }

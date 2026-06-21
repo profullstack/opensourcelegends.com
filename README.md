@@ -16,6 +16,25 @@ npm run build    # production build
 npm start        # serve the production build
 ```
 
+## Database (Turso / libSQL)
+
+The waitlist is stored in [Turso](https://turso.tech) (SQLite). Configure two env
+vars — copy `.env.local.sample` to `.env.local` and fill in the token:
+
+```bash
+TURSO_DATABASE_URL=libsql://opensourcelegendscom-profullstack.aws-us-west-2.turso.io
+TURSO_AUTH_TOKEN=...        # turso db tokens create opensourcelegendscom
+```
+
+Create the schema once (and after schema changes):
+
+```bash
+npm run db:migrate         # applies db/schema.sql
+```
+
+Set the same two vars in the Railway service. `POST /api/waitlist` inserts email
+signups into the `waitlist` table.
+
 ## Project layout
 
 ```
