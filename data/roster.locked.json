@@ -25,13 +25,14 @@
     "collector_note": "Freedom is a matter of choice.",
     "source_urls": [
       "https://www.wikidata.org/wiki/Q7439",
-      "https://en.wikipedia.org/wiki/Richard_Stallman"
+      "https://en.wikipedia.org/wiki/Richard_Stallman",
+      "https://www.google.com/search?q=Richard%20Stallman%20open%20source"
     ],
     "portrait_reference_urls": [
       "https://upload.wikimedia.org/wikipedia/commons/thumb/3/38/Richard_Stallman_Bologna_2024_abc1.jpg/330px-Richard_Stallman_Bologna_2024_abc1.jpg",
       "https://upload.wikimedia.org/wikipedia/commons/3/38/Richard_Stallman_Bologna_2024_abc1.jpg"
     ],
-    "legal_notes": "Portrait sourced from Wikimedia Commons (CC licensing — attribution required). Facts grounded in Wikipedia. Verify publicity/personality rights before commercial printing.",
+    "legal_notes": "Portrait is an AI-generated illustration (OpenAI gpt-image-1), not a photograph. Facts grounded in public Wikipedia/Wikidata sources. Verify publicity/personality rights before commercial sale.",
     "impact_rating": 95,
     "code_rating": 90,
     "innovation_rating": 92,
@@ -66,13 +67,14 @@
     "collector_note": "Linus brings freedom and collaboration to software.",
     "source_urls": [
       "https://www.wikidata.org/wiki/Q34253",
-      "https://en.wikipedia.org/wiki/Linus_Torvalds"
+      "https://en.wikipedia.org/wiki/Linus_Torvalds",
+      "https://www.google.com/search?q=Linus%20Torvalds%20open%20source"
     ],
     "portrait_reference_urls": [
       "https://upload.wikimedia.org/wikipedia/commons/thumb/0/01/LinuxCon_Europe_Linus_Torvalds_03_%28cropped%29.jpg/330px-LinuxCon_Europe_Linus_Torvalds_03_%28cropped%29.jpg",
       "https://upload.wikimedia.org/wikipedia/commons/0/01/LinuxCon_Europe_Linus_Torvalds_03_%28cropped%29.jpg"
     ],
-    "legal_notes": "Portrait sourced from Wikimedia Commons (CC licensing — attribution required). Facts grounded in Wikipedia. Verify publicity/personality rights before commercial printing.",
+    "legal_notes": "Portrait is an AI-generated illustration (OpenAI gpt-image-1), not a photograph. Facts grounded in public Wikipedia/Wikidata sources. Verify publicity/personality rights before commercial sale.",
     "impact_rating": 99,
     "code_rating": 98,
     "innovation_rating": 97,
@@ -109,13 +111,14 @@
     "collector_note": "A prodigy who fought for freedom.",
     "source_urls": [
       "https://www.wikidata.org/wiki/Q302817",
-      "https://en.wikipedia.org/wiki/Aaron_Swartz"
+      "https://en.wikipedia.org/wiki/Aaron_Swartz",
+      "https://www.google.com/search?q=Aaron%20Swartz%20open%20source"
     ],
     "portrait_reference_urls": [
       "https://upload.wikimedia.org/wikipedia/commons/thumb/c/cd/Aaron_Swartz_in_2011.jpg/330px-Aaron_Swartz_in_2011.jpg",
       "https://upload.wikimedia.org/wikipedia/commons/c/cd/Aaron_Swartz_in_2011.jpg"
     ],
-    "legal_notes": "Portrait sourced from Wikimedia Commons (CC licensing — attribution required). Facts grounded in Wikipedia. Verify publicity/personality rights before commercial printing.",
+    "legal_notes": "Portrait is an AI-generated illustration (OpenAI gpt-image-1), not a photograph. Facts grounded in public Wikipedia/Wikidata sources. Verify publicity/personality rights before commercial sale.",
     "impact_rating": 95,
     "code_rating": 88,
     "innovation_rating": 92,
@@ -150,9 +153,14 @@
     "associates_or_ecosystem": [],
     "scouting_report": "TJ Holowaychuk is a pivotal figure in the Node.js community, known for his innovative frameworks and modules. His work has significantly shaped web development practices and tools, making him a respected leader in open source.",
     "collector_note": "A master of Node.js frameworks.",
-    "source_urls": [],
-    "portrait_reference_urls": [],
-    "legal_notes": "Portrait sourced from Wikimedia Commons (CC licensing — attribution required). Facts grounded in Wikipedia. Verify publicity/personality rights before commercial printing.",
+    "source_urls": [
+      "https://en.wikipedia.org/wiki/TJ_Holowaychuk",
+      "https://www.google.com/search?q=TJ%20Holowaychuk%20open%20source"
+    ],
+    "portrait_reference_urls": [
+      "https://en.wikipedia.org/wiki/TJ_Holowaychuk"
+    ],
+    "legal_notes": "Portrait is an AI-generated illustration (OpenAI gpt-image-1), not a photograph. Facts grounded in public Wikipedia/Wikidata sources. Verify publicity/personality rights before commercial sale.",
     "impact_rating": 95,
     "code_rating": 92,
     "innovation_rating": 90,
@@ -186,13 +194,14 @@
     "collector_note": "Guido's Python has empowered generations of coders.",
     "source_urls": [
       "https://www.wikidata.org/wiki/Q30942",
-      "https://en.wikipedia.org/wiki/Guido_van_Rossum"
+      "https://en.wikipedia.org/wiki/Guido_van_Rossum",
+      "https://www.google.com/search?q=Guido%20van%20Rossum%20open%20source"
     ],
     "portrait_reference_urls": [
       "https://upload.wikimedia.org/wikipedia/commons/thumb/6/6b/Guido_van_Rossum_in_PyConUS24_%28cropped%29.jpg/330px-Guido_van_Rossum_in_PyConUS24_%28cropped%29.jpg",
       "https://upload.wikimedia.org/wikipedia/commons/6/6b/Guido_van_Rossum_in_PyConUS24_%28cropped%29.jpg"
     ],
-    "legal_notes": "Portrait sourced from Wikimedia Commons (CC licensing — attribution required). Facts grounded in Wikipedia. Verify publicity/personality rights before commercial printing.",
+    "legal_notes": "Portrait is an AI-generated illustration (OpenAI gpt-image-1), not a photograph. Facts grounded in public Wikipedia/Wikidata sources. Verify publicity/personality rights before commercial sale.",
     "impact_rating": 95,
     "code_rating": 92,
     "innovation_rating": 94,
@@ -206,7 +215,7 @@
   {
     "card_number": 6,
     "name": "Yukihiro Matsumoto",
-    "display_name": "Yukihiro “Matz” Matsumoto",
+    "display_name": "Yukihiro Matsumoto",
     "nickname_or_handle": "",
     "card_title": "Creator of Ruby Programming Language",
     "nationality": "Japan",
@@ -227,12 +236,14 @@
     "scouting_report": "Yukihiro Matsumoto, known as Matz, is the creator of Ruby. He emphasizes simplicity and productivity in programming. His work inspires a vibrant community that values creativity and collaboration.",
     "collector_note": "Matz believes programming should be enjoyable.",
     "source_urls": [
-      "https://www.wikidata.org/wiki/Q109409154"
+      "https://www.wikidata.org/wiki/Q109409154",
+      "https://en.wikipedia.org/wiki/Yukihiro_Matz_Matsumoto",
+      "https://www.google.com/search?q=Yukihiro%20%E2%80%9CMatz%E2%80%9D%20Matsumoto%20open%20source"
     ],
     "portrait_reference_urls": [
       "https://www.wikidata.org/wiki/Q109409154"
     ],
-    "legal_notes": "Portrait sourced from Wikimedia Commons (CC licensing — attribution required). Facts grounded in Wikipedia. Verify publicity/personality rights before commercial printing.",
+    "legal_notes": "Portrait is an AI-generated illustration (OpenAI gpt-image-1), not a photograph. Facts grounded in public Wikipedia/Wikidata sources. Verify publicity/personality rights before commercial sale.",
     "impact_rating": 95,
     "code_rating": 90,
     "innovation_rating": 92,
@@ -266,9 +277,14 @@
     "associates_or_ecosystem": [],
     "scouting_report": "Larry Wall is a prominent figure in open source, known for creating Perl, a highly versatile programming language. His contributions to software development and community engagement have made a lasting impact on the tech landscape.",
     "collector_note": "Perl: The duct tape of the Internet.",
-    "source_urls": [],
-    "portrait_reference_urls": [],
-    "legal_notes": "Portrait sourced from Wikimedia Commons (CC licensing — attribution required). Facts grounded in Wikipedia. Verify publicity/personality rights before commercial printing.",
+    "source_urls": [
+      "https://en.wikipedia.org/wiki/Larry_Wall",
+      "https://www.google.com/search?q=Larry%20Wall%20open%20source"
+    ],
+    "portrait_reference_urls": [
+      "https://en.wikipedia.org/wiki/Larry_Wall"
+    ],
+    "legal_notes": "Portrait is an AI-generated illustration (OpenAI gpt-image-1), not a photograph. Facts grounded in public Wikipedia/Wikidata sources. Verify publicity/personality rights before commercial sale.",
     "impact_rating": 92,
     "code_rating": 88,
     "innovation_rating": 90,
@@ -302,9 +318,14 @@
     "associates_or_ecosystem": [],
     "scouting_report": "Brendan Eich is a pivotal figure in web development, known for creating JavaScript. He co-founded Mozilla, championing open-source principles and fostering innovation in web browsers. His work continues to influence how we interact with the internet today.",
     "collector_note": "The man who brought interactivity to the web.",
-    "source_urls": [],
-    "portrait_reference_urls": [],
-    "legal_notes": "Portrait sourced from Wikimedia Commons (CC licensing — attribution required). Facts grounded in Wikipedia. Verify publicity/personality rights before commercial printing.",
+    "source_urls": [
+      "https://en.wikipedia.org/wiki/Brendan_Eich",
+      "https://www.google.com/search?q=Brendan%20Eich%20open%20source"
+    ],
+    "portrait_reference_urls": [
+      "https://en.wikipedia.org/wiki/Brendan_Eich"
+    ],
+    "legal_notes": "Portrait is an AI-generated illustration (OpenAI gpt-image-1), not a photograph. Facts grounded in public Wikipedia/Wikidata sources. Verify publicity/personality rights before commercial sale.",
     "impact_rating": 95,
     "code_rating": 90,
     "innovation_rating": 98,
@@ -338,9 +359,14 @@
     "associates_or_ecosystem": [],
     "scouting_report": "Rasmus Lerdorf is a pivotal figure in web development, best known for creating PHP. His work enables dynamic web applications and has influenced countless developers worldwide. He continues to advocate for open source principles.",
     "collector_note": "Rasmus Lerdorf transformed web programming forever.",
-    "source_urls": [],
-    "portrait_reference_urls": [],
-    "legal_notes": "Portrait sourced from Wikimedia Commons (CC licensing — attribution required). Facts grounded in Wikipedia. Verify publicity/personality rights before commercial printing.",
+    "source_urls": [
+      "https://en.wikipedia.org/wiki/Rasmus_Lerdorf",
+      "https://www.google.com/search?q=Rasmus%20Lerdorf%20open%20source"
+    ],
+    "portrait_reference_urls": [
+      "https://en.wikipedia.org/wiki/Rasmus_Lerdorf"
+    ],
+    "legal_notes": "Portrait is an AI-generated illustration (OpenAI gpt-image-1), not a photograph. Facts grounded in public Wikipedia/Wikidata sources. Verify publicity/personality rights before commercial sale.",
     "impact_rating": 95,
     "code_rating": 90,
     "innovation_rating": 92,
@@ -374,9 +400,14 @@
     "associates_or_ecosystem": [],
     "scouting_report": "David Heinemeier Hansson transforms web development with Ruby on Rails, emphasizing simplicity and productivity. As a co-founder of Basecamp, he champions remote work and efficient project management.",
     "collector_note": "Simplicity is the ultimate sophistication.",
-    "source_urls": [],
-    "portrait_reference_urls": [],
-    "legal_notes": "Portrait sourced from Wikimedia Commons (CC licensing — attribution required). Facts grounded in Wikipedia. Verify publicity/personality rights before commercial printing.",
+    "source_urls": [
+      "https://en.wikipedia.org/wiki/David_Heinemeier_Hansson",
+      "https://www.google.com/search?q=David%20Heinemeier%20Hansson%20open%20source"
+    ],
+    "portrait_reference_urls": [
+      "https://en.wikipedia.org/wiki/David_Heinemeier_Hansson"
+    ],
+    "legal_notes": "Portrait is an AI-generated illustration (OpenAI gpt-image-1), not a photograph. Facts grounded in public Wikipedia/Wikidata sources. Verify publicity/personality rights before commercial sale.",
     "impact_rating": 90,
     "code_rating": 85,
     "innovation_rating": 92,
@@ -409,9 +440,14 @@
     "associates_or_ecosystem": [],
     "scouting_report": "Ryan Dahl revolutionizes web development with Node.js, enabling JavaScript to run server-side. His work emphasizes efficiency and scalability, shaping modern web applications and influencing countless developers worldwide.",
     "collector_note": "Ryan Dahl turns JavaScript into a powerful server tool.",
-    "source_urls": [],
-    "portrait_reference_urls": [],
-    "legal_notes": "Portrait sourced from Wikimedia Commons (CC licensing — attribution required). Facts grounded in Wikipedia. Verify publicity/personality rights before commercial printing.",
+    "source_urls": [
+      "https://en.wikipedia.org/wiki/Ryan_Dahl",
+      "https://www.google.com/search?q=Ryan%20Dahl%20open%20source"
+    ],
+    "portrait_reference_urls": [
+      "https://en.wikipedia.org/wiki/Ryan_Dahl"
+    ],
+    "legal_notes": "Portrait is an AI-generated illustration (OpenAI gpt-image-1), not a photograph. Facts grounded in public Wikipedia/Wikidata sources. Verify publicity/personality rights before commercial sale.",
     "impact_rating": 95,
     "code_rating": 92,
     "innovation_rating": 94,
@@ -445,9 +481,14 @@
     "associates_or_ecosystem": [],
     "scouting_report": "Evan You is a prominent figure in web development, known for creating Vue.js. His framework emphasizes simplicity and flexibility, making it popular among developers. He actively engages with the community, continuously enhancing the framework's capabilities.",
     "collector_note": "Evan's vision reshapes how we build interfaces.",
-    "source_urls": [],
-    "portrait_reference_urls": [],
-    "legal_notes": "Portrait sourced from Wikimedia Commons (CC licensing — attribution required). Facts grounded in Wikipedia. Verify publicity/personality rights before commercial printing.",
+    "source_urls": [
+      "https://en.wikipedia.org/wiki/Evan_You",
+      "https://www.google.com/search?q=Evan%20You%20open%20source"
+    ],
+    "portrait_reference_urls": [
+      "https://en.wikipedia.org/wiki/Evan_You"
+    ],
+    "legal_notes": "Portrait is an AI-generated illustration (OpenAI gpt-image-1), not a photograph. Facts grounded in public Wikipedia/Wikidata sources. Verify publicity/personality rights before commercial sale.",
     "impact_rating": 90,
     "code_rating": 85,
     "innovation_rating": 92,
@@ -481,9 +522,14 @@
     "associates_or_ecosystem": [],
     "scouting_report": "Rich Harris is a leading figure in modern web development. He creates tools that streamline coding processes and improve application performance. His work on Svelte revolutionizes how developers build user interfaces.",
     "collector_note": "Transforming the way we code for the web.",
-    "source_urls": [],
-    "portrait_reference_urls": [],
-    "legal_notes": "Portrait sourced from Wikimedia Commons (CC licensing — attribution required). Facts grounded in Wikipedia. Verify publicity/personality rights before commercial printing.",
+    "source_urls": [
+      "https://en.wikipedia.org/wiki/Rich_Harris",
+      "https://www.google.com/search?q=Rich%20Harris%20open%20source"
+    ],
+    "portrait_reference_urls": [
+      "https://en.wikipedia.org/wiki/Rich_Harris"
+    ],
+    "legal_notes": "Portrait is an AI-generated illustration (OpenAI gpt-image-1), not a photograph. Facts grounded in public Wikipedia/Wikidata sources. Verify publicity/personality rights before commercial sale.",
     "impact_rating": 90,
     "code_rating": 88,
     "innovation_rating": 92,
@@ -517,9 +563,14 @@
     "associates_or_ecosystem": [],
     "scouting_report": "Jordan Walke revolutionizes front-end development with React, a library that simplifies building user interfaces. His work emphasizes performance and usability, making it a favorite among developers worldwide.",
     "collector_note": "Transforming how we build user interfaces.",
-    "source_urls": [],
-    "portrait_reference_urls": [],
-    "legal_notes": "Portrait sourced from Wikimedia Commons (CC licensing — attribution required). Facts grounded in Wikipedia. Verify publicity/personality rights before commercial printing.",
+    "source_urls": [
+      "https://en.wikipedia.org/wiki/Jordan_Walke",
+      "https://www.google.com/search?q=Jordan%20Walke%20open%20source"
+    ],
+    "portrait_reference_urls": [
+      "https://en.wikipedia.org/wiki/Jordan_Walke"
+    ],
+    "legal_notes": "Portrait is an AI-generated illustration (OpenAI gpt-image-1), not a photograph. Facts grounded in public Wikipedia/Wikidata sources. Verify publicity/personality rights before commercial sale.",
     "impact_rating": 95,
     "code_rating": 90,
     "innovation_rating": 93,
@@ -553,9 +604,14 @@
     "associates_or_ecosystem": [],
     "scouting_report": "Dan Abramov is a leading figure in the JavaScript community, known for his work on Redux and Create React App. His contributions significantly enhance the development experience for React developers worldwide.",
     "collector_note": "Dan's tools empower developers to build better apps.",
-    "source_urls": [],
-    "portrait_reference_urls": [],
-    "legal_notes": "Portrait sourced from Wikimedia Commons (CC licensing — attribution required). Facts grounded in Wikipedia. Verify publicity/personality rights before commercial printing.",
+    "source_urls": [
+      "https://en.wikipedia.org/wiki/Dan_Abramov",
+      "https://www.google.com/search?q=Dan%20Abramov%20open%20source"
+    ],
+    "portrait_reference_urls": [
+      "https://en.wikipedia.org/wiki/Dan_Abramov"
+    ],
+    "legal_notes": "Portrait is an AI-generated illustration (OpenAI gpt-image-1), not a photograph. Facts grounded in public Wikipedia/Wikidata sources. Verify publicity/personality rights before commercial sale.",
     "impact_rating": 92,
     "code_rating": 88,
     "innovation_rating": 90,
@@ -589,9 +645,14 @@
     "associates_or_ecosystem": [],
     "scouting_report": "Sebastian McKenzie is a pivotal figure in JavaScript development. He creates Babel, a tool that allows developers to use the latest JavaScript features while ensuring compatibility with older browsers.",
     "collector_note": "Babel: bridging the gap in JavaScript.",
-    "source_urls": [],
-    "portrait_reference_urls": [],
-    "legal_notes": "Portrait sourced from Wikimedia Commons (CC licensing — attribution required). Facts grounded in Wikipedia. Verify publicity/personality rights before commercial printing.",
+    "source_urls": [
+      "https://en.wikipedia.org/wiki/Sebastian_McKenzie",
+      "https://www.google.com/search?q=Sebastian%20McKenzie%20open%20source"
+    ],
+    "portrait_reference_urls": [
+      "https://en.wikipedia.org/wiki/Sebastian_McKenzie"
+    ],
+    "legal_notes": "Portrait is an AI-generated illustration (OpenAI gpt-image-1), not a photograph. Facts grounded in public Wikipedia/Wikidata sources. Verify publicity/personality rights before commercial sale.",
     "impact_rating": 90,
     "code_rating": 85,
     "innovation_rating": 92,
@@ -624,9 +685,14 @@
     "associates_or_ecosystem": [],
     "scouting_report": "Isaac Z. Schlueter revolutionizes JavaScript development with npm, the world's largest software registry. His work fosters collaboration and innovation, making it easier for developers to share and reuse code.",
     "collector_note": "Empowering developers, one package at a time.",
-    "source_urls": [],
-    "portrait_reference_urls": [],
-    "legal_notes": "Portrait sourced from Wikimedia Commons (CC licensing — attribution required). Facts grounded in Wikipedia. Verify publicity/personality rights before commercial printing.",
+    "source_urls": [
+      "https://en.wikipedia.org/wiki/Isaac_Z._Schlueter",
+      "https://www.google.com/search?q=Isaac%20Z.%20Schlueter%20open%20source"
+    ],
+    "portrait_reference_urls": [
+      "https://en.wikipedia.org/wiki/Isaac_Z._Schlueter"
+    ],
+    "legal_notes": "Portrait is an AI-generated illustration (OpenAI gpt-image-1), not a photograph. Facts grounded in public Wikipedia/Wikidata sources. Verify publicity/personality rights before commercial sale.",
     "impact_rating": 95,
     "code_rating": 90,
     "innovation_rating": 94,
@@ -660,9 +726,14 @@
     "associates_or_ecosystem": [],
     "scouting_report": "Matt Mullenweg is a key figure in web development, known for co-founding WordPress. He champions open-source principles and has significantly influenced online publishing and content management systems.",
     "collector_note": "Empowering creators through open-source innovation.",
-    "source_urls": [],
-    "portrait_reference_urls": [],
-    "legal_notes": "Portrait sourced from Wikimedia Commons (CC licensing — attribution required). Facts grounded in Wikipedia. Verify publicity/personality rights before commercial printing.",
+    "source_urls": [
+      "https://en.wikipedia.org/wiki/Matt_Mullenweg",
+      "https://www.google.com/search?q=Matt%20Mullenweg%20open%20source"
+    ],
+    "portrait_reference_urls": [
+      "https://en.wikipedia.org/wiki/Matt_Mullenweg"
+    ],
+    "legal_notes": "Portrait is an AI-generated illustration (OpenAI gpt-image-1), not a photograph. Facts grounded in public Wikipedia/Wikidata sources. Verify publicity/personality rights before commercial sale.",
     "impact_rating": 95,
     "code_rating": 85,
     "innovation_rating": 90,
@@ -695,9 +766,14 @@
     "associates_or_ecosystem": [],
     "scouting_report": "Dries Buytaert is a pivotal figure in open source, known for creating Drupal, a leading content management system. He champions community-driven development and continues to influence the web landscape through his work at Acquia.",
     "collector_note": "Empowering the web, one site at a time.",
-    "source_urls": [],
-    "portrait_reference_urls": [],
-    "legal_notes": "Portrait sourced from Wikimedia Commons (CC licensing — attribution required). Facts grounded in Wikipedia. Verify publicity/personality rights before commercial printing.",
+    "source_urls": [
+      "https://en.wikipedia.org/wiki/Dries_Buytaert",
+      "https://www.google.com/search?q=Dries%20Buytaert%20open%20source"
+    ],
+    "portrait_reference_urls": [
+      "https://en.wikipedia.org/wiki/Dries_Buytaert"
+    ],
+    "legal_notes": "Portrait is an AI-generated illustration (OpenAI gpt-image-1), not a photograph. Facts grounded in public Wikipedia/Wikidata sources. Verify publicity/personality rights before commercial sale.",
     "impact_rating": 95,
     "code_rating": 88,
     "innovation_rating": 92,
@@ -731,9 +807,14 @@
     "associates_or_ecosystem": [],
     "scouting_report": "Brian Behlendorf is a pivotal figure in open source, known for co-founding the Apache Software Foundation. His leadership in developing the Apache HTTP Server has significantly shaped the web landscape, promoting collaboration and innovation in software development.",
     "collector_note": "Brian champions the spirit of open collaboration.",
-    "source_urls": [],
-    "portrait_reference_urls": [],
-    "legal_notes": "Portrait sourced from Wikimedia Commons (CC licensing — attribution required). Facts grounded in Wikipedia. Verify publicity/personality rights before commercial printing.",
+    "source_urls": [
+      "https://en.wikipedia.org/wiki/Brian_Behlendorf",
+      "https://www.google.com/search?q=Brian%20Behlendorf%20open%20source"
+    ],
+    "portrait_reference_urls": [
+      "https://en.wikipedia.org/wiki/Brian_Behlendorf"
+    ],
+    "legal_notes": "Portrait is an AI-generated illustration (OpenAI gpt-image-1), not a photograph. Facts grounded in public Wikipedia/Wikidata sources. Verify publicity/personality rights before commercial sale.",
     "impact_rating": 95,
     "code_rating": 90,
     "innovation_rating": 92,
@@ -767,9 +848,14 @@
     "associates_or_ecosystem": [],
     "scouting_report": "Roy Fielding is a pivotal figure in web architecture, known for his creation of REST. His work on HTTP and the Apache HTTP Server has profoundly influenced how modern web applications are designed and interact.",
     "collector_note": "Fielding's REST principles revolutionized web communication.",
-    "source_urls": [],
-    "portrait_reference_urls": [],
-    "legal_notes": "Portrait sourced from Wikimedia Commons (CC licensing — attribution required). Facts grounded in Wikipedia. Verify publicity/personality rights before commercial printing.",
+    "source_urls": [
+      "https://en.wikipedia.org/wiki/Roy_Fielding",
+      "https://www.google.com/search?q=Roy%20Fielding%20open%20source"
+    ],
+    "portrait_reference_urls": [
+      "https://en.wikipedia.org/wiki/Roy_Fielding"
+    ],
+    "legal_notes": "Portrait is an AI-generated illustration (OpenAI gpt-image-1), not a photograph. Facts grounded in public Wikipedia/Wikidata sources. Verify publicity/personality rights before commercial sale.",
     "impact_rating": 95,
     "code_rating": 90,
     "innovation_rating": 98,
@@ -803,9 +889,14 @@
     "associates_or_ecosystem": [],
     "scouting_report": "Eric S. Raymond is a prominent figure in the open source movement. He advocates for transparency in software development and has authored influential works that shape modern programming practices.",
     "collector_note": "Raymond's insights revolutionized software development.",
-    "source_urls": [],
-    "portrait_reference_urls": [],
-    "legal_notes": "Portrait sourced from Wikimedia Commons (CC licensing — attribution required). Facts grounded in Wikipedia. Verify publicity/personality rights before commercial printing.",
+    "source_urls": [
+      "https://en.wikipedia.org/wiki/Eric_S._Raymond",
+      "https://www.google.com/search?q=Eric%20S.%20Raymond%20open%20source"
+    ],
+    "portrait_reference_urls": [
+      "https://en.wikipedia.org/wiki/Eric_S._Raymond"
+    ],
+    "legal_notes": "Portrait is an AI-generated illustration (OpenAI gpt-image-1), not a photograph. Facts grounded in public Wikipedia/Wikidata sources. Verify publicity/personality rights before commercial sale.",
     "impact_rating": 90,
     "code_rating": 80,
     "innovation_rating": 85,
@@ -839,9 +930,14 @@
     "associates_or_ecosystem": [],
     "scouting_report": "Bruce Perens is a pivotal figure in the open source movement. He co-founded the Open Source Initiative and authored the Open Source Definition, which shapes software licensing today. His advocacy continues to influence software development worldwide.",
     "collector_note": "Open source is a philosophy, not just a license.",
-    "source_urls": [],
-    "portrait_reference_urls": [],
-    "legal_notes": "Portrait sourced from Wikimedia Commons (CC licensing — attribution required). Facts grounded in Wikipedia. Verify publicity/personality rights before commercial printing.",
+    "source_urls": [
+      "https://en.wikipedia.org/wiki/Bruce_Perens",
+      "https://www.google.com/search?q=Bruce%20Perens%20open%20source"
+    ],
+    "portrait_reference_urls": [
+      "https://en.wikipedia.org/wiki/Bruce_Perens"
+    ],
+    "legal_notes": "Portrait is an AI-generated illustration (OpenAI gpt-image-1), not a photograph. Facts grounded in public Wikipedia/Wikidata sources. Verify publicity/personality rights before commercial sale.",
     "impact_rating": 95,
     "code_rating": 85,
     "innovation_rating": 90,
@@ -874,9 +970,14 @@
     "associates_or_ecosystem": [],
     "scouting_report": "Ian Murdock is a pivotal figure in open source, known for founding the Debian Project. His vision for a collaborative operating system has influenced countless distributions and fostered a strong community ethos.",
     "collector_note": "Debian: a legacy of freedom and collaboration.",
-    "source_urls": [],
-    "portrait_reference_urls": [],
-    "legal_notes": "Portrait sourced from Wikimedia Commons (CC licensing — attribution required). Facts grounded in Wikipedia. Verify publicity/personality rights before commercial printing.",
+    "source_urls": [
+      "https://en.wikipedia.org/wiki/Ian_Murdock",
+      "https://www.google.com/search?q=Ian%20Murdock%20open%20source"
+    ],
+    "portrait_reference_urls": [
+      "https://en.wikipedia.org/wiki/Ian_Murdock"
+    ],
+    "legal_notes": "Portrait is an AI-generated illustration (OpenAI gpt-image-1), not a photograph. Facts grounded in public Wikipedia/Wikidata sources. Verify publicity/personality rights before commercial sale.",
     "impact_rating": 95,
     "code_rating": 85,
     "innovation_rating": 90,
@@ -909,9 +1010,14 @@
     "associates_or_ecosystem": [],
     "scouting_report": "Mark Shuttleworth is a visionary entrepreneur and philanthropist. He founded Ubuntu, which revolutionized Linux accessibility. His commitment to open source fosters innovation and community engagement worldwide.",
     "collector_note": "Shuttleworth believes in the power of freedom through software.",
-    "source_urls": [],
-    "portrait_reference_urls": [],
-    "legal_notes": "Portrait sourced from Wikimedia Commons (CC licensing — attribution required). Facts grounded in Wikipedia. Verify publicity/personality rights before commercial printing.",
+    "source_urls": [
+      "https://en.wikipedia.org/wiki/Mark_Shuttleworth",
+      "https://www.google.com/search?q=Mark%20Shuttleworth%20open%20source"
+    ],
+    "portrait_reference_urls": [
+      "https://en.wikipedia.org/wiki/Mark_Shuttleworth"
+    ],
+    "legal_notes": "Portrait is an AI-generated illustration (OpenAI gpt-image-1), not a photograph. Facts grounded in public Wikipedia/Wikidata sources. Verify publicity/personality rights before commercial sale.",
     "impact_rating": 90,
     "code_rating": 85,
     "innovation_rating": 92,
@@ -945,9 +1051,14 @@
     "associates_or_ecosystem": [],
     "scouting_report": "Theo de Raadt leads the OpenBSD project, emphasizing security and code correctness. His work on OpenSSH has transformed secure communications globally. He is a prominent figure in the open-source community.",
     "collector_note": "Security and simplicity define his legacy.",
-    "source_urls": [],
-    "portrait_reference_urls": [],
-    "legal_notes": "Portrait sourced from Wikimedia Commons (CC licensing — attribution required). Facts grounded in Wikipedia. Verify publicity/personality rights before commercial printing.",
+    "source_urls": [
+      "https://en.wikipedia.org/wiki/Theo_de_Raadt",
+      "https://www.google.com/search?q=Theo%20de%20Raadt%20open%20source"
+    ],
+    "portrait_reference_urls": [
+      "https://en.wikipedia.org/wiki/Theo_de_Raadt"
+    ],
+    "legal_notes": "Portrait is an AI-generated illustration (OpenAI gpt-image-1), not a photograph. Facts grounded in public Wikipedia/Wikidata sources. Verify publicity/personality rights before commercial sale.",
     "impact_rating": 95,
     "code_rating": 90,
     "innovation_rating": 92,
@@ -981,9 +1092,14 @@
     "associates_or_ecosystem": [],
     "scouting_report": "D. Richard Hipp is a prominent software developer known for creating SQLite, a lightweight database widely used in applications. His work on Fossil and Tcl further showcases his versatility and impact in the open-source community.",
     "collector_note": "SQLite: the database that fits everywhere.",
-    "source_urls": [],
-    "portrait_reference_urls": [],
-    "legal_notes": "Portrait sourced from Wikimedia Commons (CC licensing — attribution required). Facts grounded in Wikipedia. Verify publicity/personality rights before commercial printing.",
+    "source_urls": [
+      "https://en.wikipedia.org/wiki/D._Richard_Hipp",
+      "https://www.google.com/search?q=D.%20Richard%20Hipp%20open%20source"
+    ],
+    "portrait_reference_urls": [
+      "https://en.wikipedia.org/wiki/D._Richard_Hipp"
+    ],
+    "legal_notes": "Portrait is an AI-generated illustration (OpenAI gpt-image-1), not a photograph. Facts grounded in public Wikipedia/Wikidata sources. Verify publicity/personality rights before commercial sale.",
     "impact_rating": 95,
     "code_rating": 90,
     "innovation_rating": 92,
@@ -1017,9 +1133,14 @@
     "associates_or_ecosystem": [],
     "scouting_report": "Fabrice Bellard is a prominent figure in open source software, known for his groundbreaking work in emulation and programming languages. His projects, especially QEMU and FFmpeg, have significantly influenced the tech landscape.",
     "collector_note": "A pioneer in emulation and multimedia.",
-    "source_urls": [],
-    "portrait_reference_urls": [],
-    "legal_notes": "Portrait sourced from Wikimedia Commons (CC licensing — attribution required). Facts grounded in Wikipedia. Verify publicity/personality rights before commercial printing.",
+    "source_urls": [
+      "https://en.wikipedia.org/wiki/Fabrice_Bellard",
+      "https://www.google.com/search?q=Fabrice%20Bellard%20open%20source"
+    ],
+    "portrait_reference_urls": [
+      "https://en.wikipedia.org/wiki/Fabrice_Bellard"
+    ],
+    "legal_notes": "Portrait is an AI-generated illustration (OpenAI gpt-image-1), not a photograph. Facts grounded in public Wikipedia/Wikidata sources. Verify publicity/personality rights before commercial sale.",
     "impact_rating": 95,
     "code_rating": 90,
     "innovation_rating": 92,
@@ -1053,9 +1174,14 @@
     "associates_or_ecosystem": [],
     "scouting_report": "Andrew Tridgell is a key figure in open-source software, known for creating Samba and rsync. His work enables seamless file sharing across different operating systems, making him a vital contributor to the open-source community.",
     "collector_note": "Tridgell bridges systems with open-source innovation.",
-    "source_urls": [],
-    "portrait_reference_urls": [],
-    "legal_notes": "Portrait sourced from Wikimedia Commons (CC licensing — attribution required). Facts grounded in Wikipedia. Verify publicity/personality rights before commercial printing.",
+    "source_urls": [
+      "https://en.wikipedia.org/wiki/Andrew_Tridgell",
+      "https://www.google.com/search?q=Andrew%20Tridgell%20open%20source"
+    ],
+    "portrait_reference_urls": [
+      "https://en.wikipedia.org/wiki/Andrew_Tridgell"
+    ],
+    "legal_notes": "Portrait is an AI-generated illustration (OpenAI gpt-image-1), not a photograph. Facts grounded in public Wikipedia/Wikidata sources. Verify publicity/personality rights before commercial sale.",
     "impact_rating": 90,
     "code_rating": 88,
     "innovation_rating": 92,
@@ -1089,9 +1215,14 @@
     "associates_or_ecosystem": [],
     "scouting_report": "Bram Moolenaar is a prominent figure in software development, known for creating Vim, a highly configurable text editor. His work emphasizes efficiency and productivity, making Vim a staple among programmers worldwide.",
     "collector_note": "Vim: The editor that keeps on giving.",
-    "source_urls": [],
-    "portrait_reference_urls": [],
-    "legal_notes": "Portrait sourced from Wikimedia Commons (CC licensing — attribution required). Facts grounded in Wikipedia. Verify publicity/personality rights before commercial printing.",
+    "source_urls": [
+      "https://en.wikipedia.org/wiki/Bram_Moolenaar",
+      "https://www.google.com/search?q=Bram%20Moolenaar%20open%20source"
+    ],
+    "portrait_reference_urls": [
+      "https://en.wikipedia.org/wiki/Bram_Moolenaar"
+    ],
+    "legal_notes": "Portrait is an AI-generated illustration (OpenAI gpt-image-1), not a photograph. Facts grounded in public Wikipedia/Wikidata sources. Verify publicity/personality rights before commercial sale.",
     "impact_rating": 90,
     "code_rating": 85,
     "innovation_rating": 88,
@@ -1125,9 +1256,14 @@
     "associates_or_ecosystem": [],
     "scouting_report": "Brian Fox is a pivotal figure in the open source community, known for creating GNU Bash, a widely used command-line shell. His work has significantly influenced the development of free software and the GNU Project, promoting software freedom.",
     "collector_note": "Brian Fox's legacy lives on in every terminal.",
-    "source_urls": [],
-    "portrait_reference_urls": [],
-    "legal_notes": "Portrait sourced from Wikimedia Commons (CC licensing — attribution required). Facts grounded in Wikipedia. Verify publicity/personality rights before commercial printing.",
+    "source_urls": [
+      "https://en.wikipedia.org/wiki/Brian_Fox",
+      "https://www.google.com/search?q=Brian%20Fox%20open%20source"
+    ],
+    "portrait_reference_urls": [
+      "https://en.wikipedia.org/wiki/Brian_Fox"
+    ],
+    "legal_notes": "Portrait is an AI-generated illustration (OpenAI gpt-image-1), not a photograph. Facts grounded in public Wikipedia/Wikidata sources. Verify publicity/personality rights before commercial sale.",
     "impact_rating": 90,
     "code_rating": 85,
     "innovation_rating": 88,
@@ -1162,13 +1298,14 @@
     "collector_note": "Koch champions freedom in digital security.",
     "source_urls": [
       "https://www.wikidata.org/wiki/Q3567326",
-      "https://en.wikipedia.org/wiki/Werner_Koch"
+      "https://en.wikipedia.org/wiki/Werner_Koch",
+      "https://www.google.com/search?q=Werner%20Koch%20open%20source"
     ],
     "portrait_reference_urls": [
       "https://upload.wikimedia.org/wikipedia/commons/thumb/4/44/Werner_Koch_Portrait_01.2015-2.jpg/330px-Werner_Koch_Portrait_01.2015-2.jpg",
       "https://upload.wikimedia.org/wikipedia/commons/4/44/Werner_Koch_Portrait_01.2015-2.jpg"
     ],
-    "legal_notes": "Portrait sourced from Wikimedia Commons (CC licensing — attribution required). Facts grounded in Wikipedia. Verify publicity/personality rights before commercial printing.",
+    "legal_notes": "Portrait is an AI-generated illustration (OpenAI gpt-image-1), not a photograph. Facts grounded in public Wikipedia/Wikidata sources. Verify publicity/personality rights before commercial sale.",
     "impact_rating": 90,
     "code_rating": 85,
     "innovation_rating": 88,
@@ -1204,13 +1341,14 @@
     "collector_note": "A true champion of open source software.",
     "source_urls": [
       "https://www.wikidata.org/wiki/Q62849",
-      "https://en.wikipedia.org/wiki/Miguel_de_Icaza"
+      "https://en.wikipedia.org/wiki/Miguel_de_Icaza",
+      "https://www.google.com/search?q=Miguel%20de%20Icaza%20open%20source"
     ],
     "portrait_reference_urls": [
       "https://upload.wikimedia.org/wikipedia/commons/thumb/9/9c/Miguel_de_Icaza_%282023-11-04%29.jpg/330px-Miguel_de_Icaza_%282023-11-04%29.jpg",
       "https://upload.wikimedia.org/wikipedia/commons/9/9c/Miguel_de_Icaza_%282023-11-04%29.jpg"
     ],
-    "legal_notes": "Portrait sourced from Wikimedia Commons (CC licensing — attribution required). Facts grounded in Wikipedia. Verify publicity/personality rights before commercial printing.",
+    "legal_notes": "Portrait is an AI-generated illustration (OpenAI gpt-image-1), not a photograph. Facts grounded in public Wikipedia/Wikidata sources. Verify publicity/personality rights before commercial sale.",
     "impact_rating": 90,
     "code_rating": 85,
     "innovation_rating": 92,
@@ -1246,13 +1384,14 @@
     "source_urls": [
       "https://www.wikidata.org/wiki/Q2041395",
       "https://en.wikipedia.org/wiki/Federico_Mena",
-      "https://en.wikipedia.org/wiki/GNOME"
+      "https://en.wikipedia.org/wiki/GNOME",
+      "https://en.wikipedia.org/wiki/Federico_Mena_Quintero"
     ],
     "portrait_reference_urls": [
       "https://upload.wikimedia.org/wikipedia/commons/thumb/6/68/Gnomelogo.svg/330px-Gnomelogo.svg.png",
       "https://upload.wikimedia.org/wikipedia/commons/thumb/6/68/Gnomelogo.svg/500px-Gnomelogo.svg.png"
     ],
-    "legal_notes": "Portrait sourced from Wikimedia Commons (CC licensing — attribution required). Facts grounded in Wikipedia. Verify publicity/personality rights before commercial printing.",
+    "legal_notes": "Portrait is an AI-generated illustration (OpenAI gpt-image-1), not a photograph. Facts grounded in public Wikipedia/Wikidata sources. Verify publicity/personality rights before commercial sale.",
     "impact_rating": 92,
     "code_rating": 85,
     "innovation_rating": 90,
@@ -1289,12 +1428,13 @@
     "collector_note": "A key figure in the free software movement.",
     "source_urls": [
       "https://www.wikidata.org/wiki/Q2444944",
-      "https://en.wikipedia.org/wiki/Havoc_Pennington"
+      "https://en.wikipedia.org/wiki/Havoc_Pennington",
+      "https://www.google.com/search?q=Havoc%20Pennington%20open%20source"
     ],
     "portrait_reference_urls": [
       "https://www.wikidata.org/wiki/Q2444944"
     ],
-    "legal_notes": "Portrait sourced from Wikimedia Commons (CC licensing — attribution required). Facts grounded in Wikipedia. Verify publicity/personality rights before commercial printing.",
+    "legal_notes": "Portrait is an AI-generated illustration (OpenAI gpt-image-1), not a photograph. Facts grounded in public Wikipedia/Wikidata sources. Verify publicity/personality rights before commercial sale.",
     "impact_rating": 88,
     "code_rating": 85,
     "innovation_rating": 90,
@@ -1328,12 +1468,13 @@
     "collector_note": "A pioneer in graphical interface innovation.",
     "source_urls": [
       "https://www.wikidata.org/wiki/Q92972",
-      "https://en.wikipedia.org/wiki/Keith_Packard"
+      "https://en.wikipedia.org/wiki/Keith_Packard",
+      "https://www.google.com/search?q=Keith%20Packard%20open%20source"
     ],
     "portrait_reference_urls": [
       "https://www.wikidata.org/wiki/Q92972"
     ],
-    "legal_notes": "Portrait sourced from Wikimedia Commons (CC licensing — attribution required). Facts grounded in Wikipedia. Verify publicity/personality rights before commercial printing.",
+    "legal_notes": "Portrait is an AI-generated illustration (OpenAI gpt-image-1), not a photograph. Facts grounded in public Wikipedia/Wikidata sources. Verify publicity/personality rights before commercial sale.",
     "impact_rating": 85,
     "code_rating": 80,
     "innovation_rating": 90,
@@ -1367,9 +1508,14 @@
     "associates_or_ecosystem": [],
     "scouting_report": "Lennart Poettering is a pivotal figure in modern Linux systems. He revolutionizes how services are managed with systemd, impacting boot processes and service management across distributions. His work on audio and service discovery further enhances user experience.",
     "collector_note": "Revolutionizing Linux with innovative technologies.",
-    "source_urls": [],
-    "portrait_reference_urls": [],
-    "legal_notes": "Portrait sourced from Wikimedia Commons (CC licensing — attribution required). Facts grounded in Wikipedia. Verify publicity/personality rights before commercial printing.",
+    "source_urls": [
+      "https://en.wikipedia.org/wiki/Lennart_Poettering",
+      "https://www.google.com/search?q=Lennart%20Poettering%20open%20source"
+    ],
+    "portrait_reference_urls": [
+      "https://en.wikipedia.org/wiki/Lennart_Poettering"
+    ],
+    "legal_notes": "Portrait is an AI-generated illustration (OpenAI gpt-image-1), not a photograph. Facts grounded in public Wikipedia/Wikidata sources. Verify publicity/personality rights before commercial sale.",
     "impact_rating": 90,
     "code_rating": 85,
     "innovation_rating": 92,
@@ -1403,9 +1549,14 @@
     "associates_or_ecosystem": [],
     "scouting_report": "Greg Kroah-Hartman is a pivotal figure in Linux kernel development, ensuring its stability and performance. His work on driver backports and Ksplice enhances system reliability, making him a respected leader in the open source community.",
     "collector_note": "A guardian of the Linux kernel.",
-    "source_urls": [],
-    "portrait_reference_urls": [],
-    "legal_notes": "Portrait sourced from Wikimedia Commons (CC licensing — attribution required). Facts grounded in Wikipedia. Verify publicity/personality rights before commercial printing.",
+    "source_urls": [
+      "https://en.wikipedia.org/wiki/Greg_Kroah-Hartman",
+      "https://www.google.com/search?q=Greg%20Kroah-Hartman%20open%20source"
+    ],
+    "portrait_reference_urls": [
+      "https://en.wikipedia.org/wiki/Greg_Kroah-Hartman"
+    ],
+    "legal_notes": "Portrait is an AI-generated illustration (OpenAI gpt-image-1), not a photograph. Facts grounded in public Wikipedia/Wikidata sources. Verify publicity/personality rights before commercial sale.",
     "impact_rating": 95,
     "code_rating": 92,
     "innovation_rating": 90,
@@ -1439,9 +1590,14 @@
     "associates_or_ecosystem": [],
     "scouting_report": "Alan Cox is a prominent figure in the Linux community, known for his extensive contributions to the Linux kernel. He plays a crucial role in maintaining kernel releases and enhancing networking capabilities, solidifying his legacy in open source software.",
     "collector_note": "A key architect of Linux's evolution.",
-    "source_urls": [],
-    "portrait_reference_urls": [],
-    "legal_notes": "Portrait sourced from Wikimedia Commons (CC licensing — attribution required). Facts grounded in Wikipedia. Verify publicity/personality rights before commercial printing.",
+    "source_urls": [
+      "https://en.wikipedia.org/wiki/Alan_Cox",
+      "https://www.google.com/search?q=Alan%20Cox%20open%20source"
+    ],
+    "portrait_reference_urls": [
+      "https://en.wikipedia.org/wiki/Alan_Cox"
+    ],
+    "legal_notes": "Portrait is an AI-generated illustration (OpenAI gpt-image-1), not a photograph. Facts grounded in public Wikipedia/Wikidata sources. Verify publicity/personality rights before commercial sale.",
     "impact_rating": 90,
     "code_rating": 88,
     "innovation_rating": 85,
@@ -1475,9 +1631,14 @@
     "associates_or_ecosystem": [],
     "scouting_report": "Chris Lattner is a pivotal figure in programming language design and compiler technology. His work on LLVM revolutionizes how software is compiled, while Swift has transformed iOS development, making it more accessible and efficient.",
     "collector_note": "A visionary in compilers and programming languages.",
-    "source_urls": [],
-    "portrait_reference_urls": [],
-    "legal_notes": "Portrait sourced from Wikimedia Commons (CC licensing — attribution required). Facts grounded in Wikipedia. Verify publicity/personality rights before commercial printing.",
+    "source_urls": [
+      "https://en.wikipedia.org/wiki/Chris_Lattner",
+      "https://www.google.com/search?q=Chris%20Lattner%20open%20source"
+    ],
+    "portrait_reference_urls": [
+      "https://en.wikipedia.org/wiki/Chris_Lattner"
+    ],
+    "legal_notes": "Portrait is an AI-generated illustration (OpenAI gpt-image-1), not a photograph. Facts grounded in public Wikipedia/Wikidata sources. Verify publicity/personality rights before commercial sale.",
     "impact_rating": 95,
     "code_rating": 92,
     "innovation_rating": 97,
@@ -1510,9 +1671,14 @@
     "associates_or_ecosystem": [],
     "scouting_report": "Graydon Hoare is a prominent software engineer known for creating Rust. His work emphasizes safety and concurrency, making a significant impact on modern programming practices. He continues to influence the open source community.",
     "collector_note": "Graydon's vision redefines how we think about safety in programming.",
-    "source_urls": [],
-    "portrait_reference_urls": [],
-    "legal_notes": "Portrait sourced from Wikimedia Commons (CC licensing — attribution required). Facts grounded in Wikipedia. Verify publicity/personality rights before commercial printing.",
+    "source_urls": [
+      "https://en.wikipedia.org/wiki/Graydon_Hoare",
+      "https://www.google.com/search?q=Graydon%20Hoare%20open%20source"
+    ],
+    "portrait_reference_urls": [
+      "https://en.wikipedia.org/wiki/Graydon_Hoare"
+    ],
+    "legal_notes": "Portrait is an AI-generated illustration (OpenAI gpt-image-1), not a photograph. Facts grounded in public Wikipedia/Wikidata sources. Verify publicity/personality rights before commercial sale.",
     "impact_rating": 90,
     "code_rating": 88,
     "innovation_rating": 92,
@@ -1546,9 +1712,14 @@
     "associates_or_ecosystem": [],
     "scouting_report": "Steve Klabnik is a prominent figure in the Rust community, known for his advocacy of open source software. He plays a crucial role in enhancing Rust's documentation and fostering a welcoming environment for developers.",
     "collector_note": "Steve champions the spirit of open source.",
-    "source_urls": [],
-    "portrait_reference_urls": [],
-    "legal_notes": "Portrait sourced from Wikimedia Commons (CC licensing — attribution required). Facts grounded in Wikipedia. Verify publicity/personality rights before commercial printing.",
+    "source_urls": [
+      "https://en.wikipedia.org/wiki/Steve_Klabnik",
+      "https://www.google.com/search?q=Steve%20Klabnik%20open%20source"
+    ],
+    "portrait_reference_urls": [
+      "https://en.wikipedia.org/wiki/Steve_Klabnik"
+    ],
+    "legal_notes": "Portrait is an AI-generated illustration (OpenAI gpt-image-1), not a photograph. Facts grounded in public Wikipedia/Wikidata sources. Verify publicity/personality rights before commercial sale.",
     "impact_rating": 88,
     "code_rating": 85,
     "innovation_rating": 90,
@@ -1562,7 +1733,7 @@
   {
     "card_number": 43,
     "name": "Salvatore Sanfilippo",
-    "display_name": "Salvatore Sanfilippo / antirez",
+    "display_name": "Salvatore Sanfilippo",
     "nickname_or_handle": "",
     "card_title": "Creator of Redis",
     "nationality": "Italy",
@@ -1581,9 +1752,14 @@
     "associates_or_ecosystem": [],
     "scouting_report": "Salvatore Sanfilippo, known as antirez, is the creator of Redis, a powerful in-memory data structure store. His work has revolutionized data handling and caching in modern applications, making him a key figure in open source software.",
     "collector_note": "Redis: Fast, reliable, and open source.",
-    "source_urls": [],
-    "portrait_reference_urls": [],
-    "legal_notes": "Portrait sourced from Wikimedia Commons (CC licensing — attribution required). Facts grounded in Wikipedia. Verify publicity/personality rights before commercial printing.",
+    "source_urls": [
+      "https://en.wikipedia.org/wiki/Salvatore_Sanfilippo",
+      "https://www.google.com/search?q=Salvatore%20Sanfilippo%20%2F%20antirez%20open%20source"
+    ],
+    "portrait_reference_urls": [
+      "https://en.wikipedia.org/wiki/Salvatore_Sanfilippo"
+    ],
+    "legal_notes": "Portrait is an AI-generated illustration (OpenAI gpt-image-1), not a photograph. Facts grounded in public Wikipedia/Wikidata sources. Verify publicity/personality rights before commercial sale.",
     "impact_rating": 95,
     "code_rating": 92,
     "innovation_rating": 94,
@@ -1597,7 +1773,7 @@
   {
     "card_number": 44,
     "name": "Michael Widenius",
-    "display_name": "Michael “Monty” Widenius",
+    "display_name": "Michael Widenius",
     "nickname_or_handle": "",
     "card_title": "Creator of MySQL Database",
     "nationality": "Sweden",
@@ -1617,9 +1793,14 @@
     "associates_or_ecosystem": [],
     "scouting_report": "Michael 'Monty' Widenius revolutionizes data management with MySQL, a leading open-source database. His commitment to community-driven development continues through MariaDB, ensuring robust alternatives in database technology.",
     "collector_note": "Monty believes in open-source freedom.",
-    "source_urls": [],
-    "portrait_reference_urls": [],
-    "legal_notes": "Portrait sourced from Wikimedia Commons (CC licensing — attribution required). Facts grounded in Wikipedia. Verify publicity/personality rights before commercial printing.",
+    "source_urls": [
+      "https://en.wikipedia.org/wiki/Michael_Monty_Widenius",
+      "https://www.google.com/search?q=Michael%20%E2%80%9CMonty%E2%80%9D%20Widenius%20open%20source"
+    ],
+    "portrait_reference_urls": [
+      "https://en.wikipedia.org/wiki/Michael_Monty_Widenius"
+    ],
+    "legal_notes": "Portrait is an AI-generated illustration (OpenAI gpt-image-1), not a photograph. Facts grounded in public Wikipedia/Wikidata sources. Verify publicity/personality rights before commercial sale.",
     "impact_rating": 95,
     "code_rating": 90,
     "innovation_rating": 92,
@@ -1653,9 +1834,14 @@
     "associates_or_ecosystem": [],
     "scouting_report": "Brad Fitzpatrick is a key figure in social networking and open source. He creates impactful projects like LiveJournal and Memcached, which have influenced web development and community building.",
     "collector_note": "Innovator of social platforms and caching solutions.",
-    "source_urls": [],
-    "portrait_reference_urls": [],
-    "legal_notes": "Portrait sourced from Wikimedia Commons (CC licensing — attribution required). Facts grounded in Wikipedia. Verify publicity/personality rights before commercial printing.",
+    "source_urls": [
+      "https://en.wikipedia.org/wiki/Brad_Fitzpatrick",
+      "https://www.google.com/search?q=Brad%20Fitzpatrick%20open%20source"
+    ],
+    "portrait_reference_urls": [
+      "https://en.wikipedia.org/wiki/Brad_Fitzpatrick"
+    ],
+    "legal_notes": "Portrait is an AI-generated illustration (OpenAI gpt-image-1), not a photograph. Facts grounded in public Wikipedia/Wikidata sources. Verify publicity/personality rights before commercial sale.",
     "impact_rating": 88,
     "code_rating": 85,
     "innovation_rating": 90,
@@ -1688,9 +1874,14 @@
     "associates_or_ecosystem": [],
     "scouting_report": "Solomon Hykes revolutionizes software deployment with Docker, enabling developers to create, deploy, and manage applications in containers. His work fosters innovation in cloud computing and microservices, making it easier for teams to collaborate and scale.",
     "collector_note": "Hykes transforms how we think about applications.",
-    "source_urls": [],
-    "portrait_reference_urls": [],
-    "legal_notes": "Portrait sourced from Wikimedia Commons (CC licensing — attribution required). Facts grounded in Wikipedia. Verify publicity/personality rights before commercial printing.",
+    "source_urls": [
+      "https://en.wikipedia.org/wiki/Solomon_Hykes",
+      "https://www.google.com/search?q=Solomon%20Hykes%20open%20source"
+    ],
+    "portrait_reference_urls": [
+      "https://en.wikipedia.org/wiki/Solomon_Hykes"
+    ],
+    "legal_notes": "Portrait is an AI-generated illustration (OpenAI gpt-image-1), not a photograph. Facts grounded in public Wikipedia/Wikidata sources. Verify publicity/personality rights before commercial sale.",
     "impact_rating": 95,
     "code_rating": 90,
     "innovation_rating": 98,
@@ -1725,9 +1916,14 @@
     "associates_or_ecosystem": [],
     "scouting_report": "Mitchell Hashimoto is a leading figure in infrastructure automation. He co-founds HashiCorp and creates tools that simplify cloud management. His work empowers developers to streamline workflows and enhance productivity.",
     "collector_note": "Transforming infrastructure management, one tool at a time.",
-    "source_urls": [],
-    "portrait_reference_urls": [],
-    "legal_notes": "Portrait sourced from Wikimedia Commons (CC licensing — attribution required). Facts grounded in Wikipedia. Verify publicity/personality rights before commercial printing.",
+    "source_urls": [
+      "https://en.wikipedia.org/wiki/Mitchell_Hashimoto",
+      "https://www.google.com/search?q=Mitchell%20Hashimoto%20open%20source"
+    ],
+    "portrait_reference_urls": [
+      "https://en.wikipedia.org/wiki/Mitchell_Hashimoto"
+    ],
+    "legal_notes": "Portrait is an AI-generated illustration (OpenAI gpt-image-1), not a photograph. Facts grounded in public Wikipedia/Wikidata sources. Verify publicity/personality rights before commercial sale.",
     "impact_rating": 92,
     "code_rating": 88,
     "innovation_rating": 95,
@@ -1761,9 +1957,14 @@
     "associates_or_ecosystem": [],
     "scouting_report": "Kelsey Hightower is a prominent advocate for Kubernetes and cloud-native technologies. He educates developers through talks and workshops, emphasizing best practices and innovative approaches in the tech community.",
     "collector_note": "Kelsey inspires the next generation of developers.",
-    "source_urls": [],
-    "portrait_reference_urls": [],
-    "legal_notes": "Portrait sourced from Wikimedia Commons (CC licensing — attribution required). Facts grounded in Wikipedia. Verify publicity/personality rights before commercial printing.",
+    "source_urls": [
+      "https://en.wikipedia.org/wiki/Kelsey_Hightower",
+      "https://www.google.com/search?q=Kelsey%20Hightower%20open%20source"
+    ],
+    "portrait_reference_urls": [
+      "https://en.wikipedia.org/wiki/Kelsey_Hightower"
+    ],
+    "legal_notes": "Portrait is an AI-generated illustration (OpenAI gpt-image-1), not a photograph. Facts grounded in public Wikipedia/Wikidata sources. Verify publicity/personality rights before commercial sale.",
     "impact_rating": 90,
     "code_rating": 85,
     "innovation_rating": 92,
@@ -1798,9 +1999,14 @@
     "associates_or_ecosystem": [],
     "scouting_report": "Taylor Otwell is a leading figure in PHP development, known for creating Laravel, a framework that simplifies web application development. His projects emphasize elegance and simplicity, making coding accessible and enjoyable for developers worldwide.",
     "collector_note": "Laravel: where elegance meets simplicity.",
-    "source_urls": [],
-    "portrait_reference_urls": [],
-    "legal_notes": "Portrait sourced from Wikimedia Commons (CC licensing — attribution required). Facts grounded in Wikipedia. Verify publicity/personality rights before commercial printing.",
+    "source_urls": [
+      "https://en.wikipedia.org/wiki/Taylor_Otwell",
+      "https://www.google.com/search?q=Taylor%20Otwell%20open%20source"
+    ],
+    "portrait_reference_urls": [
+      "https://en.wikipedia.org/wiki/Taylor_Otwell"
+    ],
+    "legal_notes": "Portrait is an AI-generated illustration (OpenAI gpt-image-1), not a photograph. Facts grounded in public Wikipedia/Wikidata sources. Verify publicity/personality rights before commercial sale.",
     "impact_rating": 90,
     "code_rating": 85,
     "innovation_rating": 88,
@@ -1834,9 +2040,14 @@
     "associates_or_ecosystem": [],
     "scouting_report": "Jeremy Ashkenas is a prominent figure in JavaScript development. He creates tools that simplify coding and enhance productivity. His projects are widely adopted and influential in the open source community.",
     "collector_note": "Transforming JavaScript, one project at a time.",
-    "source_urls": [],
-    "portrait_reference_urls": [],
-    "legal_notes": "Portrait sourced from Wikimedia Commons (CC licensing — attribution required). Facts grounded in Wikipedia. Verify publicity/personality rights before commercial printing.",
+    "source_urls": [
+      "https://en.wikipedia.org/wiki/Jeremy_Ashkenas",
+      "https://www.google.com/search?q=Jeremy%20Ashkenas%20open%20source"
+    ],
+    "portrait_reference_urls": [
+      "https://en.wikipedia.org/wiki/Jeremy_Ashkenas"
+    ],
+    "legal_notes": "Portrait is an AI-generated illustration (OpenAI gpt-image-1), not a photograph. Facts grounded in public Wikipedia/Wikidata sources. Verify publicity/personality rights before commercial sale.",
     "impact_rating": 88,
     "code_rating": 85,
     "innovation_rating": 90,
