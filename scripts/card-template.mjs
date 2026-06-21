@@ -1,5 +1,10 @@
-// HTML/CSS card template for "Open Source Legends" — matches the printed proof
-// design (docs/proof1.png). Renders accurate text; the AI portrait is embedded.
+// HTML/CSS card template for "Open Source Legends".
+// REFERENCE: docs/proof1.png is the single source of truth — match it exactly.
+//   Front: full-bleed portrait, number (top-left), crest (top-right), name plate,
+//          keyword row with badges.
+//   Back:  header, CREAM panels for Scouting Report + Signature Projects, dark
+//          Skill Stack + IMPACT box, quote, two-line footer (BORN/NATIONALITY,
+//          KNOWN FOR + </>).
 
 export const CARD_W = 750;
 export const CARD_H = 1050;
@@ -30,7 +35,6 @@ function bars(c) {
   }).join('');
 }
 
-// shared card shell — dark with a rarity-tinted foil inset border
 const shell = (accent) => `
   * { margin:0; padding:0; box-sizing:border-box; }
   html,body { width:${CARD_W}px; height:${CARD_H}px; }
@@ -49,17 +53,17 @@ export function buildFront(card, portraitDataUri) {
   const kw = traits(card).join('&nbsp;&nbsp;·&nbsp;&nbsp;');
   return `<!doctype html><html><head><meta charset="utf-8"><style>
   ${shell(accent)}
-  .portrait { position:absolute; inset:11px; border-radius:26px; overflow:hidden; }
-  .portrait img { width:100%; height:100%; object-fit:cover; object-position:center 22%; }
-  .portrait::after { content:''; position:absolute; left:0; right:0; bottom:0; height:46%;
-    background:linear-gradient(180deg, rgba(19,16,28,0) 0%, rgba(19,16,28,.85) 62%, #13101c 100%); }
+  .portrait { position:absolute; inset:0; }
+  .portrait img { width:100%; height:100%; object-fit:cover; object-position:center 20%; }
+  .portrait::after { content:''; position:absolute; left:0; right:0; bottom:0; height:44%;
+    background:linear-gradient(180deg, rgba(19,16,28,0) 0%, rgba(19,16,28,.82) 60%, #13101c 100%); }
   .num.top { position:absolute; top:26px; left:32px; z-index:5; font-size:56px; text-shadow:0 2px 10px rgba(0,0,0,.7); }
   .crest { position:absolute; top:24px; right:28px; z-index:5; }
-  .plate { position:absolute; left:26px; right:26px; bottom:120px; z-index:5; text-align:center;
-    background:linear-gradient(180deg,#1d1633,#130d22); border:2px solid ${accent}77; border-radius:18px; padding:20px 20px; }
+  .plate { position:absolute; left:26px; right:26px; bottom:118px; z-index:5; text-align:center;
+    background:linear-gradient(180deg,#1d1633,#130d22); border:2px solid ${accent}77; border-radius:18px; padding:20px; }
   .name { color:#fff; font-weight:800; font-size:44px; letter-spacing:.5px; line-height:1; text-transform:uppercase; }
   .title { color:${accent}; font-weight:700; font-size:18px; letter-spacing:1.5px; margin-top:9px; text-transform:uppercase; }
-  .footer { position:absolute; left:26px; right:26px; bottom:36px; z-index:5; display:flex; align-items:center; gap:14px; }
+  .footer { position:absolute; left:26px; right:26px; bottom:34px; z-index:5; display:flex; align-items:center; gap:14px; }
   .badge { width:64px; height:64px; flex:0 0 auto; border-radius:50%; background:#0b0911; border:2px solid ${accent};
     display:flex; align-items:center; justify-content:center; color:${accent}; font-weight:800; font-size:22px; font-family:ui-monospace,monospace; }
   .kw { flex:1; text-align:center; color:#d3d6e0; font-weight:700; font-size:17px; letter-spacing:1px; }
@@ -83,50 +87,51 @@ export function buildBack(card) {
   const projects = (card.primary_projects || []).slice(0, 5).map((p) => `<li>${esc(p)}</li>`).join('');
   return `<!doctype html><html><head><meta charset="utf-8"><style>
   ${shell(accent)}
-  .card { display:flex; flex-direction:column; padding:34px 34px 30px; }
+  .card { display:flex; flex-direction:column; padding:32px 32px 28px; }
   .head { flex:0 0 auto; }
-  .head .row { display:flex; align-items:center; gap:16px; }
-  .head .num { font-size:46px; line-height:1; }
-  .head .name { color:#fff; font-weight:800; font-size:34px; text-transform:uppercase; line-height:1; }
+  .head .row { display:flex; align-items:baseline; gap:16px; }
+  .head .num { font-size:44px; line-height:1; }
+  .head .name { color:#fff; font-weight:800; font-size:33px; text-transform:uppercase; line-height:1; }
   .head .title { color:${accent}; font-weight:700; font-size:15px; letter-spacing:1.5px; margin-top:7px; text-transform:uppercase; }
-  .rule { height:2px; background:linear-gradient(90deg,${accent},transparent); margin:16px 0 0; }
-  .content { flex:1; display:flex; flex-direction:column; justify-content:space-between; padding:6px 0; }
-  h4 { color:${accent}; font-size:13px; letter-spacing:2px; margin-bottom:10px; font-weight:800; }
-  .two { display:flex; gap:22px; }
-  .scout { flex:1.35; } .sig { flex:1; border-left:1px solid #2a2440; padding-left:20px; }
-  .scout p { color:#d7d9e2; font-size:16px; line-height:1.5; }
-  .sig ul { list-style:none; } .sig li { color:#d7d9e2; font-size:16px; line-height:1.7; padding-left:16px; position:relative; }
-  .sig li::before { content:'▸'; position:absolute; left:0; color:${accent}; }
-  .stack { display:flex; gap:20px; align-items:stretch; }
-  .skill { flex:1.7; }
-  .barRow { display:flex; align-items:center; gap:12px; margin-bottom:13px; }
+  .content { flex:1; display:flex; flex-direction:column; gap:18px; padding-top:18px; min-height:0; }
+  /* cream panels — match the proof */
+  .panels { flex:1; display:flex; gap:16px; }
+  .panel { background:#efeae0; border-radius:12px; padding:16px 18px; }
+  .panel h4 { color:#15101f; font-size:13px; letter-spacing:1.5px; margin-bottom:10px; font-weight:800; }
+  .scout { flex:1.45; } .scout p { color:#2c2935; font-size:15.5px; line-height:1.5; }
+  .sig { flex:1; } .sig ul { list-style:none; }
+  .sig li { color:#2c2935; font-size:15.5px; line-height:1.65; padding-left:15px; position:relative; }
+  .sig li::before { content:'•'; position:absolute; left:0; color:${accent === '#f5c451' ? '#b88a1e' : accent}; font-weight:800; }
+  /* skill stack + impact — dark */
+  .stack { flex:1; display:flex; gap:16px; align-items:stretch; }
+  .skill { flex:1.7; } .skill h4 { color:${accent}; font-size:13px; letter-spacing:2px; margin-bottom:12px; font-weight:800; }
+  .barRow { display:flex; align-items:center; gap:12px; margin-bottom:12px; }
   .barLabel { flex:0 0 158px; color:#aeb2c0; font-size:12px; letter-spacing:.5px; }
   .bar { flex:1; display:flex; gap:3px; }
-  .seg { flex:1; height:15px; border-radius:3px; background:#241d38; }
+  .seg { flex:1; height:14px; border-radius:3px; background:#241d38; }
   .seg.on { background:${accent}; box-shadow:0 0 6px ${accent}66; }
   .barVal { flex:0 0 34px; text-align:right; color:#fff; font-weight:800; font-size:16px; font-family:ui-monospace,monospace; }
   .impact { flex:1; background:linear-gradient(180deg,#181226,#0f0b1a); border:2px solid ${accent}77; border-radius:14px;
     display:flex; flex-direction:column; align-items:center; justify-content:center; }
   .impact .lab { color:#aeb2c0; font-size:13px; letter-spacing:3px; }
-  .impact .score { color:${accent}; font-weight:800; font-size:78px; line-height:.95; font-family:ui-monospace,monospace; }
+  .impact .score { color:${accent}; font-weight:800; font-size:74px; line-height:.95; font-family:ui-monospace,monospace; }
   .impact .rar { color:#fff; font-weight:800; font-size:15px; letter-spacing:2px; }
   .impact .stars { color:${accent}; font-size:18px; letter-spacing:3px; margin-top:6px; }
-  .quote { color:#d7d9e2; font-style:italic; font-size:17px; line-height:1.45; padding:0 4px; }
-  .quote .q { color:${accent}; font-size:30px; font-weight:800; margin-right:6px; vertical-align:-6px; }
-  .foot { flex:0 0 auto; display:flex; justify-content:space-between; align-items:center;
-    border-top:1px solid #2a2440; padding-top:14px; color:#9a9ead; font-size:12px; letter-spacing:.5px; }
+  .quote { flex:0 0 auto; color:#d7d9e2; font-style:italic; font-size:16px; line-height:1.4; }
+  .quote .q { color:${accent}; font-size:28px; font-weight:800; margin-right:5px; vertical-align:-6px; }
+  .foot { flex:0 0 auto; border-top:1px solid ${accent}55; padding-top:12px; margin-top:14px; color:#9a9ead; font-size:11.5px; letter-spacing:.4px; }
+  .foot .r { display:flex; justify-content:space-between; align-items:center; }
   .foot b { color:#d7d9e2; } .foot .c { color:${accent}; font-size:17px; font-family:ui-monospace,monospace; }
   </style></head><body>
   <div class="card">
     <div class="head">
       <div class="row"><span class="num">${pad2(card.card_number)}</span><span class="name">${esc(card.display_name)}</span></div>
       <div class="title">${esc(card.card_title)}</div>
-      <div class="rule"></div>
     </div>
     <div class="content">
-      <div class="two">
-        <div class="scout"><h4>SCOUTING REPORT</h4><p>${esc(card.scouting_report)}</p></div>
-        <div class="sig"><h4>SIGNATURE PROJECTS</h4><ul>${projects}</ul></div>
+      <div class="panels">
+        <div class="panel scout"><h4>SCOUTING REPORT</h4><p>${esc(card.scouting_report)}</p></div>
+        <div class="panel sig"><h4>SIGNATURE PROJECTS</h4><ul>${projects}</ul></div>
       </div>
       <div class="stack">
         <div class="skill"><h4>SKILL STACK</h4>${bars(card)}</div>
@@ -134,6 +139,9 @@ export function buildBack(card) {
       </div>
       <div class="quote"><span class="q">“</span>${esc(card.collector_note)}”</div>
     </div>
-    <div class="foot"><span>BORN <b>${esc(card.birth_date)}</b></span><span>NATIONALITY <b>${esc(card.nationality)}</b></span><span class="c">&lt;/&gt;</span></div>
+    <div class="foot">
+      <div class="r"><span>BORN <b>${esc(card.birth_date)}</b></span><span>NATIONALITY <b>${esc(card.nationality)}</b></span></div>
+      <div class="r" style="margin-top:6px"><span>KNOWN FOR <b>${esc(card.known_for)}</b></span><span class="c">&lt;/&gt;</span></div>
+    </div>
   </div></body></html>`;
 }

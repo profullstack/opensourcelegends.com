@@ -1,0 +1,66 @@
+<!doctype html><html><head><meta charset="utf-8"><style>
+  
+  * { margin:0; padding:0; box-sizing:border-box; }
+  html,body { width:750px; height:1050px; }
+  body { font-family:'Inter','Helvetica Neue',Arial,sans-serif; background:#05060a; }
+  .card { position:relative; width:750px; height:1050px; overflow:hidden; border-radius:34px;
+    background:#13101c; box-shadow: inset 0 0 0 6px #0b0911, inset 0 0 0 8px #b06bff66, inset 0 0 0 11px #0b0911; }
+  .num { font-family:'JetBrains Mono',ui-monospace,monospace; font-weight:800; color:#fff; }
+  .crestBox { display:flex; flex-direction:column; align-items:flex-end; background:#0b0911; border:2px solid #b06bff;
+    border-radius:10px; padding:8px 13px; clip-path:polygon(14% 0,100% 0,100% 100%,0 100%); }
+  .crestBox .t { color:#fff; font-weight:800; font-size:15px; letter-spacing:1px; text-align:right; line-height:1.05; }
+  .crestBox .c { color:#b06bff; font-weight:800; font-size:12px; font-family:ui-monospace,monospace; margin-top:2px; }
+
+  .card { display:flex; flex-direction:column; padding:34px 34px 30px; }
+  .head { flex:0 0 auto; }
+  .head .row { display:flex; align-items:center; gap:16px; }
+  .head .num { font-size:46px; line-height:1; }
+  .head .name { color:#fff; font-weight:800; font-size:34px; text-transform:uppercase; line-height:1; }
+  .head .title { color:#b06bff; font-weight:700; font-size:15px; letter-spacing:1.5px; margin-top:7px; text-transform:uppercase; }
+  .rule { height:2px; background:linear-gradient(90deg,#b06bff,transparent); margin:16px 0 0; }
+  .content { flex:1; display:flex; flex-direction:column; justify-content:space-between; padding:6px 0; }
+  h4 { color:#b06bff; font-size:13px; letter-spacing:2px; margin-bottom:10px; font-weight:800; }
+  .two { display:flex; gap:22px; }
+  .scout { flex:1.35; } .sig { flex:1; border-left:1px solid #2a2440; padding-left:20px; }
+  .scout p { color:#d7d9e2; font-size:16px; line-height:1.5; }
+  .sig ul { list-style:none; } .sig li { color:#d7d9e2; font-size:16px; line-height:1.7; padding-left:16px; position:relative; }
+  .sig li::before { content:'▸'; position:absolute; left:0; color:#b06bff; }
+  .stack { display:flex; gap:20px; align-items:stretch; }
+  .skill { flex:1.7; }
+  .barRow { display:flex; align-items:center; gap:12px; margin-bottom:13px; }
+  .barLabel { flex:0 0 158px; color:#aeb2c0; font-size:12px; letter-spacing:.5px; }
+  .bar { flex:1; display:flex; gap:3px; }
+  .seg { flex:1; height:15px; border-radius:3px; background:#241d38; }
+  .seg.on { background:#b06bff; box-shadow:0 0 6px #b06bff66; }
+  .barVal { flex:0 0 34px; text-align:right; color:#fff; font-weight:800; font-size:16px; font-family:ui-monospace,monospace; }
+  .impact { flex:1; background:linear-gradient(180deg,#181226,#0f0b1a); border:2px solid #b06bff77; border-radius:14px;
+    display:flex; flex-direction:column; align-items:center; justify-content:center; }
+  .impact .lab { color:#aeb2c0; font-size:13px; letter-spacing:3px; }
+  .impact .score { color:#b06bff; font-weight:800; font-size:78px; line-height:.95; font-family:ui-monospace,monospace; }
+  .impact .rar { color:#fff; font-weight:800; font-size:15px; letter-spacing:2px; }
+  .impact .stars { color:#b06bff; font-size:18px; letter-spacing:3px; margin-top:6px; }
+  .quote { color:#d7d9e2; font-style:italic; font-size:17px; line-height:1.45; padding:0 4px; }
+  .quote .q { color:#b06bff; font-size:30px; font-weight:800; margin-right:6px; vertical-align:-6px; }
+  .foot { flex:0 0 auto; display:flex; justify-content:space-between; align-items:center;
+    border-top:1px solid #2a2440; padding-top:14px; color:#9a9ead; font-size:12px; letter-spacing:.5px; }
+  .foot b { color:#d7d9e2; } .foot .c { color:#b06bff; font-size:17px; font-family:ui-monospace,monospace; }
+  </style></head><body>
+  <div class="card">
+    <div class="head">
+      <div class="row"><span class="num">47</span><span class="name">Mitchell Hashimoto</span></div>
+      <div class="title">Co-founder of HashiCorp</div>
+      <div class="rule"></div>
+    </div>
+    <div class="content">
+      <div class="two">
+        <div class="scout"><h4>SCOUTING REPORT</h4><p>Mitchell Hashimoto is a leading figure in infrastructure automation. He co-founds HashiCorp and creates tools that simplify cloud management. His work empowers developers to streamline workflows and enhance productivity.</p></div>
+        <div class="sig"><h4>SIGNATURE PROJECTS</h4><ul><li>Terraform</li><li>Vagrant</li><li>Consul</li><li>Vault</li></ul></div>
+      </div>
+      <div class="stack">
+        <div class="skill"><h4>SKILL STACK</h4><div class="barRow"><span class="barLabel">CODE ARCHITECTURE</span><span class="bar"><span class="seg on"></span><span class="seg on"></span><span class="seg on"></span><span class="seg on"></span><span class="seg on"></span><span class="seg on"></span><span class="seg on"></span><span class="seg on"></span><span class="seg on"></span><span class="seg "></span></span><span class="barVal">88</span></div><div class="barRow"><span class="barLabel">INNOVATION</span><span class="bar"><span class="seg on"></span><span class="seg on"></span><span class="seg on"></span><span class="seg on"></span><span class="seg on"></span><span class="seg on"></span><span class="seg on"></span><span class="seg on"></span><span class="seg on"></span><span class="seg on"></span></span><span class="barVal">95</span></div><div class="barRow"><span class="barLabel">COMMUNITY IMPACT</span><span class="bar"><span class="seg on"></span><span class="seg on"></span><span class="seg on"></span><span class="seg on"></span><span class="seg on"></span><span class="seg on"></span><span class="seg on"></span><span class="seg on"></span><span class="seg on"></span><span class="seg "></span></span><span class="barVal">90</span></div><div class="barRow"><span class="barLabel">LONGEVITY</span><span class="bar"><span class="seg on"></span><span class="seg on"></span><span class="seg on"></span><span class="seg on"></span><span class="seg on"></span><span class="seg on"></span><span class="seg on"></span><span class="seg on"></span><span class="seg on"></span><span class="seg "></span></span><span class="barVal">85</span></div><div class="barRow"><span class="barLabel">OPEN SOURCE IMPACT</span><span class="bar"><span class="seg on"></span><span class="seg on"></span><span class="seg on"></span><span class="seg on"></span><span class="seg on"></span><span class="seg on"></span><span class="seg on"></span><span class="seg on"></span><span class="seg on"></span><span class="seg "></span></span><span class="barVal">92</span></div></div>
+        <div class="impact"><span class="lab">IMPACT</span><span class="score">92</span><span class="rar">LEGENDARY</span><span class="stars">★★★★★</span></div>
+      </div>
+      <div class="quote"><span class="q">“</span>Transforming infrastructure management, one tool at a time.”</div>
+    </div>
+    <div class="foot"><span>BORN <b>1990</b></span><span>NATIONALITY <b>USA</b></span><span class="c">&lt;/&gt;</span></div>
+  </div></body></html>

@@ -68,15 +68,23 @@ async function shoot(html, id, side) {
   await page.locator('.card').screenshot({ path: path.join(OUT, `${id}-${side}.png`) });
 }
 
+let ok = 0; const skipped = [];
 for (const c of cards) {
-  const pPath = await portrait(c);
-  const b64 = (await fs.readFile(pPath)).toString('base64');
-  const uri = `data:image/png;base64,${b64}`;
   const id = `card_${String(c.card_number).padStart(3, '0')}`;
-  await shoot(buildFront(c, uri), id, 'front');
-  await shoot(buildBack(c), id, 'back');
-  console.log(`✓ ${c.card_number} ${c.display_name} (${rarityOf(c.impact_rating)})`);
+  try {
+    const pPath = await portrait(c);
+    const b64 = (await fs.readFile(pPath)).toString('base64');
+    const uri = `data:image/png;base64,${b64}`;
+    await shoot(buildFront(c, uri), id, 'front');
+    await shoot(buildBack(c), id, 'back');
+    ok++;
+    console.log(`✓ ${c.card_number} ${c.display_name} (${rarityOf(c.impact_rating)})`);
+  } catch (e) {
+    skipped.push(c.card_number);
+    console.log(`– skip ${c.card_number} ${c.display_name}: ${e.message}`);
+  }
 }
+console.log(`\nRendered ${ok}; skipped ${skipped.length ? skipped.join(', ') : 'none'}`);
 
 await browser.close();
 console.log(`\nDone. Rendered ${cards.length} cards to dist/html/`);
