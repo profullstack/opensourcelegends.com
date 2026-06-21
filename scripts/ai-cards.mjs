@@ -37,6 +37,7 @@ const cards = only.length ? roster.filter((c) => only.includes(c.card_number)) :
 
 const rarity = (n) => (n >= 95 ? 'ICONIC' : n >= 90 ? 'LEGENDARY' : n >= 85 ? 'EPIC' : 'RARE');
 const pad = (n) => String(n).padStart(2, '0');
+const slug = (s) => s.toLowerCase().replace(/[^a-z0-9]+/g, '-').replace(/^-|-$/g, '');
 
 function traits(c) {
   const map = [
@@ -80,7 +81,7 @@ Crisp, perfectly legible text. Match the reference layout precisely.`;
 }
 
 async function gen(side, c, ref, prompt, attempt = 1) {
-  const out = path.join(OUT, `card_${String(c.card_number).padStart(3, '0')}-${side}.png`);
+  const out = path.join(OUT, `card_${String(c.card_number).padStart(3, '0')}-${slug(c.display_name)}-${side}.png`);
   if (fssync.existsSync(out)) return 'skip';
   const form = new FormData();
   form.append('model', 'gpt-image-1');
