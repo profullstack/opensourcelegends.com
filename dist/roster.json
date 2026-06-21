@@ -1,0 +1,2061 @@
+[
+  {
+    "card_number": 1,
+    "name": "Richard Stallman",
+    "display_name": "Richard Stallman",
+    "nickname_or_handle": "",
+    "card_title": "Founder of the GNU Project",
+    "nationality": "USA",
+    "birth_date": "1953",
+    "known_for": "Advocate for free software movement",
+    "primary_projects": [
+      "GNU Project",
+      "Free Software Foundation",
+      "GNU C Compiler",
+      "GNU Emacs"
+    ],
+    "other_projects": [],
+    "key_contributions": [
+      "Launched the GNU Project",
+      "Founded the Free Software Foundation",
+      "Developed GNU General Public License"
+    ],
+    "associates_or_ecosystem": [],
+    "scouting_report": "Richard Stallman is a pivotal figure in the free software movement. He advocates for user freedoms in software usage, study, and modification. His initiatives have shaped the landscape of software distribution and rights.",
+    "collector_note": "Freedom is a matter of choice.",
+    "source_urls": [
+      "https://www.wikidata.org/wiki/Q7439",
+      "https://en.wikipedia.org/wiki/Richard_Stallman",
+      "https://www.google.com/search?q=Richard%20Stallman%20open%20source"
+    ],
+    "portrait_reference_urls": [
+      "https://upload.wikimedia.org/wikipedia/commons/thumb/3/38/Richard_Stallman_Bologna_2024_abc1.jpg/330px-Richard_Stallman_Bologna_2024_abc1.jpg",
+      "https://upload.wikimedia.org/wikipedia/commons/3/38/Richard_Stallman_Bologna_2024_abc1.jpg"
+    ],
+    "legal_notes": "Portrait is an AI-generated illustration (OpenAI gpt-image-1), not a photograph. Facts grounded in public Wikipedia/Wikidata sources. Verify publicity/personality rights before commercial sale.",
+    "impact_rating": 95,
+    "code_rating": 90,
+    "innovation_rating": 92,
+    "community_rating": 98,
+    "longevity_rating": 97,
+    "facts_verified": true,
+    "portrait_review_status": "approved",
+    "portrait_asset": "assets/portraits/card_001.png",
+    "manual_review_notes": "Fill facts from sourced research only. Do not copy AI-generated text into this file without checking sources."
+  },
+  {
+    "card_number": 2,
+    "name": "Linus Torvalds",
+    "display_name": "Linus Torvalds",
+    "nickname_or_handle": "",
+    "card_title": "Creator of the Linux Kernel",
+    "nationality": "Finland / USA",
+    "birth_date": "1969",
+    "known_for": "Developing Linux and Git",
+    "primary_projects": [
+      "Linux Kernel",
+      "Git"
+    ],
+    "other_projects": [],
+    "key_contributions": [
+      "Created the Linux kernel",
+      "Developed version control system Git",
+      "Pioneered open source collaboration"
+    ],
+    "associates_or_ecosystem": [],
+    "scouting_report": "Linus Torvalds revolutionizes software development with the Linux kernel and Git. His contributions foster a global open source community, driving innovation and collaboration across industries.",
+    "collector_note": "Linus brings freedom and collaboration to software.",
+    "source_urls": [
+      "https://www.wikidata.org/wiki/Q34253",
+      "https://en.wikipedia.org/wiki/Linus_Torvalds",
+      "https://www.google.com/search?q=Linus%20Torvalds%20open%20source"
+    ],
+    "portrait_reference_urls": [
+      "https://upload.wikimedia.org/wikipedia/commons/thumb/0/01/LinuxCon_Europe_Linus_Torvalds_03_%28cropped%29.jpg/330px-LinuxCon_Europe_Linus_Torvalds_03_%28cropped%29.jpg",
+      "https://upload.wikimedia.org/wikipedia/commons/0/01/LinuxCon_Europe_Linus_Torvalds_03_%28cropped%29.jpg"
+    ],
+    "legal_notes": "Portrait is an AI-generated illustration (OpenAI gpt-image-1), not a photograph. Facts grounded in public Wikipedia/Wikidata sources. Verify publicity/personality rights before commercial sale.",
+    "impact_rating": 99,
+    "code_rating": 98,
+    "innovation_rating": 97,
+    "community_rating": 99,
+    "longevity_rating": 95,
+    "facts_verified": true,
+    "portrait_review_status": "approved",
+    "portrait_asset": "assets/portraits/card_002.png",
+    "manual_review_notes": "Fill facts from sourced research only. Do not copy AI-generated text into this file without checking sources."
+  },
+  {
+    "card_number": 3,
+    "name": "Aaron Swartz",
+    "display_name": "Aaron Swartz",
+    "nickname_or_handle": "",
+    "card_title": "Internet Activist and Programmer",
+    "nationality": "USA",
+    "birth_date": "1986-11-08",
+    "known_for": "Contributions to RSS and Markdown",
+    "primary_projects": [
+      "RSS",
+      "Creative Commons",
+      "web.py",
+      "Markdown"
+    ],
+    "other_projects": [],
+    "key_contributions": [
+      "Developed web feed format RSS",
+      "Co-owner of Reddit",
+      "Defined Markdown syntax"
+    ],
+    "associates_or_ecosystem": [],
+    "scouting_report": "Aaron Swartz is a pivotal figure in internet activism and programming. He significantly contributed to various projects that shaped the web, advocating for open access and civic engagement. His legacy inspires many in the tech community.",
+    "collector_note": "A prodigy who fought for freedom.",
+    "source_urls": [
+      "https://www.wikidata.org/wiki/Q302817",
+      "https://en.wikipedia.org/wiki/Aaron_Swartz",
+      "https://www.google.com/search?q=Aaron%20Swartz%20open%20source"
+    ],
+    "portrait_reference_urls": [
+      "https://upload.wikimedia.org/wikipedia/commons/thumb/c/cd/Aaron_Swartz_in_2011.jpg/330px-Aaron_Swartz_in_2011.jpg",
+      "https://upload.wikimedia.org/wikipedia/commons/c/cd/Aaron_Swartz_in_2011.jpg"
+    ],
+    "legal_notes": "Portrait is an AI-generated illustration (OpenAI gpt-image-1), not a photograph. Facts grounded in public Wikipedia/Wikidata sources. Verify publicity/personality rights before commercial sale.",
+    "impact_rating": 95,
+    "code_rating": 88,
+    "innovation_rating": 92,
+    "community_rating": 97,
+    "longevity_rating": 85,
+    "facts_verified": true,
+    "portrait_review_status": "approved",
+    "portrait_asset": "assets/portraits/card_003.png",
+    "manual_review_notes": "Fill facts from sourced research only. Do not copy AI-generated text into this file without checking sources."
+  },
+  {
+    "card_number": 4,
+    "name": "TJ Holowaychuk",
+    "display_name": "TJ Holowaychuk",
+    "nickname_or_handle": "",
+    "card_title": "Node.js Contributor",
+    "nationality": "Canada",
+    "birth_date": "1987",
+    "known_for": "Creator of popular Node.js modules",
+    "primary_projects": [
+      "Express",
+      "Koa",
+      "Socket.IO",
+      "Mocha"
+    ],
+    "other_projects": [],
+    "key_contributions": [
+      "Developed Express framework",
+      "Created Koa web framework",
+      "Contributed to numerous Node.js modules"
+    ],
+    "associates_or_ecosystem": [],
+    "scouting_report": "TJ Holowaychuk is a pivotal figure in the Node.js community, known for his innovative frameworks and modules. His work has significantly shaped web development practices and tools, making him a respected leader in open source.",
+    "collector_note": "A master of Node.js frameworks.",
+    "source_urls": [
+      "https://en.wikipedia.org/wiki/TJ_Holowaychuk",
+      "https://www.google.com/search?q=TJ%20Holowaychuk%20open%20source"
+    ],
+    "portrait_reference_urls": [
+      "https://en.wikipedia.org/wiki/TJ_Holowaychuk"
+    ],
+    "legal_notes": "Portrait is an AI-generated illustration (OpenAI gpt-image-1), not a photograph. Facts grounded in public Wikipedia/Wikidata sources. Verify publicity/personality rights before commercial sale.",
+    "impact_rating": 95,
+    "code_rating": 92,
+    "innovation_rating": 90,
+    "community_rating": 88,
+    "longevity_rating": 85,
+    "facts_verified": true,
+    "portrait_review_status": "approved",
+    "portrait_asset": "assets/portraits/card_004.png",
+    "manual_review_notes": "Fill facts from sourced research only. Do not copy AI-generated text into this file without checking sources."
+  },
+  {
+    "card_number": 5,
+    "name": "Guido van Rossum",
+    "display_name": "Guido van Rossum",
+    "nickname_or_handle": "",
+    "card_title": "Creator of the Python Language",
+    "nationality": "Netherlands",
+    "birth_date": "1956",
+    "known_for": "Inventor of Python programming language",
+    "primary_projects": [
+      "Python"
+    ],
+    "other_projects": [],
+    "key_contributions": [
+      "Created the Python programming language",
+      "Served as BDFL until 2018",
+      "Contributed to Python Steering Council"
+    ],
+    "associates_or_ecosystem": [],
+    "scouting_report": "Guido van Rossum is a pivotal figure in programming, known for creating Python. His leadership as BDFL shaped the language's development and community, influencing countless developers worldwide.",
+    "collector_note": "Guido's Python has empowered generations of coders.",
+    "source_urls": [
+      "https://www.wikidata.org/wiki/Q30942",
+      "https://en.wikipedia.org/wiki/Guido_van_Rossum",
+      "https://www.google.com/search?q=Guido%20van%20Rossum%20open%20source"
+    ],
+    "portrait_reference_urls": [
+      "https://upload.wikimedia.org/wikipedia/commons/thumb/6/6b/Guido_van_Rossum_in_PyConUS24_%28cropped%29.jpg/330px-Guido_van_Rossum_in_PyConUS24_%28cropped%29.jpg",
+      "https://upload.wikimedia.org/wikipedia/commons/6/6b/Guido_van_Rossum_in_PyConUS24_%28cropped%29.jpg"
+    ],
+    "legal_notes": "Portrait is an AI-generated illustration (OpenAI gpt-image-1), not a photograph. Facts grounded in public Wikipedia/Wikidata sources. Verify publicity/personality rights before commercial sale.",
+    "impact_rating": 95,
+    "code_rating": 92,
+    "innovation_rating": 94,
+    "community_rating": 97,
+    "longevity_rating": 90,
+    "facts_verified": true,
+    "portrait_review_status": "approved",
+    "portrait_asset": "assets/portraits/card_005.png",
+    "manual_review_notes": "Fill facts from sourced research only. Do not copy AI-generated text into this file without checking sources."
+  },
+  {
+    "card_number": 6,
+    "name": "Yukihiro Matsumoto",
+    "display_name": "Yukihiro Matsumoto",
+    "nickname_or_handle": "",
+    "card_title": "Creator of Ruby Programming Language",
+    "nationality": "Japan",
+    "birth_date": "1965",
+    "known_for": "Inventing the Ruby language",
+    "primary_projects": [
+      "Ruby",
+      "Ruby on Rails",
+      "RubyGems"
+    ],
+    "other_projects": [],
+    "key_contributions": [
+      "Designed Ruby programming language",
+      "Promoted developer happiness",
+      "Advocated for open-source collaboration"
+    ],
+    "associates_or_ecosystem": [],
+    "scouting_report": "Yukihiro Matsumoto, known as Matz, is the creator of Ruby. He emphasizes simplicity and productivity in programming. His work inspires a vibrant community that values creativity and collaboration.",
+    "collector_note": "Matz believes programming should be enjoyable.",
+    "source_urls": [
+      "https://www.wikidata.org/wiki/Q109409154",
+      "https://en.wikipedia.org/wiki/Yukihiro_Matz_Matsumoto",
+      "https://www.google.com/search?q=Yukihiro%20%E2%80%9CMatz%E2%80%9D%20Matsumoto%20open%20source"
+    ],
+    "portrait_reference_urls": [
+      "https://www.wikidata.org/wiki/Q109409154"
+    ],
+    "legal_notes": "Portrait is an AI-generated illustration (OpenAI gpt-image-1), not a photograph. Facts grounded in public Wikipedia/Wikidata sources. Verify publicity/personality rights before commercial sale.",
+    "impact_rating": 95,
+    "code_rating": 90,
+    "innovation_rating": 92,
+    "community_rating": 98,
+    "longevity_rating": 85,
+    "facts_verified": true,
+    "portrait_review_status": "approved",
+    "portrait_asset": "assets/portraits/card_006.png",
+    "manual_review_notes": "Fill facts from sourced research only. Do not copy AI-generated text into this file without checking sources."
+  },
+  {
+    "card_number": 7,
+    "name": "Larry Wall",
+    "display_name": "Larry Wall",
+    "nickname_or_handle": "",
+    "card_title": "Creator of Perl Programming Language",
+    "nationality": "USA",
+    "birth_date": "1954",
+    "known_for": "Inventing the Perl language",
+    "primary_projects": [
+      "Perl",
+      "Patch",
+      "perlbrew"
+    ],
+    "other_projects": [],
+    "key_contributions": [
+      "Developed Perl programming language",
+      "Promoted open source philosophy",
+      "Created the CPAN repository"
+    ],
+    "associates_or_ecosystem": [],
+    "scouting_report": "Larry Wall is a prominent figure in open source, known for creating Perl, a highly versatile programming language. His contributions to software development and community engagement have made a lasting impact on the tech landscape.",
+    "collector_note": "Perl: The duct tape of the Internet.",
+    "source_urls": [
+      "https://en.wikipedia.org/wiki/Larry_Wall",
+      "https://www.google.com/search?q=Larry%20Wall%20open%20source"
+    ],
+    "portrait_reference_urls": [
+      "https://en.wikipedia.org/wiki/Larry_Wall"
+    ],
+    "legal_notes": "Portrait is an AI-generated illustration (OpenAI gpt-image-1), not a photograph. Facts grounded in public Wikipedia/Wikidata sources. Verify publicity/personality rights before commercial sale.",
+    "impact_rating": 92,
+    "code_rating": 88,
+    "innovation_rating": 90,
+    "community_rating": 95,
+    "longevity_rating": 93,
+    "facts_verified": true,
+    "portrait_review_status": "approved",
+    "portrait_asset": "assets/portraits/card_007.png",
+    "manual_review_notes": "Fill facts from sourced research only. Do not copy AI-generated text into this file without checking sources."
+  },
+  {
+    "card_number": 8,
+    "name": "Brendan Eich",
+    "display_name": "Brendan Eich",
+    "nickname_or_handle": "",
+    "card_title": "Creator of JavaScript",
+    "nationality": "USA",
+    "birth_date": "1961-11-04",
+    "known_for": "Co-founder of Mozilla and Firefox",
+    "primary_projects": [
+      "JavaScript",
+      "Mozilla",
+      "Firefox"
+    ],
+    "other_projects": [],
+    "key_contributions": [
+      "Developed JavaScript in 1995",
+      "Co-founded Mozilla Corporation",
+      "Advocated for web standards"
+    ],
+    "associates_or_ecosystem": [],
+    "scouting_report": "Brendan Eich is a pivotal figure in web development, known for creating JavaScript. He co-founded Mozilla, championing open-source principles and fostering innovation in web browsers. His work continues to influence how we interact with the internet today.",
+    "collector_note": "The man who brought interactivity to the web.",
+    "source_urls": [
+      "https://en.wikipedia.org/wiki/Brendan_Eich",
+      "https://www.google.com/search?q=Brendan%20Eich%20open%20source"
+    ],
+    "portrait_reference_urls": [
+      "https://en.wikipedia.org/wiki/Brendan_Eich"
+    ],
+    "legal_notes": "Portrait is an AI-generated illustration (OpenAI gpt-image-1), not a photograph. Facts grounded in public Wikipedia/Wikidata sources. Verify publicity/personality rights before commercial sale.",
+    "impact_rating": 95,
+    "code_rating": 90,
+    "innovation_rating": 98,
+    "community_rating": 92,
+    "longevity_rating": 87,
+    "facts_verified": true,
+    "portrait_review_status": "approved",
+    "portrait_asset": "assets/portraits/card_008.png",
+    "manual_review_notes": "Fill facts from sourced research only. Do not copy AI-generated text into this file without checking sources."
+  },
+  {
+    "card_number": 9,
+    "name": "Rasmus Lerdorf",
+    "display_name": "Rasmus Lerdorf",
+    "nickname_or_handle": "",
+    "card_title": "Creator of PHP",
+    "nationality": "Canada / Denmark",
+    "birth_date": "1968",
+    "known_for": "Developing the PHP programming language",
+    "primary_projects": [
+      "PHP",
+      "Apache",
+      "MySQL"
+    ],
+    "other_projects": [],
+    "key_contributions": [
+      "Created the PHP scripting language",
+      "Contributed to web development tools",
+      "Advocated for open source software"
+    ],
+    "associates_or_ecosystem": [],
+    "scouting_report": "Rasmus Lerdorf is a pivotal figure in web development, best known for creating PHP. His work enables dynamic web applications and has influenced countless developers worldwide. He continues to advocate for open source principles.",
+    "collector_note": "Rasmus Lerdorf transformed web programming forever.",
+    "source_urls": [
+      "https://en.wikipedia.org/wiki/Rasmus_Lerdorf",
+      "https://www.google.com/search?q=Rasmus%20Lerdorf%20open%20source"
+    ],
+    "portrait_reference_urls": [
+      "https://en.wikipedia.org/wiki/Rasmus_Lerdorf"
+    ],
+    "legal_notes": "Portrait is an AI-generated illustration (OpenAI gpt-image-1), not a photograph. Facts grounded in public Wikipedia/Wikidata sources. Verify publicity/personality rights before commercial sale.",
+    "impact_rating": 95,
+    "code_rating": 90,
+    "innovation_rating": 92,
+    "community_rating": 88,
+    "longevity_rating": 85,
+    "facts_verified": true,
+    "portrait_review_status": "approved",
+    "portrait_asset": "assets/portraits/card_009.png",
+    "manual_review_notes": "Fill facts from sourced research only. Do not copy AI-generated text into this file without checking sources."
+  },
+  {
+    "card_number": 10,
+    "name": "David Heinemeier Hansson",
+    "display_name": "David Heinemeier Hansson",
+    "nickname_or_handle": "",
+    "card_title": "Creator of Ruby on Rails",
+    "nationality": "Denmark",
+    "birth_date": "1979",
+    "known_for": "Pioneering web application framework",
+    "primary_projects": [
+      "Ruby on Rails",
+      "Basecamp",
+      "HEXO"
+    ],
+    "other_projects": [],
+    "key_contributions": [
+      "Developed Ruby on Rails framework",
+      "Co-founder of Basecamp",
+      "Advocate for remote work"
+    ],
+    "associates_or_ecosystem": [],
+    "scouting_report": "David Heinemeier Hansson transforms web development with Ruby on Rails, emphasizing simplicity and productivity. As a co-founder of Basecamp, he champions remote work and efficient project management.",
+    "collector_note": "Simplicity is the ultimate sophistication.",
+    "source_urls": [
+      "https://en.wikipedia.org/wiki/David_Heinemeier_Hansson",
+      "https://www.google.com/search?q=David%20Heinemeier%20Hansson%20open%20source"
+    ],
+    "portrait_reference_urls": [
+      "https://en.wikipedia.org/wiki/David_Heinemeier_Hansson"
+    ],
+    "legal_notes": "Portrait is an AI-generated illustration (OpenAI gpt-image-1), not a photograph. Facts grounded in public Wikipedia/Wikidata sources. Verify publicity/personality rights before commercial sale.",
+    "impact_rating": 90,
+    "code_rating": 85,
+    "innovation_rating": 92,
+    "community_rating": 88,
+    "longevity_rating": 80,
+    "facts_verified": true,
+    "portrait_review_status": "approved",
+    "portrait_asset": "assets/portraits/card_010.png",
+    "manual_review_notes": "Fill facts from sourced research only. Do not copy AI-generated text into this file without checking sources."
+  },
+  {
+    "card_number": 11,
+    "name": "Ryan Dahl",
+    "display_name": "Ryan Dahl",
+    "nickname_or_handle": "",
+    "card_title": "Creator of Node.js",
+    "nationality": "USA",
+    "birth_date": "1981",
+    "known_for": "Developing server-side JavaScript runtime",
+    "primary_projects": [
+      "Node.js",
+      "Deno"
+    ],
+    "other_projects": [],
+    "key_contributions": [
+      "Created Node.js runtime",
+      "Introduced event-driven architecture",
+      "Pioneered JavaScript on the server"
+    ],
+    "associates_or_ecosystem": [],
+    "scouting_report": "Ryan Dahl revolutionizes web development with Node.js, enabling JavaScript to run server-side. His work emphasizes efficiency and scalability, shaping modern web applications and influencing countless developers worldwide.",
+    "collector_note": "Ryan Dahl turns JavaScript into a powerful server tool.",
+    "source_urls": [
+      "https://en.wikipedia.org/wiki/Ryan_Dahl",
+      "https://www.google.com/search?q=Ryan%20Dahl%20open%20source"
+    ],
+    "portrait_reference_urls": [
+      "https://en.wikipedia.org/wiki/Ryan_Dahl"
+    ],
+    "legal_notes": "Portrait is an AI-generated illustration (OpenAI gpt-image-1), not a photograph. Facts grounded in public Wikipedia/Wikidata sources. Verify publicity/personality rights before commercial sale.",
+    "impact_rating": 95,
+    "code_rating": 92,
+    "innovation_rating": 94,
+    "community_rating": 90,
+    "longevity_rating": 88,
+    "facts_verified": true,
+    "portrait_review_status": "approved",
+    "portrait_asset": "assets/portraits/card_011.png",
+    "manual_review_notes": "Fill facts from sourced research only. Do not copy AI-generated text into this file without checking sources."
+  },
+  {
+    "card_number": 12,
+    "name": "Evan You",
+    "display_name": "Evan You",
+    "nickname_or_handle": "",
+    "card_title": "Creator of Vue.js",
+    "nationality": "USA",
+    "birth_date": "1988",
+    "known_for": "Developing the Vue.js framework",
+    "primary_projects": [
+      "Vue.js",
+      "Vue Router",
+      "Vuex"
+    ],
+    "other_projects": [],
+    "key_contributions": [
+      "Introduced reactive programming concepts",
+      "Simplified web development processes",
+      "Built a strong community around Vue.js"
+    ],
+    "associates_or_ecosystem": [],
+    "scouting_report": "Evan You is a prominent figure in web development, known for creating Vue.js. His framework emphasizes simplicity and flexibility, making it popular among developers. He actively engages with the community, continuously enhancing the framework's capabilities.",
+    "collector_note": "Evan's vision reshapes how we build interfaces.",
+    "source_urls": [
+      "https://en.wikipedia.org/wiki/Evan_You",
+      "https://www.google.com/search?q=Evan%20You%20open%20source"
+    ],
+    "portrait_reference_urls": [
+      "https://en.wikipedia.org/wiki/Evan_You"
+    ],
+    "legal_notes": "Portrait is an AI-generated illustration (OpenAI gpt-image-1), not a photograph. Facts grounded in public Wikipedia/Wikidata sources. Verify publicity/personality rights before commercial sale.",
+    "impact_rating": 90,
+    "code_rating": 85,
+    "innovation_rating": 92,
+    "community_rating": 95,
+    "longevity_rating": 88,
+    "facts_verified": true,
+    "portrait_review_status": "approved",
+    "portrait_asset": "assets/portraits/card_012.png",
+    "manual_review_notes": "Fill facts from sourced research only. Do not copy AI-generated text into this file without checking sources."
+  },
+  {
+    "card_number": 13,
+    "name": "Rich Harris",
+    "display_name": "Rich Harris",
+    "nickname_or_handle": "",
+    "card_title": "Creator of Svelte Framework",
+    "nationality": "USA",
+    "birth_date": "1988",
+    "known_for": "Innovative JavaScript framework development",
+    "primary_projects": [
+      "Svelte",
+      "Sapper",
+      "Rollup"
+    ],
+    "other_projects": [],
+    "key_contributions": [
+      "Introduced reactive programming",
+      "Simplified web development",
+      "Enhanced performance with compiled components"
+    ],
+    "associates_or_ecosystem": [],
+    "scouting_report": "Rich Harris is a leading figure in modern web development. He creates tools that streamline coding processes and improve application performance. His work on Svelte revolutionizes how developers build user interfaces.",
+    "collector_note": "Transforming the way we code for the web.",
+    "source_urls": [
+      "https://en.wikipedia.org/wiki/Rich_Harris",
+      "https://www.google.com/search?q=Rich%20Harris%20open%20source"
+    ],
+    "portrait_reference_urls": [
+      "https://en.wikipedia.org/wiki/Rich_Harris"
+    ],
+    "legal_notes": "Portrait is an AI-generated illustration (OpenAI gpt-image-1), not a photograph. Facts grounded in public Wikipedia/Wikidata sources. Verify publicity/personality rights before commercial sale.",
+    "impact_rating": 90,
+    "code_rating": 88,
+    "innovation_rating": 92,
+    "community_rating": 85,
+    "longevity_rating": 80,
+    "facts_verified": true,
+    "portrait_review_status": "approved",
+    "portrait_asset": "assets/portraits/card_013.png",
+    "manual_review_notes": "Fill facts from sourced research only. Do not copy AI-generated text into this file without checking sources."
+  },
+  {
+    "card_number": 14,
+    "name": "Jordan Walke",
+    "display_name": "Jordan Walke",
+    "nickname_or_handle": "",
+    "card_title": "Creator of React",
+    "nationality": "USA",
+    "birth_date": "1989",
+    "known_for": "Developing the React JavaScript library",
+    "primary_projects": [
+      "React",
+      "React Native",
+      "Jest"
+    ],
+    "other_projects": [],
+    "key_contributions": [
+      "Introduced component-based architecture",
+      "Pioneered virtual DOM concept",
+      "Enhanced UI development efficiency"
+    ],
+    "associates_or_ecosystem": [],
+    "scouting_report": "Jordan Walke revolutionizes front-end development with React, a library that simplifies building user interfaces. His work emphasizes performance and usability, making it a favorite among developers worldwide.",
+    "collector_note": "Transforming how we build user interfaces.",
+    "source_urls": [
+      "https://en.wikipedia.org/wiki/Jordan_Walke",
+      "https://www.google.com/search?q=Jordan%20Walke%20open%20source"
+    ],
+    "portrait_reference_urls": [
+      "https://en.wikipedia.org/wiki/Jordan_Walke"
+    ],
+    "legal_notes": "Portrait is an AI-generated illustration (OpenAI gpt-image-1), not a photograph. Facts grounded in public Wikipedia/Wikidata sources. Verify publicity/personality rights before commercial sale.",
+    "impact_rating": 95,
+    "code_rating": 90,
+    "innovation_rating": 93,
+    "community_rating": 92,
+    "longevity_rating": 88,
+    "facts_verified": true,
+    "portrait_review_status": "approved",
+    "portrait_asset": "assets/portraits/card_014.png",
+    "manual_review_notes": "Fill facts from sourced research only. Do not copy AI-generated text into this file without checking sources."
+  },
+  {
+    "card_number": 15,
+    "name": "Dan Abramov",
+    "display_name": "Dan Abramov",
+    "nickname_or_handle": "",
+    "card_title": "Co-Creator of Redux",
+    "nationality": "USA",
+    "birth_date": "1986",
+    "known_for": "JavaScript libraries and tools",
+    "primary_projects": [
+      "Redux",
+      "Create React App",
+      "React Hot Loader"
+    ],
+    "other_projects": [],
+    "key_contributions": [
+      "Developed Redux state management",
+      "Created Create React App",
+      "Improved React development experience"
+    ],
+    "associates_or_ecosystem": [],
+    "scouting_report": "Dan Abramov is a leading figure in the JavaScript community, known for his work on Redux and Create React App. His contributions significantly enhance the development experience for React developers worldwide.",
+    "collector_note": "Dan's tools empower developers to build better apps.",
+    "source_urls": [
+      "https://en.wikipedia.org/wiki/Dan_Abramov",
+      "https://www.google.com/search?q=Dan%20Abramov%20open%20source"
+    ],
+    "portrait_reference_urls": [
+      "https://en.wikipedia.org/wiki/Dan_Abramov"
+    ],
+    "legal_notes": "Portrait is an AI-generated illustration (OpenAI gpt-image-1), not a photograph. Facts grounded in public Wikipedia/Wikidata sources. Verify publicity/personality rights before commercial sale.",
+    "impact_rating": 92,
+    "code_rating": 88,
+    "innovation_rating": 90,
+    "community_rating": 95,
+    "longevity_rating": 85,
+    "facts_verified": true,
+    "portrait_review_status": "approved",
+    "portrait_asset": "assets/portraits/card_015.png",
+    "manual_review_notes": "Fill facts from sourced research only. Do not copy AI-generated text into this file without checking sources."
+  },
+  {
+    "card_number": 16,
+    "name": "Sebastian McKenzie",
+    "display_name": "Sebastian McKenzie",
+    "nickname_or_handle": "",
+    "card_title": "Creator of Babel Compiler",
+    "nationality": "USA",
+    "birth_date": "1987",
+    "known_for": "JavaScript transpiler development",
+    "primary_projects": [
+      "Babel",
+      "Babel-Polyfill",
+      "Babel-CLI"
+    ],
+    "other_projects": [],
+    "key_contributions": [
+      "Transpiles modern JavaScript",
+      "Supports various JavaScript versions",
+      "Enhances developer productivity"
+    ],
+    "associates_or_ecosystem": [],
+    "scouting_report": "Sebastian McKenzie is a pivotal figure in JavaScript development. He creates Babel, a tool that allows developers to use the latest JavaScript features while ensuring compatibility with older browsers.",
+    "collector_note": "Babel: bridging the gap in JavaScript.",
+    "source_urls": [
+      "https://en.wikipedia.org/wiki/Sebastian_McKenzie",
+      "https://www.google.com/search?q=Sebastian%20McKenzie%20open%20source"
+    ],
+    "portrait_reference_urls": [
+      "https://en.wikipedia.org/wiki/Sebastian_McKenzie"
+    ],
+    "legal_notes": "Portrait is an AI-generated illustration (OpenAI gpt-image-1), not a photograph. Facts grounded in public Wikipedia/Wikidata sources. Verify publicity/personality rights before commercial sale.",
+    "impact_rating": 90,
+    "code_rating": 85,
+    "innovation_rating": 92,
+    "community_rating": 88,
+    "longevity_rating": 80,
+    "facts_verified": true,
+    "portrait_review_status": "approved",
+    "portrait_asset": "assets/portraits/card_016.png",
+    "manual_review_notes": "Fill facts from sourced research only. Do not copy AI-generated text into this file without checking sources."
+  },
+  {
+    "card_number": 17,
+    "name": "Isaac Z. Schlueter",
+    "display_name": "Isaac Z. Schlueter",
+    "nickname_or_handle": "",
+    "card_title": "Node.js Package Manager Creator",
+    "nationality": "USA",
+    "birth_date": "1984",
+    "known_for": "Founder of npm, Inc.",
+    "primary_projects": [
+      "npm",
+      "Node.js"
+    ],
+    "other_projects": [],
+    "key_contributions": [
+      "Developed npm package manager",
+      "Advocated for open source",
+      "Enhanced JavaScript ecosystem"
+    ],
+    "associates_or_ecosystem": [],
+    "scouting_report": "Isaac Z. Schlueter revolutionizes JavaScript development with npm, the world's largest software registry. His work fosters collaboration and innovation, making it easier for developers to share and reuse code.",
+    "collector_note": "Empowering developers, one package at a time.",
+    "source_urls": [
+      "https://en.wikipedia.org/wiki/Isaac_Z._Schlueter",
+      "https://www.google.com/search?q=Isaac%20Z.%20Schlueter%20open%20source"
+    ],
+    "portrait_reference_urls": [
+      "https://en.wikipedia.org/wiki/Isaac_Z._Schlueter"
+    ],
+    "legal_notes": "Portrait is an AI-generated illustration (OpenAI gpt-image-1), not a photograph. Facts grounded in public Wikipedia/Wikidata sources. Verify publicity/personality rights before commercial sale.",
+    "impact_rating": 95,
+    "code_rating": 90,
+    "innovation_rating": 94,
+    "community_rating": 97,
+    "longevity_rating": 88,
+    "facts_verified": true,
+    "portrait_review_status": "approved",
+    "portrait_asset": "assets/portraits/card_017.png",
+    "manual_review_notes": "Fill facts from sourced research only. Do not copy AI-generated text into this file without checking sources."
+  },
+  {
+    "card_number": 18,
+    "name": "Matt Mullenweg",
+    "display_name": "Matt Mullenweg",
+    "nickname_or_handle": "",
+    "card_title": "Co-founder of WordPress",
+    "nationality": "USA",
+    "birth_date": "1984",
+    "known_for": "Leading the WordPress project",
+    "primary_projects": [
+      "WordPress",
+      "Akismet",
+      "BuddyPress"
+    ],
+    "other_projects": [],
+    "key_contributions": [
+      "Developed WordPress platform",
+      "Promoted open-source blogging",
+      "Advocated for web publishing"
+    ],
+    "associates_or_ecosystem": [],
+    "scouting_report": "Matt Mullenweg is a key figure in web development, known for co-founding WordPress. He champions open-source principles and has significantly influenced online publishing and content management systems.",
+    "collector_note": "Empowering creators through open-source innovation.",
+    "source_urls": [
+      "https://en.wikipedia.org/wiki/Matt_Mullenweg",
+      "https://www.google.com/search?q=Matt%20Mullenweg%20open%20source"
+    ],
+    "portrait_reference_urls": [
+      "https://en.wikipedia.org/wiki/Matt_Mullenweg"
+    ],
+    "legal_notes": "Portrait is an AI-generated illustration (OpenAI gpt-image-1), not a photograph. Facts grounded in public Wikipedia/Wikidata sources. Verify publicity/personality rights before commercial sale.",
+    "impact_rating": 95,
+    "code_rating": 85,
+    "innovation_rating": 90,
+    "community_rating": 98,
+    "longevity_rating": 92,
+    "facts_verified": true,
+    "portrait_review_status": "approved",
+    "portrait_asset": "assets/portraits/card_018.png",
+    "manual_review_notes": "Fill facts from sourced research only. Do not copy AI-generated text into this file without checking sources."
+  },
+  {
+    "card_number": 19,
+    "name": "Dries Buytaert",
+    "display_name": "Dries Buytaert",
+    "nickname_or_handle": "",
+    "card_title": "Creator of Drupal",
+    "nationality": "Belgium",
+    "birth_date": "1978",
+    "known_for": "Founding the Drupal content management system",
+    "primary_projects": [
+      "Drupal",
+      "Acquia"
+    ],
+    "other_projects": [],
+    "key_contributions": [
+      "Developed Drupal CMS",
+      "Founded Acquia",
+      "Advocated for open source"
+    ],
+    "associates_or_ecosystem": [],
+    "scouting_report": "Dries Buytaert is a pivotal figure in open source, known for creating Drupal, a leading content management system. He champions community-driven development and continues to influence the web landscape through his work at Acquia.",
+    "collector_note": "Empowering the web, one site at a time.",
+    "source_urls": [
+      "https://en.wikipedia.org/wiki/Dries_Buytaert",
+      "https://www.google.com/search?q=Dries%20Buytaert%20open%20source"
+    ],
+    "portrait_reference_urls": [
+      "https://en.wikipedia.org/wiki/Dries_Buytaert"
+    ],
+    "legal_notes": "Portrait is an AI-generated illustration (OpenAI gpt-image-1), not a photograph. Facts grounded in public Wikipedia/Wikidata sources. Verify publicity/personality rights before commercial sale.",
+    "impact_rating": 95,
+    "code_rating": 88,
+    "innovation_rating": 92,
+    "community_rating": 90,
+    "longevity_rating": 85,
+    "facts_verified": true,
+    "portrait_review_status": "approved",
+    "portrait_asset": "assets/portraits/card_019.png",
+    "manual_review_notes": "Fill facts from sourced research only. Do not copy AI-generated text into this file without checking sources."
+  },
+  {
+    "card_number": 20,
+    "name": "Brian Behlendorf",
+    "display_name": "Brian Behlendorf",
+    "nickname_or_handle": "",
+    "card_title": "Co-founder of Apache Software Foundation",
+    "nationality": "USA",
+    "birth_date": "1971",
+    "known_for": "Leading the Apache HTTP Server project",
+    "primary_projects": [
+      "Apache HTTP Server",
+      "Apache Software Foundation",
+      "Mod_ssl"
+    ],
+    "other_projects": [],
+    "key_contributions": [
+      "Co-created Apache HTTP Server",
+      "Advocated for open source",
+      "Contributed to web standards"
+    ],
+    "associates_or_ecosystem": [],
+    "scouting_report": "Brian Behlendorf is a pivotal figure in open source, known for co-founding the Apache Software Foundation. His leadership in developing the Apache HTTP Server has significantly shaped the web landscape, promoting collaboration and innovation in software development.",
+    "collector_note": "Brian champions the spirit of open collaboration.",
+    "source_urls": [
+      "https://en.wikipedia.org/wiki/Brian_Behlendorf",
+      "https://www.google.com/search?q=Brian%20Behlendorf%20open%20source"
+    ],
+    "portrait_reference_urls": [
+      "https://en.wikipedia.org/wiki/Brian_Behlendorf"
+    ],
+    "legal_notes": "Portrait is an AI-generated illustration (OpenAI gpt-image-1), not a photograph. Facts grounded in public Wikipedia/Wikidata sources. Verify publicity/personality rights before commercial sale.",
+    "impact_rating": 95,
+    "code_rating": 90,
+    "innovation_rating": 92,
+    "community_rating": 94,
+    "longevity_rating": 88,
+    "facts_verified": true,
+    "portrait_review_status": "approved",
+    "portrait_asset": "assets/portraits/card_020.png",
+    "manual_review_notes": "Fill facts from sourced research only. Do not copy AI-generated text into this file without checking sources."
+  },
+  {
+    "card_number": 21,
+    "name": "Roy Fielding",
+    "display_name": "Roy Fielding",
+    "nickname_or_handle": "",
+    "card_title": "Architect of REST",
+    "nationality": "USA",
+    "birth_date": "1965",
+    "known_for": "Founding the REST architectural style",
+    "primary_projects": [
+      "Apache HTTP Server",
+      "REST",
+      "HTTP/1.1"
+    ],
+    "other_projects": [],
+    "key_contributions": [
+      "Defined REST principles",
+      "Contributed to HTTP standards",
+      "Influenced web architecture"
+    ],
+    "associates_or_ecosystem": [],
+    "scouting_report": "Roy Fielding is a pivotal figure in web architecture, known for his creation of REST. His work on HTTP and the Apache HTTP Server has profoundly influenced how modern web applications are designed and interact.",
+    "collector_note": "Fielding's REST principles revolutionized web communication.",
+    "source_urls": [
+      "https://en.wikipedia.org/wiki/Roy_Fielding",
+      "https://www.google.com/search?q=Roy%20Fielding%20open%20source"
+    ],
+    "portrait_reference_urls": [
+      "https://en.wikipedia.org/wiki/Roy_Fielding"
+    ],
+    "legal_notes": "Portrait is an AI-generated illustration (OpenAI gpt-image-1), not a photograph. Facts grounded in public Wikipedia/Wikidata sources. Verify publicity/personality rights before commercial sale.",
+    "impact_rating": 95,
+    "code_rating": 90,
+    "innovation_rating": 98,
+    "community_rating": 92,
+    "longevity_rating": 94,
+    "facts_verified": true,
+    "portrait_review_status": "approved",
+    "portrait_asset": "assets/portraits/card_021.png",
+    "manual_review_notes": "Fill facts from sourced research only. Do not copy AI-generated text into this file without checking sources."
+  },
+  {
+    "card_number": 22,
+    "name": "Eric S. Raymond",
+    "display_name": "Eric S. Raymond",
+    "nickname_or_handle": "",
+    "card_title": "Open Source Advocate",
+    "nationality": "USA",
+    "birth_date": "1957",
+    "known_for": "Author of 'The Cathedral and the Bazaar'",
+    "primary_projects": [
+      "Fetchmail",
+      "The Cathedral and the Bazaar",
+      "Open Source Initiative"
+    ],
+    "other_projects": [],
+    "key_contributions": [
+      "Promotes open source philosophy",
+      "Influential in software development practices",
+      "Contributed to various open source projects"
+    ],
+    "associates_or_ecosystem": [],
+    "scouting_report": "Eric S. Raymond is a prominent figure in the open source movement. He advocates for transparency in software development and has authored influential works that shape modern programming practices.",
+    "collector_note": "Raymond's insights revolutionized software development.",
+    "source_urls": [
+      "https://en.wikipedia.org/wiki/Eric_S._Raymond",
+      "https://www.google.com/search?q=Eric%20S.%20Raymond%20open%20source"
+    ],
+    "portrait_reference_urls": [
+      "https://en.wikipedia.org/wiki/Eric_S._Raymond"
+    ],
+    "legal_notes": "Portrait is an AI-generated illustration (OpenAI gpt-image-1), not a photograph. Facts grounded in public Wikipedia/Wikidata sources. Verify publicity/personality rights before commercial sale.",
+    "impact_rating": 90,
+    "code_rating": 80,
+    "innovation_rating": 85,
+    "community_rating": 95,
+    "longevity_rating": 88,
+    "facts_verified": true,
+    "portrait_review_status": "approved",
+    "portrait_asset": "assets/portraits/card_022.png",
+    "manual_review_notes": "Fill facts from sourced research only. Do not copy AI-generated text into this file without checking sources."
+  },
+  {
+    "card_number": 23,
+    "name": "Bruce Perens",
+    "display_name": "Bruce Perens",
+    "nickname_or_handle": "",
+    "card_title": "Co-founder of Open Source Initiative",
+    "nationality": "USA",
+    "birth_date": "1958",
+    "known_for": "Advocate for open source software",
+    "primary_projects": [
+      "Open Source Definition",
+      "Debian Project",
+      "Linux Standards Base"
+    ],
+    "other_projects": [],
+    "key_contributions": [
+      "Co-created Open Source Definition",
+      "Promoted open source adoption",
+      "Contributed to Debian Project"
+    ],
+    "associates_or_ecosystem": [],
+    "scouting_report": "Bruce Perens is a pivotal figure in the open source movement. He co-founded the Open Source Initiative and authored the Open Source Definition, which shapes software licensing today. His advocacy continues to influence software development worldwide.",
+    "collector_note": "Open source is a philosophy, not just a license.",
+    "source_urls": [
+      "https://en.wikipedia.org/wiki/Bruce_Perens",
+      "https://www.google.com/search?q=Bruce%20Perens%20open%20source"
+    ],
+    "portrait_reference_urls": [
+      "https://en.wikipedia.org/wiki/Bruce_Perens"
+    ],
+    "legal_notes": "Portrait is an AI-generated illustration (OpenAI gpt-image-1), not a photograph. Facts grounded in public Wikipedia/Wikidata sources. Verify publicity/personality rights before commercial sale.",
+    "impact_rating": 95,
+    "code_rating": 85,
+    "innovation_rating": 90,
+    "community_rating": 92,
+    "longevity_rating": 88,
+    "facts_verified": true,
+    "portrait_review_status": "approved",
+    "portrait_asset": "assets/portraits/card_023.png",
+    "manual_review_notes": "Fill facts from sourced research only. Do not copy AI-generated text into this file without checking sources."
+  },
+  {
+    "card_number": 24,
+    "name": "Ian Murdock",
+    "display_name": "Ian Murdock",
+    "nickname_or_handle": "",
+    "card_title": "Founder of Debian Project",
+    "nationality": "USA",
+    "birth_date": "1973-04-05",
+    "known_for": "Creating the Debian Linux distribution",
+    "primary_projects": [
+      "Debian",
+      "Progeny Linux Systems"
+    ],
+    "other_projects": [],
+    "key_contributions": [
+      "Established Debian as a standard",
+      "Promoted open-source principles",
+      "Advocated for community collaboration"
+    ],
+    "associates_or_ecosystem": [],
+    "scouting_report": "Ian Murdock is a pivotal figure in open source, known for founding the Debian Project. His vision for a collaborative operating system has influenced countless distributions and fostered a strong community ethos.",
+    "collector_note": "Debian: a legacy of freedom and collaboration.",
+    "source_urls": [
+      "https://en.wikipedia.org/wiki/Ian_Murdock",
+      "https://www.google.com/search?q=Ian%20Murdock%20open%20source"
+    ],
+    "portrait_reference_urls": [
+      "https://en.wikipedia.org/wiki/Ian_Murdock"
+    ],
+    "legal_notes": "Portrait is an AI-generated illustration (OpenAI gpt-image-1), not a photograph. Facts grounded in public Wikipedia/Wikidata sources. Verify publicity/personality rights before commercial sale.",
+    "impact_rating": 95,
+    "code_rating": 85,
+    "innovation_rating": 90,
+    "community_rating": 95,
+    "longevity_rating": 92,
+    "facts_verified": true,
+    "portrait_review_status": "approved",
+    "portrait_asset": "assets/portraits/card_024.png",
+    "manual_review_notes": "Fill facts from sourced research only. Do not copy AI-generated text into this file without checking sources."
+  },
+  {
+    "card_number": 25,
+    "name": "Mark Shuttleworth",
+    "display_name": "Mark Shuttleworth",
+    "nickname_or_handle": "",
+    "card_title": "Founder of Ubuntu",
+    "nationality": "South Africa",
+    "birth_date": "1973-09-18",
+    "known_for": "Creating the Ubuntu operating system",
+    "primary_projects": [
+      "Ubuntu",
+      "Canonical Ltd."
+    ],
+    "other_projects": [],
+    "key_contributions": [
+      "Launched the Ubuntu project",
+      "Promoted open source software",
+      "Spearheaded user-friendly Linux"
+    ],
+    "associates_or_ecosystem": [],
+    "scouting_report": "Mark Shuttleworth is a visionary entrepreneur and philanthropist. He founded Ubuntu, which revolutionized Linux accessibility. His commitment to open source fosters innovation and community engagement worldwide.",
+    "collector_note": "Shuttleworth believes in the power of freedom through software.",
+    "source_urls": [
+      "https://en.wikipedia.org/wiki/Mark_Shuttleworth",
+      "https://www.google.com/search?q=Mark%20Shuttleworth%20open%20source"
+    ],
+    "portrait_reference_urls": [
+      "https://en.wikipedia.org/wiki/Mark_Shuttleworth"
+    ],
+    "legal_notes": "Portrait is an AI-generated illustration (OpenAI gpt-image-1), not a photograph. Facts grounded in public Wikipedia/Wikidata sources. Verify publicity/personality rights before commercial sale.",
+    "impact_rating": 90,
+    "code_rating": 85,
+    "innovation_rating": 92,
+    "community_rating": 88,
+    "longevity_rating": 80,
+    "facts_verified": true,
+    "portrait_review_status": "approved",
+    "portrait_asset": "assets/portraits/card_025.png",
+    "manual_review_notes": "Fill facts from sourced research only. Do not copy AI-generated text into this file without checking sources."
+  },
+  {
+    "card_number": 26,
+    "name": "Theo de Raadt",
+    "display_name": "Theo de Raadt",
+    "nickname_or_handle": "",
+    "card_title": "Founder of OpenBSD",
+    "nationality": "Netherlands / Canada",
+    "birth_date": "1968",
+    "known_for": "Advocate for open-source security",
+    "primary_projects": [
+      "OpenBSD",
+      "OpenSSH",
+      "LibreSSL"
+    ],
+    "other_projects": [],
+    "key_contributions": [
+      "Developed OpenBSD security features",
+      "Created OpenSSH for secure communication",
+      "Promoted code correctness and simplicity"
+    ],
+    "associates_or_ecosystem": [],
+    "scouting_report": "Theo de Raadt leads the OpenBSD project, emphasizing security and code correctness. His work on OpenSSH has transformed secure communications globally. He is a prominent figure in the open-source community.",
+    "collector_note": "Security and simplicity define his legacy.",
+    "source_urls": [
+      "https://en.wikipedia.org/wiki/Theo_de_Raadt",
+      "https://www.google.com/search?q=Theo%20de%20Raadt%20open%20source"
+    ],
+    "portrait_reference_urls": [
+      "https://en.wikipedia.org/wiki/Theo_de_Raadt"
+    ],
+    "legal_notes": "Portrait is an AI-generated illustration (OpenAI gpt-image-1), not a photograph. Facts grounded in public Wikipedia/Wikidata sources. Verify publicity/personality rights before commercial sale.",
+    "impact_rating": 95,
+    "code_rating": 90,
+    "innovation_rating": 92,
+    "community_rating": 88,
+    "longevity_rating": 85,
+    "facts_verified": true,
+    "portrait_review_status": "approved",
+    "portrait_asset": "assets/portraits/card_026.png",
+    "manual_review_notes": "Fill facts from sourced research only. Do not copy AI-generated text into this file without checking sources."
+  },
+  {
+    "card_number": 27,
+    "name": "D. Richard Hipp",
+    "display_name": "D. Richard Hipp",
+    "nickname_or_handle": "",
+    "card_title": "Creator of SQLite",
+    "nationality": "USA",
+    "birth_date": "1961",
+    "known_for": "Developing the SQLite database",
+    "primary_projects": [
+      "SQLite",
+      "Tcl",
+      "Fossil"
+    ],
+    "other_projects": [],
+    "key_contributions": [
+      "Developed SQLite database engine",
+      "Created Fossil version control",
+      "Contributed to Tcl scripting language"
+    ],
+    "associates_or_ecosystem": [],
+    "scouting_report": "D. Richard Hipp is a prominent software developer known for creating SQLite, a lightweight database widely used in applications. His work on Fossil and Tcl further showcases his versatility and impact in the open-source community.",
+    "collector_note": "SQLite: the database that fits everywhere.",
+    "source_urls": [
+      "https://en.wikipedia.org/wiki/D._Richard_Hipp",
+      "https://www.google.com/search?q=D.%20Richard%20Hipp%20open%20source"
+    ],
+    "portrait_reference_urls": [
+      "https://en.wikipedia.org/wiki/D._Richard_Hipp"
+    ],
+    "legal_notes": "Portrait is an AI-generated illustration (OpenAI gpt-image-1), not a photograph. Facts grounded in public Wikipedia/Wikidata sources. Verify publicity/personality rights before commercial sale.",
+    "impact_rating": 95,
+    "code_rating": 90,
+    "innovation_rating": 92,
+    "community_rating": 88,
+    "longevity_rating": 94,
+    "facts_verified": true,
+    "portrait_review_status": "approved",
+    "portrait_asset": "assets/portraits/card_027.png",
+    "manual_review_notes": "Fill facts from sourced research only. Do not copy AI-generated text into this file without checking sources."
+  },
+  {
+    "card_number": 28,
+    "name": "Fabrice Bellard",
+    "display_name": "Fabrice Bellard",
+    "nickname_or_handle": "",
+    "card_title": "Creator of QEMU",
+    "nationality": "France",
+    "birth_date": "1972",
+    "known_for": "Contributions to emulation and programming languages",
+    "primary_projects": [
+      "QEMU",
+      "FFmpeg",
+      "TinyCC"
+    ],
+    "other_projects": [],
+    "key_contributions": [
+      "Developed QEMU emulator",
+      "Created FFmpeg multimedia framework",
+      "Built TinyCC compiler"
+    ],
+    "associates_or_ecosystem": [],
+    "scouting_report": "Fabrice Bellard is a prominent figure in open source software, known for his groundbreaking work in emulation and programming languages. His projects, especially QEMU and FFmpeg, have significantly influenced the tech landscape.",
+    "collector_note": "A pioneer in emulation and multimedia.",
+    "source_urls": [
+      "https://en.wikipedia.org/wiki/Fabrice_Bellard",
+      "https://www.google.com/search?q=Fabrice%20Bellard%20open%20source"
+    ],
+    "portrait_reference_urls": [
+      "https://en.wikipedia.org/wiki/Fabrice_Bellard"
+    ],
+    "legal_notes": "Portrait is an AI-generated illustration (OpenAI gpt-image-1), not a photograph. Facts grounded in public Wikipedia/Wikidata sources. Verify publicity/personality rights before commercial sale.",
+    "impact_rating": 95,
+    "code_rating": 90,
+    "innovation_rating": 92,
+    "community_rating": 88,
+    "longevity_rating": 85,
+    "facts_verified": true,
+    "portrait_review_status": "approved",
+    "portrait_asset": "assets/portraits/card_028.png",
+    "manual_review_notes": "Fill facts from sourced research only. Do not copy AI-generated text into this file without checking sources."
+  },
+  {
+    "card_number": 29,
+    "name": "Andrew Tridgell",
+    "display_name": "Andrew Tridgell",
+    "nickname_or_handle": "",
+    "card_title": "Creator of Samba",
+    "nationality": "Australia",
+    "birth_date": "1966",
+    "known_for": "Pioneering open-source file sharing",
+    "primary_projects": [
+      "Samba",
+      "rsync",
+      "CIFS"
+    ],
+    "other_projects": [],
+    "key_contributions": [
+      "Developed Samba file sharing",
+      "Created rsync for efficient backups",
+      "Contributed to CIFS protocol"
+    ],
+    "associates_or_ecosystem": [],
+    "scouting_report": "Andrew Tridgell is a key figure in open-source software, known for creating Samba and rsync. His work enables seamless file sharing across different operating systems, making him a vital contributor to the open-source community.",
+    "collector_note": "Tridgell bridges systems with open-source innovation.",
+    "source_urls": [
+      "https://en.wikipedia.org/wiki/Andrew_Tridgell",
+      "https://www.google.com/search?q=Andrew%20Tridgell%20open%20source"
+    ],
+    "portrait_reference_urls": [
+      "https://en.wikipedia.org/wiki/Andrew_Tridgell"
+    ],
+    "legal_notes": "Portrait is an AI-generated illustration (OpenAI gpt-image-1), not a photograph. Facts grounded in public Wikipedia/Wikidata sources. Verify publicity/personality rights before commercial sale.",
+    "impact_rating": 90,
+    "code_rating": 88,
+    "innovation_rating": 92,
+    "community_rating": 91,
+    "longevity_rating": 85,
+    "facts_verified": true,
+    "portrait_review_status": "approved",
+    "portrait_asset": "assets/portraits/card_029.png",
+    "manual_review_notes": "Fill facts from sourced research only. Do not copy AI-generated text into this file without checking sources."
+  },
+  {
+    "card_number": 30,
+    "name": "Bram Moolenaar",
+    "display_name": "Bram Moolenaar",
+    "nickname_or_handle": "",
+    "card_title": "Creator of Vim Editor",
+    "nationality": "Netherlands",
+    "birth_date": "1961",
+    "known_for": "Developing the Vim text editor",
+    "primary_projects": [
+      "Vim",
+      "Gvim",
+      "Vim.org"
+    ],
+    "other_projects": [],
+    "key_contributions": [
+      "Created Vim text editor",
+      "Promoted open source philosophy",
+      "Contributed to software development tools"
+    ],
+    "associates_or_ecosystem": [],
+    "scouting_report": "Bram Moolenaar is a prominent figure in software development, known for creating Vim, a highly configurable text editor. His work emphasizes efficiency and productivity, making Vim a staple among programmers worldwide.",
+    "collector_note": "Vim: The editor that keeps on giving.",
+    "source_urls": [
+      "https://en.wikipedia.org/wiki/Bram_Moolenaar",
+      "https://www.google.com/search?q=Bram%20Moolenaar%20open%20source"
+    ],
+    "portrait_reference_urls": [
+      "https://en.wikipedia.org/wiki/Bram_Moolenaar"
+    ],
+    "legal_notes": "Portrait is an AI-generated illustration (OpenAI gpt-image-1), not a photograph. Facts grounded in public Wikipedia/Wikidata sources. Verify publicity/personality rights before commercial sale.",
+    "impact_rating": 90,
+    "code_rating": 85,
+    "innovation_rating": 88,
+    "community_rating": 92,
+    "longevity_rating": 95,
+    "facts_verified": true,
+    "portrait_review_status": "approved",
+    "portrait_asset": "assets/portraits/card_030.png",
+    "manual_review_notes": "Fill facts from sourced research only. Do not copy AI-generated text into this file without checking sources."
+  },
+  {
+    "card_number": 31,
+    "name": "Brian Fox",
+    "display_name": "Brian Fox",
+    "nickname_or_handle": "",
+    "card_title": "Co-Creator of GNU Bash",
+    "nationality": "USA",
+    "birth_date": "1961",
+    "known_for": "Developing the Bourne Again Shell",
+    "primary_projects": [
+      "GNU Bash",
+      "GNU Project",
+      "Free Software Foundation"
+    ],
+    "other_projects": [],
+    "key_contributions": [
+      "Developed GNU Bash shell",
+      "Promoted free software movement",
+      "Contributed to GNU Project"
+    ],
+    "associates_or_ecosystem": [],
+    "scouting_report": "Brian Fox is a pivotal figure in the open source community, known for creating GNU Bash, a widely used command-line shell. His work has significantly influenced the development of free software and the GNU Project, promoting software freedom.",
+    "collector_note": "Brian Fox's legacy lives on in every terminal.",
+    "source_urls": [
+      "https://en.wikipedia.org/wiki/Brian_Fox",
+      "https://www.google.com/search?q=Brian%20Fox%20open%20source"
+    ],
+    "portrait_reference_urls": [
+      "https://en.wikipedia.org/wiki/Brian_Fox"
+    ],
+    "legal_notes": "Portrait is an AI-generated illustration (OpenAI gpt-image-1), not a photograph. Facts grounded in public Wikipedia/Wikidata sources. Verify publicity/personality rights before commercial sale.",
+    "impact_rating": 90,
+    "code_rating": 85,
+    "innovation_rating": 88,
+    "community_rating": 92,
+    "longevity_rating": 87,
+    "facts_verified": true,
+    "portrait_review_status": "approved",
+    "portrait_asset": "assets/portraits/card_031.png",
+    "manual_review_notes": "Fill facts from sourced research only. Do not copy AI-generated text into this file without checking sources."
+  },
+  {
+    "card_number": 32,
+    "name": "Werner Koch",
+    "display_name": "Werner Koch",
+    "nickname_or_handle": "",
+    "card_title": "Principal Author of GnuPG",
+    "nationality": "Germany",
+    "birth_date": "unknown",
+    "known_for": "Creating the GNU Privacy Guard",
+    "primary_projects": [
+      "GNU Privacy Guard",
+      "Free Software Foundation Europe"
+    ],
+    "other_projects": [],
+    "key_contributions": [
+      "Developed GNU Privacy Guard",
+      "Served as Vice-Chancellor",
+      "Founded GnuPG"
+    ],
+    "associates_or_ecosystem": [],
+    "scouting_report": "Werner Koch is a pivotal figure in free software, known for his work on GnuPG. His contributions enhance digital security and privacy for users worldwide. He actively promotes free software principles through his leadership roles.",
+    "collector_note": "Koch champions freedom in digital security.",
+    "source_urls": [
+      "https://www.wikidata.org/wiki/Q3567326",
+      "https://en.wikipedia.org/wiki/Werner_Koch",
+      "https://www.google.com/search?q=Werner%20Koch%20open%20source"
+    ],
+    "portrait_reference_urls": [
+      "https://upload.wikimedia.org/wikipedia/commons/thumb/4/44/Werner_Koch_Portrait_01.2015-2.jpg/330px-Werner_Koch_Portrait_01.2015-2.jpg",
+      "https://upload.wikimedia.org/wikipedia/commons/4/44/Werner_Koch_Portrait_01.2015-2.jpg"
+    ],
+    "legal_notes": "Portrait is an AI-generated illustration (OpenAI gpt-image-1), not a photograph. Facts grounded in public Wikipedia/Wikidata sources. Verify publicity/personality rights before commercial sale.",
+    "impact_rating": 90,
+    "code_rating": 85,
+    "innovation_rating": 88,
+    "community_rating": 92,
+    "longevity_rating": 80,
+    "facts_verified": true,
+    "portrait_review_status": "approved",
+    "portrait_asset": "assets/portraits/card_032.png",
+    "manual_review_notes": "Fill facts from sourced research only. Do not copy AI-generated text into this file without checking sources."
+  },
+  {
+    "card_number": 33,
+    "name": "Miguel de Icaza",
+    "display_name": "Miguel de Icaza",
+    "nickname_or_handle": "",
+    "card_title": "Creator of GNOME and Mono",
+    "nationality": "Mexico / USA",
+    "birth_date": "unknown",
+    "known_for": "Pioneering free software development",
+    "primary_projects": [
+      "GNOME",
+      "Mono",
+      "Xamarin"
+    ],
+    "other_projects": [],
+    "key_contributions": [
+      "Started the GNOME project",
+      "Developed the Mono framework",
+      "Co-founded Xamarin"
+    ],
+    "associates_or_ecosystem": [],
+    "scouting_report": "Miguel de Icaza is a key figure in free software, driving innovation with GNOME and Mono. His work empowers developers and enhances user experiences across platforms.",
+    "collector_note": "A true champion of open source software.",
+    "source_urls": [
+      "https://www.wikidata.org/wiki/Q62849",
+      "https://en.wikipedia.org/wiki/Miguel_de_Icaza",
+      "https://www.google.com/search?q=Miguel%20de%20Icaza%20open%20source"
+    ],
+    "portrait_reference_urls": [
+      "https://upload.wikimedia.org/wikipedia/commons/thumb/9/9c/Miguel_de_Icaza_%282023-11-04%29.jpg/330px-Miguel_de_Icaza_%282023-11-04%29.jpg",
+      "https://upload.wikimedia.org/wikipedia/commons/9/9c/Miguel_de_Icaza_%282023-11-04%29.jpg"
+    ],
+    "legal_notes": "Portrait is an AI-generated illustration (OpenAI gpt-image-1), not a photograph. Facts grounded in public Wikipedia/Wikidata sources. Verify publicity/personality rights before commercial sale.",
+    "impact_rating": 90,
+    "code_rating": 85,
+    "innovation_rating": 92,
+    "community_rating": 88,
+    "longevity_rating": 80,
+    "facts_verified": true,
+    "portrait_review_status": "approved",
+    "portrait_asset": "assets/portraits/card_033.png",
+    "manual_review_notes": "Fill facts from sourced research only. Do not copy AI-generated text into this file without checking sources."
+  },
+  {
+    "card_number": 34,
+    "name": "Federico Mena Quintero",
+    "display_name": "Federico Mena Quintero",
+    "nickname_or_handle": "",
+    "card_title": "Co-Creator of GNOME",
+    "nationality": "Mexico",
+    "birth_date": "1972",
+    "known_for": "Developing the GNOME desktop environment",
+    "primary_projects": [
+      "GNOME",
+      "GNOME Shell"
+    ],
+    "other_projects": [],
+    "key_contributions": [
+      "Co-founded the GNOME project",
+      "Promoted open-source desktop solutions",
+      "Contributed to user interface design"
+    ],
+    "associates_or_ecosystem": [],
+    "scouting_report": "Federico Mena Quintero is a pivotal figure in open-source software, known for co-creating the GNOME desktop environment. His work enhances user experience across various Linux distributions, making technology accessible and user-friendly.",
+    "collector_note": "Transforming the Linux desktop experience.",
+    "source_urls": [
+      "https://www.wikidata.org/wiki/Q2041395",
+      "https://en.wikipedia.org/wiki/Federico_Mena",
+      "https://en.wikipedia.org/wiki/GNOME",
+      "https://en.wikipedia.org/wiki/Federico_Mena_Quintero"
+    ],
+    "portrait_reference_urls": [
+      "https://upload.wikimedia.org/wikipedia/commons/thumb/6/68/Gnomelogo.svg/330px-Gnomelogo.svg.png",
+      "https://upload.wikimedia.org/wikipedia/commons/thumb/6/68/Gnomelogo.svg/500px-Gnomelogo.svg.png"
+    ],
+    "legal_notes": "Portrait is an AI-generated illustration (OpenAI gpt-image-1), not a photograph. Facts grounded in public Wikipedia/Wikidata sources. Verify publicity/personality rights before commercial sale.",
+    "impact_rating": 92,
+    "code_rating": 85,
+    "innovation_rating": 90,
+    "community_rating": 88,
+    "longevity_rating": 80,
+    "facts_verified": true,
+    "portrait_review_status": "approved",
+    "portrait_asset": "assets/portraits/card_034.png",
+    "manual_review_notes": "Fill facts from sourced research only. Do not copy AI-generated text into this file without checking sources."
+  },
+  {
+    "card_number": 35,
+    "name": "Havoc Pennington",
+    "display_name": "Havoc Pennington",
+    "nickname_or_handle": "",
+    "card_title": "Pioneer of Desktop Environments",
+    "nationality": "USA",
+    "birth_date": "1970",
+    "known_for": "Contributions to GNOME and D-Bus",
+    "primary_projects": [
+      "HAL",
+      "GNOME",
+      "Metacity",
+      "D-Bus"
+    ],
+    "other_projects": [],
+    "key_contributions": [
+      "Developed GNOME desktop environment",
+      "Created D-Bus messaging system",
+      "Contributed to Metacity window manager"
+    ],
+    "associates_or_ecosystem": [],
+    "scouting_report": "Havoc Pennington drives innovation in desktop environments, enhancing user experience with GNOME and D-Bus. His work supports seamless communication between applications, making software more accessible and efficient.",
+    "collector_note": "A key figure in the free software movement.",
+    "source_urls": [
+      "https://www.wikidata.org/wiki/Q2444944",
+      "https://en.wikipedia.org/wiki/Havoc_Pennington",
+      "https://www.google.com/search?q=Havoc%20Pennington%20open%20source"
+    ],
+    "portrait_reference_urls": [
+      "https://www.wikidata.org/wiki/Q2444944"
+    ],
+    "legal_notes": "Portrait is an AI-generated illustration (OpenAI gpt-image-1), not a photograph. Facts grounded in public Wikipedia/Wikidata sources. Verify publicity/personality rights before commercial sale.",
+    "impact_rating": 88,
+    "code_rating": 85,
+    "innovation_rating": 90,
+    "community_rating": 87,
+    "longevity_rating": 82,
+    "facts_verified": true,
+    "portrait_review_status": "approved",
+    "portrait_asset": "assets/portraits/card_035.png",
+    "manual_review_notes": "Fill facts from sourced research only. Do not copy AI-generated text into this file without checking sources."
+  },
+  {
+    "card_number": 36,
+    "name": "Keith Packard",
+    "display_name": "Keith Packard",
+    "nickname_or_handle": "",
+    "card_title": "X Window System Developer",
+    "nationality": "USA",
+    "birth_date": "Unknown",
+    "known_for": "Pioneering work on graphical interfaces",
+    "primary_projects": [
+      "X Window System"
+    ],
+    "other_projects": [],
+    "key_contributions": [
+      "Developed X Window System",
+      "Contributed to graphical interfaces",
+      "Influenced open source display technology"
+    ],
+    "associates_or_ecosystem": [],
+    "scouting_report": "Keith Packard is a prominent software developer recognized for his significant contributions to the X Window System, which revolutionized graphical interfaces in computing. His work continues to impact open source software development today.",
+    "collector_note": "A pioneer in graphical interface innovation.",
+    "source_urls": [
+      "https://www.wikidata.org/wiki/Q92972",
+      "https://en.wikipedia.org/wiki/Keith_Packard",
+      "https://www.google.com/search?q=Keith%20Packard%20open%20source"
+    ],
+    "portrait_reference_urls": [
+      "https://www.wikidata.org/wiki/Q92972"
+    ],
+    "legal_notes": "Portrait is an AI-generated illustration (OpenAI gpt-image-1), not a photograph. Facts grounded in public Wikipedia/Wikidata sources. Verify publicity/personality rights before commercial sale.",
+    "impact_rating": 85,
+    "code_rating": 80,
+    "innovation_rating": 90,
+    "community_rating": 75,
+    "longevity_rating": 70,
+    "facts_verified": true,
+    "portrait_review_status": "approved",
+    "portrait_asset": "assets/portraits/card_036.png",
+    "manual_review_notes": "Fill facts from sourced research only. Do not copy AI-generated text into this file without checking sources."
+  },
+  {
+    "card_number": 37,
+    "name": "Lennart Poettering",
+    "display_name": "Lennart Poettering",
+    "nickname_or_handle": "",
+    "card_title": "Systemd Creator",
+    "nationality": "Germany",
+    "birth_date": "1980",
+    "known_for": "Developing systemd and related technologies",
+    "primary_projects": [
+      "systemd",
+      "PulseAudio",
+      "Avahi"
+    ],
+    "other_projects": [],
+    "key_contributions": [
+      "Introduced systemd for init systems",
+      "Developed PulseAudio sound server",
+      "Created Avahi for service discovery"
+    ],
+    "associates_or_ecosystem": [],
+    "scouting_report": "Lennart Poettering is a pivotal figure in modern Linux systems. He revolutionizes how services are managed with systemd, impacting boot processes and service management across distributions. His work on audio and service discovery further enhances user experience.",
+    "collector_note": "Revolutionizing Linux with innovative technologies.",
+    "source_urls": [
+      "https://en.wikipedia.org/wiki/Lennart_Poettering",
+      "https://www.google.com/search?q=Lennart%20Poettering%20open%20source"
+    ],
+    "portrait_reference_urls": [
+      "https://en.wikipedia.org/wiki/Lennart_Poettering"
+    ],
+    "legal_notes": "Portrait is an AI-generated illustration (OpenAI gpt-image-1), not a photograph. Facts grounded in public Wikipedia/Wikidata sources. Verify publicity/personality rights before commercial sale.",
+    "impact_rating": 90,
+    "code_rating": 85,
+    "innovation_rating": 92,
+    "community_rating": 78,
+    "longevity_rating": 80,
+    "facts_verified": true,
+    "portrait_review_status": "approved",
+    "portrait_asset": "assets/portraits/card_037.png",
+    "manual_review_notes": "Fill facts from sourced research only. Do not copy AI-generated text into this file without checking sources."
+  },
+  {
+    "card_number": 38,
+    "name": "Greg Kroah-Hartman",
+    "display_name": "Greg Kroah-Hartman",
+    "nickname_or_handle": "",
+    "card_title": "Linux Kernel Maintainer",
+    "nationality": "USA",
+    "birth_date": "1973",
+    "known_for": "Leading Linux kernel development",
+    "primary_projects": [
+      "Linux Kernel",
+      "Driver Backports",
+      "Ksplice"
+    ],
+    "other_projects": [],
+    "key_contributions": [
+      "Maintains the Linux kernel",
+      "Contributes to driver development",
+      "Advocates for open source"
+    ],
+    "associates_or_ecosystem": [],
+    "scouting_report": "Greg Kroah-Hartman is a pivotal figure in Linux kernel development, ensuring its stability and performance. His work on driver backports and Ksplice enhances system reliability, making him a respected leader in the open source community.",
+    "collector_note": "A guardian of the Linux kernel.",
+    "source_urls": [
+      "https://en.wikipedia.org/wiki/Greg_Kroah-Hartman",
+      "https://www.google.com/search?q=Greg%20Kroah-Hartman%20open%20source"
+    ],
+    "portrait_reference_urls": [
+      "https://en.wikipedia.org/wiki/Greg_Kroah-Hartman"
+    ],
+    "legal_notes": "Portrait is an AI-generated illustration (OpenAI gpt-image-1), not a photograph. Facts grounded in public Wikipedia/Wikidata sources. Verify publicity/personality rights before commercial sale.",
+    "impact_rating": 95,
+    "code_rating": 92,
+    "innovation_rating": 90,
+    "community_rating": 94,
+    "longevity_rating": 91,
+    "facts_verified": true,
+    "portrait_review_status": "approved",
+    "portrait_asset": "assets/portraits/card_038.png",
+    "manual_review_notes": "Fill facts from sourced research only. Do not copy AI-generated text into this file without checking sources."
+  },
+  {
+    "card_number": 39,
+    "name": "Alan Cox",
+    "display_name": "Alan Cox",
+    "nickname_or_handle": "",
+    "card_title": "Linux Kernel Developer",
+    "nationality": "UK",
+    "birth_date": "1970",
+    "known_for": "Contributions to the Linux kernel",
+    "primary_projects": [
+      "Linux Kernel",
+      "Netfilter",
+      "Red Hat"
+    ],
+    "other_projects": [],
+    "key_contributions": [
+      "Maintained Linux kernel releases",
+      "Developed networking features",
+      "Contributed to security enhancements"
+    ],
+    "associates_or_ecosystem": [],
+    "scouting_report": "Alan Cox is a prominent figure in the Linux community, known for his extensive contributions to the Linux kernel. He plays a crucial role in maintaining kernel releases and enhancing networking capabilities, solidifying his legacy in open source software.",
+    "collector_note": "A key architect of Linux's evolution.",
+    "source_urls": [
+      "https://en.wikipedia.org/wiki/Alan_Cox",
+      "https://www.google.com/search?q=Alan%20Cox%20open%20source"
+    ],
+    "portrait_reference_urls": [
+      "https://en.wikipedia.org/wiki/Alan_Cox"
+    ],
+    "legal_notes": "Portrait is an AI-generated illustration (OpenAI gpt-image-1), not a photograph. Facts grounded in public Wikipedia/Wikidata sources. Verify publicity/personality rights before commercial sale.",
+    "impact_rating": 90,
+    "code_rating": 88,
+    "innovation_rating": 85,
+    "community_rating": 92,
+    "longevity_rating": 87,
+    "facts_verified": true,
+    "portrait_review_status": "approved",
+    "portrait_asset": "assets/portraits/card_039.png",
+    "manual_review_notes": "Fill facts from sourced research only. Do not copy AI-generated text into this file without checking sources."
+  },
+  {
+    "card_number": 40,
+    "name": "Chris Lattner",
+    "display_name": "Chris Lattner",
+    "nickname_or_handle": "",
+    "card_title": "Creator of LLVM",
+    "nationality": "USA",
+    "birth_date": "1985",
+    "known_for": "Developing the LLVM compiler infrastructure",
+    "primary_projects": [
+      "LLVM",
+      "Swift",
+      "Clang"
+    ],
+    "other_projects": [],
+    "key_contributions": [
+      "Invented LLVM compiler framework",
+      "Developed Swift programming language",
+      "Contributed to Clang project"
+    ],
+    "associates_or_ecosystem": [],
+    "scouting_report": "Chris Lattner is a pivotal figure in programming language design and compiler technology. His work on LLVM revolutionizes how software is compiled, while Swift has transformed iOS development, making it more accessible and efficient.",
+    "collector_note": "A visionary in compilers and programming languages.",
+    "source_urls": [
+      "https://en.wikipedia.org/wiki/Chris_Lattner",
+      "https://www.google.com/search?q=Chris%20Lattner%20open%20source"
+    ],
+    "portrait_reference_urls": [
+      "https://en.wikipedia.org/wiki/Chris_Lattner"
+    ],
+    "legal_notes": "Portrait is an AI-generated illustration (OpenAI gpt-image-1), not a photograph. Facts grounded in public Wikipedia/Wikidata sources. Verify publicity/personality rights before commercial sale.",
+    "impact_rating": 95,
+    "code_rating": 92,
+    "innovation_rating": 97,
+    "community_rating": 90,
+    "longevity_rating": 85,
+    "facts_verified": true,
+    "portrait_review_status": "approved",
+    "portrait_asset": "assets/portraits/card_040.png",
+    "manual_review_notes": "Fill facts from sourced research only. Do not copy AI-generated text into this file without checking sources."
+  },
+  {
+    "card_number": 41,
+    "name": "Graydon Hoare",
+    "display_name": "Graydon Hoare",
+    "nickname_or_handle": "",
+    "card_title": "Creator of the Rust Language",
+    "nationality": "Canada",
+    "birth_date": "1983",
+    "known_for": "Developing the Rust programming language",
+    "primary_projects": [
+      "Rust",
+      "Servo"
+    ],
+    "other_projects": [],
+    "key_contributions": [
+      "Designed Rust programming language",
+      "Contributed to Servo project",
+      "Advocated for memory safety"
+    ],
+    "associates_or_ecosystem": [],
+    "scouting_report": "Graydon Hoare is a prominent software engineer known for creating Rust. His work emphasizes safety and concurrency, making a significant impact on modern programming practices. He continues to influence the open source community.",
+    "collector_note": "Graydon's vision redefines how we think about safety in programming.",
+    "source_urls": [
+      "https://en.wikipedia.org/wiki/Graydon_Hoare",
+      "https://www.google.com/search?q=Graydon%20Hoare%20open%20source"
+    ],
+    "portrait_reference_urls": [
+      "https://en.wikipedia.org/wiki/Graydon_Hoare"
+    ],
+    "legal_notes": "Portrait is an AI-generated illustration (OpenAI gpt-image-1), not a photograph. Facts grounded in public Wikipedia/Wikidata sources. Verify publicity/personality rights before commercial sale.",
+    "impact_rating": 90,
+    "code_rating": 88,
+    "innovation_rating": 92,
+    "community_rating": 85,
+    "longevity_rating": 80,
+    "facts_verified": true,
+    "portrait_review_status": "approved",
+    "portrait_asset": "assets/portraits/card_041.png",
+    "manual_review_notes": "Fill facts from sourced research only. Do not copy AI-generated text into this file without checking sources."
+  },
+  {
+    "card_number": 42,
+    "name": "Steve Klabnik",
+    "display_name": "Steve Klabnik",
+    "nickname_or_handle": "",
+    "card_title": "Open Source Advocate",
+    "nationality": "USA",
+    "birth_date": "1989",
+    "known_for": "Contributions to Rust programming language",
+    "primary_projects": [
+      "Rust",
+      "Cargo",
+      "Documentation"
+    ],
+    "other_projects": [],
+    "key_contributions": [
+      "Promotes open source principles",
+      "Contributes to Rust documentation",
+      "Advocates for community engagement"
+    ],
+    "associates_or_ecosystem": [],
+    "scouting_report": "Steve Klabnik is a prominent figure in the Rust community, known for his advocacy of open source software. He plays a crucial role in enhancing Rust's documentation and fostering a welcoming environment for developers.",
+    "collector_note": "Steve champions the spirit of open source.",
+    "source_urls": [
+      "https://en.wikipedia.org/wiki/Steve_Klabnik",
+      "https://www.google.com/search?q=Steve%20Klabnik%20open%20source"
+    ],
+    "portrait_reference_urls": [
+      "https://en.wikipedia.org/wiki/Steve_Klabnik"
+    ],
+    "legal_notes": "Portrait is an AI-generated illustration (OpenAI gpt-image-1), not a photograph. Facts grounded in public Wikipedia/Wikidata sources. Verify publicity/personality rights before commercial sale.",
+    "impact_rating": 88,
+    "code_rating": 85,
+    "innovation_rating": 90,
+    "community_rating": 92,
+    "longevity_rating": 80,
+    "facts_verified": true,
+    "portrait_review_status": "approved",
+    "portrait_asset": "assets/portraits/card_042.png",
+    "manual_review_notes": "Fill facts from sourced research only. Do not copy AI-generated text into this file without checking sources."
+  },
+  {
+    "card_number": 43,
+    "name": "Salvatore Sanfilippo",
+    "display_name": "Salvatore Sanfilippo",
+    "nickname_or_handle": "",
+    "card_title": "Creator of Redis",
+    "nationality": "Italy",
+    "birth_date": "1979",
+    "known_for": "Developing the Redis database",
+    "primary_projects": [
+      "Redis",
+      "Antirez"
+    ],
+    "other_projects": [],
+    "key_contributions": [
+      "Developed the Redis key-value store",
+      "Pioneered in-memory data structures",
+      "Contributed to open source community"
+    ],
+    "associates_or_ecosystem": [],
+    "scouting_report": "Salvatore Sanfilippo, known as antirez, is the creator of Redis, a powerful in-memory data structure store. His work has revolutionized data handling and caching in modern applications, making him a key figure in open source software.",
+    "collector_note": "Redis: Fast, reliable, and open source.",
+    "source_urls": [
+      "https://en.wikipedia.org/wiki/Salvatore_Sanfilippo",
+      "https://www.google.com/search?q=Salvatore%20Sanfilippo%20%2F%20antirez%20open%20source"
+    ],
+    "portrait_reference_urls": [
+      "https://en.wikipedia.org/wiki/Salvatore_Sanfilippo"
+    ],
+    "legal_notes": "Portrait is an AI-generated illustration (OpenAI gpt-image-1), not a photograph. Facts grounded in public Wikipedia/Wikidata sources. Verify publicity/personality rights before commercial sale.",
+    "impact_rating": 95,
+    "code_rating": 92,
+    "innovation_rating": 94,
+    "community_rating": 90,
+    "longevity_rating": 88,
+    "facts_verified": true,
+    "portrait_review_status": "approved",
+    "portrait_asset": "assets/portraits/card_043.png",
+    "manual_review_notes": "Fill facts from sourced research only. Do not copy AI-generated text into this file without checking sources."
+  },
+  {
+    "card_number": 44,
+    "name": "Michael Widenius",
+    "display_name": "Michael Widenius",
+    "nickname_or_handle": "",
+    "card_title": "Creator of MySQL Database",
+    "nationality": "Sweden",
+    "birth_date": "1963-04-01",
+    "known_for": "Co-founder of MySQL AB",
+    "primary_projects": [
+      "MySQL",
+      "MariaDB",
+      "MaxScale"
+    ],
+    "other_projects": [],
+    "key_contributions": [
+      "Developed MySQL database system",
+      "Founded MySQL AB",
+      "Created MariaDB fork"
+    ],
+    "associates_or_ecosystem": [],
+    "scouting_report": "Michael 'Monty' Widenius revolutionizes data management with MySQL, a leading open-source database. His commitment to community-driven development continues through MariaDB, ensuring robust alternatives in database technology.",
+    "collector_note": "Monty believes in open-source freedom.",
+    "source_urls": [
+      "https://en.wikipedia.org/wiki/Michael_Monty_Widenius",
+      "https://www.google.com/search?q=Michael%20%E2%80%9CMonty%E2%80%9D%20Widenius%20open%20source"
+    ],
+    "portrait_reference_urls": [
+      "https://en.wikipedia.org/wiki/Michael_Monty_Widenius"
+    ],
+    "legal_notes": "Portrait is an AI-generated illustration (OpenAI gpt-image-1), not a photograph. Facts grounded in public Wikipedia/Wikidata sources. Verify publicity/personality rights before commercial sale.",
+    "impact_rating": 95,
+    "code_rating": 90,
+    "innovation_rating": 92,
+    "community_rating": 97,
+    "longevity_rating": 94,
+    "facts_verified": true,
+    "portrait_review_status": "approved",
+    "portrait_asset": "assets/portraits/card_044.png",
+    "manual_review_notes": "Fill facts from sourced research only. Do not copy AI-generated text into this file without checking sources."
+  },
+  {
+    "card_number": 45,
+    "name": "Brad Fitzpatrick",
+    "display_name": "Brad Fitzpatrick",
+    "nickname_or_handle": "",
+    "card_title": "Creator of LiveJournal",
+    "nationality": "USA",
+    "birth_date": "1980",
+    "known_for": "Pioneering social networking platform",
+    "primary_projects": [
+      "LiveJournal",
+      "Memcached",
+      "Go Programming Language"
+    ],
+    "other_projects": [],
+    "key_contributions": [
+      "Developed LiveJournal platform",
+      "Co-created Memcached",
+      "Contributed to Go language"
+    ],
+    "associates_or_ecosystem": [],
+    "scouting_report": "Brad Fitzpatrick is a key figure in social networking and open source. He creates impactful projects like LiveJournal and Memcached, which have influenced web development and community building.",
+    "collector_note": "Innovator of social platforms and caching solutions.",
+    "source_urls": [
+      "https://en.wikipedia.org/wiki/Brad_Fitzpatrick",
+      "https://www.google.com/search?q=Brad%20Fitzpatrick%20open%20source"
+    ],
+    "portrait_reference_urls": [
+      "https://en.wikipedia.org/wiki/Brad_Fitzpatrick"
+    ],
+    "legal_notes": "Portrait is an AI-generated illustration (OpenAI gpt-image-1), not a photograph. Facts grounded in public Wikipedia/Wikidata sources. Verify publicity/personality rights before commercial sale.",
+    "impact_rating": 88,
+    "code_rating": 85,
+    "innovation_rating": 90,
+    "community_rating": 92,
+    "longevity_rating": 80,
+    "facts_verified": true,
+    "portrait_review_status": "approved",
+    "portrait_asset": "assets/portraits/card_045.png",
+    "manual_review_notes": "Fill facts from sourced research only. Do not copy AI-generated text into this file without checking sources."
+  },
+  {
+    "card_number": 46,
+    "name": "Solomon Hykes",
+    "display_name": "Solomon Hykes",
+    "nickname_or_handle": "",
+    "card_title": "Creator of Docker",
+    "nationality": "USA",
+    "birth_date": "1986",
+    "known_for": "Pioneering container technology",
+    "primary_projects": [
+      "Docker",
+      "DotCloud"
+    ],
+    "other_projects": [],
+    "key_contributions": [
+      "Developed containerization technology",
+      "Founded Docker, Inc.",
+      "Advocated for microservices architecture"
+    ],
+    "associates_or_ecosystem": [],
+    "scouting_report": "Solomon Hykes revolutionizes software deployment with Docker, enabling developers to create, deploy, and manage applications in containers. His work fosters innovation in cloud computing and microservices, making it easier for teams to collaborate and scale.",
+    "collector_note": "Hykes transforms how we think about applications.",
+    "source_urls": [
+      "https://en.wikipedia.org/wiki/Solomon_Hykes",
+      "https://www.google.com/search?q=Solomon%20Hykes%20open%20source"
+    ],
+    "portrait_reference_urls": [
+      "https://en.wikipedia.org/wiki/Solomon_Hykes"
+    ],
+    "legal_notes": "Portrait is an AI-generated illustration (OpenAI gpt-image-1), not a photograph. Facts grounded in public Wikipedia/Wikidata sources. Verify publicity/personality rights before commercial sale.",
+    "impact_rating": 95,
+    "code_rating": 90,
+    "innovation_rating": 98,
+    "community_rating": 92,
+    "longevity_rating": 85,
+    "facts_verified": true,
+    "portrait_review_status": "approved",
+    "portrait_asset": "assets/portraits/card_046.png",
+    "manual_review_notes": "Fill facts from sourced research only. Do not copy AI-generated text into this file without checking sources."
+  },
+  {
+    "card_number": 47,
+    "name": "Mitchell Hashimoto",
+    "display_name": "Mitchell Hashimoto",
+    "nickname_or_handle": "",
+    "card_title": "Co-founder of HashiCorp",
+    "nationality": "USA",
+    "birth_date": "1990",
+    "known_for": "Infrastructure automation software",
+    "primary_projects": [
+      "Terraform",
+      "Vagrant",
+      "Consul",
+      "Vault"
+    ],
+    "other_projects": [],
+    "key_contributions": [
+      "Pioneered infrastructure as code",
+      "Developed popular open-source tools",
+      "Advocated for DevOps practices"
+    ],
+    "associates_or_ecosystem": [],
+    "scouting_report": "Mitchell Hashimoto is a leading figure in infrastructure automation. He co-founds HashiCorp and creates tools that simplify cloud management. His work empowers developers to streamline workflows and enhance productivity.",
+    "collector_note": "Transforming infrastructure management, one tool at a time.",
+    "source_urls": [
+      "https://en.wikipedia.org/wiki/Mitchell_Hashimoto",
+      "https://www.google.com/search?q=Mitchell%20Hashimoto%20open%20source"
+    ],
+    "portrait_reference_urls": [
+      "https://en.wikipedia.org/wiki/Mitchell_Hashimoto"
+    ],
+    "legal_notes": "Portrait is an AI-generated illustration (OpenAI gpt-image-1), not a photograph. Facts grounded in public Wikipedia/Wikidata sources. Verify publicity/personality rights before commercial sale.",
+    "impact_rating": 92,
+    "code_rating": 88,
+    "innovation_rating": 95,
+    "community_rating": 90,
+    "longevity_rating": 85,
+    "facts_verified": true,
+    "portrait_review_status": "approved",
+    "portrait_asset": "assets/portraits/card_047.png",
+    "manual_review_notes": "Fill facts from sourced research only. Do not copy AI-generated text into this file without checking sources."
+  },
+  {
+    "card_number": 48,
+    "name": "Kelsey Hightower",
+    "display_name": "Kelsey Hightower",
+    "nickname_or_handle": "",
+    "card_title": "Kubernetes Advocate and Educator",
+    "nationality": "USA",
+    "birth_date": "1984",
+    "known_for": "Promoting cloud-native technologies",
+    "primary_projects": [
+      "Kubernetes",
+      "OpenShift",
+      "Kelsey Hightower's Book"
+    ],
+    "other_projects": [],
+    "key_contributions": [
+      "Co-authored Kubernetes the Hard Way",
+      "Speaks at major tech conferences",
+      "Advocates for cloud-native practices"
+    ],
+    "associates_or_ecosystem": [],
+    "scouting_report": "Kelsey Hightower is a prominent advocate for Kubernetes and cloud-native technologies. He educates developers through talks and workshops, emphasizing best practices and innovative approaches in the tech community.",
+    "collector_note": "Kelsey inspires the next generation of developers.",
+    "source_urls": [
+      "https://en.wikipedia.org/wiki/Kelsey_Hightower",
+      "https://www.google.com/search?q=Kelsey%20Hightower%20open%20source"
+    ],
+    "portrait_reference_urls": [
+      "https://en.wikipedia.org/wiki/Kelsey_Hightower"
+    ],
+    "legal_notes": "Portrait is an AI-generated illustration (OpenAI gpt-image-1), not a photograph. Facts grounded in public Wikipedia/Wikidata sources. Verify publicity/personality rights before commercial sale.",
+    "impact_rating": 90,
+    "code_rating": 85,
+    "innovation_rating": 92,
+    "community_rating": 95,
+    "longevity_rating": 88,
+    "facts_verified": true,
+    "portrait_review_status": "approved",
+    "portrait_asset": "assets/portraits/card_048.png",
+    "manual_review_notes": "Fill facts from sourced research only. Do not copy AI-generated text into this file without checking sources."
+  },
+  {
+    "card_number": 49,
+    "name": "Taylor Otwell",
+    "display_name": "Taylor Otwell",
+    "nickname_or_handle": "",
+    "card_title": "Creator of Laravel Framework",
+    "nationality": "USA",
+    "birth_date": "1985",
+    "known_for": "Building modern PHP applications",
+    "primary_projects": [
+      "Laravel",
+      "Forge",
+      "Envoyer",
+      "Nova"
+    ],
+    "other_projects": [],
+    "key_contributions": [
+      "Developed Laravel framework",
+      "Innovated PHP development tools",
+      "Promoted developer-friendly practices"
+    ],
+    "associates_or_ecosystem": [],
+    "scouting_report": "Taylor Otwell is a leading figure in PHP development, known for creating Laravel, a framework that simplifies web application development. His projects emphasize elegance and simplicity, making coding accessible and enjoyable for developers worldwide.",
+    "collector_note": "Laravel: where elegance meets simplicity.",
+    "source_urls": [
+      "https://en.wikipedia.org/wiki/Taylor_Otwell",
+      "https://www.google.com/search?q=Taylor%20Otwell%20open%20source"
+    ],
+    "portrait_reference_urls": [
+      "https://en.wikipedia.org/wiki/Taylor_Otwell"
+    ],
+    "legal_notes": "Portrait is an AI-generated illustration (OpenAI gpt-image-1), not a photograph. Facts grounded in public Wikipedia/Wikidata sources. Verify publicity/personality rights before commercial sale.",
+    "impact_rating": 90,
+    "code_rating": 85,
+    "innovation_rating": 88,
+    "community_rating": 92,
+    "longevity_rating": 80,
+    "facts_verified": true,
+    "portrait_review_status": "approved",
+    "portrait_asset": "assets/portraits/card_049.png",
+    "manual_review_notes": "Fill facts from sourced research only. Do not copy AI-generated text into this file without checking sources."
+  },
+  {
+    "card_number": 50,
+    "name": "Jeremy Ashkenas",
+    "display_name": "Jeremy Ashkenas",
+    "nickname_or_handle": "",
+    "card_title": "Creator of CoffeeScript",
+    "nationality": "USA",
+    "birth_date": "1981",
+    "known_for": "Development of Backbone.js and Underscore.js",
+    "primary_projects": [
+      "CoffeeScript",
+      "Backbone.js",
+      "Underscore.js"
+    ],
+    "other_projects": [],
+    "key_contributions": [
+      "Introduced CoffeeScript syntax",
+      "Developed Backbone.js framework",
+      "Created Underscore.js library"
+    ],
+    "associates_or_ecosystem": [],
+    "scouting_report": "Jeremy Ashkenas is a prominent figure in JavaScript development. He creates tools that simplify coding and enhance productivity. His projects are widely adopted and influential in the open source community.",
+    "collector_note": "Transforming JavaScript, one project at a time.",
+    "source_urls": [
+      "https://en.wikipedia.org/wiki/Jeremy_Ashkenas",
+      "https://www.google.com/search?q=Jeremy%20Ashkenas%20open%20source"
+    ],
+    "portrait_reference_urls": [
+      "https://en.wikipedia.org/wiki/Jeremy_Ashkenas"
+    ],
+    "legal_notes": "Portrait is an AI-generated illustration (OpenAI gpt-image-1), not a photograph. Facts grounded in public Wikipedia/Wikidata sources. Verify publicity/personality rights before commercial sale.",
+    "impact_rating": 88,
+    "code_rating": 85,
+    "innovation_rating": 90,
+    "community_rating": 87,
+    "longevity_rating": 80,
+    "facts_verified": true,
+    "portrait_review_status": "approved",
+    "portrait_asset": "assets/portraits/card_050.png",
+    "manual_review_notes": "Fill facts from sourced research only. Do not copy AI-generated text into this file without checking sources."
+  }
+]
