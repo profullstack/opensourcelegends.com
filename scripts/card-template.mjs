@@ -36,6 +36,16 @@ function bars(c) {
 
 const FONTS = `@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@500;600;700&family=Inter:wght@400;500;600;700&display=swap');`;
 
+// Inline SVG emblem (shield + laurel + </>) — HTML graphic, no raster image.
+const emblem = (accent, size = 30) => `<svg width="${size}" height="${size}" viewBox="0 0 48 48" fill="none">
+  <path d="M24 3l16 5v13c0 12-7.4 20-16 24C15.4 41 8 33 8 21V8l16-5z" fill="#0a0810" stroke="${accent}" stroke-width="2.4"/>
+  <path d="M14 19c-1.6 4-.8 8.4 2.2 12M14 24c-1.5 0-3-.8-3.8-2.2M16 29c-1.5.8-3 .8-4.4 0" stroke="${accent}" stroke-width="1.7" stroke-linecap="round"/>
+  <path d="M34 19c1.6 4 .8 8.4-2.2 12M34 24c1.5 0 3-.8 3.8-2.2M32 29c1.5.8 3 .8 4.4 0" stroke="${accent}" stroke-width="1.7" stroke-linecap="round"/>
+  <path d="M20 18l-5 6 5 6M28 18l5 6-5 6M26 16l-4 17" stroke="${accent}" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"/>
+</svg>`;
+const codeGlyph = (accent, size = 26) => `<svg width="${size}" height="${size}" viewBox="0 0 32 32" fill="none">
+  <path d="M12 9l-6 7 6 7M20 9l6 7-6 7M18 7l-4 18" stroke="${accent}" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round"/></svg>`;
+
 const shell = (accent) => `
   ${FONTS}
   * { margin:0; padding:0; box-sizing:border-box; }
@@ -46,10 +56,10 @@ const shell = (accent) => `
     background:#13101c;
     box-shadow: inset 0 0 0 5px #0a0810, inset 0 0 0 7px ${accent}, inset 0 0 0 10px #0a0810, inset 0 0 0 12px ${accent}44; }
   .num { font-family:'Oswald',sans-serif; font-weight:700; color:#fff; }
-  .crestBox { display:flex; flex-direction:column; align-items:flex-end; background:#0a0810; border:2px solid ${accent};
-    border-radius:8px; padding:9px 14px 8px; clip-path:polygon(16% 0,100% 0,100% 100%,0 100%); }
-  .crestBox .t { font-family:'Oswald',sans-serif; color:#fff; font-weight:700; font-size:17px; letter-spacing:1.5px; text-align:right; line-height:1; }
-  .crestBox .c { color:${accent}; font-weight:700; font-size:12px; font-family:ui-monospace,monospace; margin-top:3px; }
+  .crestBox { display:flex; flex-direction:row; align-items:center; gap:9px; background:#0a0810; border:2px solid ${accent};
+    border-radius:9px; padding:7px 13px 7px 11px; clip-path:polygon(9% 0,100% 0,100% 100%,0 100%); }
+  .crestBox svg { flex:0 0 auto; }
+  .crestBox .t { font-family:'Oswald',sans-serif; color:#fff; font-weight:700; font-size:16px; letter-spacing:1.4px; text-align:left; line-height:1.05; }
 `;
 
 export function buildFront(card, portraitDataUri) {
@@ -75,12 +85,12 @@ export function buildFront(card, portraitDataUri) {
   <div class="card">
     <div class="portrait"><img src="${portraitDataUri}"></div>
     <span class="num top">${pad2(card.card_number)}</span>
-    <span class="crest"><span class="crestBox"><span class="t">OPEN SOURCE<br>LEGENDS</span><span class="c">&lt;/&gt;</span></span></span>
+    <span class="crest"><span class="crestBox">${emblem(accent, 30)}<span class="t">OPEN SOURCE<br>LEGENDS</span></span></span>
     <div class="plate"><div class="name">${esc(card.display_name)}</div><div class="title">${esc(card.card_title)}</div></div>
     <div class="footer">
-      <span class="badge">${esc((card.primary_projects?.[0] || '?').replace(/[^A-Za-z]/g, '').slice(0, 2) || '?')}</span>
+      <span class="badge">${emblem(accent, 34)}</span>
       <span class="kw">${kw}</span>
-      <span class="badge">&lt;/&gt;</span>
+      <span class="badge">${codeGlyph(accent, 30)}</span>
     </div>
   </div></body></html>`;
 }
@@ -150,7 +160,7 @@ export function buildBack(card) {
     </div>
     <div class="foot">
       <div class="r"><span>BORN <b>${esc(card.birth_date)}</b></span><span>NATIONALITY <b>${esc(card.nationality)}</b></span></div>
-      <div class="r" style="margin-top:6px"><span>KNOWN FOR <b>${esc(card.known_for)}</b></span><span class="c">&lt;/&gt;</span></div>
+      <div class="r" style="margin-top:6px"><span>KNOWN FOR <b>${esc(card.known_for)}</b></span>${codeGlyph(accent, 22)}</div>
     </div>
   </div></body></html>`;
 }
