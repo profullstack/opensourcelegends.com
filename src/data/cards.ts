@@ -1,24 +1,7 @@
-// AUTO-GENERATED from data/roster.locked.json — do not edit by hand.
-// Regenerate after running the card generator.
-
+// AUTO-GENERATED from data/roster.locked.json + dist/html renders.
 export type Rarity = 'iconic' | 'legendary' | 'epic' | 'rare';
 
-export type Card = {
-  number: number;
-  slug: string;
-  name: string;
-  title: string;
-  knownFor: string;
-  rarity: Rarity;
-  impact: number;
-  nationality: string;
-  era: string;
-  projects: string[];
-  scouting: string;
-  quote: string;
-  front: string;
-  back: string;
-};
+export type Card = { number:number; slug:string; name:string; title:string; knownFor:string; rarity:Rarity; impact:number; nationality:string; era:string; projects:string[]; scouting:string; quote:string; front:string; back:string; };
 
 export const cards: Card[] = [
   {
@@ -950,73 +933,9 @@ export const cards: Card[] = [
     "quote": "Transforming infrastructure management, one tool at a time.",
     "front": "/cards/047-mitchell-hashimoto-front.png",
     "back": "/cards/047-mitchell-hashimoto-back.png"
-  },
-  {
-    "number": 48,
-    "slug": "kelsey-hightower",
-    "name": "Kelsey Hightower",
-    "title": "Kubernetes Advocate and Educator",
-    "knownFor": "Promoting cloud-native technologies",
-    "rarity": "legendary",
-    "impact": 90,
-    "nationality": "USA",
-    "era": "1984",
-    "projects": [
-      "Kubernetes",
-      "OpenShift",
-      "Kelsey Hightower's Book"
-    ],
-    "scouting": "Kelsey Hightower is a prominent advocate for Kubernetes and cloud-native technologies. He educates developers through talks and workshops, emphasizing best practices and innovative approaches in the tech community.",
-    "quote": "Kelsey inspires the next generation of developers.",
-    "front": "/cards/048-kelsey-hightower-front.png",
-    "back": "/cards/048-kelsey-hightower-back.png"
-  },
-  {
-    "number": 49,
-    "slug": "taylor-otwell",
-    "name": "Taylor Otwell",
-    "title": "Creator of Laravel Framework",
-    "knownFor": "Building modern PHP applications",
-    "rarity": "legendary",
-    "impact": 90,
-    "nationality": "USA",
-    "era": "1985",
-    "projects": [
-      "Laravel",
-      "Forge",
-      "Envoyer",
-      "Nova"
-    ],
-    "scouting": "Taylor Otwell is a leading figure in PHP development, known for creating Laravel, a framework that simplifies web application development. His projects emphasize elegance and simplicity, making coding accessible and enjoyable for developers worldwide.",
-    "quote": "Laravel: where elegance meets simplicity.",
-    "front": "/cards/049-taylor-otwell-front.png",
-    "back": "/cards/049-taylor-otwell-back.png"
-  },
-  {
-    "number": 50,
-    "slug": "jeremy-ashkenas",
-    "name": "Jeremy Ashkenas",
-    "title": "Creator of CoffeeScript",
-    "knownFor": "Development of Backbone.js and Underscore.js",
-    "rarity": "epic",
-    "impact": 88,
-    "nationality": "USA",
-    "era": "1981",
-    "projects": [
-      "CoffeeScript",
-      "Backbone.js",
-      "Underscore.js"
-    ],
-    "scouting": "Jeremy Ashkenas is a prominent figure in JavaScript development. He creates tools that simplify coding and enhance productivity. His projects are widely adopted and influential in the open source community.",
-    "quote": "Transforming JavaScript, one project at a time.",
-    "front": "/cards/050-jeremy-ashkenas-front.png",
-    "back": "/cards/050-jeremy-ashkenas-back.png"
   }
 ];
 
 export const featured = cards.slice(0, 8);
 export const rarityLabel: Record<Rarity,string> = { iconic:'Iconic', legendary:'Legendary', epic:'Epic', rare:'Rare' };
-
-export function getCard(slug: string): Card | undefined {
-  return cards.find((c) => c.slug === slug);
-}
+export function getCard(slug: string): Card | undefined { return cards.find((c) => c.slug === slug); }
