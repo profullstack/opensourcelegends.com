@@ -93,22 +93,24 @@ export function buildBack(card) {
   .head .num { font-size:44px; line-height:1; }
   .head .name { color:#fff; font-weight:800; font-size:33px; text-transform:uppercase; line-height:1; }
   .head .title { color:${accent}; font-weight:700; font-size:15px; letter-spacing:1.5px; margin-top:7px; text-transform:uppercase; }
-  .content { flex:1; display:flex; flex-direction:column; gap:18px; padding-top:18px; min-height:0; }
-  /* cream panels — match the proof */
-  .panels { flex:1; display:flex; gap:16px; }
+  .content { flex:1; display:flex; flex-direction:column; gap:16px; padding-top:16px; min-height:0; }
+  /* cream panels — sized to content (match the proof, not stretched) */
+  .panels { flex:0 0 auto; display:flex; gap:16px; align-items:stretch; }
   .panel { background:#efeae0; border-radius:12px; padding:16px 18px; }
   .panel h4 { color:#15101f; font-size:13px; letter-spacing:1.5px; margin-bottom:10px; font-weight:800; }
-  .scout { flex:1.45; } .scout p { color:#2c2935; font-size:15.5px; line-height:1.5; }
+  .scout { flex:1.45; } .scout p { color:#2c2935; font-size:16px; line-height:1.55; }
   .sig { flex:1; } .sig ul { list-style:none; }
-  .sig li { color:#2c2935; font-size:15.5px; line-height:1.65; padding-left:15px; position:relative; }
+  .sig li { color:#2c2935; font-size:16px; line-height:1.7; padding-left:15px; position:relative; }
   .sig li::before { content:'•'; position:absolute; left:0; color:${accent === '#f5c451' ? '#b88a1e' : accent}; font-weight:800; }
-  /* skill stack + impact — dark */
-  .stack { flex:1; display:flex; gap:16px; align-items:stretch; }
-  .skill { flex:1.7; } .skill h4 { color:${accent}; font-size:13px; letter-spacing:2px; margin-bottom:12px; font-weight:800; }
-  .barRow { display:flex; align-items:center; gap:12px; margin-bottom:12px; }
+  /* skill stack + impact — dark, GROWS to fill the middle */
+  .stack { flex:1; display:flex; gap:16px; align-items:stretch; min-height:0; }
+  .skill { flex:1.7; display:flex; flex-direction:column; }
+  .skill h4 { color:${accent}; font-size:14px; letter-spacing:2px; margin-bottom:8px; font-weight:800; }
+  .barsWrap { flex:1; display:flex; flex-direction:column; justify-content:space-around; }
+  .barRow { display:flex; align-items:center; gap:12px; }
   .barLabel { flex:0 0 158px; color:#aeb2c0; font-size:12px; letter-spacing:.5px; }
   .bar { flex:1; display:flex; gap:3px; }
-  .seg { flex:1; height:14px; border-radius:3px; background:#241d38; }
+  .seg { flex:1; height:17px; border-radius:3px; background:#241d38; }
   .seg.on { background:${accent}; box-shadow:0 0 6px ${accent}66; }
   .barVal { flex:0 0 34px; text-align:right; color:#fff; font-weight:800; font-size:16px; font-family:ui-monospace,monospace; }
   .impact { flex:1; background:linear-gradient(180deg,#181226,#0f0b1a); border:2px solid ${accent}77; border-radius:14px;
@@ -134,7 +136,7 @@ export function buildBack(card) {
         <div class="panel sig"><h4>SIGNATURE PROJECTS</h4><ul>${projects}</ul></div>
       </div>
       <div class="stack">
-        <div class="skill"><h4>SKILL STACK</h4>${bars(card)}</div>
+        <div class="skill"><h4>SKILL STACK</h4><div class="barsWrap">${bars(card)}</div></div>
         <div class="impact"><span class="lab">IMPACT</span><span class="score">${card.impact_rating}</span><span class="rar">${rarity}</span><span class="stars">★★★★★</span></div>
       </div>
       <div class="quote"><span class="q">“</span>${esc(card.collector_note)}”</div>
