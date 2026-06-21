@@ -28,6 +28,7 @@ export default function Footer() {
           <h4>Community</h4>
           <a href={site.github} target="_blank" rel="noreferrer">GitHub</a>
           <a href={site.twitter} target="_blank" rel="noreferrer">X</a>
+          <a href={site.youtube} target="_blank" rel="noreferrer">YouTube</a>
           <a href={`mailto:${site.email}`}>Contact</a>
         </nav>
       </div>

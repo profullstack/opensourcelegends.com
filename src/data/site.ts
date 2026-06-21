@@ -6,6 +6,7 @@ export const site = {
   url: "https://opensourcelegends.com",
   github: "https://github.com/profullstack/opensourcelegends.com",
   twitter: "https://x.com/profullstackinc",
+  youtube: "https://www.youtube.com/@profullstack",
   email: "hello@opensourcelegends.com",
   license: "CC BY-SA 4.0",
 } as const;
