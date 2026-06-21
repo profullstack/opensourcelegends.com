@@ -1,11 +1,11 @@
 import Link from 'next/link';
-import LegendCard from '@/components/LegendCard';
-import { featured, legends } from '@/data/legends';
+import CardFlip from '@/components/CardFlip';
+import { cards, featured } from '@/data/cards';
 import { site } from '@/data/site';
 import styles from './page.module.css';
 
 export default function Home() {
-  const fan = legends.slice(0, 3);
+  const fan = cards.slice(0, 3);
 
   return (
     <>
@@ -13,7 +13,7 @@ export default function Home() {
       <section className={styles.hero}>
         <div className={`container ${styles.heroInner}`}>
           <div className={styles.heroCopy}>
-            <span className="kicker">Series One · {legends.length} cards</span>
+            <span className="kicker">Series One · {cards.length} legends</span>
             <h1 className={styles.title}>
               The <span className="gradient-text">legends</span> who built
               the software the world runs on.
@@ -33,9 +33,10 @@ export default function Home() {
           </div>
 
           <div className={styles.fan} aria-hidden>
-            {fan.map((l, i) => (
-              <div key={l.slug} className={styles.fanCard} data-pos={i}>
-                <LegendCard legend={l} />
+            {fan.map((c, i) => (
+              <div key={c.slug} className={styles.fanCard} data-pos={i}>
+                {/* eslint-disable-next-line @next/next/no-img-element */}
+                <img src={c.front} alt="" className={styles.fanImg} loading="eager" />
               </div>
             ))}
           </div>
@@ -46,7 +47,7 @@ export default function Home() {
       <section className={styles.stats}>
         <div className={`container ${styles.statsInner}`}>
           {[
-            ['16', 'Legends in Series One'],
+            ['50', 'Legends in Series One'],
             ['CC BY-SA', 'Open-licensed art'],
             ['3', 'Ways to collect'],
             ['∞', 'Community submissions'],
@@ -66,12 +67,13 @@ export default function Home() {
             <div>
               <span className="kicker">The roster</span>
               <h2 className={styles.h2}>Meet the legends</h2>
+              <p className={styles.sectionSub}>Hover or tap a card to flip it.</p>
             </div>
-            <Link href="/cards" className="btn-secondary">See all {legends.length} →</Link>
+            <Link href="/cards" className="btn-secondary">Browse the set →</Link>
           </div>
           <div className={styles.grid}>
-            {featured.map((l) => (
-              <LegendCard key={l.slug} legend={l} />
+            {featured.map((c) => (
+              <CardFlip key={c.slug} card={c} />
             ))}
           </div>
         </div>

@@ -1,0 +1,59 @@
+.scene {
+  --accent: var(--iconic);
+  display: block;
+  width: 100%;
+  aspect-ratio: 1024 / 1536;
+  background: none;
+  border: none;
+  padding: 0;
+  cursor: pointer;
+  perspective: 1400px;
+}
+
+.scene[data-rarity='iconic'] { --accent: var(--iconic); }
+.scene[data-rarity='legendary'] { --accent: var(--legendary); }
+.scene[data-rarity='epic'] { --accent: var(--epic); }
+.scene[data-rarity='rare'] { --accent: var(--rare); }
+
+.inner {
+  position: relative;
+  display: block;
+  width: 100%;
+  height: 100%;
+  transition: transform 0.6s cubic-bezier(0.2, 0.7, 0.2, 1);
+  transform-style: preserve-3d;
+  border-radius: 16px;
+  filter: drop-shadow(0 18px 36px rgba(0, 0, 0, 0.5));
+}
+
+/* flip on hover (desktop) or when toggled (tap) */
+@media (hover: hover) {
+  .scene:hover .inner { transform: rotateY(180deg); }
+}
+.scene.flipped .inner { transform: rotateY(180deg); }
+
+.face {
+  position: absolute;
+  inset: 0;
+  display: block;
+  backface-visibility: hidden;
+  -webkit-backface-visibility: hidden;
+  border-radius: 16px;
+  overflow: hidden;
+}
+
+.face img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+
+.back {
+  transform: rotateY(180deg);
+}
+
+.scene:hover .inner,
+.scene.flipped .inner {
+  box-shadow: 0 0 0 2px var(--accent), 0 24px 48px rgba(0, 0, 0, 0.55);
+}
