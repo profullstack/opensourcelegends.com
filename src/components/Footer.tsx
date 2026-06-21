@@ -8,7 +8,7 @@ export default function Footer() {
       <div className={`container ${styles.inner}`}>
         <div className={styles.brand}>
           <Link href="/" className={styles.logo}>
-            <img src="/crest.svg" alt="" width={26} height={26} />
+            <img src="/favicon.png" alt="" width={26} height={26} />
             <span>Open Source Legends</span>
           </Link>
           <p>{site.tagline}</p>

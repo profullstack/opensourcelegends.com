@@ -25,11 +25,21 @@ const SIZE = '1024x1536';
 if (!KEY) { console.error('OPENAI_API_KEY not set'); process.exit(1); }
 await fs.mkdir(OUT, { recursive: true });
 
-// Crop clean single-card references from the proof sheet (top row = front, bottom = back).
+// Build ISOLATED single-card references from the proof sheet (top row = front,
+// bottom row = back). Each card is extracted tightly and padded onto a clean dark
+// background so the model never sees a neighbouring card — this prevents the
+// "sliver of the next card at the bottom" cropping artifact.
 const refFront = path.join(OUT, '_ref_front.png');
 const refBack = path.join(OUT, '_ref_back.png');
-await sharp(PROOF).extract({ left: 10, top: 12, width: 292, height: 466 }).toFile(refFront);
-await sharp(PROOF).extract({ left: 10, top: 528, width: 292, height: 486 }).toFile(refBack);
+async function isolatedRef(extractOpts, outPath) {
+  const card = await sharp(PROOF).extract(extractOpts).png().toBuffer();
+  await sharp({ create: { width: 358, height: 558, channels: 3, background: '#0b0d14' } })
+    .composite([{ input: card, left: 40, top: 40 }])
+    .png()
+    .toFile(outPath);
+}
+await isolatedRef({ left: 14, top: 10, width: 278, height: 478 }, refFront);
+await isolatedRef({ left: 14, top: 528, width: 278, height: 478 }, refBack);
 
 const roster = JSON.parse(await fs.readFile(path.join(ROOT, 'data', 'roster.locked.json'), 'utf8'));
 const only = process.argv.slice(2).map(Number).filter(Boolean);
@@ -50,15 +60,18 @@ function traits(c) {
 function frontPrompt(c) {
   const kws = traits(c);
   const motif = (c.primary_projects || []).slice(0, 2).join(' and ');
-  return `Recreate the reference image EXACTLY as a collectible trading-card FRONT for "Open Source Legends": identical dark foil border, identical "OPEN SOURCE LEGENDS" crest emblem in the top-right, identical large card-number chip in the top-left, identical photorealistic head-and-shoulders portrait framed against a subtle dark themed background with faint motifs, identical lower name plate, title sub-line, and a row of three short skill keywords with a small themed icon and a </> mark.
+  return `Recreate the SINGLE trading card in the reference image as a collectible card FRONT for "Open Source Legends", fully visible and centered, filling the frame.
+IMPORTANT: render exactly ONE card. Do NOT show a second card or any partial card at the top or bottom edge.
+Match the reference layout exactly: dark foil border, "OPEN SOURCE LEGENDS" crest emblem in the top-right, large card-number chip in the top-left, a framed portrait over a subtle dark themed background, a lower name plate, a title sub-line, and a row of three short skill keywords with a small themed icon and a </> mark.
+The PORTRAIT must be a STYLIZED DIGITAL ILLUSTRATION — smooth cel-shaded semi-caricature comic-art style (like a polished illustrated sports/collectible card), warm and characterful, slightly exaggerated features. NOT a photograph, NOT photorealistic.
 This card:
 - number: ${pad(c.card_number)}
-- portrait: photorealistic likeness of ${c.display_name} (${c.nationality}), professional, looking at camera
+- portrait: illustrated likeness of ${c.display_name} (${c.nationality}), facing forward
 - background motif: faint silhouettes/logos of ${motif || 'open source software'}
 - name (large): ${c.display_name.toUpperCase()}
 - title: ${c.card_title.toUpperCase()}
 - three skill keywords: ${kws}
-Crisp, perfectly legible text. Premium foil trading card. Match the reference layout precisely.`;
+Spell all text exactly as given, crisp and perfectly legible (the crest reads "OPEN SOURCE LEGENDS"). Premium foil collectible card. Match the reference layout precisely.`;
 }
 
 function backPrompt(c) {
@@ -69,8 +82,10 @@ function backPrompt(c) {
     ['LONGEVITY', c.longevity_rating],
     ['OPEN SOURCE IMPACT', c.impact_rating],
   ].map(([l, v]) => `${l} ${v}`).join('; ');
-  return `Recreate the reference image EXACTLY as a collectible trading-card BACK for "Open Source Legends": identical dark foil border and layout. Top: small card number "${pad(c.card_number)}", name "${c.display_name.toUpperCase()}", title "${c.card_title.toUpperCase()}". A "SCOUTING REPORT" text block, a "SIGNATURE PROJECTS" bulleted list, a "SKILL STACK" section with horizontal rating bars and numbers, a large "IMPACT" score box with a rarity label and stars, a quote near the bottom, and a footer row with BORN / NATIONALITY / KNOWN FOR and a </> mark.
-This card's data (render text accurately):
+  return `Recreate the SINGLE trading card in the reference image as a collectible card BACK for "Open Source Legends", fully visible and centered, filling the frame.
+IMPORTANT: render exactly ONE card. Do NOT show a second card or any partial card at the top or bottom edge.
+Match the reference layout exactly: dark foil border. Top: small card number "${pad(c.card_number)}", name "${c.display_name.toUpperCase()}", title "${c.card_title.toUpperCase()}". A "SCOUTING REPORT" text block, a "SIGNATURE PROJECTS" bulleted list, a "SKILL STACK" section with horizontal rating bars and numbers, a large "IMPACT" score box with a rarity label and stars, a quote near the bottom, and a footer row with BORN / NATIONALITY / KNOWN FOR and a </> mark.
+Spell every word and number EXACTLY as given below — do not invent or misspell text. This card's data:
 - SCOUTING REPORT: ${c.scouting_report}
 - SIGNATURE PROJECTS: ${(c.primary_projects || []).slice(0, 4).join(', ')}
 - SKILL STACK bars (label then 0-100): ${bars}

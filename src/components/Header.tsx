@@ -10,7 +10,7 @@ export default function Header() {
     <header className={styles.header}>
       <div className={`container ${styles.inner}`}>
         <Link href="/" className={styles.logo} onClick={() => setOpen(false)}>
-          <img src="/crest.svg" alt="" width={28} height={28} />
+          <img src="/favicon.png" alt="" width={28} height={28} />
           <span>Open Source Legends</span>
         </Link>
 
