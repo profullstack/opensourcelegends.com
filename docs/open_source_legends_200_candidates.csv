@@ -1,0 +1,201 @@
+candidate_number,name,display_name,nickname_or_handle,card_title_draft,primary_projects_to_verify,category,candidate_strength,validation_status,portrait_status,manual_review_notes,source_url_1,source_url_2,portrait_reference_url_1,portrait_reference_url_2,selected_for_final_deck
+1,Richard Stallman,Richard Stallman,rms,GNU / Free Software,GNU; FSF; GCC; Emacs; GPL,Free software / GNU,strong,needs_source_validation,verified likeness likely,Verify current legal/publicity risk separately; use sourced exact claims only.,,,,,no
+2,Linus Torvalds,Linus Torvalds,,Linux / Git,Linux kernel; Git,Kernel / tools,strong,needs_source_validation,verified likeness likely,,,,,,no
+3,Aaron Swartz,Aaron Swartz,,Open web / RSS,RSS; web.py; Open Library; Creative Commons metadata,Web / open knowledge,strong,needs_source_validation,deceased; verify estate/publicity concerns,Do not overstate RSS role; source exact wording.,,,,,no
+4,TJ Holowaychuk,TJ Holowaychuk,tj,Node ecosystem libraries,Express.js; Mocha; Commander.js; Jade/Pug; Stylus,JavaScript / Node,strong,needs_source_validation,verified likeness likely,Do NOT label as Node.js creator.,,,,,no
+5,Guido van Rossum,Guido van Rossum,,Python,Python,Languages,strong,needs_source_validation,verified likeness likely,,,,,,no
+6,Yukihiro Matsumoto,Yukihiro “Matz” Matsumoto,Matz,Ruby,Ruby,Languages,strong,needs_source_validation,verified likeness likely,,,,,,no
+7,Larry Wall,Larry Wall,,Perl,Perl; patch; rn,Languages,strong,needs_source_validation,verified likeness likely,,,,,,no
+8,Brendan Eich,Brendan Eich,,JavaScript / Mozilla,JavaScript; Mozilla; Firefox ecosystem,Web / browsers,strong,needs_source_validation,verified likeness likely,,,,,,no
+9,Rasmus Lerdorf,Rasmus Lerdorf,,PHP,PHP,Languages / web,strong,needs_source_validation,verified likeness likely,,,,,,no
+10,David Heinemeier Hansson,David Heinemeier Hansson,DHH,Ruby on Rails,Ruby on Rails; Basecamp OSS ecosystem,Web frameworks,strong,needs_source_validation,verified likeness likely,,,,,,no
+11,Ryan Dahl,Ryan Dahl,,Node.js / Deno,Node.js; Deno,JavaScript runtimes,strong,needs_source_validation,verified likeness likely,Must be listed as creator of Node.js.,,,,,no
+12,Evan You,Evan You,yyx990803,Vue / Vite,Vue.js; Vite; Vitest,JavaScript frameworks,strong,needs_source_validation,verified likeness likely,,,,,,no
+13,Rich Harris,Rich Harris,,Svelte / Rollup,Svelte; SvelteKit; Rollup,JavaScript frameworks,strong,needs_source_validation,verified likeness likely,,,,,,no
+14,Jordan Walke,Jordan Walke,,React,React; Reason/ReasonML ecosystem,JavaScript frameworks,strong,needs_source_validation,verified likeness likely,,,,,,no
+15,Dan Abramov,Dan Abramov,gaearon,Redux / React education,Redux; Create React App; React docs/community,JavaScript / React,strong,needs_source_validation,verified likeness likely,Verify role descriptions; avoid calling him React creator.,,,,,no
+16,Sebastian McKenzie,Sebastian McKenzie,sebmck,Babel / Yarn / Biome,Babel; Yarn; Rome; Biome,JavaScript tooling,strong,needs_source_validation,verified likeness likely,,,,,,no
+17,Isaac Z. Schlueter,Isaac Z. Schlueter,isaacs,npm,npm; Node.js ecosystem,JavaScript tooling,strong,needs_source_validation,verified likeness likely,,,,,,no
+18,Matt Mullenweg,Matt Mullenweg,,WordPress,WordPress; Automattic OSS ecosystem,CMS / web,strong,needs_source_validation,verified likeness likely,,,,,,no
+19,Dries Buytaert,Dries Buytaert,,Drupal,Drupal,CMS / web,strong,needs_source_validation,verified likeness likely,,,,,,no
+20,Brian Behlendorf,Brian Behlendorf,,Apache,Apache HTTP Server; Apache Software Foundation,Web servers / foundations,strong,needs_source_validation,verified likeness likely,,,,,,no
+21,Roy Fielding,Roy Fielding,,HTTP / REST / Apache,Apache HTTP Server; HTTP specs; REST architectural style,Web architecture,strong,needs_source_validation,verified likeness likely,"Careful: REST is architecture/dissertation, not software project.",,,,,no
+22,Eric S. Raymond,Eric S. Raymond,ESR,Open source advocacy,fetchmail; The Cathedral and the Bazaar; OSI,Advocacy / tools,strong,needs_source_validation,verified likeness likely,,,,,,no
+23,Bruce Perens,Bruce Perens,,Open Source Definition,Debian Free Software Guidelines; Open Source Definition; BusyBox,Licensing / embedded,strong,needs_source_validation,verified likeness likely,,,,,,no
+24,Ian Murdock,Ian Murdock,,Debian,Debian,Linux distributions,strong,needs_source_validation,deceased; verify estate/publicity concerns,,,,,,no
+25,Mark Shuttleworth,Mark Shuttleworth,,Ubuntu,Ubuntu; Launchpad; Canonical OSS ecosystem,Linux distributions,strong,needs_source_validation,verified likeness likely,,,,,,no
+26,Theo de Raadt,Theo de Raadt,,OpenBSD / OpenSSH,OpenBSD; OpenSSH,BSD / security,strong,needs_source_validation,verified likeness likely,,,,,,no
+27,D. Richard Hipp,D. Richard Hipp,,SQLite / Fossil,SQLite; Fossil SCM,Databases / tools,strong,needs_source_validation,verified likeness likely,,,,,,no
+28,Fabrice Bellard,Fabrice Bellard,,FFmpeg / QEMU,FFmpeg; QEMU; TinyCC; Bellard.org projects,Multimedia / emulation,strong,needs_source_validation,verified likeness likely,,,,,,no
+29,Andrew Tridgell,Andrew Tridgell,tridge,Samba / rsync,Samba; rsync,Networking / filesystems,strong,needs_source_validation,verified likeness likely,,,,,,no
+30,Bram Moolenaar,Bram Moolenaar,,Vim,Vim,Editors,strong,needs_source_validation,deceased; verify estate/publicity concerns,,,,,,no
+31,Brian Fox,Brian Fox,,Bash,GNU Bash; GNU readline ecosystem,Shells / GNU,strong,needs_source_validation,portrait manual review likely,,,,,,no
+32,Werner Koch,Werner Koch,,GnuPG,GnuPG,Crypto / privacy,strong,needs_source_validation,verified likeness likely,,,,,,no
+33,Miguel de Icaza,Miguel de Icaza,,GNOME / Mono,GNOME; Mono; Xamarin OSS ecosystem,Desktop / runtimes,strong,needs_source_validation,verified likeness likely,,,,,,no
+34,Federico Mena Quintero,Federico Mena Quintero,,GNOME / GTK ecosystem,GNOME; GNOME Calendar; librsvg; GTK/GIMP ecosystem,Desktop,strong,needs_source_validation,verified likeness likely,,,,,,no
+35,Havoc Pennington,Havoc Pennington,,GNOME / freedesktop.org,GNOME; freedesktop.org; D-Bus ecosystem,Desktop,strong,needs_source_validation,verified likeness likely,,,,,,no
+36,Keith Packard,Keith Packard,,X.Org / fontconfig,X.Org; fontconfig; Cairo/X graphics ecosystem,Graphics / desktop,strong,needs_source_validation,verified likeness likely,,,,,,no
+37,Lennart Poettering,Lennart Poettering,,systemd / PulseAudio,systemd; PulseAudio; Avahi,Linux userspace,strong,needs_source_validation,verified likeness likely,,,,,,no
+38,Greg Kroah-Hartman,Greg Kroah-Hartman,gregkh,Linux stable kernel,Linux kernel stable releases; driver core; Linux Foundation work,Kernel,strong,needs_source_validation,verified likeness likely,,,,,,no
+39,Alan Cox,Alan Cox,,Linux kernel,Linux kernel; early Linux networking/security work,Kernel,strong,needs_source_validation,verified likeness likely,,,,,,no
+40,Chris Lattner,Chris Lattner,,LLVM / Clang,LLVM; Clang; Swift; MLIR,Compilers,strong,needs_source_validation,verified likeness likely,,,,,,no
+41,Graydon Hoare,Graydon Hoare,,Rust,Rust language,Languages,strong,needs_source_validation,verified likeness likely,,,,,,no
+42,Steve Klabnik,Steve Klabnik,steveklabnik,Rust docs/community,Rust documentation; Rails/Rust community work,Languages / docs,medium,needs_source_validation,verified likeness likely,Avoid overstating creator role.,,,,,no
+43,Salvatore Sanfilippo,Salvatore Sanfilippo / antirez,antirez,Redis,Redis; hping; Tcl hacking,Databases,strong,needs_source_validation,verified likeness likely,,,,,,no
+44,Michael Widenius,Michael “Monty” Widenius,Monty,MySQL / MariaDB,MySQL; MariaDB,Databases,strong,needs_source_validation,verified likeness likely,,,,,,no
+45,Brad Fitzpatrick,Brad Fitzpatrick,bradfitz,memcached / OpenID,memcached; OpenID; LiveJournal OSS; Go contributions,Infrastructure / web,strong,needs_source_validation,verified likeness likely,,,,,,no
+46,Solomon Hykes,Solomon Hykes,,Docker,Docker,Containers,strong,needs_source_validation,verified likeness likely,,,,,,no
+47,Mitchell Hashimoto,Mitchell Hashimoto,mitchellh,HashiCorp OSS,Vagrant; Terraform; Packer; Consul; Nomad,DevOps / infra,strong,needs_source_validation,verified likeness likely,,,,,,no
+48,Taylor Otwell,Taylor Otwell,,Laravel,Laravel; Forge ecosystem,PHP frameworks,strong,needs_source_validation,verified likeness likely,,,,,,no
+49,Jeremy Ashkenas,Jeremy Ashkenas,jashkenas,CoffeeScript / Backbone,CoffeeScript; Backbone.js; Underscore.js,JavaScript libraries,strong,needs_source_validation,portrait manual review likely,,,,,,no
+50,Daniel Stenberg,Daniel Stenberg,bagder,curl,curl; libcurl,Networking tools,strong,needs_source_validation,verified likeness likely,,,,,,no
+51,Satoshi Nakamoto,Satoshi Nakamoto,,Bitcoin,Bitcoin; Bitcoin whitepaper; original Bitcoin software,Crypto / pseudonymous,manual_review,needs_source_validation,no verified likeness; use symbolic art only,Pseudonymous; do not generate a realistic face.,,,,,no
+52,Vitalik Buterin,Vitalik Buterin,,Ethereum,Ethereum; Ethereum whitepaper/ecosystem,Crypto / blockchain,strong,needs_source_validation,verified likeness likely,,,,,,no
+53,Gavin Wood,Gavin Wood,,Ethereum / Solidity / Polkadot,Ethereum; Solidity; Polkadot; Substrate,Crypto / blockchain,strong,needs_source_validation,verified likeness likely,,,,,,no
+54,Joseph Lubin,Joseph Lubin,,Ethereum / ConsenSys,Ethereum; ConsenSys OSS ecosystem,Crypto / blockchain,medium,needs_source_validation,verified likeness likely,Verify open-source contributor angle versus company/founder role.,,,,,no
+55,Charles Hoskinson,Charles Hoskinson,,Ethereum / Cardano,Ethereum; Cardano ecosystem,Crypto / blockchain,medium,needs_source_validation,verified likeness likely,Verify OSS contribution angle and avoid investment claims.,,,,,no
+56,Hal Finney,Hal Finney,,PGP / Bitcoin early contributor,PGP; Bitcoin early testing/contribution,Crypto / security,strong,needs_source_validation,deceased; verify estate/publicity concerns,,,,,,no
+57,Adam Back,Adam Back,,Hashcash / Bitcoin ecosystem,Hashcash; Bitcoin ecosystem; Blockstream OSS,Crypto / security,strong,needs_source_validation,verified likeness likely,,,,,,no
+58,Pieter Wuille,Pieter Wuille,sipa,Bitcoin Core,Bitcoin Core; SegWit; libsecp256k1,Crypto / blockchain,strong,needs_source_validation,verified likeness likely,,,,,,no
+59,Wladimir van der Laan,Wladimir van der Laan,laanwj,Bitcoin Core maintainer,Bitcoin Core,Crypto / blockchain,strong,needs_source_validation,portrait manual review likely,,,,,,no
+60,Matt Corallo,Matt Corallo,TheBlueMatt,Bitcoin Core / Lightning,Bitcoin Core; rust-lightning,Crypto / blockchain,strong,needs_source_validation,verified likeness likely,,,,,,no
+61,Gregory Maxwell,Gregory Maxwell,gmaxwell,Bitcoin Core / privacy crypto,Bitcoin Core; libsecp256k1; Blockstream OSS,Crypto / blockchain,strong,needs_source_validation,portrait manual review likely,,,,,,no
+62,Zooko Wilcox-O'Hearn,Zooko Wilcox-O'Hearn,Zooko,Zcash / Tahoe-LAFS,Zcash; Tahoe-LAFS,Crypto / distributed systems,strong,needs_source_validation,verified likeness likely,,,,,,no
+63,Bram Cohen,Bram Cohen,,BitTorrent,BitTorrent protocol/software; Chia ecosystem,P2P / crypto,strong,needs_source_validation,verified likeness likely,Verify which BitTorrent implementations/license claims fit.,,,,,no
+64,Phil Zimmermann,Phil Zimmermann,,PGP,Pretty Good Privacy; OpenPGP ecosystem,Crypto / privacy,strong,needs_source_validation,verified likeness likely,,,,,,no
+65,Moxie Marlinspike,Moxie Marlinspike,,Signal Protocol,Signal Protocol; Signal; TextSecure,Crypto / privacy,strong,needs_source_validation,verified likeness likely,,,,,,no
+66,Trevor Perrin,Trevor Perrin,,Signal / Noise protocols,Signal Protocol; Noise Protocol Framework,Crypto / protocols,strong,needs_source_validation,portrait manual review likely,,,,,,no
+67,Daniel J. Bernstein,Daniel J. Bernstein,djb,Crypto/network software,qmail; djbdns; NaCl; Curve25519 ecosystem,Crypto / security,strong,needs_source_validation,verified likeness likely,Check licenses; qmail historically public-domain-ish release details.,,,,,no
+68,Tatu Ylönen,Tatu Ylönen,,SSH,SSH protocol/software,Security / networking,strong,needs_source_validation,verified likeness likely,Verify OSS versus commercial SSH history carefully.,,,,,no
+69,Damien Miller,Damien Miller,djm,OpenSSH,OpenSSH,Security / networking,strong,needs_source_validation,portrait manual review likely,,,,,,no
+70,Niels Provos,Niels Provos,,OpenSSH / libevent,OpenSSH; bcrypt; libevent,Security / networking,strong,needs_source_validation,verified likeness likely,,,,,,no
+71,Dug Song,Dug Song,,Security tools / OpenSSH ecosystem,dsniff; OpenSSH ecosystem; libdnet,Security,strong,needs_source_validation,verified likeness likely,,,,,,no
+72,Gordon Lyon,Gordon Lyon / Fyodor,Fyodor,Nmap,Nmap,Security tools,strong,needs_source_validation,verified likeness likely,,,,,,no
+73,HD Moore,HD Moore,,Metasploit,Metasploit Framework,Security tools,strong,needs_source_validation,verified likeness likely,,,,,,no
+74,Solar Designer,Solar Designer,,Openwall / John the Ripper,Openwall; John the Ripper ecosystem,Security tools,strong,needs_source_validation,manual review; public likeness may be limited,,,,,,no
+75,Alexander Peslyak,Alexander Peslyak,Solar Designer,John the Ripper / Openwall,John the Ripper; Openwall,Security tools,strong,needs_source_validation,manual review; same person as Solar Designer? verify,Check whether to merge with Solar Designer row; likely same person/handle.,,,,,no
+76,Michal Zalewski,Michal Zalewski,lcamtuf,AFL / security research tools,American Fuzzy Lop; p0f; security tools,Security tools,strong,needs_source_validation,verified likeness likely,,,,,,no
+77,Tavis Ormandy,Tavis Ormandy,,Security research tooling,Project Zero OSS tools; vulnerability research tooling,Security,medium,needs_source_validation,verified likeness likely,Verify specific OSS projects before final deck.,,,,,no
+78,Renaud Deraison,Renaud Deraison,,Nessus,Nessus original open-source scanner,Security tools,medium,needs_source_validation,verified likeness likely,Verify open-source-era framing.,,,,,no
+79,Tim Berners-Lee,Tim Berners-Lee,,World Wide Web,WorldWideWeb; libwww; W3C open web,Web foundations,strong,needs_source_validation,verified likeness likely,"Frame as web/open standards plus early open software, not generic OSS only.",,,,,no
+80,Jamie Zawinski,Jamie Zawinski,jwz,Mozilla / XScreenSaver,Netscape/Mozilla; XScreenSaver,Browsers / desktop,strong,needs_source_validation,verified likeness likely,,,,,,no
+81,Mitchell Baker,Mitchell Baker,,Mozilla,Mozilla open-source organization; Mozilla Public License ecosystem,Browsers / foundations,medium,needs_source_validation,verified likeness likely,Mostly organizational leadership; verify creator/developer fit.,,,,,no
+82,Blake Ross,Blake Ross,,Firefox,Firefox,Browsers,medium,needs_source_validation,verified likeness likely,Verify co-creator role and OSS contribution scope.,,,,,no
+83,Dave Hyatt,Dave Hyatt,,Firefox / WebKit,Firefox; WebKit; Safari/WebKit ecosystem,Browsers,strong,needs_source_validation,verified likeness likely,,,,,,no
+84,Ian Hickson,Ian Hickson,Hixie,HTML5 / WHATWG,HTML5; WHATWG specs; web-platform tests ecosystem,Web standards,medium,needs_source_validation,portrait manual review likely,Standards/editor role; verify OSS project angle.,,,,,no
+85,Anne van Kesteren,Anne van Kesteren,annevk,WHATWG / web standards,DOM; Fetch; URL standards; WHATWG,Web standards,medium,needs_source_validation,verified likeness likely,Standards/editor role; verify OSS project angle.,,,,,no
+86,Domenic Denicola,Domenic Denicola,domenic,WHATWG / Node ecosystem,HTML/Streams standards; Node.js ecosystem,Web standards / JS,medium,needs_source_validation,verified likeness likely,,,,,,no
+87,Mathias Bynens,Mathias Bynens,mathias,V8 / JavaScript tooling,V8; Babel ecosystem; JavaScript tooling,JavaScript tooling,strong,needs_source_validation,verified likeness likely,,,,,,no
+88,John Resig,John Resig,,jQuery,jQuery; Processing.js,JavaScript libraries,strong,needs_source_validation,verified likeness likely,,,,,,no
+89,Yehuda Katz,Yehuda Katz,wycats,Ember / Bundler / Rails,Ember.js; Bundler; Rust/TC39 work; Rails ecosystem,Web frameworks / tooling,strong,needs_source_validation,verified likeness likely,,,,,,no
+90,Tom Dale,Tom Dale,,Ember,Ember.js,JavaScript frameworks,medium,needs_source_validation,verified likeness likely,,,,,,no
+91,Sam Stephenson,Sam Stephenson,,Prototype / Rails ecosystem,Prototype.js; Ruby on Rails ecosystem; Turbolinks,JavaScript / Rails,strong,needs_source_validation,portrait manual review likely,,,,,,no
+92,Alex Russell,Alex Russell,slightlylate,Dojo / web platform,Dojo Toolkit; web components/PWA advocacy,JavaScript / web platform,medium,needs_source_validation,verified likeness likely,Verify exact open-source contributions.,,,,,no
+93,Dylan Schiemann,Dylan Schiemann,,Dojo Toolkit,Dojo Toolkit,JavaScript frameworks,medium,needs_source_validation,verified likeness likely,,,,,,no
+94,James Halliday,James Halliday / substack,substack,browserify / Node modules,browserify; tape; Node.js module ecosystem,JavaScript tooling,strong,needs_source_validation,verified likeness likely,,,,,,no
+95,Tobias Koppers,Tobias Koppers,sokra,webpack,webpack,JavaScript tooling,strong,needs_source_validation,verified likeness likely,,,,,,no
+96,Nicholas C. Zakas,Nicholas C. Zakas,,ESLint,ESLint; YUI ecosystem,JavaScript tooling,strong,needs_source_validation,verified likeness likely,,,,,,no
+97,Feross Aboukhadijeh,Feross Aboukhadijeh,feross,WebTorrent / StandardJS,WebTorrent; StandardJS; Node security tooling,JavaScript / P2P,strong,needs_source_validation,verified likeness likely,,,,,,no
+98,Guillermo Rauch,Guillermo Rauch,rauchg,Socket.IO / Next.js ecosystem,Socket.IO; Next.js/Vercel OSS ecosystem,JavaScript / web,strong,needs_source_validation,verified likeness likely,Verify creator/maintainer distinctions for Next.js.,,,,,no
+99,Tim Neutkens,Tim Neutkens,timneutkens,Next.js,Next.js,JavaScript frameworks,strong,needs_source_validation,verified likeness likely,,,,,,no
+100,Kent C. Dodds,Kent C. Dodds,kentcdodds,Testing Library,Testing Library; Remix ecosystem,JavaScript testing,strong,needs_source_validation,verified likeness likely,,,,,,no
+101,Michael Jackson,Michael Jackson,mjackson,React Router / Remix,React Router; Remix,JavaScript frameworks,strong,needs_source_validation,verified likeness likely,,,,,,no
+102,Ryan Florence,Ryan Florence,ryanflorence,React Router / Remix,React Router; Remix,JavaScript frameworks,strong,needs_source_validation,verified likeness likely,,,,,,no
+103,Tanner Linsley,Tanner Linsley,tannerlinsley,TanStack,TanStack Query; TanStack Table; TanStack Router,JavaScript libraries,strong,needs_source_validation,verified likeness likely,,,,,,no
+104,Ryan Carniato,Ryan Carniato,ryansolid,SolidJS,SolidJS,JavaScript frameworks,strong,needs_source_validation,verified likeness likely,,,,,,no
+105,Miško Hevery,Miško Hevery,mhevery,AngularJS / Qwik,AngularJS; Qwik,JavaScript frameworks,strong,needs_source_validation,verified likeness likely,,,,,,no
+106,Igor Minar,Igor Minar,,Angular,Angular; AngularJS ecosystem,JavaScript frameworks,medium,needs_source_validation,verified likeness likely,,,,,,no
+107,Rob Eisenberg,Rob Eisenberg,EisenbergEffect,Aurelia / Durandal,Aurelia; Durandal,JavaScript frameworks,medium,needs_source_validation,verified likeness likely,,,,,,no
+108,Max Stoiber,Max Stoiber,mxstbr,styled-components,styled-components; React Boilerplate,JavaScript / CSS-in-JS,medium,needs_source_validation,verified likeness likely,,,,,,no
+109,Jed Watson,Jed Watson,,KeystoneJS / React Select,KeystoneJS; React Select,JavaScript libraries,medium,needs_source_validation,verified likeness likely,,,,,,no
+110,Sindre Sorhus,Sindre Sorhus,sindresorhus,npm package ecosystem,Hundreds of npm packages; Awesome lists,JavaScript tooling,strong,needs_source_validation,verified likeness likely,Avoid unsourced package counts unless verified.,,,,,no
+111,James Snell,James M. Snell,jasnell,Node.js core,Node.js core; undici/Web APIs work,JavaScript runtimes,medium,needs_source_validation,verified likeness likely,,,,,,no
+112,Matteo Collina,Matteo Collina,mcollina,Fastify / Node.js core,Fastify; pino; Node.js core,JavaScript runtimes,strong,needs_source_validation,verified likeness likely,,,,,,no
+113,Ben Noordhuis,Ben Noordhuis,bnoordhuis,Node.js / libuv,Node.js core; libuv,JavaScript runtimes,strong,needs_source_validation,portrait manual review likely,,,,,,no
+114,Bert Belder,Bert Belder,piscisaureus,libuv / Node Windows,libuv; Node.js Windows support,JavaScript runtimes,strong,needs_source_validation,portrait manual review likely,,,,,,no
+115,Fedor Indutny,Fedor Indutny,indutny,Node.js core / crypto tooling,Node.js core; crypto/tls libraries; llhttp ecosystem,JavaScript runtimes,medium,needs_source_validation,verified likeness likely,,,,,,no
+116,Rod Vagg,Rod Vagg,rvagg,Node.js releases/community,Node.js release/community; LevelDB ecosystem,JavaScript runtimes,medium,needs_source_validation,verified likeness likely,,,,,,no
+117,Myles Borins,Myles Borins,MylesBorins,Node.js / OpenJS,Node.js TSC; OpenJS Foundation; JavaScript tooling,JavaScript runtimes,medium,needs_source_validation,verified likeness likely,,,,,,no
+118,Ben Alman,Ben Alman,cowboy,Grunt / jQuery plugins,Grunt; jQuery plugins,JavaScript tooling,medium,needs_source_validation,verified likeness likely,,,,,,no
+119,Henry Zhu,Henry Zhu,hzoo,Babel,Babel; JavaScript compiler community,JavaScript tooling,strong,needs_source_validation,verified likeness likely,,,,,,no
+120,James Kyle,James Kyle,thejameskyle,Babel / JavaScript tooling,Babel; Lerna-era tooling; React ecosystem,JavaScript tooling,medium,needs_source_validation,verified likeness likely,Verify exact projects before final.,,,,,no
+121,Tim Peters,Tim Peters,,Python core,Python core; Timsort; Zen of Python,Python,strong,needs_source_validation,verified likeness likely,,,,,,no
+122,Barry Warsaw,Barry Warsaw,,Python / Mailman,Python core; GNU Mailman,Python,strong,needs_source_validation,verified likeness likely,,,,,,no
+123,Brett Cannon,Brett Cannon,brettcannon,Python core,Python core; importlib; Python packaging/community,Python,medium,needs_source_validation,verified likeness likely,,,,,,no
+124,Carol Willing,Carol Willing,willingc,Python / Jupyter,Python core; Jupyter; CPython governance/community,Python / notebooks,medium,needs_source_validation,verified likeness likely,,,,,,no
+125,Fernando Pérez,Fernando Pérez,fperez,IPython / Jupyter,IPython; Jupyter,Python / notebooks,strong,needs_source_validation,verified likeness likely,,,,,,no
+126,Brian Granger,Brian Granger,ellisonbg,Jupyter,Jupyter; IPython parallel/notebook ecosystem,Python / notebooks,strong,needs_source_validation,verified likeness likely,,,,,,no
+127,Travis Oliphant,Travis Oliphant,,NumPy / SciPy,NumPy; SciPy; Numba/Conda ecosystem,Scientific Python,strong,needs_source_validation,verified likeness likely,,,,,,no
+128,Wes McKinney,Wes McKinney,,pandas / Arrow,pandas; Apache Arrow ecosystem,Data / Python,strong,needs_source_validation,verified likeness likely,,,,,,no
+129,Gaël Varoquaux,Gaël Varoquaux,,scikit-learn / Nilearn,scikit-learn; Nilearn; scientific Python,Machine learning / Python,strong,needs_source_validation,verified likeness likely,,,,,,no
+130,Andreas Müller,Andreas Müller,amueller,scikit-learn,scikit-learn; machine-learning education,Machine learning / Python,strong,needs_source_validation,verified likeness likely,,,,,,no
+131,Pauli Virtanen,Pauli Virtanen,,SciPy,SciPy; scientific Python ecosystem,Scientific Python,medium,needs_source_validation,portrait manual review likely,,,,,,no
+132,Matthew Rocklin,Matthew Rocklin,mrocklin,Dask,Dask; Python data tooling,Data / Python,strong,needs_source_validation,verified likeness likely,,,,,,no
+133,Armin Ronacher,Armin Ronacher,mitsuhiko,Flask / Jinja,Flask; Jinja; Werkzeug; Click,Python web,strong,needs_source_validation,verified likeness likely,,,,,,no
+134,Kenneth Reitz,Kenneth Reitz,kennethreitz,Requests,Requests; Pipenv-era Python tooling,Python tooling,strong,needs_source_validation,verified likeness likely,,,,,,no
+135,Łukasz Langa,Łukasz Langa,ambv,Black / Python core,Black; Python core; mypy/typing ecosystem,Python tooling,strong,needs_source_validation,verified likeness likely,,,,,,no
+136,Simon Willison,Simon Willison,simonw,Django / Datasette,Django early work; Datasette; sqlite-utils,Python web / data,strong,needs_source_validation,verified likeness likely,,,,,,no
+137,Adrian Holovaty,Adrian Holovaty,,Django,Django,Python web,strong,needs_source_validation,verified likeness likely,,,,,,no
+138,Jacob Kaplan-Moss,Jacob Kaplan-Moss,jacobian,Django,Django,Python web,strong,needs_source_validation,verified likeness likely,,,,,,no
+139,Russell Keith-Magee,Russell Keith-Magee,freakboy3742,BeeWare / Django,BeeWare; Django Software Foundation,Python apps / community,medium,needs_source_validation,verified likeness likely,,,,,,no
+140,David Beazley,David Beazley,,Python education/tooling,PLY; Curio; Python systems examples,Python tooling,medium,needs_source_validation,verified likeness likely,Verify OSS project fit before final.,,,,,no
+141,Bruce Momjian,Bruce Momjian,,PostgreSQL,PostgreSQL core team/community,Databases,strong,needs_source_validation,verified likeness likely,,,,,,no
+142,Tom Lane,Tom Lane,,PostgreSQL,PostgreSQL core development,Databases,strong,needs_source_validation,portrait manual review likely,,,,,,no
+143,Marc G. Fournier,Marc G. Fournier,,PostgreSQL,PostgreSQL infrastructure/community,Databases,medium,needs_source_validation,portrait manual review likely,Verify exact role claims.,,,,,no
+144,Oleg Bartunov,Oleg Bartunov,,PostgreSQL / search,PostgreSQL; GiST/GIN/search extensions,Databases,strong,needs_source_validation,verified likeness likely,,,,,,no
+145,Teodor Sigaev,Teodor Sigaev,,PostgreSQL / indexes,PostgreSQL; GiST/GIN/search extensions,Databases,strong,needs_source_validation,portrait manual review likely,,,,,,no
+146,Igor Sysoev,Igor Sysoev,,nginx,nginx,Web servers,strong,needs_source_validation,verified likeness likely,Verify OSS/commercial split and project role.,,,,,no
+147,Rob Pike,Rob Pike,,Go / Plan 9 tools,Go; Plan 9 tools; UTF-8 ecosystem,Languages / systems,strong,needs_source_validation,verified likeness likely,Frame as Go co-creator and systems software.,,,,,no
+148,Ken Thompson,Ken Thompson,,Go / Unix heritage,Go; Unix; Plan 9,Languages / systems,strong,needs_source_validation,verified likeness likely,Verify OSS framing; much work predates open source.,,,,,no
+149,Robert Griesemer,Robert Griesemer,,Go,Go language,Languages,strong,needs_source_validation,verified likeness likely,,,,,,no
+150,Russ Cox,Russ Cox,rsc,Go / toolchains,Go; Go modules; Plan 9 from User Space,Languages / tools,strong,needs_source_validation,verified likeness likely,,,,,,no
+151,Ian Lance Taylor,Ian Lance Taylor,iant,GCC / Go,GCC; gold linker; Go compiler work,Compilers / languages,strong,needs_source_validation,verified likeness likely,,,,,,no
+152,Brendan Burns,Brendan Burns,,Kubernetes,Kubernetes,Cloud native,strong,needs_source_validation,verified likeness likely,,,,,,no
+153,Joe Beda,Joe Beda,,Kubernetes,Kubernetes; Heptio OSS ecosystem,Cloud native,strong,needs_source_validation,verified likeness likely,,,,,,no
+154,Craig McLuckie,Craig McLuckie,,Kubernetes,Kubernetes,Cloud native,strong,needs_source_validation,verified likeness likely,,,,,,no
+155,Tim Hockin,Tim Hockin,thockin,Kubernetes,Kubernetes; Google cloud-native OSS,Cloud native,strong,needs_source_validation,verified likeness likely,,,,,,no
+156,Clayton Coleman,Clayton Coleman,smarterclayton,OpenShift / Kubernetes,OpenShift; Kubernetes,Cloud native,medium,needs_source_validation,verified likeness likely,,,,,,no
+157,Sarah Novotny,Sarah Novotny,,Kubernetes community,Kubernetes community; Open source program leadership,Cloud native / community,medium,needs_source_validation,verified likeness likely,Organizational/community card; verify developer fit.,,,,,no
+158,Kelsey Hightower,Kelsey Hightower,,Kubernetes education / cloud native,Kubernetes ecosystem; cloud-native education; OSS advocacy,Cloud native / education,medium,needs_source_validation,verified likeness likely,Advocate/educator more than creator; mark manual review for final 50.,,,,,no
+159,Jessie Frazelle,Jessie Frazelle,jessfraz,Containers / Linux tooling,Docker; runc/container ecosystem; Linux tooling,Containers / security,strong,needs_source_validation,verified likeness likely,,,,,,no
+160,Jérôme Petazzoni,Jérôme Petazzoni,jpetazzo,Docker education / tooling,Docker ecosystem; container education/tools,Containers,medium,needs_source_validation,verified likeness likely,Verify final-card project claims.,,,,,no
+161,Aleksa Sarai,Aleksa Sarai,cyphar,runc / containers,runc; opencontainers; Linux security tooling,Containers / Linux,strong,needs_source_validation,verified likeness likely,,,,,,no
+162,Michael Crosby,Michael Crosby,crosbymichael,containerd / Docker,containerd; Docker; runC ecosystem,Containers,strong,needs_source_validation,verified likeness likely,,,,,,no
+163,Alex Ellis,Alex Ellis,alexellisuk,OpenFaaS,OpenFaaS; arkade; faas-cli,Cloud native,strong,needs_source_validation,verified likeness likely,,,,,,no
+164,Jordan Hubbard,Jordan Hubbard,,FreeBSD,FreeBSD,BSD,strong,needs_source_validation,verified likeness likely,,,,,,no
+165,Poul-Henning Kamp,Poul-Henning Kamp,phk,FreeBSD / Varnish,FreeBSD; Varnish Cache; timekeeping/randomness work,BSD / web infrastructure,strong,needs_source_validation,verified likeness likely,,,,,,no
+166,Robert Watson,Robert Watson,,FreeBSD / Capsicum,FreeBSD; Capsicum; OpenBSM,BSD / security,strong,needs_source_validation,verified likeness likely,,,,,,no
+167,Matthew Dillon,Matthew Dillon,,DragonFly BSD,DragonFly BSD; FreeBSD VM work,BSD,strong,needs_source_validation,portrait manual review likely,,,,,,no
+168,Charles M. Hannum,Charles M. Hannum,,NetBSD,NetBSD,BSD,strong,needs_source_validation,portrait manual review likely,,,,,,no
+169,Patrick Volkerding,Patrick Volkerding,,Slackware,Slackware Linux,Linux distributions,strong,needs_source_validation,verified likeness likely,,,,,,no
+170,Gaël Duval,Gaël Duval,,Mandrake / /e/OS,Mandrake/Mandriva Linux; /e/OS ecosystem,Linux distributions / mobile,medium,needs_source_validation,verified likeness likely,,,,,,no
+171,Daniel Robbins,Daniel Robbins,drobbins,Gentoo,Gentoo Linux; Funtoo,Linux distributions,strong,needs_source_validation,verified likeness likely,,,,,,no
+172,Judd Vinet,Judd Vinet,,Arch Linux,Arch Linux; Pacman,Linux distributions,strong,needs_source_validation,portrait manual review likely,,,,,,no
+173,Aaron Griffin,Aaron Griffin,,Arch Linux,Arch Linux leadership/maintenance,Linux distributions,medium,needs_source_validation,verified likeness likely,Verify exact role and final-card strength.,,,,,no
+174,Clement Lefebvre,Clement Lefebvre,Clem,Linux Mint,Linux Mint; Cinnamon desktop,Linux distributions / desktop,strong,needs_source_validation,verified likeness likely,,,,,,no
+175,Jason A. Donenfeld,Jason A. Donenfeld,zx2c4,WireGuard,WireGuard; pass; cgit contributions,Networking / security,strong,needs_source_validation,verified likeness likely,,,,,,no
+176,Andrew Morton,Andrew Morton,akpm,Linux kernel,Linux kernel mm tree/maintainer work,Kernel,strong,needs_source_validation,verified likeness likely,,,,,,no
+177,Theodore Ts'o,Theodore Ts'o,tytso,ext filesystems / Linux,ext2/ext3/ext4; Linux kernel,Kernel / filesystems,strong,needs_source_validation,verified likeness likely,,,,,,no
+178,Ingo Molnár,Ingo Molnár,mingo,Linux scheduler/performance,Linux scheduler; kernel performance work,Kernel,strong,needs_source_validation,verified likeness likely,,,,,,no
+179,David S. Miller,David S. Miller,davem,Linux networking,Linux networking; SPARC/Linux work,Kernel / networking,strong,needs_source_validation,portrait manual review likely,,,,,,no
+180,Rusty Russell,Rusty Russell,,netfilter / Linux modules,netfilter/iptables; Linux kernel modules; ccan,Kernel / networking,strong,needs_source_validation,verified likeness likely,,,,,,no
+181,Harald Welte,Harald Welte,LaForge,netfilter / Openmoko,netfilter/iptables; Openmoko; Osmocom,Kernel / mobile / telecom,strong,needs_source_validation,verified likeness likely,,,,,,no
+182,Valerie Aurora,Valerie Aurora,,Linux filesystems / OSS advocacy,Linux kernel filesystems; Ada Initiative; Double Union,Kernel / advocacy,medium,needs_source_validation,verified likeness likely,Verify card angle carefully.,,,,,no
+183,Sarah Sharp,Sarah Sharp,,Linux USB,Linux xHCI/USB 3.0 driver work,Kernel,strong,needs_source_validation,verified likeness likely,,,,,,no
+184,Julia Lawall,Julia Lawall,,Coccinelle / Linux kernel tooling,Coccinelle; Linux kernel semantic patching,Kernel tooling,strong,needs_source_validation,verified likeness likely,,,,,,no
+185,Linus Walleij,Linus Walleij,linusw,Linux ARM/GPIO,Linux kernel ARM/GPIO/pinctrl work,Kernel,medium,needs_source_validation,verified likeness likely,,,,,,no
+186,Dave Airlie,Dave Airlie,airlied,Linux graphics,Linux DRM subsystem; Mesa graphics ecosystem,Graphics / kernel,strong,needs_source_validation,verified likeness likely,,,,,,no
+187,Kristian Høgsberg,Kristian Høgsberg,krh,Wayland,Wayland; DRI/graphics stack,Graphics / desktop,strong,needs_source_validation,verified likeness likely,,,,,,no
+188,Daniel Stone,Daniel Stone,daniels,Wayland / Mesa / X.Org,Wayland; Mesa; X.Org; Collabora graphics work,Graphics / desktop,strong,needs_source_validation,verified likeness likely,,,,,,no
+189,Brian Paul,Brian Paul,,Mesa,Mesa 3D,Graphics,strong,needs_source_validation,portrait manual review likely,,,,,,no
+190,Rob Clark,Rob Clark,robclark,Freedreno / Mesa,Freedreno; Mesa; Linux graphics,Graphics / drivers,strong,needs_source_validation,verified likeness likely,,,,,,no
+191,Alyssa Rosenzweig,Alyssa Rosenzweig,alyssa,Panfrost / Asahi graphics,Panfrost; Asahi Linux GPU drivers; Mesa,Graphics / drivers,strong,needs_source_validation,verified likeness likely,,,,,,no
+192,Hector Martin,Hector Martin / marcan,marcan,Asahi Linux,Asahi Linux; Linux-on-Apple-Silicon reverse engineering,Linux / hardware,strong,needs_source_validation,verified likeness likely,,,,,,no
+193,Drew DeVault,Drew DeVault,sircmpwn,sway / wlroots / SourceHut,sway; wlroots; SourceHut; Hare,Desktop / tooling,strong,needs_source_validation,verified likeness likely,,,,,,no
+194,Simon Ser,Simon Ser,emersion,Wayland / wlroots,wlroots; Wayland protocols/tools,Desktop / graphics,strong,needs_source_validation,portrait manual review likely,,,,,,no
+195,Andreas Kling,Andreas Kling,awesomekling,SerenityOS / Ladybird,SerenityOS; Ladybird browser,Operating systems / browsers,strong,needs_source_validation,verified likeness likely,,,,,,no
+196,Sam Lantinga,Sam Lantinga,slouken,SDL,Simple DirectMedia Layer,Game/dev libraries,strong,needs_source_validation,verified likeness likely,,,,,,no
+197,Ryan C. Gordon,Ryan C. Gordon / icculus,icculus,SDL / Linux games,icculus.org ports; PhysicsFS; game-dev OSS,Game/dev libraries,strong,needs_source_validation,verified likeness likely,,,,,,no
+198,Ton Roosendaal,Ton Roosendaal,,Blender,Blender; Blender Foundation,Creative software,strong,needs_source_validation,verified likeness likely,,,,,,no
+199,Spencer Kimball,Spencer Kimball,,GIMP,GIMP,Creative software,strong,needs_source_validation,verified likeness likely,,,,,,no
+200,Peter Mattis,Peter Mattis,,GIMP,GIMP; GTK early ecosystem,Creative software,strong,needs_source_validation,verified likeness likely,,,,,,no
