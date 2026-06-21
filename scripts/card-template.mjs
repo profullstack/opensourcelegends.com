@@ -15,8 +15,6 @@ function traits(c) {
   return [...m, rarityOf(c.impact_rating).toUpperCase()];
 }
 
-const CREST = `<span class="crest"><span class="crestText">OPEN SOURCE<br>LEGENDS</span><span class="code">&lt;/&gt;</span></span>`;
-
 function bars(c) {
   const rows = [
     ['CODE ARCHITECTURE', c.code_rating],
@@ -32,49 +30,47 @@ function bars(c) {
   }).join('');
 }
 
-const sharedCss = (accent) => `
+// shared card shell — dark with a rarity-tinted foil inset border
+const shell = (accent) => `
   * { margin:0; padding:0; box-sizing:border-box; }
   html,body { width:${CARD_W}px; height:${CARD_H}px; }
-  body { font-family: 'Inter','Helvetica Neue',Arial,sans-serif; background:#05060a; }
-  .card {
-    position:relative; width:${CARD_W}px; height:${CARD_H}px; overflow:hidden;
-    border-radius:34px; background:#15101f;
-    box-shadow: inset 0 0 0 6px #0c0a14, inset 0 0 0 8px ${accent}55, inset 0 0 0 11px #0c0a14;
-  }
-  .num { position:absolute; top:26px; left:30px; z-index:5; font-weight:800; font-size:54px; color:#fff;
-         font-family:'JetBrains Mono',ui-monospace,monospace; text-shadow:0 2px 8px rgba(0,0,0,.6); }
-  .crest { position:absolute; top:22px; right:26px; z-index:5; display:flex; flex-direction:column; align-items:flex-end;
-           background:#0c0a14; border:2px solid ${accent}; border-radius:10px; padding:8px 12px; clip-path:polygon(12% 0,100% 0,100% 100%,0 100%); }
-  .crestText { color:#fff; font-weight:800; font-size:15px; letter-spacing:1px; text-align:right; line-height:1.05; }
-  .code { color:${accent}; font-weight:800; font-size:13px; font-family:ui-monospace,monospace; margin-top:2px; }
+  body { font-family:'Inter','Helvetica Neue',Arial,sans-serif; background:#05060a; }
+  .card { position:relative; width:${CARD_W}px; height:${CARD_H}px; overflow:hidden; border-radius:34px;
+    background:#13101c; box-shadow: inset 0 0 0 6px #0b0911, inset 0 0 0 8px ${accent}66, inset 0 0 0 11px #0b0911; }
+  .num { font-family:'JetBrains Mono',ui-monospace,monospace; font-weight:800; color:#fff; }
+  .crestBox { display:flex; flex-direction:column; align-items:flex-end; background:#0b0911; border:2px solid ${accent};
+    border-radius:10px; padding:8px 13px; clip-path:polygon(14% 0,100% 0,100% 100%,0 100%); }
+  .crestBox .t { color:#fff; font-weight:800; font-size:15px; letter-spacing:1px; text-align:right; line-height:1.05; }
+  .crestBox .c { color:${accent}; font-weight:800; font-size:12px; font-family:ui-monospace,monospace; margin-top:2px; }
 `;
 
 export function buildFront(card, portraitDataUri) {
   const accent = ACCENT[rarityOf(card.impact_rating)];
   const kw = traits(card).join('&nbsp;&nbsp;·&nbsp;&nbsp;');
   return `<!doctype html><html><head><meta charset="utf-8"><style>
-  ${sharedCss(accent)}
-  .portrait { position:absolute; inset:0; }
-  .portrait img { width:100%; height:72%; object-fit:cover; object-position:center top; }
-  .portrait::after { content:''; position:absolute; left:0; right:0; top:48%; height:30%;
-    background:linear-gradient(180deg, rgba(21,16,31,0) 0%, #15101f 92%); }
-  .plate { position:absolute; left:24px; right:24px; bottom:118px; z-index:4;
-    background:linear-gradient(180deg,#1c1530,#120d1f); border:2px solid ${accent}66; border-radius:18px;
-    padding:18px 20px; text-align:center; }
-  .name { color:#fff; font-weight:800; font-size:42px; letter-spacing:.5px; line-height:1; text-transform:uppercase; }
-  .title { color:${accent}; font-weight:700; font-size:18px; letter-spacing:1.5px; margin-top:8px; text-transform:uppercase; }
-  .footer { position:absolute; left:24px; right:24px; bottom:34px; z-index:4; display:flex; align-items:center; gap:14px; }
-  .badge { width:62px; height:62px; flex:0 0 auto; border-radius:50%; background:#0c0a14; border:2px solid ${accent};
+  ${shell(accent)}
+  .portrait { position:absolute; inset:11px; border-radius:26px; overflow:hidden; }
+  .portrait img { width:100%; height:100%; object-fit:cover; object-position:center 22%; }
+  .portrait::after { content:''; position:absolute; left:0; right:0; bottom:0; height:46%;
+    background:linear-gradient(180deg, rgba(19,16,28,0) 0%, rgba(19,16,28,.85) 62%, #13101c 100%); }
+  .num.top { position:absolute; top:26px; left:32px; z-index:5; font-size:56px; text-shadow:0 2px 10px rgba(0,0,0,.7); }
+  .crest { position:absolute; top:24px; right:28px; z-index:5; }
+  .plate { position:absolute; left:26px; right:26px; bottom:120px; z-index:5; text-align:center;
+    background:linear-gradient(180deg,#1d1633,#130d22); border:2px solid ${accent}77; border-radius:18px; padding:20px 20px; }
+  .name { color:#fff; font-weight:800; font-size:44px; letter-spacing:.5px; line-height:1; text-transform:uppercase; }
+  .title { color:${accent}; font-weight:700; font-size:18px; letter-spacing:1.5px; margin-top:9px; text-transform:uppercase; }
+  .footer { position:absolute; left:26px; right:26px; bottom:36px; z-index:5; display:flex; align-items:center; gap:14px; }
+  .badge { width:64px; height:64px; flex:0 0 auto; border-radius:50%; background:#0b0911; border:2px solid ${accent};
     display:flex; align-items:center; justify-content:center; color:${accent}; font-weight:800; font-size:22px; font-family:ui-monospace,monospace; }
-  .kw { flex:1; text-align:center; color:#cfd2dc; font-weight:700; font-size:16px; letter-spacing:1px; }
+  .kw { flex:1; text-align:center; color:#d3d6e0; font-weight:700; font-size:17px; letter-spacing:1px; }
   </style></head><body>
   <div class="card">
     <div class="portrait"><img src="${portraitDataUri}"></div>
-    <span class="num">${pad2(card.card_number)}</span>
-    ${CREST}
+    <span class="num top">${pad2(card.card_number)}</span>
+    <span class="crest"><span class="crestBox"><span class="t">OPEN SOURCE<br>LEGENDS</span><span class="c">&lt;/&gt;</span></span></span>
     <div class="plate"><div class="name">${esc(card.display_name)}</div><div class="title">${esc(card.card_title)}</div></div>
     <div class="footer">
-      <span class="badge">${esc((card.primary_projects?.[0] || '?').slice(0, 2))}</span>
+      <span class="badge">${esc((card.primary_projects?.[0] || '?').replace(/[^A-Za-z]/g, '').slice(0, 2) || '?')}</span>
       <span class="kw">${kw}</span>
       <span class="badge">&lt;/&gt;</span>
     </div>
@@ -86,55 +82,58 @@ export function buildBack(card) {
   const rarity = rarityOf(card.impact_rating).toUpperCase();
   const projects = (card.primary_projects || []).slice(0, 5).map((p) => `<li>${esc(p)}</li>`).join('');
   return `<!doctype html><html><head><meta charset="utf-8"><style>
-  ${sharedCss(accent)}
-  .head { position:absolute; top:30px; left:30px; right:30px; }
+  ${shell(accent)}
+  .card { display:flex; flex-direction:column; padding:34px 34px 30px; }
+  .head { flex:0 0 auto; }
+  .head .row { display:flex; align-items:center; gap:16px; }
+  .head .num { font-size:46px; line-height:1; }
   .head .name { color:#fff; font-weight:800; font-size:34px; text-transform:uppercase; line-height:1; }
-  .head .title { color:${accent}; font-weight:700; font-size:15px; letter-spacing:1.5px; margin-top:6px; text-transform:uppercase; }
-  .body { position:absolute; top:120px; left:30px; right:30px; bottom:120px; display:flex; flex-direction:column; gap:16px; }
-  .two { display:flex; gap:14px; }
-  .panel { background:#efeae0; border-radius:12px; padding:14px 16px; }
-  .panel h4 { color:#15101f; font-size:13px; letter-spacing:1.5px; margin-bottom:8px; }
-  .scout { flex:1.4; }
-  .scout p { color:#2a2733; font-size:14.5px; line-height:1.45; }
-  .sig { flex:1; }
-  .sig ul { list-style:none; }
-  .sig li { color:#2a2733; font-size:14.5px; line-height:1.55; padding-left:14px; position:relative; }
-  .sig li::before { content:'•'; position:absolute; left:0; color:${accent}; }
-  .stack { display:flex; gap:14px; align-items:stretch; }
-  .stackMain { flex:1.7; background:#100c1a; border:1px solid #2a2440; border-radius:12px; padding:14px 16px; }
-  .stackMain h4 { color:#cfd2dc; font-size:13px; letter-spacing:1.5px; margin-bottom:12px; }
-  .barRow { display:flex; align-items:center; gap:10px; margin-bottom:9px; }
-  .barLabel { flex:0 0 150px; color:#aeb2c0; font-size:11.5px; letter-spacing:.5px; }
+  .head .title { color:${accent}; font-weight:700; font-size:15px; letter-spacing:1.5px; margin-top:7px; text-transform:uppercase; }
+  .rule { height:2px; background:linear-gradient(90deg,${accent},transparent); margin:16px 0 0; }
+  .content { flex:1; display:flex; flex-direction:column; justify-content:space-between; padding:6px 0; }
+  h4 { color:${accent}; font-size:13px; letter-spacing:2px; margin-bottom:10px; font-weight:800; }
+  .two { display:flex; gap:22px; }
+  .scout { flex:1.35; } .sig { flex:1; border-left:1px solid #2a2440; padding-left:20px; }
+  .scout p { color:#d7d9e2; font-size:16px; line-height:1.5; }
+  .sig ul { list-style:none; } .sig li { color:#d7d9e2; font-size:16px; line-height:1.7; padding-left:16px; position:relative; }
+  .sig li::before { content:'▸'; position:absolute; left:0; color:${accent}; }
+  .stack { display:flex; gap:20px; align-items:stretch; }
+  .skill { flex:1.7; }
+  .barRow { display:flex; align-items:center; gap:12px; margin-bottom:13px; }
+  .barLabel { flex:0 0 158px; color:#aeb2c0; font-size:12px; letter-spacing:.5px; }
   .bar { flex:1; display:flex; gap:3px; }
-  .seg { flex:1; height:11px; border-radius:2px; background:#241d38; }
-  .seg.on { background:${accent}; }
-  .barVal { flex:0 0 30px; text-align:right; color:#fff; font-weight:800; font-size:14px; font-family:ui-monospace,monospace; }
-  .impact { flex:1; background:#100c1a; border:1px solid ${accent}55; border-radius:12px; display:flex; flex-direction:column; align-items:center; justify-content:center; padding:10px; }
-  .impact .lab { color:#aeb2c0; font-size:12px; letter-spacing:2px; }
-  .impact .score { color:${accent}; font-weight:800; font-size:64px; line-height:1; font-family:ui-monospace,monospace; }
-  .impact .rar { color:#fff; font-weight:800; font-size:14px; letter-spacing:1.5px; margin-top:2px; }
-  .impact .stars { color:${accent}; font-size:16px; letter-spacing:2px; margin-top:4px; }
-  .quote { color:#cfd2dc; font-style:italic; font-size:15px; line-height:1.4; padding:0 6px; }
-  .quote .q { color:${accent}; font-size:26px; font-weight:800; margin-right:4px; }
-  .foot { position:absolute; bottom:30px; left:30px; right:30px; display:flex; justify-content:space-between; align-items:center;
-    border-top:1px solid #2a2440; padding-top:12px; color:#9a9ead; font-size:11px; letter-spacing:.5px; }
-  .foot b { color:#cfd2dc; }
-  .foot .code { color:${accent}; font-size:16px; font-family:ui-monospace,monospace; }
+  .seg { flex:1; height:15px; border-radius:3px; background:#241d38; }
+  .seg.on { background:${accent}; box-shadow:0 0 6px ${accent}66; }
+  .barVal { flex:0 0 34px; text-align:right; color:#fff; font-weight:800; font-size:16px; font-family:ui-monospace,monospace; }
+  .impact { flex:1; background:linear-gradient(180deg,#181226,#0f0b1a); border:2px solid ${accent}77; border-radius:14px;
+    display:flex; flex-direction:column; align-items:center; justify-content:center; }
+  .impact .lab { color:#aeb2c0; font-size:13px; letter-spacing:3px; }
+  .impact .score { color:${accent}; font-weight:800; font-size:78px; line-height:.95; font-family:ui-monospace,monospace; }
+  .impact .rar { color:#fff; font-weight:800; font-size:15px; letter-spacing:2px; }
+  .impact .stars { color:${accent}; font-size:18px; letter-spacing:3px; margin-top:6px; }
+  .quote { color:#d7d9e2; font-style:italic; font-size:17px; line-height:1.45; padding:0 4px; }
+  .quote .q { color:${accent}; font-size:30px; font-weight:800; margin-right:6px; vertical-align:-6px; }
+  .foot { flex:0 0 auto; display:flex; justify-content:space-between; align-items:center;
+    border-top:1px solid #2a2440; padding-top:14px; color:#9a9ead; font-size:12px; letter-spacing:.5px; }
+  .foot b { color:#d7d9e2; } .foot .c { color:${accent}; font-size:17px; font-family:ui-monospace,monospace; }
   </style></head><body>
   <div class="card">
-    <div class="head"><span class="num" style="position:static">${pad2(card.card_number)}</span>
-      <div class="name">${esc(card.display_name)}</div><div class="title">${esc(card.card_title)}</div></div>
-    <div class="body">
+    <div class="head">
+      <div class="row"><span class="num">${pad2(card.card_number)}</span><span class="name">${esc(card.display_name)}</span></div>
+      <div class="title">${esc(card.card_title)}</div>
+      <div class="rule"></div>
+    </div>
+    <div class="content">
       <div class="two">
-        <div class="panel scout"><h4>SCOUTING REPORT</h4><p>${esc(card.scouting_report)}</p></div>
-        <div class="panel sig"><h4>SIGNATURE PROJECTS</h4><ul>${projects}</ul></div>
+        <div class="scout"><h4>SCOUTING REPORT</h4><p>${esc(card.scouting_report)}</p></div>
+        <div class="sig"><h4>SIGNATURE PROJECTS</h4><ul>${projects}</ul></div>
       </div>
       <div class="stack">
-        <div class="stackMain"><h4>SKILL STACK</h4>${bars(card)}</div>
+        <div class="skill"><h4>SKILL STACK</h4>${bars(card)}</div>
         <div class="impact"><span class="lab">IMPACT</span><span class="score">${card.impact_rating}</span><span class="rar">${rarity}</span><span class="stars">★★★★★</span></div>
       </div>
       <div class="quote"><span class="q">“</span>${esc(card.collector_note)}”</div>
     </div>
-    <div class="foot"><span>BORN <b>${esc(card.birth_date)}</b></span><span>NATIONALITY <b>${esc(card.nationality)}</b></span><span class="code">&lt;/&gt;</span></div>
+    <div class="foot"><span>BORN <b>${esc(card.birth_date)}</b></span><span>NATIONALITY <b>${esc(card.nationality)}</b></span><span class="c">&lt;/&gt;</span></div>
   </div></body></html>`;
 }

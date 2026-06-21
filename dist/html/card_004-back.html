@@ -2,66 +2,65 @@
   
   * { margin:0; padding:0; box-sizing:border-box; }
   html,body { width:750px; height:1050px; }
-  body { font-family: 'Inter','Helvetica Neue',Arial,sans-serif; background:#05060a; }
-  .card {
-    position:relative; width:750px; height:1050px; overflow:hidden;
-    border-radius:34px; background:#15101f;
-    box-shadow: inset 0 0 0 6px #0c0a14, inset 0 0 0 8px #f5c45155, inset 0 0 0 11px #0c0a14;
-  }
-  .num { position:absolute; top:26px; left:30px; z-index:5; font-weight:800; font-size:54px; color:#fff;
-         font-family:'JetBrains Mono',ui-monospace,monospace; text-shadow:0 2px 8px rgba(0,0,0,.6); }
-  .crest { position:absolute; top:22px; right:26px; z-index:5; display:flex; flex-direction:column; align-items:flex-end;
-           background:#0c0a14; border:2px solid #f5c451; border-radius:10px; padding:8px 12px; clip-path:polygon(12% 0,100% 0,100% 100%,0 100%); }
-  .crestText { color:#fff; font-weight:800; font-size:15px; letter-spacing:1px; text-align:right; line-height:1.05; }
-  .code { color:#f5c451; font-weight:800; font-size:13px; font-family:ui-monospace,monospace; margin-top:2px; }
+  body { font-family:'Inter','Helvetica Neue',Arial,sans-serif; background:#05060a; }
+  .card { position:relative; width:750px; height:1050px; overflow:hidden; border-radius:34px;
+    background:#13101c; box-shadow: inset 0 0 0 6px #0b0911, inset 0 0 0 8px #f5c45166, inset 0 0 0 11px #0b0911; }
+  .num { font-family:'JetBrains Mono',ui-monospace,monospace; font-weight:800; color:#fff; }
+  .crestBox { display:flex; flex-direction:column; align-items:flex-end; background:#0b0911; border:2px solid #f5c451;
+    border-radius:10px; padding:8px 13px; clip-path:polygon(14% 0,100% 0,100% 100%,0 100%); }
+  .crestBox .t { color:#fff; font-weight:800; font-size:15px; letter-spacing:1px; text-align:right; line-height:1.05; }
+  .crestBox .c { color:#f5c451; font-weight:800; font-size:12px; font-family:ui-monospace,monospace; margin-top:2px; }
 
-  .head { position:absolute; top:30px; left:30px; right:30px; }
+  .card { display:flex; flex-direction:column; padding:34px 34px 30px; }
+  .head { flex:0 0 auto; }
+  .head .row { display:flex; align-items:center; gap:16px; }
+  .head .num { font-size:46px; line-height:1; }
   .head .name { color:#fff; font-weight:800; font-size:34px; text-transform:uppercase; line-height:1; }
-  .head .title { color:#f5c451; font-weight:700; font-size:15px; letter-spacing:1.5px; margin-top:6px; text-transform:uppercase; }
-  .body { position:absolute; top:120px; left:30px; right:30px; bottom:120px; display:flex; flex-direction:column; gap:16px; }
-  .two { display:flex; gap:14px; }
-  .panel { background:#efeae0; border-radius:12px; padding:14px 16px; }
-  .panel h4 { color:#15101f; font-size:13px; letter-spacing:1.5px; margin-bottom:8px; }
-  .scout { flex:1.4; }
-  .scout p { color:#2a2733; font-size:14.5px; line-height:1.45; }
-  .sig { flex:1; }
-  .sig ul { list-style:none; }
-  .sig li { color:#2a2733; font-size:14.5px; line-height:1.55; padding-left:14px; position:relative; }
-  .sig li::before { content:'•'; position:absolute; left:0; color:#f5c451; }
-  .stack { display:flex; gap:14px; align-items:stretch; }
-  .stackMain { flex:1.7; background:#100c1a; border:1px solid #2a2440; border-radius:12px; padding:14px 16px; }
-  .stackMain h4 { color:#cfd2dc; font-size:13px; letter-spacing:1.5px; margin-bottom:12px; }
-  .barRow { display:flex; align-items:center; gap:10px; margin-bottom:9px; }
-  .barLabel { flex:0 0 150px; color:#aeb2c0; font-size:11.5px; letter-spacing:.5px; }
+  .head .title { color:#f5c451; font-weight:700; font-size:15px; letter-spacing:1.5px; margin-top:7px; text-transform:uppercase; }
+  .rule { height:2px; background:linear-gradient(90deg,#f5c451,transparent); margin:16px 0 0; }
+  .content { flex:1; display:flex; flex-direction:column; justify-content:space-between; padding:6px 0; }
+  h4 { color:#f5c451; font-size:13px; letter-spacing:2px; margin-bottom:10px; font-weight:800; }
+  .two { display:flex; gap:22px; }
+  .scout { flex:1.35; } .sig { flex:1; border-left:1px solid #2a2440; padding-left:20px; }
+  .scout p { color:#d7d9e2; font-size:16px; line-height:1.5; }
+  .sig ul { list-style:none; } .sig li { color:#d7d9e2; font-size:16px; line-height:1.7; padding-left:16px; position:relative; }
+  .sig li::before { content:'▸'; position:absolute; left:0; color:#f5c451; }
+  .stack { display:flex; gap:20px; align-items:stretch; }
+  .skill { flex:1.7; }
+  .barRow { display:flex; align-items:center; gap:12px; margin-bottom:13px; }
+  .barLabel { flex:0 0 158px; color:#aeb2c0; font-size:12px; letter-spacing:.5px; }
   .bar { flex:1; display:flex; gap:3px; }
-  .seg { flex:1; height:11px; border-radius:2px; background:#241d38; }
-  .seg.on { background:#f5c451; }
-  .barVal { flex:0 0 30px; text-align:right; color:#fff; font-weight:800; font-size:14px; font-family:ui-monospace,monospace; }
-  .impact { flex:1; background:#100c1a; border:1px solid #f5c45155; border-radius:12px; display:flex; flex-direction:column; align-items:center; justify-content:center; padding:10px; }
-  .impact .lab { color:#aeb2c0; font-size:12px; letter-spacing:2px; }
-  .impact .score { color:#f5c451; font-weight:800; font-size:64px; line-height:1; font-family:ui-monospace,monospace; }
-  .impact .rar { color:#fff; font-weight:800; font-size:14px; letter-spacing:1.5px; margin-top:2px; }
-  .impact .stars { color:#f5c451; font-size:16px; letter-spacing:2px; margin-top:4px; }
-  .quote { color:#cfd2dc; font-style:italic; font-size:15px; line-height:1.4; padding:0 6px; }
-  .quote .q { color:#f5c451; font-size:26px; font-weight:800; margin-right:4px; }
-  .foot { position:absolute; bottom:30px; left:30px; right:30px; display:flex; justify-content:space-between; align-items:center;
-    border-top:1px solid #2a2440; padding-top:12px; color:#9a9ead; font-size:11px; letter-spacing:.5px; }
-  .foot b { color:#cfd2dc; }
-  .foot .code { color:#f5c451; font-size:16px; font-family:ui-monospace,monospace; }
+  .seg { flex:1; height:15px; border-radius:3px; background:#241d38; }
+  .seg.on { background:#f5c451; box-shadow:0 0 6px #f5c45166; }
+  .barVal { flex:0 0 34px; text-align:right; color:#fff; font-weight:800; font-size:16px; font-family:ui-monospace,monospace; }
+  .impact { flex:1; background:linear-gradient(180deg,#181226,#0f0b1a); border:2px solid #f5c45177; border-radius:14px;
+    display:flex; flex-direction:column; align-items:center; justify-content:center; }
+  .impact .lab { color:#aeb2c0; font-size:13px; letter-spacing:3px; }
+  .impact .score { color:#f5c451; font-weight:800; font-size:78px; line-height:.95; font-family:ui-monospace,monospace; }
+  .impact .rar { color:#fff; font-weight:800; font-size:15px; letter-spacing:2px; }
+  .impact .stars { color:#f5c451; font-size:18px; letter-spacing:3px; margin-top:6px; }
+  .quote { color:#d7d9e2; font-style:italic; font-size:17px; line-height:1.45; padding:0 4px; }
+  .quote .q { color:#f5c451; font-size:30px; font-weight:800; margin-right:6px; vertical-align:-6px; }
+  .foot { flex:0 0 auto; display:flex; justify-content:space-between; align-items:center;
+    border-top:1px solid #2a2440; padding-top:14px; color:#9a9ead; font-size:12px; letter-spacing:.5px; }
+  .foot b { color:#d7d9e2; } .foot .c { color:#f5c451; font-size:17px; font-family:ui-monospace,monospace; }
   </style></head><body>
   <div class="card">
-    <div class="head"><span class="num" style="position:static">04</span>
-      <div class="name">TJ Holowaychuk</div><div class="title">Node.js Contributor</div></div>
-    <div class="body">
+    <div class="head">
+      <div class="row"><span class="num">04</span><span class="name">TJ Holowaychuk</span></div>
+      <div class="title">Node.js Contributor</div>
+      <div class="rule"></div>
+    </div>
+    <div class="content">
       <div class="two">
-        <div class="panel scout"><h4>SCOUTING REPORT</h4><p>TJ Holowaychuk is a pivotal figure in the Node.js community, known for his innovative frameworks and modules. His work has significantly shaped web development practices and tools, making him a respected leader in open source.</p></div>
-        <div class="panel sig"><h4>SIGNATURE PROJECTS</h4><ul><li>Express</li><li>Koa</li><li>Socket.IO</li><li>Mocha</li></ul></div>
+        <div class="scout"><h4>SCOUTING REPORT</h4><p>TJ Holowaychuk is a pivotal figure in the Node.js community, known for his innovative frameworks and modules. His work has significantly shaped web development practices and tools, making him a respected leader in open source.</p></div>
+        <div class="sig"><h4>SIGNATURE PROJECTS</h4><ul><li>Express</li><li>Koa</li><li>Socket.IO</li><li>Mocha</li></ul></div>
       </div>
       <div class="stack">
-        <div class="stackMain"><h4>SKILL STACK</h4><div class="barRow"><span class="barLabel">CODE ARCHITECTURE</span><span class="bar"><span class="seg on"></span><span class="seg on"></span><span class="seg on"></span><span class="seg on"></span><span class="seg on"></span><span class="seg on"></span><span class="seg on"></span><span class="seg on"></span><span class="seg on"></span><span class="seg "></span></span><span class="barVal">92</span></div><div class="barRow"><span class="barLabel">INNOVATION</span><span class="bar"><span class="seg on"></span><span class="seg on"></span><span class="seg on"></span><span class="seg on"></span><span class="seg on"></span><span class="seg on"></span><span class="seg on"></span><span class="seg on"></span><span class="seg on"></span><span class="seg "></span></span><span class="barVal">90</span></div><div class="barRow"><span class="barLabel">COMMUNITY IMPACT</span><span class="bar"><span class="seg on"></span><span class="seg on"></span><span class="seg on"></span><span class="seg on"></span><span class="seg on"></span><span class="seg on"></span><span class="seg on"></span><span class="seg on"></span><span class="seg on"></span><span class="seg "></span></span><span class="barVal">88</span></div><div class="barRow"><span class="barLabel">LONGEVITY</span><span class="bar"><span class="seg on"></span><span class="seg on"></span><span class="seg on"></span><span class="seg on"></span><span class="seg on"></span><span class="seg on"></span><span class="seg on"></span><span class="seg on"></span><span class="seg on"></span><span class="seg "></span></span><span class="barVal">85</span></div><div class="barRow"><span class="barLabel">OPEN SOURCE IMPACT</span><span class="bar"><span class="seg on"></span><span class="seg on"></span><span class="seg on"></span><span class="seg on"></span><span class="seg on"></span><span class="seg on"></span><span class="seg on"></span><span class="seg on"></span><span class="seg on"></span><span class="seg on"></span></span><span class="barVal">95</span></div></div>
+        <div class="skill"><h4>SKILL STACK</h4><div class="barRow"><span class="barLabel">CODE ARCHITECTURE</span><span class="bar"><span class="seg on"></span><span class="seg on"></span><span class="seg on"></span><span class="seg on"></span><span class="seg on"></span><span class="seg on"></span><span class="seg on"></span><span class="seg on"></span><span class="seg on"></span><span class="seg "></span></span><span class="barVal">92</span></div><div class="barRow"><span class="barLabel">INNOVATION</span><span class="bar"><span class="seg on"></span><span class="seg on"></span><span class="seg on"></span><span class="seg on"></span><span class="seg on"></span><span class="seg on"></span><span class="seg on"></span><span class="seg on"></span><span class="seg on"></span><span class="seg "></span></span><span class="barVal">90</span></div><div class="barRow"><span class="barLabel">COMMUNITY IMPACT</span><span class="bar"><span class="seg on"></span><span class="seg on"></span><span class="seg on"></span><span class="seg on"></span><span class="seg on"></span><span class="seg on"></span><span class="seg on"></span><span class="seg on"></span><span class="seg on"></span><span class="seg "></span></span><span class="barVal">88</span></div><div class="barRow"><span class="barLabel">LONGEVITY</span><span class="bar"><span class="seg on"></span><span class="seg on"></span><span class="seg on"></span><span class="seg on"></span><span class="seg on"></span><span class="seg on"></span><span class="seg on"></span><span class="seg on"></span><span class="seg on"></span><span class="seg "></span></span><span class="barVal">85</span></div><div class="barRow"><span class="barLabel">OPEN SOURCE IMPACT</span><span class="bar"><span class="seg on"></span><span class="seg on"></span><span class="seg on"></span><span class="seg on"></span><span class="seg on"></span><span class="seg on"></span><span class="seg on"></span><span class="seg on"></span><span class="seg on"></span><span class="seg on"></span></span><span class="barVal">95</span></div></div>
         <div class="impact"><span class="lab">IMPACT</span><span class="score">95</span><span class="rar">ICONIC</span><span class="stars">★★★★★</span></div>
       </div>
       <div class="quote"><span class="q">“</span>A master of Node.js frameworks.”</div>
     </div>
-    <div class="foot"><span>BORN <b>1987</b></span><span>NATIONALITY <b>Canada</b></span><span class="code">&lt;/&gt;</span></div>
+    <div class="foot"><span>BORN <b>1987</b></span><span>NATIONALITY <b>Canada</b></span><span class="c">&lt;/&gt;</span></div>
   </div></body></html>
