@@ -65,6 +65,7 @@ async function shoot(html, id, side) {
   // re-rendered or hand-edited later without regenerating anything
   await fs.writeFile(path.join(OUT, `${id}-${side}.html`), html);
   await page.setContent(html, { waitUntil: 'networkidle' });
+  await page.evaluate(() => document.fonts.ready); // wait for Oswald/Inter to load
   await page.locator('.card').screenshot({ path: path.join(OUT, `${id}-${side}.png`) });
 }
 
