@@ -1,0 +1,49 @@
+{
+  "type": "standard",
+  "title": "Guido van Rossum",
+  "displaytitle": "<span lang=\"en\" dir=\"ltr\"><span class=\"mw-page-title-main\">Guido van Rossum</span></span>",
+  "namespace": {
+    "id": 0,
+    "text": ""
+  },
+  "wikibase_item": "Q30942",
+  "titles": {
+    "canonical": "Guido_van_Rossum",
+    "normalized": "Guido van Rossum",
+    "display": "<span lang=\"en\" dir=\"ltr\"><span class=\"mw-page-title-main\">Guido van Rossum</span></span>"
+  },
+  "pageid": 226402,
+  "thumbnail": {
+    "source": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/6b/Guido_van_Rossum_in_PyConUS24_%28cropped%29.jpg/330px-Guido_van_Rossum_in_PyConUS24_%28cropped%29.jpg",
+    "width": 330,
+    "height": 440
+  },
+  "originalimage": {
+    "source": "https://upload.wikimedia.org/wikipedia/commons/6/6b/Guido_van_Rossum_in_PyConUS24_%28cropped%29.jpg",
+    "width": 1721,
+    "height": 2293
+  },
+  "lang": "en",
+  "dir": "ltr",
+  "revision": "1358919486",
+  "tid": "745fba95-65d7-11f1-beee-64b7e3dd5944",
+  "timestamp": "2026-06-11T20:52:27Z",
+  "description": "Dutch programmer and creator of Python (born 1956)",
+  "description_source": "local",
+  "content_urls": {
+    "desktop": {
+      "page": "https://en.wikipedia.org/wiki/Guido_van_Rossum",
+      "revisions": "https://en.wikipedia.org/wiki/Guido_van_Rossum?action=history",
+      "edit": "https://en.wikipedia.org/wiki/Guido_van_Rossum?action=edit",
+      "talk": "https://en.wikipedia.org/wiki/Talk:Guido_van_Rossum"
+    },
+    "mobile": {
+      "page": "https://en.wikipedia.org/wiki/Guido_van_Rossum",
+      "revisions": "https://en.wikipedia.org/wiki/Special:History/Guido_van_Rossum",
+      "edit": "https://en.wikipedia.org/wiki/Guido_van_Rossum?action=edit",
+      "talk": "https://en.wikipedia.org/wiki/Talk:Guido_van_Rossum"
+    }
+  },
+  "extract": "Guido van Rossum is a Dutch programmer. He is the creator of the Python programming language, for which he was the \"benevolent dictator for life\" (BDFL) until he stepped down from the position on 12 July 2018. He remained a member of the Python Steering Council through 2019, and withdrew from nominations for the 2020 election.",
+  "extract_html": "<p><b>Guido van Rossum</b> is a Dutch programmer. He is the creator of the Python programming language, for which he was the \"benevolent dictator for life\" (BDFL) until he stepped down from the position on 12 July 2018. He remained a member of the Python Steering Council through 2019, and withdrew from nominations for the 2020 election.</p>"
+}

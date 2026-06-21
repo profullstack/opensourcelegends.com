@@ -1,0 +1,33 @@
+{
+  "searchinfo": {
+    "search": "Linus Torvalds"
+  },
+  "search": [
+    {
+      "id": "Q34253",
+      "title": "Q34253",
+      "pageid": 37031,
+      "concepturi": "http://www.wikidata.org/entity/Q34253",
+      "repository": "wikidata",
+      "url": "//www.wikidata.org/wiki/Q34253",
+      "display": {
+        "label": {
+          "value": "Linus Torvalds",
+          "language": "en"
+        },
+        "description": {
+          "value": "Finnish software engineer (born 1969)",
+          "language": "en"
+        }
+      },
+      "label": "Linus Torvalds",
+      "description": "Finnish software engineer (born 1969)",
+      "match": {
+        "type": "label",
+        "language": "en",
+        "text": "Linus Torvalds"
+      }
+    }
+  ],
+  "success": 1
+}

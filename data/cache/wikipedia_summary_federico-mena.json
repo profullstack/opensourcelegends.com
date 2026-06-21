@@ -1,0 +1,49 @@
+{
+  "type": "standard",
+  "title": "GNOME",
+  "displaytitle": "<span lang=\"en\" dir=\"ltr\"><span class=\"mw-page-title-main\">GNOME</span></span>",
+  "namespace": {
+    "id": 0,
+    "text": ""
+  },
+  "wikibase_item": "Q44316",
+  "titles": {
+    "canonical": "GNOME",
+    "normalized": "GNOME",
+    "display": "<span lang=\"en\" dir=\"ltr\"><span class=\"mw-page-title-main\">GNOME</span></span>"
+  },
+  "pageid": 23715667,
+  "thumbnail": {
+    "source": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/68/Gnomelogo.svg/330px-Gnomelogo.svg.png",
+    "width": 330,
+    "height": 401
+  },
+  "originalimage": {
+    "source": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/68/Gnomelogo.svg/500px-Gnomelogo.svg.png",
+    "width": 402,
+    "height": 488
+  },
+  "lang": "en",
+  "dir": "ltr",
+  "revision": "1358420801",
+  "tid": "2f772112-6352-11f1-8e75-dec15b594d89",
+  "timestamp": "2026-06-08T15:53:26Z",
+  "description": "Desktop environment for Linux and other Unix-like systems",
+  "description_source": "local",
+  "content_urls": {
+    "desktop": {
+      "page": "https://en.wikipedia.org/wiki/GNOME",
+      "revisions": "https://en.wikipedia.org/wiki/GNOME?action=history",
+      "edit": "https://en.wikipedia.org/wiki/GNOME?action=edit",
+      "talk": "https://en.wikipedia.org/wiki/Talk:GNOME"
+    },
+    "mobile": {
+      "page": "https://en.wikipedia.org/wiki/GNOME",
+      "revisions": "https://en.wikipedia.org/wiki/Special:History/GNOME",
+      "edit": "https://en.wikipedia.org/wiki/GNOME?action=edit",
+      "talk": "https://en.wikipedia.org/wiki/Talk:GNOME"
+    }
+  },
+  "extract": "GNOME is a free and open-source desktop environment for Linux and other Unix-like operating systems. It is distributed as the default desktop environment of many major Linux distributions, including Debian, Fedora Linux, Ubuntu, Red Hat Enterprise Linux, and SUSE Linux Enterprise, and is the default in Oracle Solaris, a Unix operating system.",
+  "extract_html": "<p><b>GNOME</b> is a free and open-source desktop environment for Linux and other Unix-like operating systems. It is distributed as the default desktop environment of many major Linux distributions, including Debian, Fedora Linux, Ubuntu, Red Hat Enterprise Linux, and SUSE Linux Enterprise, and is the default in Oracle Solaris, a Unix operating system.</p>"
+}

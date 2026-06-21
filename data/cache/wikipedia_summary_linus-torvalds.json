@@ -1,0 +1,49 @@
+{
+  "type": "standard",
+  "title": "Linus Torvalds",
+  "displaytitle": "<span lang=\"en\" dir=\"ltr\"><span class=\"mw-page-title-main\">Linus Torvalds</span></span>",
+  "namespace": {
+    "id": 0,
+    "text": ""
+  },
+  "wikibase_item": "Q34253",
+  "titles": {
+    "canonical": "Linus_Torvalds",
+    "normalized": "Linus Torvalds",
+    "display": "<span lang=\"en\" dir=\"ltr\"><span class=\"mw-page-title-main\">Linus Torvalds</span></span>"
+  },
+  "pageid": 17618,
+  "thumbnail": {
+    "source": "https://upload.wikimedia.org/wikipedia/commons/thumb/0/01/LinuxCon_Europe_Linus_Torvalds_03_%28cropped%29.jpg/330px-LinuxCon_Europe_Linus_Torvalds_03_%28cropped%29.jpg",
+    "width": 330,
+    "height": 459
+  },
+  "originalimage": {
+    "source": "https://upload.wikimedia.org/wikipedia/commons/0/01/LinuxCon_Europe_Linus_Torvalds_03_%28cropped%29.jpg",
+    "width": 975,
+    "height": 1357
+  },
+  "lang": "en",
+  "dir": "ltr",
+  "revision": "1358872978",
+  "tid": "858ed368-65a3-11f1-8a4e-12fd6eed8286",
+  "timestamp": "2026-06-11T14:40:42Z",
+  "description": "Finnish and American software engineer (born 1969)",
+  "description_source": "local",
+  "content_urls": {
+    "desktop": {
+      "page": "https://en.wikipedia.org/wiki/Linus_Torvalds",
+      "revisions": "https://en.wikipedia.org/wiki/Linus_Torvalds?action=history",
+      "edit": "https://en.wikipedia.org/wiki/Linus_Torvalds?action=edit",
+      "talk": "https://en.wikipedia.org/wiki/Talk:Linus_Torvalds"
+    },
+    "mobile": {
+      "page": "https://en.wikipedia.org/wiki/Linus_Torvalds",
+      "revisions": "https://en.wikipedia.org/wiki/Special:History/Linus_Torvalds",
+      "edit": "https://en.wikipedia.org/wiki/Linus_Torvalds?action=edit",
+      "talk": "https://en.wikipedia.org/wiki/Talk:Linus_Torvalds"
+    }
+  },
+  "extract": "Linus Benedict Torvalds is a Finnish and American software engineer who is the creator and lead developer of the Linux kernel since 1991. He also created the distributed version control system Git.",
+  "extract_html": "<p><b>Linus Benedict Torvalds</b> is a Finnish and American software engineer who is the creator and lead developer of the Linux kernel since 1991. He also created the distributed version control system Git.</p>"
+}

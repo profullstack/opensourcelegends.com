@@ -1,0 +1,39 @@
+{
+  "type": "standard",
+  "title": "Havoc Pennington",
+  "displaytitle": "<span lang=\"en\" dir=\"ltr\"><span class=\"mw-page-title-main\">Havoc Pennington</span></span>",
+  "namespace": {
+    "id": 0,
+    "text": ""
+  },
+  "wikibase_item": "Q2444944",
+  "titles": {
+    "canonical": "Havoc_Pennington",
+    "normalized": "Havoc Pennington",
+    "display": "<span lang=\"en\" dir=\"ltr\"><span class=\"mw-page-title-main\">Havoc Pennington</span></span>"
+  },
+  "pageid": 2089042,
+  "lang": "en",
+  "dir": "ltr",
+  "revision": "1339017160",
+  "tid": "65c45f9b-0cd9-11f1-b2b2-4fed52f92200",
+  "timestamp": "2026-02-18T14:52:08Z",
+  "description": "American computer engineer and entrepreneur",
+  "description_source": "local",
+  "content_urls": {
+    "desktop": {
+      "page": "https://en.wikipedia.org/wiki/Havoc_Pennington",
+      "revisions": "https://en.wikipedia.org/wiki/Havoc_Pennington?action=history",
+      "edit": "https://en.wikipedia.org/wiki/Havoc_Pennington?action=edit",
+      "talk": "https://en.wikipedia.org/wiki/Talk:Havoc_Pennington"
+    },
+    "mobile": {
+      "page": "https://en.wikipedia.org/wiki/Havoc_Pennington",
+      "revisions": "https://en.wikipedia.org/wiki/Special:History/Havoc_Pennington",
+      "edit": "https://en.wikipedia.org/wiki/Havoc_Pennington?action=edit",
+      "talk": "https://en.wikipedia.org/wiki/Talk:Havoc_Pennington"
+    }
+  },
+  "extract": "Robert Sanford Havoc Pennington is an American computer engineer and entrepreneur. He is known in the free software movement due to his work on HAL, GNOME, Metacity, GConf, and D-Bus.",
+  "extract_html": "<p><b>Robert Sanford Havoc Pennington</b> is an American computer engineer and entrepreneur. He is known in the free software movement due to his work on HAL, GNOME, Metacity, GConf, and D-Bus.</p>"
+}

@@ -1,0 +1,183 @@
+{
+  "searchinfo": {
+    "search": "Richard Stallman"
+  },
+  "search": [
+    {
+      "id": "Q7439",
+      "title": "Q7439",
+      "pageid": 8666,
+      "concepturi": "http://www.wikidata.org/entity/Q7439",
+      "repository": "wikidata",
+      "url": "//www.wikidata.org/wiki/Q7439",
+      "display": {
+        "label": {
+          "value": "Richard Stallman",
+          "language": "en"
+        },
+        "description": {
+          "value": "American software freedom activist, short story writer and computer programmer, founder of the GNU project",
+          "language": "en"
+        }
+      },
+      "label": "Richard Stallman",
+      "description": "American software freedom activist, short story writer and computer programmer, founder of the GNU project",
+      "match": {
+        "type": "label",
+        "language": "en",
+        "text": "Richard Stallman"
+      }
+    },
+    {
+      "id": "Q3431232",
+      "title": "Q3431232",
+      "pageid": 3268936,
+      "concepturi": "http://www.wikidata.org/entity/Q3431232",
+      "repository": "wikidata",
+      "url": "//www.wikidata.org/wiki/Q3431232",
+      "display": {
+        "label": {
+          "value": "Richard Stallman and the Free Software Revolution",
+          "language": "en"
+        },
+        "description": {
+          "value": "book by Richard Stallman",
+          "language": "en"
+        }
+      },
+      "label": "Richard Stallman and the Free Software Revolution",
+      "description": "book by Richard Stallman",
+      "match": {
+        "type": "label",
+        "language": "en",
+        "text": "Richard Stallman and the Free Software Revolution"
+      }
+    },
+    {
+      "id": "Q17659855",
+      "title": "Q17659855",
+      "pageid": 19254758,
+      "concepturi": "http://www.wikidata.org/entity/Q17659855",
+      "repository": "wikidata",
+      "url": "//www.wikidata.org/wiki/Q17659855",
+      "display": {
+        "label": {
+          "value": "Richard Stallman, founder of GNU Project confirmed safe after earthquake",
+          "language": "en"
+        },
+        "description": {
+          "value": "Wikinews article",
+          "language": "en"
+        }
+      },
+      "label": "Richard Stallman, founder of GNU Project confirmed safe after earthquake",
+      "description": "Wikinews article",
+      "match": {
+        "type": "label",
+        "language": "en",
+        "text": "Richard Stallman, founder of GNU Project confirmed safe after earthquake"
+      }
+    },
+    {
+      "id": "Q17982249",
+      "title": "Q17982249",
+      "pageid": 19515439,
+      "concepturi": "http://www.wikidata.org/entity/Q17982249",
+      "repository": "wikidata",
+      "url": "//www.wikidata.org/wiki/Q17982249",
+      "display": {
+        "label": {
+          "value": "Richard Stallman członkiem zarządu Free Network Foundation",
+          "language": "pl"
+        },
+        "description": {
+          "value": "Wikinews article",
+          "language": "en"
+        }
+      },
+      "label": "Richard Stallman członkiem zarządu Free Network Foundation",
+      "description": "Wikinews article",
+      "match": {
+        "type": "label",
+        "language": "pl",
+        "text": "Richard Stallman członkiem zarządu Free Network Foundation"
+      }
+    },
+    {
+      "id": "Q17942212",
+      "title": "Q17942212",
+      "pageid": 19487029,
+      "concepturi": "http://www.wikidata.org/entity/Q17942212",
+      "repository": "wikidata",
+      "url": "//www.wikidata.org/wiki/Q17942212",
+      "display": {
+        "label": {
+          "value": "Richard Stallman realiza una gira por Uruguay y Argentina en abril de 2010",
+          "language": "ga"
+        },
+        "description": {
+          "value": "Wikinews article",
+          "language": "en"
+        }
+      },
+      "label": "Richard Stallman realiza una gira por Uruguay y Argentina en abril de 2010",
+      "description": "Wikinews article",
+      "match": {
+        "type": "label",
+        "language": "ga",
+        "text": "Richard Stallman realiza una gira por Uruguay y Argentina en abril de 2010"
+      }
+    },
+    {
+      "id": "Q17955251",
+      "title": "Q17955251",
+      "pageid": 19497789,
+      "concepturi": "http://www.wikidata.org/entity/Q17955251",
+      "repository": "wikidata",
+      "url": "//www.wikidata.org/wiki/Q17955251",
+      "display": {
+        "label": {
+          "value": "Richard Stallman attaccato dai ninja all'università di Yale",
+          "language": "it"
+        },
+        "description": {
+          "value": "Wikinews article",
+          "language": "en"
+        }
+      },
+      "label": "Richard Stallman attaccato dai ninja all'università di Yale",
+      "description": "Wikinews article",
+      "match": {
+        "type": "label",
+        "language": "it",
+        "text": "Richard Stallman attaccato dai ninja all'università di Yale"
+      }
+    },
+    {
+      "id": "Q126672633",
+      "title": "Q126672633",
+      "pageid": 120690655,
+      "concepturi": "http://www.wikidata.org/entity/Q126672633",
+      "repository": "wikidata",
+      "url": "//www.wikidata.org/wiki/Q126672633",
+      "display": {
+        "label": {
+          "value": "Richard Stallman et la révolution du logiciel libre",
+          "language": "fr"
+        },
+        "description": {
+          "value": "book edition (fr)",
+          "language": "en"
+        }
+      },
+      "label": "Richard Stallman et la révolution du logiciel libre",
+      "description": "book edition (fr)",
+      "match": {
+        "type": "label",
+        "language": "fr",
+        "text": "Richard Stallman et la révolution du logiciel libre"
+      }
+    }
+  ],
+  "success": 1
+}

@@ -1,0 +1,61 @@
+{
+  "searchinfo": {
+    "search": "Miguel de Icaza"
+  },
+  "search": [
+    {
+      "id": "Q62849",
+      "title": "Q62849",
+      "pageid": 65592,
+      "concepturi": "http://www.wikidata.org/entity/Q62849",
+      "repository": "wikidata",
+      "url": "//www.wikidata.org/wiki/Q62849",
+      "display": {
+        "label": {
+          "value": "Miguel de Icaza",
+          "language": "en"
+        },
+        "description": {
+          "value": "Mexican free software developer",
+          "language": "en"
+        }
+      },
+      "label": "Miguel de Icaza",
+      "description": "Mexican free software developer",
+      "match": {
+        "type": "label",
+        "language": "en",
+        "text": "Miguel de Icaza"
+      }
+    },
+    {
+      "id": "Q81762841",
+      "title": "Q81762841",
+      "pageid": 81122161,
+      "concepturi": "http://www.wikidata.org/entity/Q81762841",
+      "repository": "wikidata",
+      "url": "//www.wikidata.org/wiki/Q81762841",
+      "display": {
+        "label": {
+          "value": "Alex Marín De Icaza",
+          "language": "en"
+        },
+        "description": {
+          "value": "Mexican researcher",
+          "language": "en"
+        }
+      },
+      "label": "Alex Marín De Icaza",
+      "description": "Mexican researcher",
+      "match": {
+        "type": "alias",
+        "language": "en",
+        "text": "Miguel de Icaza Herrera"
+      },
+      "aliases": [
+        "Miguel de Icaza Herrera"
+      ]
+    }
+  ],
+  "success": 1
+}

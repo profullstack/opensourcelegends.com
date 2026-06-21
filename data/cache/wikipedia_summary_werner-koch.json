@@ -1,0 +1,49 @@
+{
+  "type": "standard",
+  "title": "Werner Koch",
+  "displaytitle": "<span lang=\"en\" dir=\"ltr\"><span class=\"mw-page-title-main\">Werner Koch</span></span>",
+  "namespace": {
+    "id": 0,
+    "text": ""
+  },
+  "wikibase_item": "Q3567326",
+  "titles": {
+    "canonical": "Werner_Koch",
+    "normalized": "Werner Koch",
+    "display": "<span lang=\"en\" dir=\"ltr\"><span class=\"mw-page-title-main\">Werner Koch</span></span>"
+  },
+  "pageid": 430503,
+  "thumbnail": {
+    "source": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/44/Werner_Koch_Portrait_01.2015-2.jpg/330px-Werner_Koch_Portrait_01.2015-2.jpg",
+    "width": 330,
+    "height": 330
+  },
+  "originalimage": {
+    "source": "https://upload.wikimedia.org/wikipedia/commons/4/44/Werner_Koch_Portrait_01.2015-2.jpg",
+    "width": 960,
+    "height": 960
+  },
+  "lang": "en",
+  "dir": "ltr",
+  "revision": "1347797276",
+  "tid": "a8c6be2e-3393-11f1-b226-8a8facddc168",
+  "timestamp": "2026-04-08T21:41:11Z",
+  "description": "German free software developer (born 1961)",
+  "description_source": "local",
+  "content_urls": {
+    "desktop": {
+      "page": "https://en.wikipedia.org/wiki/Werner_Koch",
+      "revisions": "https://en.wikipedia.org/wiki/Werner_Koch?action=history",
+      "edit": "https://en.wikipedia.org/wiki/Werner_Koch?action=edit",
+      "talk": "https://en.wikipedia.org/wiki/Talk:Werner_Koch"
+    },
+    "mobile": {
+      "page": "https://en.wikipedia.org/wiki/Werner_Koch",
+      "revisions": "https://en.wikipedia.org/wiki/Special:History/Werner_Koch",
+      "edit": "https://en.wikipedia.org/wiki/Werner_Koch?action=edit",
+      "talk": "https://en.wikipedia.org/wiki/Talk:Werner_Koch"
+    }
+  },
+  "extract": "Werner Koch is a German free software developer. He is best known as the principal author of the GNU Privacy Guard. He was also Head of Office and German Vice-Chancellor of the Free Software Foundation Europe. He is the winner of Award for the Advancement of Free Software in 2015 for founding GnuPG.",
+  "extract_html": "<p><b>Werner Koch</b> is a German free software developer. He is best known as the principal author of the GNU Privacy Guard. He was also Head of Office and German Vice-Chancellor of the Free Software Foundation Europe. He is the winner of Award for the Advancement of Free Software in 2015 for founding GnuPG.</p>"
+}

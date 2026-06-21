@@ -1,0 +1,49 @@
+{
+  "type": "standard",
+  "title": "Miguel de Icaza",
+  "displaytitle": "<span lang=\"en\" dir=\"ltr\"><span class=\"mw-page-title-main\">Miguel de Icaza</span></span>",
+  "namespace": {
+    "id": 0,
+    "text": ""
+  },
+  "wikibase_item": "Q62849",
+  "titles": {
+    "canonical": "Miguel_de_Icaza",
+    "normalized": "Miguel de Icaza",
+    "display": "<span lang=\"en\" dir=\"ltr\"><span class=\"mw-page-title-main\">Miguel de Icaza</span></span>"
+  },
+  "pageid": 20757,
+  "thumbnail": {
+    "source": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/9c/Miguel_de_Icaza_%282023-11-04%29.jpg/330px-Miguel_de_Icaza_%282023-11-04%29.jpg",
+    "width": 330,
+    "height": 556
+  },
+  "originalimage": {
+    "source": "https://upload.wikimedia.org/wikipedia/commons/9/9c/Miguel_de_Icaza_%282023-11-04%29.jpg",
+    "width": 1473,
+    "height": 2481
+  },
+  "lang": "en",
+  "dir": "ltr",
+  "revision": "1360348092",
+  "tid": "7a9f13e4-6cfc-11f1-a3f3-552d6a224ec6",
+  "timestamp": "2026-06-20T23:05:07Z",
+  "description": "Mexican free software developer (born 1972)",
+  "description_source": "local",
+  "content_urls": {
+    "desktop": {
+      "page": "https://en.wikipedia.org/wiki/Miguel_de_Icaza",
+      "revisions": "https://en.wikipedia.org/wiki/Miguel_de_Icaza?action=history",
+      "edit": "https://en.wikipedia.org/wiki/Miguel_de_Icaza?action=edit",
+      "talk": "https://en.wikipedia.org/wiki/Talk:Miguel_de_Icaza"
+    },
+    "mobile": {
+      "page": "https://en.wikipedia.org/wiki/Miguel_de_Icaza",
+      "revisions": "https://en.wikipedia.org/wiki/Special:History/Miguel_de_Icaza",
+      "edit": "https://en.wikipedia.org/wiki/Miguel_de_Icaza?action=edit",
+      "talk": "https://en.wikipedia.org/wiki/Talk:Miguel_de_Icaza"
+    }
+  },
+  "extract": "Miguel de Icaza is a Mexican-American programmer and activist, best known for starting the GNOME, Mono, and Xamarin projects.",
+  "extract_html": "<p><b>Miguel de Icaza</b> is a Mexican-American programmer and activist, best known for starting the GNOME, Mono, and Xamarin projects.</p>"
+}

@@ -1,0 +1,49 @@
+{
+  "type": "standard",
+  "title": "Richard Stallman",
+  "displaytitle": "<span lang=\"en\" dir=\"ltr\"><span class=\"mw-page-title-main\">Richard Stallman</span></span>",
+  "namespace": {
+    "id": 0,
+    "text": ""
+  },
+  "wikibase_item": "Q7439",
+  "titles": {
+    "canonical": "Richard_Stallman",
+    "normalized": "Richard Stallman",
+    "display": "<span lang=\"en\" dir=\"ltr\"><span class=\"mw-page-title-main\">Richard Stallman</span></span>"
+  },
+  "pageid": 3434143,
+  "thumbnail": {
+    "source": "https://upload.wikimedia.org/wikipedia/commons/thumb/3/38/Richard_Stallman_Bologna_2024_abc1.jpg/330px-Richard_Stallman_Bologna_2024_abc1.jpg",
+    "width": 330,
+    "height": 428
+  },
+  "originalimage": {
+    "source": "https://upload.wikimedia.org/wikipedia/commons/3/38/Richard_Stallman_Bologna_2024_abc1.jpg",
+    "width": 2023,
+    "height": 2623
+  },
+  "lang": "en",
+  "dir": "ltr",
+  "revision": "1358826053",
+  "tid": "a6303d1c-6555-11f1-b3ca-da6f8e0ff17f",
+  "timestamp": "2026-06-11T05:23:16Z",
+  "description": "American activist and programmer (born 1953)",
+  "description_source": "local",
+  "content_urls": {
+    "desktop": {
+      "page": "https://en.wikipedia.org/wiki/Richard_Stallman",
+      "revisions": "https://en.wikipedia.org/wiki/Richard_Stallman?action=history",
+      "edit": "https://en.wikipedia.org/wiki/Richard_Stallman?action=edit",
+      "talk": "https://en.wikipedia.org/wiki/Talk:Richard_Stallman"
+    },
+    "mobile": {
+      "page": "https://en.wikipedia.org/wiki/Richard_Stallman",
+      "revisions": "https://en.wikipedia.org/wiki/Special:History/Richard_Stallman",
+      "edit": "https://en.wikipedia.org/wiki/Richard_Stallman?action=edit",
+      "talk": "https://en.wikipedia.org/wiki/Talk:Richard_Stallman"
+    }
+  },
+  "extract": "Richard Matthew Stallman, also known by his initials rms, is an American free software movement activist and programmer. He campaigns for software to be distributed in such a manner that its users have the freedom to use, study, distribute, and modify that software. Software which ensures these freedoms is termed free software. Stallman launched the GNU Project, founded the Free Software Foundation (FSF) in October 1985, developed the GNU C Compiler and GNU Emacs, and wrote all versions of the GNU General Public License.",
+  "extract_html": "<p><b>Richard Matthew Stallman</b>, also known by his initials <b>rms</b>, is an American free software movement activist and programmer. He campaigns for software to be distributed in such a manner that its users have the freedom to use, study, distribute, and modify that software. Software which ensures these freedoms is termed free software. Stallman launched the GNU Project, founded the Free Software Foundation (FSF) in October 1985, developed the GNU C Compiler and GNU Emacs, and wrote all versions of the GNU General Public License.</p>"
+}

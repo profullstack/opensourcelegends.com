@@ -1,0 +1,1425 @@
+{
+  "entities": {
+    "Q2041395": {
+      "pageid": 1969090,
+      "ns": 0,
+      "title": "Q2041395",
+      "lastrevid": 2493584294,
+      "modified": "2026-05-18T06:12:57Z",
+      "type": "item",
+      "id": "Q2041395",
+      "labels": {
+        "pt": {
+          "language": "pt",
+          "value": "Federico Mena"
+        },
+        "sk": {
+          "language": "sk",
+          "value": "Federico Mena"
+        },
+        "eu": {
+          "language": "eu",
+          "value": "Federico Mena"
+        },
+        "fr": {
+          "language": "fr",
+          "value": "Federico Mena"
+        },
+        "es": {
+          "language": "es",
+          "value": "Federico Mena"
+        },
+        "en": {
+          "language": "en",
+          "value": "Federico Mena"
+        },
+        "ca": {
+          "language": "ca",
+          "value": "Federico Mena Quintero"
+        },
+        "it": {
+          "language": "it",
+          "value": "Federico Mena"
+        },
+        "ja": {
+          "language": "ja",
+          "value": "フェデリコ・メーナ"
+        },
+        "cs": {
+          "language": "cs",
+          "value": "Federico Mena"
+        },
+        "ar": {
+          "language": "ar",
+          "value": "فيديريكو مينا"
+        },
+        "zh": {
+          "language": "zh",
+          "value": "費德里科·梅納"
+        },
+        "nb": {
+          "language": "nb",
+          "value": "Federico Mena Quintero"
+        },
+        "da": {
+          "language": "da",
+          "value": "Federico Mena"
+        },
+        "nn": {
+          "language": "nn",
+          "value": "Federico Mena"
+        },
+        "sv": {
+          "language": "sv",
+          "value": "Federico Mena"
+        },
+        "de": {
+          "language": "de",
+          "value": "Federico Mena"
+        },
+        "nl": {
+          "language": "nl",
+          "value": "Federico Mena"
+        },
+        "sl": {
+          "language": "sl",
+          "value": "Federico Mena"
+        },
+        "pt-br": {
+          "language": "pt-br",
+          "value": "Federico Mena"
+        },
+        "ast": {
+          "language": "ast",
+          "value": "Federico Mena"
+        },
+        "ga": {
+          "language": "ga",
+          "value": "Federico Mena"
+        },
+        "kea": {
+          "language": "kea",
+          "value": "Federico Mena"
+        },
+        "sq": {
+          "language": "sq",
+          "value": "Federico Mena"
+        },
+        "arz": {
+          "language": "arz",
+          "value": "فيديريكو مينا"
+        },
+        "zh-hant": {
+          "language": "zh-hant",
+          "value": "費德里科·梅納"
+        },
+        "ru": {
+          "language": "ru",
+          "value": "Федерико Мена-Кинтеро"
+        }
+      },
+      "descriptions": {
+        "fa": {
+          "language": "fa",
+          "value": "دانشمند علوم کامپیوتر مکزیکی"
+        },
+        "nb": {
+          "language": "nb",
+          "value": "meksikansk informatiker"
+        },
+        "da": {
+          "language": "da",
+          "value": "mexicansk informatiker"
+        },
+        "nn": {
+          "language": "nn",
+          "value": "meksikansk informatikar"
+        },
+        "sv": {
+          "language": "sv",
+          "value": "mexikansk datavetare"
+        },
+        "en": {
+          "language": "en",
+          "value": "Mexican computer scientist and programmer"
+        },
+        "nl": {
+          "language": "nl",
+          "value": "informaticus uit Mexico"
+        },
+        "it": {
+          "language": "it",
+          "value": "informatico messicano"
+        },
+        "de": {
+          "language": "de",
+          "value": "mexikanischer Informatiker und Programmierer"
+        },
+        "pt": {
+          "language": "pt",
+          "value": "informático mexicano"
+        },
+        "kea": {
+          "language": "kea",
+          "value": "informátiku mexikanu"
+        },
+        "ja": {
+          "language": "ja",
+          "value": "メキシコ出身のコンピューター・プログラマー"
+        },
+        "cs": {
+          "language": "cs",
+          "value": "mexický programátor"
+        },
+        "arz": {
+          "language": "arz",
+          "value": "مبرمج من الميكسيك"
+        },
+        "fr": {
+          "language": "fr",
+          "value": "informaticien mexicain"
+        },
+        "bn": {
+          "language": "bn",
+          "value": "মেক্সিকান কম্পিউটার বিজ্ঞানী ও প্রোগ্রামার"
+        }
+      },
+      "aliases": {
+        "pt": [
+          {
+            "language": "pt",
+            "value": "Federico Mena Quintero"
+          },
+          {
+            "language": "pt",
+            "value": "Federico Mena-Quintero"
+          }
+        ],
+        "ru": [
+          {
+            "language": "ru",
+            "value": "Мена Федерико"
+          },
+          {
+            "language": "ru",
+            "value": "Мена, Федерико"
+          },
+          {
+            "language": "ru",
+            "value": "Федерико Мена"
+          },
+          {
+            "language": "ru",
+            "value": "Федерико Мена-Кинтеро"
+          },
+          {
+            "language": "ru",
+            "value": "Мена-Кинтеро, Федерико"
+          }
+        ],
+        "es": [
+          {
+            "language": "es",
+            "value": "Federico Mena Quintero"
+          },
+          {
+            "language": "es",
+            "value": "Federico Mena-Quintero"
+          }
+        ],
+        "cs": [
+          {
+            "language": "cs",
+            "value": "Federico Mena Quintero"
+          }
+        ],
+        "ar": [
+          {
+            "language": "ar",
+            "value": "فيديريكو مينا كوينترو"
+          },
+          {
+            "language": "ar",
+            "value": "Federico Mena"
+          },
+          {
+            "language": "ar",
+            "value": "Federico Mena Quintero"
+          }
+        ],
+        "en": [
+          {
+            "language": "en",
+            "value": "Federico Mena Quintero"
+          },
+          {
+            "language": "en",
+            "value": "Federico Mena-Quintero"
+          }
+        ],
+        "de": [
+          {
+            "language": "de",
+            "value": "Federico Mena Quintero"
+          }
+        ],
+        "kea": [
+          {
+            "language": "kea",
+            "value": "Federico Mena Quintero"
+          },
+          {
+            "language": "kea",
+            "value": "Federico Mena-Quintero"
+          }
+        ],
+        "eu": [
+          {
+            "language": "eu",
+            "value": "Federico Mena Quintero"
+          }
+        ]
+      },
+      "claims": {
+        "P21": [
+          {
+            "mainsnak": {
+              "snaktype": "value",
+              "property": "P21",
+              "hash": "85ad4b1c7348f7a5aac521135040d74e91fb5939",
+              "datavalue": {
+                "value": {
+                  "entity-type": "item",
+                  "numeric-id": 6581097,
+                  "id": "Q6581097"
+                },
+                "type": "wikibase-entityid"
+              },
+              "datatype": "wikibase-item"
+            },
+            "type": "statement",
+            "id": "q2041395$84375C4E-6262-43A3-B7B9-9E0414D98DF7",
+            "rank": "normal",
+            "references": [
+              {
+                "hash": "c456dc5cd2117249948c288206ff3f8b1bf574f0",
+                "snaks": {
+                  "P143": [
+                    {
+                      "snaktype": "value",
+                      "property": "P143",
+                      "hash": "e17507043402fe54ae6c4d65cc51f46cec987de9",
+                      "datavalue": {
+                        "value": {
+                          "entity-type": "item",
+                          "numeric-id": 8449,
+                          "id": "Q8449"
+                        },
+                        "type": "wikibase-entityid"
+                      },
+                      "datatype": "wikibase-item"
+                    }
+                  ]
+                },
+                "snaks-order": [
+                  "P143"
+                ]
+              },
+              {
+                "hash": "d5847b9b6032aa8b13dae3c2dfd9ed5d114d21b3",
+                "snaks": {
+                  "P143": [
+                    {
+                      "snaktype": "value",
+                      "property": "P143",
+                      "hash": "5a343e7e758a4282a01316d3e959b6e653b767fc",
+                      "datavalue": {
+                        "value": {
+                          "entity-type": "item",
+                          "numeric-id": 11920,
+                          "id": "Q11920"
+                        },
+                        "type": "wikibase-entityid"
+                      },
+                      "datatype": "wikibase-item"
+                    }
+                  ]
+                },
+                "snaks-order": [
+                  "P143"
+                ]
+              }
+            ]
+          }
+        ],
+        "P31": [
+          {
+            "mainsnak": {
+              "snaktype": "value",
+              "property": "P31",
+              "hash": "ad7d38a03cdd40cdc373de0dc4e7b7fcbccb31d9",
+              "datavalue": {
+                "value": {
+                  "entity-type": "item",
+                  "numeric-id": 5,
+                  "id": "Q5"
+                },
+                "type": "wikibase-entityid"
+              },
+              "datatype": "wikibase-item"
+            },
+            "type": "statement",
+            "id": "Q2041395$B000735A-5987-4807-9E87-B28C001AE442",
+            "rank": "normal",
+            "references": [
+              {
+                "hash": "288ab581e7d2d02995a26dfa8b091d96e78457fc",
+                "snaks": {
+                  "P143": [
+                    {
+                      "snaktype": "value",
+                      "property": "P143",
+                      "hash": "6a164248fc96bfa583bbb495cb63ae6401ec203c",
+                      "datavalue": {
+                        "value": {
+                          "entity-type": "item",
+                          "numeric-id": 206855,
+                          "id": "Q206855"
+                        },
+                        "type": "wikibase-entityid"
+                      },
+                      "datatype": "wikibase-item"
+                    }
+                  ]
+                },
+                "snaks-order": [
+                  "P143"
+                ]
+              }
+            ]
+          }
+        ],
+        "P646": [
+          {
+            "mainsnak": {
+              "snaktype": "value",
+              "property": "P646",
+              "hash": "2178a4b8f2651fe0fdbbe2e7f2a323ecd1d4ce11",
+              "datavalue": {
+                "value": "/m/01429b",
+                "type": "string"
+              },
+              "datatype": "external-id"
+            },
+            "type": "statement",
+            "id": "Q2041395$F811D2F2-E0AD-455F-963B-1E7842C6694E",
+            "rank": "normal",
+            "references": [
+              {
+                "hash": "2b00cb481cddcac7623114367489b5c194901c4a",
+                "snaks": {
+                  "P248": [
+                    {
+                      "snaktype": "value",
+                      "property": "P248",
+                      "hash": "a94b740202b097dd33355e0e6c00e54b9395e5e0",
+                      "datavalue": {
+                        "value": {
+                          "entity-type": "item",
+                          "numeric-id": 15241312,
+                          "id": "Q15241312"
+                        },
+                        "type": "wikibase-entityid"
+                      },
+                      "datatype": "wikibase-item"
+                    }
+                  ],
+                  "P577": [
+                    {
+                      "snaktype": "value",
+                      "property": "P577",
+                      "hash": "fde79ecb015112d2f29229ccc1ec514ed3e71fa2",
+                      "datavalue": {
+                        "value": {
+                          "time": "+2013-10-28T00:00:00Z",
+                          "timezone": 0,
+                          "before": 0,
+                          "after": 0,
+                          "precision": 11,
+                          "calendarmodel": "http://www.wikidata.org/entity/Q1985727"
+                        },
+                        "type": "time"
+                      },
+                      "datatype": "time"
+                    }
+                  ]
+                },
+                "snaks-order": [
+                  "P248",
+                  "P577"
+                ]
+              }
+            ]
+          }
+        ],
+        "P18": [
+          {
+            "mainsnak": {
+              "snaktype": "value",
+              "property": "P18",
+              "hash": "7fcfde67d6d3c40295b6c9ce39640b44c23c8618",
+              "datavalue": {
+                "value": "Federico Mena Quintero.jpg",
+                "type": "string"
+              },
+              "datatype": "commonsMedia"
+            },
+            "type": "statement",
+            "id": "Q2041395$BF4D08C1-32D0-452C-8709-3AF1F118B1E4",
+            "rank": "normal",
+            "references": [
+              {
+                "hash": "d4bd87b862b12d99d26e86472d44f26858dee639",
+                "snaks": {
+                  "P143": [
+                    {
+                      "snaktype": "value",
+                      "property": "P143",
+                      "hash": "f30cbd35620c4ea6d0633aaf0210a8916130469b",
+                      "datavalue": {
+                        "value": {
+                          "entity-type": "item",
+                          "numeric-id": 8447,
+                          "id": "Q8447"
+                        },
+                        "type": "wikibase-entityid"
+                      },
+                      "datatype": "wikibase-item"
+                    }
+                  ]
+                },
+                "snaks-order": [
+                  "P143"
+                ]
+              }
+            ]
+          }
+        ],
+        "P106": [
+          {
+            "mainsnak": {
+              "snaktype": "value",
+              "property": "P106",
+              "hash": "857148c2e53b4ebd290b5954382ce601e294a4df",
+              "datavalue": {
+                "value": {
+                  "entity-type": "item",
+                  "numeric-id": 82594,
+                  "id": "Q82594"
+                },
+                "type": "wikibase-entityid"
+              },
+              "datatype": "wikibase-item"
+            },
+            "type": "statement",
+            "id": "Q2041395$6D41DB59-20CA-4D70-B999-819F0C4F67CE",
+            "rank": "normal",
+            "references": [
+              {
+                "hash": "d5847b9b6032aa8b13dae3c2dfd9ed5d114d21b3",
+                "snaks": {
+                  "P143": [
+                    {
+                      "snaktype": "value",
+                      "property": "P143",
+                      "hash": "5a343e7e758a4282a01316d3e959b6e653b767fc",
+                      "datavalue": {
+                        "value": {
+                          "entity-type": "item",
+                          "numeric-id": 11920,
+                          "id": "Q11920"
+                        },
+                        "type": "wikibase-entityid"
+                      },
+                      "datatype": "wikibase-item"
+                    }
+                  ]
+                },
+                "snaks-order": [
+                  "P143"
+                ]
+              }
+            ]
+          },
+          {
+            "mainsnak": {
+              "snaktype": "value",
+              "property": "P106",
+              "hash": "74f22c5d4810e4f584b097a8966372c952c76b4d",
+              "datavalue": {
+                "value": {
+                  "entity-type": "item",
+                  "numeric-id": 5482740,
+                  "id": "Q5482740"
+                },
+                "type": "wikibase-entityid"
+              },
+              "datatype": "wikibase-item"
+            },
+            "type": "statement",
+            "id": "Q2041395$D669F312-CF25-4ECB-9B10-42596F96DFAB",
+            "rank": "normal"
+          }
+        ],
+        "P27": [
+          {
+            "mainsnak": {
+              "snaktype": "value",
+              "property": "P27",
+              "hash": "2e422b96b5d75d047676bbb1c208a6d5aafd8770",
+              "datavalue": {
+                "value": {
+                  "entity-type": "item",
+                  "numeric-id": 96,
+                  "id": "Q96"
+                },
+                "type": "wikibase-entityid"
+              },
+              "datatype": "wikibase-item"
+            },
+            "type": "statement",
+            "id": "Q2041395$C259786A-F3A7-4D6D-932C-8692C1FEB76F",
+            "rank": "normal",
+            "references": [
+              {
+                "hash": "d5847b9b6032aa8b13dae3c2dfd9ed5d114d21b3",
+                "snaks": {
+                  "P143": [
+                    {
+                      "snaktype": "value",
+                      "property": "P143",
+                      "hash": "5a343e7e758a4282a01316d3e959b6e653b767fc",
+                      "datavalue": {
+                        "value": {
+                          "entity-type": "item",
+                          "numeric-id": 11920,
+                          "id": "Q11920"
+                        },
+                        "type": "wikibase-entityid"
+                      },
+                      "datatype": "wikibase-item"
+                    }
+                  ]
+                },
+                "snaks-order": [
+                  "P143"
+                ]
+              }
+            ]
+          }
+        ],
+        "P69": [
+          {
+            "mainsnak": {
+              "snaktype": "value",
+              "property": "P69",
+              "hash": "ba84bda578753e4e28851956d4981810c6976e00",
+              "datavalue": {
+                "value": {
+                  "entity-type": "item",
+                  "numeric-id": 222738,
+                  "id": "Q222738"
+                },
+                "type": "wikibase-entityid"
+              },
+              "datatype": "wikibase-item"
+            },
+            "type": "statement",
+            "id": "Q2041395$9CDA6CE8-EF45-45A4-A653-BC111EFB2D53",
+            "rank": "normal"
+          }
+        ],
+        "P735": [
+          {
+            "mainsnak": {
+              "snaktype": "value",
+              "property": "P735",
+              "hash": "2616b73c96675db67aae112778ee37942fdc2ce3",
+              "datavalue": {
+                "value": {
+                  "entity-type": "item",
+                  "numeric-id": 17539144,
+                  "id": "Q17539144"
+                },
+                "type": "wikibase-entityid"
+              },
+              "datatype": "wikibase-item"
+            },
+            "type": "statement",
+            "id": "Q2041395$B0593855-8AA1-45E5-A317-F1FAA2F99F60",
+            "rank": "normal",
+            "references": [
+              {
+                "hash": "323be97becfd18ea6625da4b3770079385901a18",
+                "snaks": {
+                  "P887": [
+                    {
+                      "snaktype": "value",
+                      "property": "P887",
+                      "hash": "b40d6c0ac6eb965460f92fade101fe40a3c44239",
+                      "datavalue": {
+                        "value": {
+                          "entity-type": "item",
+                          "numeric-id": 97033143,
+                          "id": "Q97033143"
+                        },
+                        "type": "wikibase-entityid"
+                      },
+                      "datatype": "wikibase-item"
+                    }
+                  ]
+                },
+                "snaks-order": [
+                  "P887"
+                ]
+              }
+            ]
+          }
+        ],
+        "P569": [
+          {
+            "mainsnak": {
+              "snaktype": "value",
+              "property": "P569",
+              "hash": "51522571141388657aa9f318133df33a4d4d645b",
+              "datavalue": {
+                "value": {
+                  "time": "+1976-07-29T00:00:00Z",
+                  "timezone": 0,
+                  "before": 0,
+                  "after": 0,
+                  "precision": 11,
+                  "calendarmodel": "http://www.wikidata.org/entity/Q1985727"
+                },
+                "type": "time"
+              },
+              "datatype": "time"
+            },
+            "type": "statement",
+            "id": "Q2041395$C5FE4A2A-1C11-4322-A4E3-717B0F269676",
+            "rank": "normal",
+            "references": [
+              {
+                "hash": "d5847b9b6032aa8b13dae3c2dfd9ed5d114d21b3",
+                "snaks": {
+                  "P143": [
+                    {
+                      "snaktype": "value",
+                      "property": "P143",
+                      "hash": "5a343e7e758a4282a01316d3e959b6e653b767fc",
+                      "datavalue": {
+                        "value": {
+                          "entity-type": "item",
+                          "numeric-id": 11920,
+                          "id": "Q11920"
+                        },
+                        "type": "wikibase-entityid"
+                      },
+                      "datatype": "wikibase-item"
+                    }
+                  ]
+                },
+                "snaks-order": [
+                  "P143"
+                ]
+              }
+            ]
+          }
+        ],
+        "P373": [
+          {
+            "mainsnak": {
+              "snaktype": "value",
+              "property": "P373",
+              "hash": "70d442925026c9c815f02c4556b0ee41ff763e72",
+              "datavalue": {
+                "value": "Federico Mena",
+                "type": "string"
+              },
+              "datatype": "string"
+            },
+            "type": "statement",
+            "id": "Q2041395$DAECA785-E34C-4F35-82E3-E69EB5292BE9",
+            "rank": "normal"
+          }
+        ],
+        "P19": [
+          {
+            "mainsnak": {
+              "snaktype": "value",
+              "property": "P19",
+              "hash": "3585ef355f99275e04b56a0e10e1984c33fa03b6",
+              "datavalue": {
+                "value": {
+                  "entity-type": "item",
+                  "numeric-id": 1489,
+                  "id": "Q1489"
+                },
+                "type": "wikibase-entityid"
+              },
+              "datatype": "wikibase-item"
+            },
+            "type": "statement",
+            "id": "Q2041395$3a4bb9f0-ad12-4dd3-9886-ebfcb8f99af6",
+            "rank": "normal",
+            "references": [
+              {
+                "hash": "d5847b9b6032aa8b13dae3c2dfd9ed5d114d21b3",
+                "snaks": {
+                  "P143": [
+                    {
+                      "snaktype": "value",
+                      "property": "P143",
+                      "hash": "5a343e7e758a4282a01316d3e959b6e653b767fc",
+                      "datavalue": {
+                        "value": {
+                          "entity-type": "item",
+                          "numeric-id": 11920,
+                          "id": "Q11920"
+                        },
+                        "type": "wikibase-entityid"
+                      },
+                      "datatype": "wikibase-item"
+                    }
+                  ]
+                },
+                "snaks-order": [
+                  "P143"
+                ]
+              }
+            ]
+          }
+        ],
+        "P734": [
+          {
+            "mainsnak": {
+              "snaktype": "value",
+              "property": "P734",
+              "hash": "7db43dab1c33055ebab8779b0672d6066f6f7d3e",
+              "datavalue": {
+                "value": {
+                  "entity-type": "item",
+                  "numeric-id": 16290702,
+                  "id": "Q16290702"
+                },
+                "type": "wikibase-entityid"
+              },
+              "datatype": "wikibase-item"
+            },
+            "type": "statement",
+            "qualifiers": {
+              "P1545": [
+                {
+                  "snaktype": "value",
+                  "property": "P1545",
+                  "hash": "2a1ced1dca90648ea7e306acbadd74fc81a10722",
+                  "datavalue": {
+                    "value": "1",
+                    "type": "string"
+                  },
+                  "datatype": "string"
+                }
+              ]
+            },
+            "qualifiers-order": [
+              "P1545"
+            ],
+            "id": "Q2041395$6DA7DF78-D519-4EB5-99E7-1E9BF4CA37B9",
+            "rank": "normal",
+            "references": [
+              {
+                "hash": "323be97becfd18ea6625da4b3770079385901a18",
+                "snaks": {
+                  "P887": [
+                    {
+                      "snaktype": "value",
+                      "property": "P887",
+                      "hash": "b40d6c0ac6eb965460f92fade101fe40a3c44239",
+                      "datavalue": {
+                        "value": {
+                          "entity-type": "item",
+                          "numeric-id": 97033143,
+                          "id": "Q97033143"
+                        },
+                        "type": "wikibase-entityid"
+                      },
+                      "datatype": "wikibase-item"
+                    }
+                  ]
+                },
+                "snaks-order": [
+                  "P887"
+                ]
+              }
+            ]
+          },
+          {
+            "mainsnak": {
+              "snaktype": "value",
+              "property": "P734",
+              "hash": "2ffb698ae91bd49507b46e8162281320ebd08312",
+              "datavalue": {
+                "value": {
+                  "entity-type": "item",
+                  "numeric-id": 7272402,
+                  "id": "Q7272402"
+                },
+                "type": "wikibase-entityid"
+              },
+              "datatype": "wikibase-item"
+            },
+            "type": "statement",
+            "qualifiers": {
+              "P1545": [
+                {
+                  "snaktype": "value",
+                  "property": "P1545",
+                  "hash": "7241753c62a310cf84895620ea82250dcea65835",
+                  "datavalue": {
+                    "value": "2",
+                    "type": "string"
+                  },
+                  "datatype": "string"
+                }
+              ]
+            },
+            "qualifiers-order": [
+              "P1545"
+            ],
+            "id": "Q2041395$ac50e57a-4dd4-f4e3-82ea-63817a6df667",
+            "rank": "normal"
+          }
+        ],
+        "P1412": [
+          {
+            "mainsnak": {
+              "snaktype": "value",
+              "property": "P1412",
+              "hash": "7056615ebf0fbde82a3ca3bb9b2c481669a46eb1",
+              "datavalue": {
+                "value": {
+                  "entity-type": "item",
+                  "numeric-id": 1860,
+                  "id": "Q1860"
+                },
+                "type": "wikibase-entityid"
+              },
+              "datatype": "wikibase-item"
+            },
+            "type": "statement",
+            "id": "q2041395$31da5e72-4f94-a234-4b03-59bfdf7c9ca2",
+            "rank": "normal"
+          },
+          {
+            "mainsnak": {
+              "snaktype": "value",
+              "property": "P1412",
+              "hash": "34f7c448acf9236240a0070caa86e7f1cdceee90",
+              "datavalue": {
+                "value": {
+                  "entity-type": "item",
+                  "numeric-id": 1321,
+                  "id": "Q1321"
+                },
+                "type": "wikibase-entityid"
+              },
+              "datatype": "wikibase-item"
+            },
+            "type": "statement",
+            "id": "q2041395$b275aeaf-47f3-c2ad-297b-e6fabda9d03a",
+            "rank": "normal"
+          }
+        ],
+        "P4033": [
+          {
+            "mainsnak": {
+              "snaktype": "value",
+              "property": "P4033",
+              "hash": "4228bf4baedf49bfefd02193a6e1e5d588e452da",
+              "datavalue": {
+                "value": "federicomena@mstdn.mx",
+                "type": "string"
+              },
+              "datatype": "external-id"
+            },
+            "type": "statement",
+            "qualifiers": {
+              "P580": [
+                {
+                  "snaktype": "value",
+                  "property": "P580",
+                  "hash": "6b8a118e4543522bf78f816c490c5924f09ca50e",
+                  "datavalue": {
+                    "value": {
+                      "time": "+2017-04-28T00:00:00Z",
+                      "timezone": 0,
+                      "before": 0,
+                      "after": 0,
+                      "precision": 11,
+                      "calendarmodel": "http://www.wikidata.org/entity/Q1985727"
+                    },
+                    "type": "time"
+                  },
+                  "datatype": "time"
+                }
+              ],
+              "P407": [
+                {
+                  "snaktype": "value",
+                  "property": "P407",
+                  "hash": "daf1c4fcb58181b02dff9cc89deb084004ddae4b",
+                  "datavalue": {
+                    "value": {
+                      "entity-type": "item",
+                      "numeric-id": 1860,
+                      "id": "Q1860"
+                    },
+                    "type": "wikibase-entityid"
+                  },
+                  "datatype": "wikibase-item"
+                }
+              ]
+            },
+            "qualifiers-order": [
+              "P580",
+              "P407"
+            ],
+            "id": "Q2041395$8c5a6a4e-45ce-aa92-a356-912d54075d61",
+            "rank": "normal"
+          }
+        ],
+        "P856": [
+          {
+            "mainsnak": {
+              "snaktype": "value",
+              "property": "P856",
+              "hash": "2fed61789607c6a8785e64469dbdb1e4daa5a24d",
+              "datavalue": {
+                "value": "https://viruta.org/",
+                "type": "string"
+              },
+              "datatype": "url"
+            },
+            "type": "statement",
+            "qualifiers": {
+              "P407": [
+                {
+                  "snaktype": "value",
+                  "property": "P407",
+                  "hash": "daf1c4fcb58181b02dff9cc89deb084004ddae4b",
+                  "datavalue": {
+                    "value": {
+                      "entity-type": "item",
+                      "numeric-id": 1860,
+                      "id": "Q1860"
+                    },
+                    "type": "wikibase-entityid"
+                  },
+                  "datatype": "wikibase-item"
+                },
+                {
+                  "snaktype": "value",
+                  "property": "P407",
+                  "hash": "ffe70325d10cfc55f0dca807ed80ca0b5b97c472",
+                  "datavalue": {
+                    "value": {
+                      "entity-type": "item",
+                      "numeric-id": 1321,
+                      "id": "Q1321"
+                    },
+                    "type": "wikibase-entityid"
+                  },
+                  "datatype": "wikibase-item"
+                }
+              ]
+            },
+            "qualifiers-order": [
+              "P407"
+            ],
+            "id": "Q2041395$bfe0dcea-45e8-9bfe-5c10-49a98ed7cbe2",
+            "rank": "normal"
+          }
+        ],
+        "P8687": [
+          {
+            "mainsnak": {
+              "snaktype": "value",
+              "property": "P8687",
+              "hash": "f15a4e2a1d775e457344cb89d2ce4bec711c0be1",
+              "datavalue": {
+                "value": {
+                  "amount": "+1974",
+                  "unit": "1"
+                },
+                "type": "quantity"
+              },
+              "datatype": "quantity"
+            },
+            "type": "statement",
+            "qualifiers": {
+              "P4033": [
+                {
+                  "snaktype": "value",
+                  "property": "P4033",
+                  "hash": "4228bf4baedf49bfefd02193a6e1e5d588e452da",
+                  "datavalue": {
+                    "value": "federicomena@mstdn.mx",
+                    "type": "string"
+                  },
+                  "datatype": "external-id"
+                }
+              ],
+              "P585": [
+                {
+                  "snaktype": "value",
+                  "property": "P585",
+                  "hash": "9d60d69fc8914e1e052163b51526bd50afbdf62b",
+                  "datavalue": {
+                    "value": {
+                      "time": "+2024-02-12T00:00:00Z",
+                      "timezone": 0,
+                      "before": 0,
+                      "after": 0,
+                      "precision": 11,
+                      "calendarmodel": "http://www.wikidata.org/entity/Q1985727"
+                    },
+                    "type": "time"
+                  },
+                  "datatype": "time"
+                }
+              ]
+            },
+            "qualifiers-order": [
+              "P4033",
+              "P585"
+            ],
+            "id": "Q2041395$CBF49BE6-E772-4C19-944E-074CBE9681FE",
+            "rank": "normal"
+          },
+          {
+            "mainsnak": {
+              "snaktype": "value",
+              "property": "P8687",
+              "hash": "650c9a3f8e1bc36f1dba633ae0e490719194e355",
+              "datavalue": {
+                "value": {
+                  "amount": "+1991",
+                  "unit": "1"
+                },
+                "type": "quantity"
+              },
+              "datatype": "quantity"
+            },
+            "type": "statement",
+            "qualifiers": {
+              "P4033": [
+                {
+                  "snaktype": "value",
+                  "property": "P4033",
+                  "hash": "4228bf4baedf49bfefd02193a6e1e5d588e452da",
+                  "datavalue": {
+                    "value": "federicomena@mstdn.mx",
+                    "type": "string"
+                  },
+                  "datatype": "external-id"
+                }
+              ],
+              "P585": [
+                {
+                  "snaktype": "value",
+                  "property": "P585",
+                  "hash": "a238e7341c8aa9bed8f85acab644a10b14752adc",
+                  "datavalue": {
+                    "value": {
+                      "time": "+2024-03-16T00:00:00Z",
+                      "timezone": 0,
+                      "before": 0,
+                      "after": 0,
+                      "precision": 11,
+                      "calendarmodel": "http://www.wikidata.org/entity/Q1985727"
+                    },
+                    "type": "time"
+                  },
+                  "datatype": "time"
+                }
+              ]
+            },
+            "qualifiers-order": [
+              "P4033",
+              "P585"
+            ],
+            "id": "Q2041395$A01A3A8B-DC69-4F49-989B-31AFA185F2A0",
+            "rank": "normal"
+          },
+          {
+            "mainsnak": {
+              "snaktype": "value",
+              "property": "P8687",
+              "hash": "d3a1b04552bc8a51f764294d2c00865932067889",
+              "datavalue": {
+                "value": {
+                  "amount": "+2013",
+                  "unit": "1"
+                },
+                "type": "quantity"
+              },
+              "datatype": "quantity"
+            },
+            "type": "statement",
+            "qualifiers": {
+              "P4033": [
+                {
+                  "snaktype": "value",
+                  "property": "P4033",
+                  "hash": "4228bf4baedf49bfefd02193a6e1e5d588e452da",
+                  "datavalue": {
+                    "value": "federicomena@mstdn.mx",
+                    "type": "string"
+                  },
+                  "datatype": "external-id"
+                }
+              ],
+              "P585": [
+                {
+                  "snaktype": "value",
+                  "property": "P585",
+                  "hash": "607184846106e630f6f06910d2df74dca931b9f0",
+                  "datavalue": {
+                    "value": {
+                      "time": "+2024-04-11T00:00:00Z",
+                      "timezone": 0,
+                      "before": 0,
+                      "after": 0,
+                      "precision": 11,
+                      "calendarmodel": "http://www.wikidata.org/entity/Q1985727"
+                    },
+                    "type": "time"
+                  },
+                  "datatype": "time"
+                }
+              ]
+            },
+            "qualifiers-order": [
+              "P4033",
+              "P585"
+            ],
+            "id": "Q2041395$AE4EA2C1-A0D4-49B8-A12B-D73358A170E6",
+            "rank": "normal"
+          }
+        ],
+        "P39": [
+          {
+            "mainsnak": {
+              "snaktype": "value",
+              "property": "P39",
+              "hash": "d471327d25300a9796585343c43a774c647cbb4e",
+              "datavalue": {
+                "value": {
+                  "entity-type": "item",
+                  "numeric-id": 130307818,
+                  "id": "Q130307818"
+                },
+                "type": "wikibase-entityid"
+              },
+              "datatype": "wikibase-item"
+            },
+            "type": "statement",
+            "qualifiers": {
+              "P580": [
+                {
+                  "snaktype": "somevalue",
+                  "property": "P580",
+                  "hash": "591beafd4b23b81744b09486d54b98520c54fa5e",
+                  "datatype": "time"
+                }
+              ],
+              "P582": [
+                {
+                  "snaktype": "somevalue",
+                  "property": "P582",
+                  "hash": "0f0e43d5ac17613a0369bf0d65a07a326f4b8d98",
+                  "datatype": "time"
+                }
+              ]
+            },
+            "qualifiers-order": [
+              "P580",
+              "P582"
+            ],
+            "id": "Q2041395$872e7796-48e6-702f-2a2c-7dd5e872809e",
+            "rank": "normal",
+            "references": [
+              {
+                "hash": "a3481f5f79d6355a1c731ac9cef565de613596af",
+                "snaks": {
+                  "P143": [
+                    {
+                      "snaktype": "value",
+                      "property": "P143",
+                      "hash": "f30cbd35620c4ea6d0633aaf0210a8916130469b",
+                      "datavalue": {
+                        "value": {
+                          "entity-type": "item",
+                          "numeric-id": 8447,
+                          "id": "Q8447"
+                        },
+                        "type": "wikibase-entityid"
+                      },
+                      "datatype": "wikibase-item"
+                    }
+                  ],
+                  "P813": [
+                    {
+                      "snaktype": "value",
+                      "property": "P813",
+                      "hash": "a5e57a34ac3d6665e6cd2f848c5aa410c933e6b9",
+                      "datavalue": {
+                        "value": {
+                          "time": "+2024-09-16T00:00:00Z",
+                          "timezone": 0,
+                          "before": 0,
+                          "after": 0,
+                          "precision": 11,
+                          "calendarmodel": "http://www.wikidata.org/entity/Q1985727"
+                        },
+                        "type": "time"
+                      },
+                      "datatype": "time"
+                    }
+                  ]
+                },
+                "snaks-order": [
+                  "P143",
+                  "P813"
+                ]
+              }
+            ]
+          }
+        ],
+        "P864": [
+          {
+            "mainsnak": {
+              "snaktype": "value",
+              "property": "P864",
+              "hash": "463fefad6076b31aff29266b8ff333d28eebe35f",
+              "datavalue": {
+                "value": "81332515363",
+                "type": "string"
+              },
+              "datatype": "external-id"
+            },
+            "type": "statement",
+            "qualifiers": {
+              "P1810": [
+                {
+                  "snaktype": "value",
+                  "property": "P1810",
+                  "hash": "bc1776b182c0995eaf1400aa97fefb1885da0ab4",
+                  "datavalue": {
+                    "value": "Federico Mena-Quintero",
+                    "type": "string"
+                  },
+                  "datatype": "string"
+                }
+              ]
+            },
+            "qualifiers-order": [
+              "P1810"
+            ],
+            "id": "Q2041395$96cb9b08-4b4a-5ddf-b4c3-de2a1bb1db55",
+            "rank": "normal"
+          }
+        ]
+      },
+      "sitelinks": {
+        "ptwiki": {
+          "site": "ptwiki",
+          "title": "Federico Mena",
+          "badges": []
+        },
+        "skwiki": {
+          "site": "skwiki",
+          "title": "Federico Mena",
+          "badges": []
+        },
+        "euwiki": {
+          "site": "euwiki",
+          "title": "Federico Mena",
+          "badges": []
+        },
+        "frwiki": {
+          "site": "frwiki",
+          "title": "Federico Mena",
+          "badges": []
+        },
+        "eswiki": {
+          "site": "eswiki",
+          "title": "Federico Mena",
+          "badges": []
+        },
+        "nowiki": {
+          "site": "nowiki",
+          "title": "Federico Mena Quintero",
+          "badges": []
+        },
+        "cawiki": {
+          "site": "cawiki",
+          "title": "Federico Mena",
+          "badges": []
+        },
+        "itwiki": {
+          "site": "itwiki",
+          "title": "Federico Mena",
+          "badges": []
+        },
+        "jawiki": {
+          "site": "jawiki",
+          "title": "フェデリコ・メーナ",
+          "badges": []
+        },
+        "cswiki": {
+          "site": "cswiki",
+          "title": "Federico Mena",
+          "badges": []
+        },
+        "arwiki": {
+          "site": "arwiki",
+          "title": "فيديريكو مينا",
+          "badges": []
+        },
+        "zhwiki": {
+          "site": "zhwiki",
+          "title": "費德里科·梅納",
+          "badges": []
+        },
+        "enwiki": {
+          "site": "enwiki",
+          "title": "Federico Mena",
+          "badges": [
+            "Q70893996"
+          ]
+        },
+        "commonswiki": {
+          "site": "commonswiki",
+          "title": "Category:Federico Mena",
+          "badges": []
+        },
+        "arzwiki": {
+          "site": "arzwiki",
+          "title": "فيديريكو مينا",
+          "badges": []
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,131 @@
+{
+  "searchinfo": {
+    "search": "Guido van Rossum"
+  },
+  "search": [
+    {
+      "id": "Q30942",
+      "title": "Q30942",
+      "pageid": 33892,
+      "concepturi": "http://www.wikidata.org/entity/Q30942",
+      "repository": "wikidata",
+      "url": "//www.wikidata.org/wiki/Q30942",
+      "display": {
+        "label": {
+          "value": "Guido van Rossum",
+          "language": "en"
+        },
+        "description": {
+          "value": "Dutch programmer and creator of Python",
+          "language": "en"
+        }
+      },
+      "label": "Guido van Rossum",
+      "description": "Dutch programmer and creator of Python",
+      "match": {
+        "type": "label",
+        "language": "en",
+        "text": "Guido van Rossum"
+      }
+    },
+    {
+      "id": "Q110189165",
+      "title": "Q110189165",
+      "pageid": 105266932,
+      "concepturi": "http://www.wikidata.org/entity/Q110189165",
+      "repository": "wikidata",
+      "url": "//www.wikidata.org/wiki/Q110189165",
+      "display": {
+        "label": {
+          "value": "Lex Fridman Podcast Guido van Rossum: Python",
+          "language": "en"
+        },
+        "description": {
+          "value": "podcast episode of the Lex Fridman Podcast",
+          "language": "en"
+        }
+      },
+      "label": "Lex Fridman Podcast Guido van Rossum: Python",
+      "description": "podcast episode of the Lex Fridman Podcast",
+      "match": {
+        "type": "alias",
+        "language": "en",
+        "text": "Guido van Rossum: Python"
+      },
+      "aliases": [
+        "Guido van Rossum: Python"
+      ]
+    },
+    {
+      "id": "Q115648250",
+      "title": "Q115648250",
+      "pageid": 110206853,
+      "concepturi": "http://www.wikidata.org/entity/Q115648250",
+      "repository": "wikidata",
+      "url": "//www.wikidata.org/wiki/Q115648250",
+      "display": {
+        "label": {
+          "value": "Guido van Rossum: Python and the Future of Programming | Lex Fridman Podcast #341",
+          "language": "en"
+        }
+      },
+      "label": "Guido van Rossum: Python and the Future of Programming | Lex Fridman Podcast #341",
+      "match": {
+        "type": "label",
+        "language": "en",
+        "text": "Guido van Rossum: Python and the Future of Programming | Lex Fridman Podcast #341"
+      }
+    },
+    {
+      "id": "Q121625160",
+      "title": "Q121625160",
+      "pageid": 116017483,
+      "concepturi": "http://www.wikidata.org/entity/Q121625160",
+      "repository": "wikidata",
+      "url": "//www.wikidata.org/wiki/Q121625160",
+      "display": {
+        "label": {
+          "value": "Guido van Rossum: The Early Years of Python",
+          "language": "en"
+        },
+        "description": {
+          "value": "scientific article published in 2015",
+          "language": "en"
+        }
+      },
+      "label": "Guido van Rossum: The Early Years of Python",
+      "description": "scientific article published in 2015",
+      "match": {
+        "type": "label",
+        "language": "en",
+        "text": "Guido van Rossum: The Early Years of Python"
+      }
+    },
+    {
+      "id": "Q121033700",
+      "title": "Q121033700",
+      "pageid": 115476374,
+      "concepturi": "http://www.wikidata.org/entity/Q121033700",
+      "repository": "wikidata",
+      "url": "//www.wikidata.org/wiki/Q121033700",
+      "display": {
+        "label": {
+          "value": "Guido van Rossum: The Modern Era of Python",
+          "language": "en"
+        },
+        "description": {
+          "value": "scientific article published in 2015",
+          "language": "en"
+        }
+      },
+      "label": "Guido van Rossum: The Modern Era of Python",
+      "description": "scientific article published in 2015",
+      "match": {
+        "type": "label",
+        "language": "en",
+        "text": "Guido van Rossum: The Modern Era of Python"
+      }
+    }
+  ],
+  "success": 1
+}

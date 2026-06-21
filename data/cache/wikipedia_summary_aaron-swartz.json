@@ -1,0 +1,49 @@
+{
+  "type": "standard",
+  "title": "Aaron Swartz",
+  "displaytitle": "<span lang=\"en\" dir=\"ltr\"><span class=\"mw-page-title-main\">Aaron Swartz</span></span>",
+  "namespace": {
+    "id": 0,
+    "text": ""
+  },
+  "wikibase_item": "Q302817",
+  "titles": {
+    "canonical": "Aaron_Swartz",
+    "normalized": "Aaron Swartz",
+    "display": "<span lang=\"en\" dir=\"ltr\"><span class=\"mw-page-title-main\">Aaron Swartz</span></span>"
+  },
+  "pageid": 2850681,
+  "thumbnail": {
+    "source": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/cd/Aaron_Swartz_in_2011.jpg/330px-Aaron_Swartz_in_2011.jpg",
+    "width": 330,
+    "height": 499
+  },
+  "originalimage": {
+    "source": "https://upload.wikimedia.org/wikipedia/commons/c/cd/Aaron_Swartz_in_2011.jpg",
+    "width": 1309,
+    "height": 1979
+  },
+  "lang": "en",
+  "dir": "ltr",
+  "revision": "1357090893",
+  "tid": "51eab6ed-5d1c-11f1-beef-7435ea858aa4",
+  "timestamp": "2026-05-31T18:12:44Z",
+  "description": "American computer programmer and activist (1986–2013)",
+  "description_source": "local",
+  "content_urls": {
+    "desktop": {
+      "page": "https://en.wikipedia.org/wiki/Aaron_Swartz",
+      "revisions": "https://en.wikipedia.org/wiki/Aaron_Swartz?action=history",
+      "edit": "https://en.wikipedia.org/wiki/Aaron_Swartz?action=edit",
+      "talk": "https://en.wikipedia.org/wiki/Talk:Aaron_Swartz"
+    },
+    "mobile": {
+      "page": "https://en.wikipedia.org/wiki/Aaron_Swartz",
+      "revisions": "https://en.wikipedia.org/wiki/Special:History/Aaron_Swartz",
+      "edit": "https://en.wikipedia.org/wiki/Aaron_Swartz?action=edit",
+      "talk": "https://en.wikipedia.org/wiki/Talk:Aaron_Swartz"
+    }
+  },
+  "extract": "Aaron Hillel Swartz, also known as AaronSw, was an American computer programmer, entrepreneur, writer, political organizer, and Internet hacktivist. As a programmer, Swartz helped develop the web feed format RSS; the technical architecture for Creative Commons, an organization dedicated to creating copyright licenses; and the Python website framework web.py. Swartz helped define the syntax of the lightweight markup language format Markdown, and was a co-owner of the social news aggregation website Reddit and contributed to its development until he left the company in 2007. He is often credited as a martyr and a prodigy, and much of his work focused on civic awareness and progressive activism.",
+  "extract_html": "<p><b>Aaron Hillel Swartz</b>, also known as <b>AaronSw</b>, was an American computer programmer, entrepreneur, writer, political organizer, and Internet hacktivist. As a programmer, Swartz helped develop the web feed format RSS; the technical architecture for Creative Commons, an organization dedicated to creating copyright licenses; and the Python website framework web.py. Swartz helped define the syntax of the lightweight markup language format Markdown, and was a co-owner of the social news aggregation website Reddit and contributed to its development until he left the company in 2007. He is often credited as a martyr and a prodigy, and much of his work focused on civic awareness and progressive activism.</p>"
+}

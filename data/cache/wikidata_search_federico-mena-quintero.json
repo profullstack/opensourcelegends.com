@@ -1,0 +1,36 @@
+{
+  "searchinfo": {
+    "search": "Federico Mena Quintero"
+  },
+  "search": [
+    {
+      "id": "Q2041395",
+      "title": "Q2041395",
+      "pageid": 1969090,
+      "concepturi": "http://www.wikidata.org/entity/Q2041395",
+      "repository": "wikidata",
+      "url": "//www.wikidata.org/wiki/Q2041395",
+      "display": {
+        "label": {
+          "value": "Federico Mena",
+          "language": "en"
+        },
+        "description": {
+          "value": "Mexican computer scientist and programmer",
+          "language": "en"
+        }
+      },
+      "label": "Federico Mena",
+      "description": "Mexican computer scientist and programmer",
+      "match": {
+        "type": "alias",
+        "language": "en",
+        "text": "Federico Mena Quintero"
+      },
+      "aliases": [
+        "Federico Mena Quintero"
+      ]
+    }
+  ],
+  "success": 1
+}

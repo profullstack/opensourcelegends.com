@@ -1,0 +1,78 @@
+{
+  "searchinfo": {
+    "search": "Yukihiro Matsumoto"
+  },
+  "search": [
+    {
+      "id": "Q109409154",
+      "title": "Q109409154",
+      "pageid": 104564331,
+      "concepturi": "http://www.wikidata.org/entity/Q109409154",
+      "repository": "wikidata",
+      "url": "//www.wikidata.org/wiki/Q109409154",
+      "display": {
+        "label": {
+          "value": "Yukihiro Matsumoto",
+          "language": "en"
+        }
+      },
+      "label": "Yukihiro Matsumoto",
+      "match": {
+        "type": "label",
+        "language": "en",
+        "text": "Yukihiro Matsumoto"
+      }
+    },
+    {
+      "id": "Q92748",
+      "title": "Q92748",
+      "pageid": 94973,
+      "concepturi": "http://www.wikidata.org/entity/Q92748",
+      "repository": "wikidata",
+      "url": "//www.wikidata.org/wiki/Q92748",
+      "display": {
+        "label": {
+          "value": "Yukihiro Matsumoto",
+          "language": "en"
+        },
+        "description": {
+          "value": "Japanese computer scientist who created the Ruby programming language",
+          "language": "en"
+        }
+      },
+      "label": "Yukihiro Matsumoto",
+      "description": "Japanese computer scientist who created the Ruby programming language",
+      "match": {
+        "type": "label",
+        "language": "en",
+        "text": "Yukihiro Matsumoto"
+      }
+    },
+    {
+      "id": "Q98470836",
+      "title": "Q98470836",
+      "pageid": 96679625,
+      "concepturi": "http://www.wikidata.org/entity/Q98470836",
+      "repository": "wikidata",
+      "url": "//www.wikidata.org/wiki/Q98470836",
+      "display": {
+        "label": {
+          "value": "Yukihiro Matsumoto",
+          "language": "en"
+        },
+        "description": {
+          "value": "researcher",
+          "language": "en"
+        }
+      },
+      "label": "Yukihiro Matsumoto",
+      "description": "researcher",
+      "match": {
+        "type": "label",
+        "language": "en",
+        "text": "Yukihiro Matsumoto"
+      }
+    }
+  ],
+  "success": 1
+}

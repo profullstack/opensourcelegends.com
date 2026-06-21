@@ -1,0 +1,39 @@
+{
+  "type": "standard",
+  "title": "Keith Packard",
+  "displaytitle": "<span lang=\"en\" dir=\"ltr\"><span class=\"mw-page-title-main\">Keith Packard</span></span>",
+  "namespace": {
+    "id": 0,
+    "text": ""
+  },
+  "wikibase_item": "Q92972",
+  "titles": {
+    "canonical": "Keith_Packard",
+    "normalized": "Keith Packard",
+    "display": "<span lang=\"en\" dir=\"ltr\"><span class=\"mw-page-title-main\">Keith Packard</span></span>"
+  },
+  "pageid": 761129,
+  "lang": "en",
+  "dir": "ltr",
+  "revision": "1343188092",
+  "tid": "8228698e-1e53-11f1-a21b-a7de3f7f54ea",
+  "timestamp": "2026-03-12T20:39:04Z",
+  "description": "American software developer (born 1963)",
+  "description_source": "local",
+  "content_urls": {
+    "desktop": {
+      "page": "https://en.wikipedia.org/wiki/Keith_Packard",
+      "revisions": "https://en.wikipedia.org/wiki/Keith_Packard?action=history",
+      "edit": "https://en.wikipedia.org/wiki/Keith_Packard?action=edit",
+      "talk": "https://en.wikipedia.org/wiki/Talk:Keith_Packard"
+    },
+    "mobile": {
+      "page": "https://en.wikipedia.org/wiki/Keith_Packard",
+      "revisions": "https://en.wikipedia.org/wiki/Special:History/Keith_Packard",
+      "edit": "https://en.wikipedia.org/wiki/Keith_Packard?action=edit",
+      "talk": "https://en.wikipedia.org/wiki/Talk:Keith_Packard"
+    }
+  },
+  "extract": "Keith Packard is a software developer, best known for his work on the X Window System.",
+  "extract_html": "<p><b>Keith Packard</b> is a software developer, best known for his work on the X Window System.</p>"
+}

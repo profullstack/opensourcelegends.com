@@ -10,10 +10,10 @@ Modules (no Tailwind).
 ## Develop
 
 ```bash
-npm install
-npm run dev      # http://localhost:3000
-npm run build    # production build
-npm start        # serve the production build
+pnpm install
+pnpm dev         # http://localhost:3000
+pnpm build       # production build
+pnpm start       # serve the production build
 ```
 
 ## Database (Turso / libSQL)

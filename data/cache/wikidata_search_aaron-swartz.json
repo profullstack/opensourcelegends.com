@@ -1,0 +1,184 @@
+{
+  "searchinfo": {
+    "search": "Aaron Swartz"
+  },
+  "search": [
+    {
+      "id": "Q302817",
+      "title": "Q302817",
+      "pageid": 291745,
+      "concepturi": "http://www.wikidata.org/entity/Q302817",
+      "repository": "wikidata",
+      "url": "//www.wikidata.org/wiki/Q302817",
+      "display": {
+        "label": {
+          "value": "Aaron Swartz",
+          "language": "en"
+        },
+        "description": {
+          "value": "American computer programmer and internet-political activist (1986–2013)",
+          "language": "en"
+        }
+      },
+      "label": "Aaron Swartz",
+      "description": "American computer programmer and internet-political activist (1986–2013)",
+      "match": {
+        "type": "label",
+        "language": "en",
+        "text": "Aaron Swartz"
+      }
+    },
+    {
+      "id": "Q16239377",
+      "title": "Q16239377",
+      "pageid": 17863517,
+      "concepturi": "http://www.wikidata.org/entity/Q16239377",
+      "repository": "wikidata",
+      "url": "//www.wikidata.org/wiki/Q16239377",
+      "display": {
+        "label": {
+          "value": "Aaron Swartz",
+          "language": "en"
+        },
+        "description": {
+          "value": "British actor, theatre and film director",
+          "language": "en"
+        }
+      },
+      "label": "Aaron Swartz",
+      "description": "British actor, theatre and film director",
+      "match": {
+        "type": "label",
+        "language": "en",
+        "text": "Aaron Swartz"
+      }
+    },
+    {
+      "id": "Q132190033",
+      "title": "Q132190033",
+      "pageid": 126069323,
+      "concepturi": "http://www.wikidata.org/entity/Q132190033",
+      "repository": "wikidata",
+      "url": "//www.wikidata.org/wiki/Q132190033",
+      "display": {
+        "label": {
+          "value": "Aaron Swartz",
+          "language": "en"
+        },
+        "description": {
+          "value": "sculpture of American Internet activist unveiled in 2025",
+          "language": "en"
+        }
+      },
+      "label": "Aaron Swartz",
+      "description": "sculpture of American Internet activist unveiled in 2025",
+      "match": {
+        "type": "label",
+        "language": "en",
+        "text": "Aaron Swartz"
+      }
+    },
+    {
+      "id": "Q100930178",
+      "title": "Q100930178",
+      "pageid": 98417807,
+      "concepturi": "http://www.wikidata.org/entity/Q100930178",
+      "repository": "wikidata",
+      "url": "//www.wikidata.org/wiki/Q100930178",
+      "display": {
+        "label": {
+          "value": "Aaron Swartzendruber",
+          "language": "en"
+        },
+        "description": {
+          "value": "college basketball player (1995–1998) Kansas State",
+          "language": "en"
+        }
+      },
+      "label": "Aaron Swartzendruber",
+      "description": "college basketball player (1995–1998) Kansas State",
+      "match": {
+        "type": "label",
+        "language": "en",
+        "text": "Aaron Swartzendruber"
+      }
+    },
+    {
+      "id": "Q53998552",
+      "title": "Q53998552",
+      "pageid": 54388894,
+      "concepturi": "http://www.wikidata.org/entity/Q53998552",
+      "repository": "wikidata",
+      "url": "//www.wikidata.org/wiki/Q53998552",
+      "display": {
+        "label": {
+          "value": "Aaron Swartz's A Programmable Web: An Unfinished Work",
+          "language": "en"
+        },
+        "description": {
+          "value": "Unfinished book by Aaron Swartz",
+          "language": "en"
+        }
+      },
+      "label": "Aaron Swartz's A Programmable Web: An Unfinished Work",
+      "description": "Unfinished book by Aaron Swartz",
+      "match": {
+        "type": "label",
+        "language": "en",
+        "text": "Aaron Swartz's A Programmable Web: An Unfinished Work"
+      }
+    },
+    {
+      "id": "Q17601250",
+      "title": "Q17601250",
+      "pageid": 19192470,
+      "concepturi": "http://www.wikidata.org/entity/Q17601250",
+      "repository": "wikidata",
+      "url": "//www.wikidata.org/wiki/Q17601250",
+      "display": {
+        "label": {
+          "value": "Aaron Swartz arrested and charged for downloading JSTOR articles",
+          "language": "en"
+        },
+        "description": {
+          "value": "Wikinews article",
+          "language": "en"
+        }
+      },
+      "label": "Aaron Swartz arrested and charged for downloading JSTOR articles",
+      "description": "Wikinews article",
+      "match": {
+        "type": "label",
+        "language": "en",
+        "text": "Aaron Swartz arrested and charged for downloading JSTOR articles"
+      }
+    },
+    {
+      "id": "Q130058577",
+      "title": "Q130058577",
+      "pageid": 124025856,
+      "concepturi": "http://www.wikidata.org/entity/Q130058577",
+      "repository": "wikidata",
+      "url": "//www.wikidata.org/wiki/Q130058577",
+      "display": {
+        "label": {
+          "value": "AARON SWARTZ AND THE SPIRIT OF INFORMATION",
+          "language": "en"
+        },
+        "description": {
+          "value": "scholarly article published on 23 February 2015",
+          "language": "en"
+        }
+      },
+      "label": "AARON SWARTZ AND THE SPIRIT OF INFORMATION",
+      "description": "scholarly article published on 23 February 2015",
+      "match": {
+        "type": "label",
+        "language": "en",
+        "text": "AARON SWARTZ AND THE SPIRIT OF INFORMATION"
+      }
+    }
+  ],
+  "search-continue": 7,
+  "success": 1
+}

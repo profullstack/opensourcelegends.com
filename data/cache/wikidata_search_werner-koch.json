@@ -1,0 +1,179 @@
+{
+  "searchinfo": {
+    "search": "Werner Koch"
+  },
+  "search": [
+    {
+      "id": "Q3567326",
+      "title": "Q3567326",
+      "pageid": 3396157,
+      "concepturi": "http://www.wikidata.org/entity/Q3567326",
+      "repository": "wikidata",
+      "url": "//www.wikidata.org/wiki/Q3567326",
+      "display": {
+        "label": {
+          "value": "Werner Koch",
+          "language": "en"
+        },
+        "description": {
+          "value": "German free software developer",
+          "language": "en"
+        }
+      },
+      "label": "Werner Koch",
+      "description": "German free software developer",
+      "match": {
+        "type": "label",
+        "language": "en",
+        "text": "Werner Koch"
+      }
+    },
+    {
+      "id": "Q2561763",
+      "title": "Q2561763",
+      "pageid": 2472040,
+      "concepturi": "http://www.wikidata.org/entity/Q2561763",
+      "repository": "wikidata",
+      "url": "//www.wikidata.org/wiki/Q2561763",
+      "display": {
+        "label": {
+          "value": "Werner Koch",
+          "language": "en"
+        },
+        "description": {
+          "value": "German journalist and theologian (1910-1994)",
+          "language": "en"
+        }
+      },
+      "label": "Werner Koch",
+      "description": "German journalist and theologian (1910-1994)",
+      "match": {
+        "type": "label",
+        "language": "en",
+        "text": "Werner Koch"
+      }
+    },
+    {
+      "id": "Q15854065",
+      "title": "Q15854065",
+      "pageid": 17481850,
+      "concepturi": "http://www.wikidata.org/entity/Q15854065",
+      "repository": "wikidata",
+      "url": "//www.wikidata.org/wiki/Q15854065",
+      "display": {
+        "label": {
+          "value": "Werner Koch",
+          "language": "en"
+        },
+        "description": {
+          "value": "German botanist (1933-2000)",
+          "language": "en"
+        }
+      },
+      "label": "Werner Koch",
+      "description": "German botanist (1933-2000)",
+      "match": {
+        "type": "label",
+        "language": "en",
+        "text": "Werner Koch"
+      }
+    },
+    {
+      "id": "Q107098194",
+      "title": "Q107098194",
+      "pageid": 102347080,
+      "concepturi": "http://www.wikidata.org/entity/Q107098194",
+      "repository": "wikidata",
+      "url": "//www.wikidata.org/wiki/Q107098194",
+      "display": {
+        "label": {
+          "value": "Werner Koch",
+          "language": "en"
+        }
+      },
+      "label": "Werner Koch",
+      "match": {
+        "type": "label",
+        "language": "en",
+        "text": "Werner Koch"
+      }
+    },
+    {
+      "id": "Q112377649",
+      "title": "Q112377649",
+      "pageid": 107269420,
+      "concepturi": "http://www.wikidata.org/entity/Q112377649",
+      "repository": "wikidata",
+      "url": "//www.wikidata.org/wiki/Q112377649",
+      "display": {
+        "label": {
+          "value": "Werner Koch",
+          "language": "en"
+        },
+        "description": {
+          "value": "(born 1953)",
+          "language": "en"
+        }
+      },
+      "label": "Werner Koch",
+      "description": "(born 1953)",
+      "match": {
+        "type": "label",
+        "language": "en",
+        "text": "Werner Koch"
+      }
+    },
+    {
+      "id": "Q112487257",
+      "title": "Q112487257",
+      "pageid": 107378847,
+      "concepturi": "http://www.wikidata.org/entity/Q112487257",
+      "repository": "wikidata",
+      "url": "//www.wikidata.org/wiki/Q112487257",
+      "display": {
+        "label": {
+          "value": "Werner Koch",
+          "language": "en"
+        },
+        "description": {
+          "value": "(born 1942)",
+          "language": "en"
+        }
+      },
+      "label": "Werner Koch",
+      "description": "(born 1942)",
+      "match": {
+        "type": "label",
+        "language": "en",
+        "text": "Werner Koch"
+      }
+    },
+    {
+      "id": "Q112384058",
+      "title": "Q112384058",
+      "pageid": 107275748,
+      "concepturi": "http://www.wikidata.org/entity/Q112384058",
+      "repository": "wikidata",
+      "url": "//www.wikidata.org/wiki/Q112384058",
+      "display": {
+        "label": {
+          "value": "Werner Koch",
+          "language": "en"
+        },
+        "description": {
+          "value": "(born 1923)",
+          "language": "en"
+        }
+      },
+      "label": "Werner Koch",
+      "description": "(born 1923)",
+      "match": {
+        "type": "label",
+        "language": "en",
+        "text": "Werner Koch"
+      }
+    }
+  ],
+  "search-continue": 7,
+  "success": 1
+}
