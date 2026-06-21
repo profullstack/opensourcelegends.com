@@ -5,7 +5,7 @@ export const site = {
     "A collectible card series celebrating the legends of open source. Open-licensed artwork, limited physical packs, and on-chain collectibles.",
   url: "https://opensourcelegends.com",
   github: "https://github.com/profullstack/opensourcelegends.com",
-  twitter: "https://twitter.com/profullstack",
+  twitter: "https://x.com/profullstackinc",
   email: "hello@opensourcelegends.com",
   license: "CC BY-SA 4.0",
 } as const;

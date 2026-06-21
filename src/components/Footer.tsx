@@ -27,7 +27,7 @@ export default function Footer() {
         <nav className={styles.links}>
           <h4>Community</h4>
           <a href={site.github} target="_blank" rel="noreferrer">GitHub</a>
-          <a href={site.twitter} target="_blank" rel="noreferrer">X / Twitter</a>
+          <a href={site.twitter} target="_blank" rel="noreferrer">X</a>
           <a href={`mailto:${site.email}`}>Contact</a>
         </nav>
       </div>
