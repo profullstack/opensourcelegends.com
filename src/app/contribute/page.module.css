@@ -1,0 +1,106 @@
+.hero {
+  padding: 6rem 0 2rem;
+}
+
+.h1 {
+  font-size: clamp(3.2rem, 5vw, 5rem);
+  font-weight: 800;
+  margin: 1rem 0 1.6rem;
+  max-width: 20ch;
+}
+
+.sub {
+  font-size: 1.75rem;
+  color: var(--text-muted);
+  max-width: 60rem;
+}
+
+.sub strong {
+  color: var(--crest);
+}
+
+.actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1.2rem;
+  margin-top: 2.8rem;
+}
+
+.steps {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 2rem;
+}
+
+.step {
+  background: var(--bg-elev);
+  border: 1px solid var(--border);
+  border-radius: var(--radius-lg);
+  padding: 2.4rem;
+}
+
+.stepNum {
+  font-family: ui-monospace, Menlo, Consolas, monospace;
+  font-size: 1.4rem;
+  font-weight: 800;
+  color: var(--crest);
+}
+
+.step h3 {
+  font-size: 1.8rem;
+  font-weight: 800;
+  margin: 1.2rem 0 0.8rem;
+}
+
+.step p {
+  font-size: 1.4rem;
+  color: var(--text-muted);
+}
+
+.specSection {
+  padding-bottom: 9rem;
+}
+
+.sectionHead {
+  margin-bottom: 3rem;
+}
+
+.h2 {
+  font-size: clamp(2.6rem, 3.5vw, 3.8rem);
+  font-weight: 800;
+  margin-top: 1rem;
+}
+
+.specSub {
+  font-size: 1.5rem;
+  color: var(--text-muted);
+  margin-top: 1rem;
+}
+
+.specSub .mono {
+  color: var(--crest);
+}
+
+.code {
+  background: var(--bg-deep);
+  border: 1px solid var(--border);
+  border-radius: var(--radius-lg);
+  padding: 2.6rem;
+  overflow-x: auto;
+  font-family: ui-monospace, Menlo, Consolas, monospace;
+  font-size: 1.35rem;
+  line-height: 1.7;
+  color: #cdd3e0;
+}
+
+@media (max-width: 900px) {
+  .steps {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 540px) {
+  .steps {
+    grid-template-columns: 1fr;
+  }
+}

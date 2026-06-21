@@ -1,0 +1,20 @@
+<svg width="64" height="64" viewBox="0 0 64 64" fill="none" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Open Source Legends crest">
+  <defs>
+    <linearGradient id="g" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#f8d57a"/>
+      <stop offset="1" stop-color="#d99a2b"/>
+    </linearGradient>
+  </defs>
+  <!-- shield -->
+  <path d="M32 3l22 7v18c0 16-10 27-22 33C20 55 10 44 10 28V10l22-7z"
+        fill="#0d0f16" stroke="url(#g)" stroke-width="2.5"/>
+  <!-- laurel left -->
+  <path d="M18 24c-2 5-1 11 3 16M18 30c-2 0-4-1-5-3M20 36c-2 1-4 1-6 0M23 41c-2 1-4 2-6 2"
+        stroke="url(#g)" stroke-width="2" stroke-linecap="round" fill="none"/>
+  <!-- laurel right -->
+  <path d="M46 24c2 5 1 11-3 16M46 30c2 0 4-1 5-3M44 36c2 1 4 1 6 0M41 41c2 1 4 2 6 2"
+        stroke="url(#g)" stroke-width="2" stroke-linecap="round" fill="none"/>
+  <!-- </> code mark -->
+  <path d="M27 24l-6 7 6 7M37 24l6 7-6 7M34 22l-4 20"
+        stroke="url(#g)" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round" fill="none"/>
+</svg>

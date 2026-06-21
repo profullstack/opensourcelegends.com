@@ -1,0 +1,49 @@
+.head {
+  margin-bottom: 4rem;
+  max-width: 70rem;
+}
+
+.h1 {
+  font-size: clamp(3.2rem, 5vw, 5rem);
+  font-weight: 800;
+  margin: 1rem 0 1.4rem;
+}
+
+.sub {
+  font-size: 1.7rem;
+  color: var(--text-muted);
+}
+
+.legend {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1.6rem;
+  margin-top: 2.4rem;
+  font-size: 1.3rem;
+  font-weight: 700;
+}
+
+.legend span {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.6rem;
+}
+
+.legend span::before {
+  content: '';
+  width: 1rem;
+  height: 1rem;
+  border-radius: 999px;
+  background: var(--c);
+}
+
+.legend span[data-r='iconic'] { --c: var(--iconic); }
+.legend span[data-r='legendary'] { --c: var(--legendary); }
+.legend span[data-r='epic'] { --c: var(--epic); }
+.legend span[data-r='rare'] { --c: var(--rare); }
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(30rem, 1fr));
+  gap: 2.2rem;
+}

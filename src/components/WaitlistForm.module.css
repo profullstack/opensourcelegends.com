@@ -1,0 +1,46 @@
+.form {
+  display: flex;
+  gap: 1rem;
+  width: 100%;
+  max-width: 44rem;
+}
+
+.form input {
+  flex: 1;
+  background: var(--bg-base);
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  color: var(--text);
+  font-size: 1.5rem;
+  padding: 1.3rem 1.6rem;
+  font-family: inherit;
+}
+
+.form input:focus {
+  outline: none;
+  border-color: var(--crest);
+  box-shadow: 0 0 0 3px rgba(245, 196, 81, 0.15);
+}
+
+.success {
+  background: var(--bg-elev);
+  border: 1px solid color-mix(in srgb, var(--rare) 45%, var(--border));
+  border-radius: var(--radius-lg);
+  padding: 2.4rem;
+  max-width: 44rem;
+}
+
+.success strong {
+  font-size: 1.8rem;
+}
+
+.success p {
+  color: var(--text-muted);
+  margin-top: 0.6rem;
+}
+
+@media (max-width: 560px) {
+  .form {
+    flex-direction: column;
+  }
+}
