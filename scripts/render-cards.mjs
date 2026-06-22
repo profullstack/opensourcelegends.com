@@ -13,7 +13,7 @@ import path from 'node:path';
 import { fileURLToPath } from 'node:url';
 import { chromium } from 'playwright-core';
 import sharp from 'sharp';
-import { buildFront, buildBack, CARD_W, CARD_H, rarityOf } from './card-template.mjs';
+import { buildFront, buildBack, CARD_W, CARD_H, rarityOf, accentHexOf } from './card-template.mjs';
 
 const ROOT = path.resolve(path.dirname(fileURLToPath(import.meta.url)), '..');
 const CHROME = '/usr/bin/google-chrome';
@@ -27,6 +27,17 @@ const nums = process.argv.slice(2).map(Number).filter(Boolean);
 const cards = (nums.length ? roster.filter((c) => nums.includes(c.card_number)) : roster).slice(0, 50);
 
 const DISTAI = path.join(ROOT, 'dist', 'ai');
+const FRAMEDIR = path.join(ROOT, 'assets', 'frames');
+const frameCache = {};
+function frameUri(card) {
+  const hex = accentHexOf(card);
+  if (!frameCache[hex]) {
+    const f = path.join(FRAMEDIR, `frame-${hex}.png`);
+    const src = fssync.existsSync(f) ? f : path.join(FRAMEDIR, 'frame-gold.png');
+    frameCache[hex] = `data:image/png;base64,${fssync.readFileSync(src).toString('base64')}`;
+  }
+  return frameCache[hex];
+}
 
 async function portrait(card) {
   const id = `card_${String(card.card_number).padStart(3, '0')}`;
@@ -76,8 +87,9 @@ for (const c of cards) {
     const pPath = await portrait(c);
     const b64 = (await fs.readFile(pPath)).toString('base64');
     const uri = `data:image/png;base64,${b64}`;
-    await shoot(buildFront(c, uri), id, 'front');
-    await shoot(buildBack(c), id, 'back');
+    const frame = frameUri(c);
+    await shoot(buildFront(c, uri, frame), id, 'front');
+    await shoot(buildBack(c, frame), id, 'back');
     ok++;
     console.log(`✓ ${c.card_number} ${c.display_name} (${rarityOf(c.impact_rating)})`);
   } catch (e) {

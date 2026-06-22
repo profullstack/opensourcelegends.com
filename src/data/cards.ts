@@ -1,9 +1,9 @@
-// AUTO-GENERATED from data/roster.locked.json + dist/html renders.
-export type Rarity = 'iconic' | 'legendary' | 'epic' | 'rare';
+// AUTO-GENERATED from roster + dist/html renders.
+export type Rarity='iconic'|'legendary'|'epic'|'rare';
 
-export type Card = { number:number; slug:string; name:string; title:string; knownFor:string; rarity:Rarity; impact:number; nationality:string; era:string; projects:string[]; scouting:string; quote:string; front:string; back:string; };
+export type Card={number:number;slug:string;name:string;title:string;knownFor:string;rarity:Rarity;impact:number;nationality:string;era:string;projects:string[];scouting:string;quote:string;front:string;back:string;};
 
-export const cards: Card[] = [
+export const cards: Card[]=[
   {
     "number": 1,
     "slug": "richard-stallman",
@@ -936,6 +936,6 @@ export const cards: Card[] = [
   }
 ];
 
-export const featured = cards.slice(0, 8);
-export const rarityLabel: Record<Rarity,string> = { iconic:'Iconic', legendary:'Legendary', epic:'Epic', rare:'Rare' };
-export function getCard(slug: string): Card | undefined { return cards.find((c) => c.slug === slug); }
+export const featured=cards.slice(0,8);
+export const rarityLabel:Record<Rarity,string>={iconic:"Iconic",legendary:"Legendary",epic:"Epic",rare:"Rare"};
+export function getCard(slug:string){return cards.find(c=>c.slug===slug);}
