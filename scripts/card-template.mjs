@@ -43,32 +43,31 @@ const base = `* { margin:0; padding:0; box-sizing:border-box; }
 export function buildFront(card, portraitDataUri, frameDataUri) {
   const accent = accentOf(card);
   const kw = traits(card).join('&nbsp;·&nbsp;');
+  // zones match the proof-derived front frame (portrait window, crest banner,
+  // name plate, two badge circles)
   return `<!doctype html><html><head><meta charset="utf-8"><style>${FONTS}
   ${base}
-  .portrait { position:absolute; left:8.5%; right:8.5%; top:7%; height:49%; z-index:2; border-radius:8px; overflow:hidden; }
+  .portrait { position:absolute; left:5%; right:5%; top:4%; height:53%; z-index:2; border-radius:14px; overflow:hidden; }
   .portrait img { width:100%; height:100%; object-fit:cover; object-position:center 16%; }
-  .portrait::after { content:''; position:absolute; left:0; right:0; bottom:0; height:38%; background:linear-gradient(180deg,transparent,#0b0a12); }
-  .num { position:absolute; top:5.6%; left:9%; z-index:4; font-family:'Oswald'; font-weight:700; color:#fff; font-size:50px; text-shadow:0 2px 12px #000; }
-  .crest { position:absolute; top:6.2%; right:9%; z-index:4; display:flex; align-items:center; gap:7px; background:#0a0810cc; border:1.5px solid ${accent}; border-radius:7px; padding:5px 11px 5px 8px; }
-  .crest .t { font-family:'Oswald'; color:#fff; font-weight:700; font-size:13px; letter-spacing:1px; line-height:1.05; }
-  .info { position:absolute; left:9%; right:9%; top:57%; bottom:7%; z-index:4; display:flex; flex-direction:column; align-items:center; }
-  .name { font-family:'Oswald'; color:#fff; font-weight:700; font-size:44px; letter-spacing:1px; text-transform:uppercase; text-align:center; margin-top:8px; line-height:1; }
-  .title { color:${accent}; font-weight:700; font-size:17px; letter-spacing:2px; margin-top:11px; text-transform:uppercase; font-family:'Oswald'; text-align:center; }
-  .kwbar { margin-top:auto; width:100%; display:flex; align-items:center; gap:12px; background:#0c0a16cc; border:1.5px solid ${accent}66; border-radius:12px; padding:9px 13px; }
-  .badge { width:42px; height:42px; flex:0 0 auto; border-radius:50%; background:#0a0810; border:2px solid ${accent}; display:flex; align-items:center; justify-content:center; }
-  .kw { font-family:'Oswald'; flex:1; text-align:center; color:#e4e6ee; font-weight:600; font-size:14px; letter-spacing:1px; }
+  .num { position:absolute; top:3.4%; left:7.5%; z-index:4; font-family:'Oswald'; font-weight:700; color:#fff; font-size:40px; line-height:1; text-shadow:0 2px 8px #000; }
+  .crest { position:absolute; top:5%; right:6%; z-index:4; width:116px; text-align:center; }
+  .crest .t { font-family:'Oswald'; color:#fff; font-weight:700; font-size:11px; letter-spacing:.4px; line-height:1.12; }
+  .title { position:absolute; left:8%; right:8%; top:60.3%; z-index:4; text-align:center; color:${accent}; font-family:'Oswald'; font-weight:700; font-size:15px; letter-spacing:2px; text-transform:uppercase; }
+  .name { position:absolute; left:8%; right:8%; top:67.2%; z-index:4; text-align:center; font-family:'Oswald'; color:#fff; font-weight:700; font-size:34px; letter-spacing:1px; text-transform:uppercase; line-height:1; }
+  .bl { position:absolute; left:7.3%; top:87.4%; z-index:4; } .br { position:absolute; right:7.3%; top:87.4%; z-index:4; }
+  .kw { position:absolute; left:22%; right:22%; top:89.6%; z-index:4; text-align:center; font-family:'Oswald'; color:#e4e6ee; font-weight:600; font-size:13px; letter-spacing:1px; }
   </style></head><body>
   <div class="card">
     <div class="bg"></div>
     <div class="portrait"><img src="${portraitDataUri}"></div>
     <div class="frame"><img src="${frameDataUri}"></div>
     <div class="num">${pad2(card.card_number)}</div>
-    <div class="crest">${emblem(accent, 22)}<span class="t">OPEN SOURCE<br>LEGENDS</span></div>
-    <div class="info">
-      <div class="name">${esc(card.display_name)}</div>
-      <div class="title">${esc(card.card_title)}</div>
-      <div class="kwbar"><span class="badge">${emblem(accent, 24)}</span><span class="kw">${kw}</span><span class="badge">${codeGlyph(accent, 22)}</span></div>
-    </div>
+    <div class="crest"><span class="t">OPEN SOURCE<br>LEGENDS</span></div>
+    <div class="title">${esc(card.card_title)}</div>
+    <div class="name">${esc(card.display_name)}</div>
+    <div class="bl">${emblem(accent, 44)}</div>
+    <div class="br">${codeGlyph(accent, 40)}</div>
+    <div class="kw">${kw}</div>
   </div></body></html>`;
 }
 

@@ -29,14 +29,15 @@ const cards = (nums.length ? roster.filter((c) => nums.includes(c.card_number)) 
 const DISTAI = path.join(ROOT, 'dist', 'ai');
 const FRAMEDIR = path.join(ROOT, 'assets', 'frames');
 const frameCache = {};
-function frameUri(card) {
+function frameUri(card, side) {
   const hex = accentHexOf(card);
-  if (!frameCache[hex]) {
-    const f = path.join(FRAMEDIR, `frame-${hex}.png`);
-    const src = fssync.existsSync(f) ? f : path.join(FRAMEDIR, 'frame-gold.png');
-    frameCache[hex] = `data:image/png;base64,${fssync.readFileSync(src).toString('base64')}`;
+  const k = `${side}-${hex}`;
+  if (!frameCache[k]) {
+    const f = path.join(FRAMEDIR, `frame-${side}-${hex}.png`);
+    const src = fssync.existsSync(f) ? f : path.join(FRAMEDIR, `base-${side}.png`);
+    frameCache[k] = `data:image/png;base64,${fssync.readFileSync(src).toString('base64')}`;
   }
-  return frameCache[hex];
+  return frameCache[k];
 }
 
 async function portrait(card) {
@@ -87,9 +88,8 @@ for (const c of cards) {
     const pPath = await portrait(c);
     const b64 = (await fs.readFile(pPath)).toString('base64');
     const uri = `data:image/png;base64,${b64}`;
-    const frame = frameUri(c);
-    await shoot(buildFront(c, uri, frame), id, 'front');
-    await shoot(buildBack(c, frame), id, 'back');
+    await shoot(buildFront(c, uri, frameUri(c, 'front')), id, 'front');
+    await shoot(buildBack(c, frameUri(c, 'back')), id, 'back');
     ok++;
     console.log(`✓ ${c.card_number} ${c.display_name} (${rarityOf(c.impact_rating)})`);
   } catch (e) {

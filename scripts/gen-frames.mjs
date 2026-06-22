@@ -1,11 +1,11 @@
 #!/usr/bin/env node
 /*
-  Generate accent-coloured card frames by recolouring the base gold frame with
-  Gemini (nano-banana). Keeps one consistent design across the palette.
+  Recolour the proof-derived base frames (assets/frames/base-front.png and
+  base-back.png — generated from docs/proof1.png via Gemini) into the 8 palette
+  accent colours, using Gemini nano-banana (consistent design).
   Env: GEMINI_API_KEY   Run: node scripts/gen-frames.mjs
 */
-import fs from 'node:fs/promises';
-import fssync from 'node:fs';
+import fs from 'node:fs';
 import path from 'node:path';
 import { fileURLToPath } from 'node:url';
 
@@ -14,34 +14,40 @@ const KEY = process.env.GEMINI_API_KEY;
 const DIR = path.join(ROOT, 'assets', 'frames');
 const MODEL = 'gemini-2.5-flash-image';
 
-// palette hex -> colour description for the recolour prompt
+// base frames are violet (#9b6bff); recolour to each palette colour
 const COLORS = {
-  'e0473a': 'bright crimson red', 'f0822e': 'vivid orange', '3e7bd6': 'royal blue',
-  '36b37e': 'emerald green', '9b6bff': 'violet purple', '2bb3c0': 'cyan teal', 'e35d8a': 'magenta pink',
+  f5c451: 'metallic gold and amber', e0473a: 'bright crimson red', f0822e: 'vivid orange',
+  '3e7bd6': 'royal blue', '36b37e': 'emerald green', '9b6bff': 'violet purple (keep as-is)',
+  '2bb3c0': 'cyan teal', e35d8a: 'magenta pink',
 };
 
-const base = fssync.readFileSync(path.join(DIR, 'frame-gold.png')).toString('base64');
-
-for (const [hex, name] of Object.entries(COLORS)) {
-  const out = path.join(DIR, `frame-${hex}.png`);
-  if (fssync.existsSync(out)) { console.log('skip', hex); continue; }
+async function recolour(baseB64, name) {
   const body = {
     contents: [{ parts: [
-      { inline_data: { mime_type: 'image/png', data: base } },
-      { text: `Recolour the metallic gold border and corner ornaments of this trading-card frame to ${name}. Keep the exact same design, layout, ornaments, dark carbon interior, and proportions — only change the metallic accent colour to ${name}. No text.` },
+      { inline_data: { mime_type: 'image/png', data: baseB64 } },
+      { text: `Recolour the glowing violet/purple accent of this trading-card frame (the border glow and circuit motifs) to ${name}. Keep the EXACT same design, layout, motifs, proportions and dark interior — only change the accent colour. No text.` },
     ] }],
     generationConfig: { responseModalities: ['IMAGE'] },
   };
   const res = await fetch(`https://generativelanguage.googleapis.com/v1beta/models/${MODEL}:generateContent?key=${KEY}`, {
     method: 'POST', headers: { 'Content-Type': 'application/json' }, body: JSON.stringify(body),
   });
-  const data = await res.json();
-  if (!data.candidates) { console.log('✗', hex, JSON.stringify(data).slice(0, 160)); continue; }
-  const part = data.candidates[0].content.parts.find((p) => p.inlineData || p.inline_data);
-  if (!part) { console.log('✗', hex, 'no image'); continue; }
-  await fs.writeFile(out, Buffer.from((part.inlineData || part.inline_data).data, 'base64'));
-  console.log('✓', hex, name);
+  const d = await res.json();
+  if (!d.candidates) return null;
+  const part = d.candidates[0].content.parts.find((p) => p.inlineData || p.inline_data);
+  return part ? Buffer.from((part.inlineData || part.inline_data).data, 'base64') : null;
 }
-// alias gold by hex too
-if (!fssync.existsSync(path.join(DIR, 'frame-f5c451.png'))) fssync.copyFileSync(path.join(DIR, 'frame-gold.png'), path.join(DIR, 'frame-f5c451.png'));
+
+for (const side of ['front', 'back']) {
+  const base = fs.readFileSync(path.join(DIR, `base-${side}.png`)).toString('base64');
+  for (const [hex, name] of Object.entries(COLORS)) {
+    const out = path.join(DIR, `frame-${side}-${hex}.png`);
+    if (fs.existsSync(out)) { console.log('skip', side, hex); continue; }
+    if (hex === '9b6bff') { fs.copyFileSync(path.join(DIR, `base-${side}.png`), out); console.log('✓', side, hex, '(base)'); continue; }
+    const buf = await recolour(base, name);
+    if (!buf) { console.log('✗', side, hex); continue; }
+    fs.writeFileSync(out, buf);
+    console.log('✓', side, hex, name);
+  }
+}
 console.log('done');
