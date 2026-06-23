@@ -20,3 +20,5 @@ next-env.d.ts
 # Regenerable for free via `node scripts/render-cards.mjs` (no API cost)
 dist/html/
 assets/portraits-art/
+
+dist/enhanced/
