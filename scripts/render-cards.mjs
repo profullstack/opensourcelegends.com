@@ -88,8 +88,8 @@ for (const c of cards) {
     const pPath = await portrait(c);
     const b64 = (await fs.readFile(pPath)).toString('base64');
     const uri = `data:image/png;base64,${b64}`;
-    await shoot(buildFront(c, uri, frameUri(c, 'front')), id, 'front');
-    await shoot(buildBack(c, frameUri(c, 'back')), id, 'back');
+    await shoot(buildFront(c, uri), id, 'front');
+    await shoot(buildBack(c), id, 'back');
     ok++;
     console.log(`✓ ${c.card_number} ${c.display_name} (${rarityOf(c.impact_rating)})`);
   } catch (e) {
