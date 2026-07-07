@@ -1,5 +1,6 @@
 import Link from 'next/link';
 import CardFlip from '@/components/CardFlip';
+import AdUnit from '@/components/AdUnit';
 import { cards, featured } from '@/data/cards';
 import { site } from '@/data/site';
 import styles from './page.module.css';
@@ -76,6 +77,13 @@ export default function Home() {
               <CardFlip key={c.slug} card={c} />
             ))}
           </div>
+        </div>
+      </section>
+
+      {/* In-content ad */}
+      <section className="section">
+        <div className="container">
+          <AdUnit />
         </div>
       </section>
 

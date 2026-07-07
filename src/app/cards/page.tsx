@@ -1,6 +1,7 @@
 import type { Metadata } from 'next';
 import Link from 'next/link';
 import CardFlip from '@/components/CardFlip';
+import AdUnit from '@/components/AdUnit';
 import { cards } from '@/data/cards';
 import styles from './page.module.css';
 
@@ -27,6 +28,8 @@ export default function CardsPage() {
             <CardFlip key={c.slug} card={c} />
           ))}
         </div>
+
+        <AdUnit />
 
         <div className={styles.cta}>
           <Link href="/collect" className="btn-primary">Get the full deck →</Link>

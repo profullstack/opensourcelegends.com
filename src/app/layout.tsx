@@ -34,9 +34,9 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
         <Header />
         <main>{children}</main>
         <Footer />
-              <Script data-site="6e37a389-d4cc-46c3-8e7d-20e5c9fd8b42" src="https://crawlproof.com/stats.js" strategy="afterInteractive" />
-              <div data-cp-ad="" data-slot="b9a5efa3-b3f8-408f-8bae-0322f42d382d" data-format="banner_300x250" />
-      <Script src="https://crawlproof.com/ad.js" strategy="afterInteractive" />
+        <Script data-site="6e37a389-d4cc-46c3-8e7d-20e5c9fd8b42" src="https://crawlproof.com/stats.js" strategy="afterInteractive" />
+        {/* Global CrawlProof ad loader — hydrates every <AdUnit /> ([data-cp-ad]) rendered in page content. */}
+        <Script src="https://crawlproof.com/ad.js" strategy="afterInteractive" />
       </body>
     </html>
   );
