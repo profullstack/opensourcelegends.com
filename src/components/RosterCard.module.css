@@ -2,6 +2,8 @@
   --tier: var(--common);
   display: flex;
   flex-direction: column;
+  /* buttons get `align-items: center` from the UA sheet, which shrink-wraps every row */
+  align-items: stretch;
   gap: 1.4rem;
   width: 100%;
   text-align: left;
@@ -54,6 +56,7 @@
   align-items: center;
   justify-content: center;
   gap: 0.8rem;
+  width: 100%;
   aspect-ratio: 3 / 2;
   border-radius: var(--radius);
   border: 1px dashed var(--border);
