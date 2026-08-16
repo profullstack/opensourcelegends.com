@@ -2,6 +2,7 @@ import Link from 'next/link';
 import CardFlip from '@/components/CardFlip';
 import AdUnit from '@/components/AdUnit';
 import { cards, featured } from '@/data/cards';
+import { hackers } from '@/data/hacking';
 import { site } from '@/data/site';
 import styles from './page.module.css';
 
@@ -76,6 +77,27 @@ export default function Home() {
             {featured.map((c) => (
               <CardFlip key={c.slug} card={c} />
             ))}
+          </div>
+        </div>
+      </section>
+
+      {/* Series Two teaser */}
+      <section className="section">
+        <div className="container">
+          <div className={styles.bandInner}>
+            <div>
+              <span className="kicker">Series Two · In progress</span>
+              <h2 className={styles.h2}>Hacking Legends</h2>
+              <p>
+                The next set covers the other half of the story: the phone phreaks, worm
+                authors, disclosure architects and defenders who found the holes in all of
+                this. {hackers.length} names on the working roster, no artwork yet, and
+                nominations are open.
+              </p>
+            </div>
+            <div className={styles.bandActions}>
+              <Link href="/hacking-legends" className="btn-primary">See the roster →</Link>
+            </div>
           </div>
         </div>
       </section>
