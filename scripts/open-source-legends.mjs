@@ -7,7 +7,7 @@
   - Never copies template guide artwork into production PDFs.
   - Fetches research suggestions from public Wikipedia/Wikidata APIs, but does not auto-approve facts.
   - Requires manually locked/fact-checked data in data/roster.locked.json.
-  - Requires manually approved portrait PNGs in assets/portraits/card_###.png.
+  - Requires manually approved portrait PNGs in assets/portraits/legends/card_###.png.
   - Renders exact-size 300 DPI equivalent front/back PNGs.
   - Builds one 2-page PDF per card, two 50-page batch PDFs, one 100-page master PDF, roster CSV/JSON,
     sources/legal notes, and proof contact sheets.
@@ -21,7 +21,7 @@
   Typical run:
     node scripts/open-source-legends.mjs init
     node scripts/open-source-legends.mjs research
-    # manually review/fill data/roster.locked.json and add assets/portraits/card_001.png ... card_050.png
+    # manually review/fill data/roster.locked.json and add assets/portraits/legends/card_001.png ... card_050.png
     node scripts/open-source-legends.mjs all
 */
 
@@ -46,7 +46,8 @@ const CONFIG = {
   cacheDir: path.join(ROOT, 'data', 'cache'),
   rosterLocked: path.join(ROOT, 'data', 'roster.locked.json'),
   researchSuggestions: path.join(ROOT, 'data', 'research_suggestions.json'),
-  portraitDir: path.join(ROOT, 'assets', 'portraits'),
+  // Series One art only. Series Two (Hacking Legends) lives in assets/portraits/hacking-legends/.
+  portraitDir: path.join(ROOT, 'assets', 'portraits', 'legends'),
   outDir: path.join(ROOT, 'dist'),
   pngDir: path.join(ROOT, 'dist', 'png'),
   proofDir: path.join(ROOT, 'dist', 'proofs'),
@@ -284,7 +285,7 @@ function starterCard(i, name, displayName) {
     longevity_rating: 50,
     facts_verified: false,
     portrait_review_status: 'needs_review',
-    portrait_asset: `assets/portraits/${cardId(i)}.png`,
+    portrait_asset: `assets/portraits/legends/${cardId(i)}.png`,
     manual_review_notes: 'Fill facts from sourced research only. Do not copy AI-generated text into this file without checking sources.'
   };
 }
@@ -932,7 +933,7 @@ async function writePortraitPrompts() {
   lines.push('# Open Source Legends - portrait prompts');
   lines.push('');
   lines.push('Use these prompts only for portrait art. Do not generate full cards, text, logos, labels, or badges with the image model.');
-  lines.push('After manual review, save approved output as `assets/portraits/card_###.png`.');
+  lines.push('After manual review, save approved output as `assets/portraits/legends/card_###.png`.');
   lines.push('');
   for (const card of roster) {
     lines.push(`## ${cardId(card.card_number)} - ${card.display_name}`);
