@@ -63,8 +63,11 @@ export default function HackingLegendsPage() {
             who found the holes in the software the world runs on.
           </p>
           <p className={styles.warning}>
-            This set is being built in public. Copy is drafted, stats are in flux, and not a
-            single portrait has been illustrated yet. What you see below is the working roster.
+            This set is being built in public. Copy is drafted, stats are in flux, and{' '}
+            {illustratedCount === 0
+              ? 'not a single portrait has been illustrated yet'
+              : `${illustratedCount} of ${totalPlanned} cards are illustrated so far`}
+            . What you see below is the working roster.
           </p>
           <div className={styles.actions}>
             <a href={site.github} target="_blank" rel="noreferrer" className="btn-primary">

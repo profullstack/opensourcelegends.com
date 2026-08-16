@@ -35,6 +35,49 @@ npm run db:migrate         # applies db/schema.sql
 Set the same two vars in the Railway service. `POST /api/waitlist` inserts email
 signups into the `waitlist` table.
 
+## Card production
+
+Two decks, one per series. Approved portrait art lives under
+`assets/portraits/<set>/` — see [assets/portraits/README.md](assets/portraits/README.md).
+
+**Series One — Open Source Legends** (`data/roster.locked.json`, complete):
+
+```bash
+node scripts/open-source-legends.mjs validate   # roster + portraits + template dims
+node scripts/open-source-legends.mjs all        # PNGs, per-card PDFs, batches, proofs
+```
+
+**Series Two — Hacking Legends** (`src/data/hacking.ts`, in progress):
+
+```bash
+pnpm hacking validate          # roster checks, reports what art is missing
+pnpm hacking all               # portraits -> render -> enhance -> publish
+pnpm hacking all 1 5 12        # ...only these card numbers
+pnpm hacking render            # re-render faces from the template, no API calls
+```
+
+The Series Two stages are:
+
+| Stage | Output | Cost |
+| --- | --- | --- |
+| `portraits` | `assets/portraits-art/hacking-legends/` | one image call per card |
+| `render` | `dist/hacking/html/` (700x1043 @2x + the source HTML) | free |
+| `enhance` | `dist/hacking/enhanced/` — premium finish, text preserved | two image calls per card |
+| `publish` | `public/cards/hacking/` at 500x745, and writes `front`/`back` into `src/data/hacking.ts` | free |
+
+Every stage skips work that already exists, so a failed batch is just re-run.
+Move a portrait from `assets/portraits-art/hacking-legends/` to
+`assets/portraits/hacking-legends/` to approve it — the approved copy wins and is
+never regenerated.
+
+Set `OPENAI_API_KEY` (uses `gpt-image-2`) or `GEMINI_API_KEY` (uses
+`gemini-3-pro-image-preview`); override with `IMAGE_PROVIDER`,
+`OPENAI_IMAGE_MODEL` or `GEMINI_IMAGE_MODEL`. Rendering needs Chrome or
+Chromium — set `CHROME_PATH` if it is not on the usual paths.
+
+`dist/hacking/` is gitignored, so the full-resolution faces are local only.
+Archive them before wiping the directory if you want print masters.
+
 ## Project layout
 
 ```

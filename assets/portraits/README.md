@@ -5,7 +5,7 @@ Approved, human-reviewed portrait art. One directory per card set.
 | Directory          | Set                              | Roster source          | Status                       |
 | ------------------ | -------------------------------- | ---------------------- | ---------------------------- |
 | `legends/`         | Open Source Legends (Series One) | `data/roster.locked.json` | Complete, 50 portraits    |
-| `hacking-legends/` | Hacking Legends (Series Two)     | `src/data/hacking.ts`  | Art not started, 30 on roster |
+| `hacking-legends/` | Hacking Legends (Series Two)     | `src/data/hacking.ts`  | In progress, 30 on roster     |
 
 ## Naming
 
@@ -23,8 +23,12 @@ unrelated.
 - `node scripts/open-source-legends.mjs validate` fails if any Series One card
   has no portrait in `legends/`.
 
-## Prompts
+## Prompts and generation
 
-`node scripts/open-source-legends.mjs prompts` writes per-card portrait prompts
-for Series One to `dist/portrait_prompts.md`. Series Two has no generator yet;
-its art is being commissioned separately.
+Series One: `node scripts/open-source-legends.mjs prompts` writes per-card
+portrait prompts to `dist/portrait_prompts.md`.
+
+Series Two: `pnpm hacking portraits` generates art into
+`assets/portraits-art/hacking-legends/` (gitignored). Copy one into
+`hacking-legends/` here to approve it — approved art always wins and is never
+regenerated. See the card production section in the root README.
