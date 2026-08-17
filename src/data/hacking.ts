@@ -85,6 +85,8 @@ export const hackers: Hacker[] = [
       'Discovered that a toy whistle packed in a cereal box produced the exact 2600 Hz tone AT&T used to signal a free trunk line. The blue-box scene that grew from it pulled in two young Californians named Wozniak and Jobs, and drew the blueprint for every generation of hacker that followed.',
     note: 'Patient zero for hacker culture. The whistle is the artifact of the century.',
     status: 'locked',
+    front: '/cards/hacking/002-john-draper-front.png',
+    back: '/cards/hacking/002-john-draper-back.png',
   },
   {
     number: 3,
@@ -105,6 +107,8 @@ export const hackers: Hacker[] = [
       'Released a self-replicating program from MIT in November 1988 that reinfected hosts far faster than intended and knocked out a large share of the machines on the internet. First person convicted under the Computer Fraud and Abuse Act. Went on to become an MIT professor and a co-founder of Y Combinator.',
     note: 'The accident that created the entire incident-response industry — CERT exists because of this.',
     status: 'locked',
+    front: '/cards/hacking/003-robert-tappan-morris-front.png',
+    back: '/cards/hacking/003-robert-tappan-morris-back.png',
   },
   {
     number: 4,
@@ -126,6 +130,8 @@ export const hackers: Hacker[] = [
       'Front man of L0pht Heavy Industries and co-author of L0phtCrack. In 1998 the crew testified before the US Senate under their handles and warned that the internet could be taken down in half an hour. Later ran cyber programs at DARPA, worked security at Google and Stripe, and blew the whistle on Twitter’s security posture in 2022.',
     note: 'The rare legend who went from underground to the Senate floor without changing his story.',
     status: 'locked',
+    front: '/cards/hacking/004-peiter-zatko-front.png',
+    back: '/cards/hacking/004-peiter-zatko-back.png',
   },
   {
     number: 5,
@@ -170,6 +176,8 @@ export const hackers: Hacker[] = [
       'Founded 2600: The Hacker Quarterly in 1984 and has been broadcasting Off The Hook on WBAI since 1988. Organizer of the HOPE conferences and a defendant in the DeCSS case, where the courts first wrestled with whether publishing code is speech.',
     note: 'The set needs a printing press, and this is it.',
     status: 'locked',
+    front: '/cards/hacking/006-eric-corley-front.png',
+    back: '/cards/hacking/006-eric-corley-back.png',
   },
   {
     number: 7,
@@ -191,6 +199,8 @@ export const hackers: Hacker[] = [
       'Member of the Legion of Doom who, hours after being arrested in 1986, wrote the essay that Phrack published as The Conscience of a Hacker. Later wrote GURPS Cyberpunk for Steve Jackson Games — the manuscript the Secret Service seized in a raid that helped spark the founding of the EFF.',
     note: 'One page of text that every hacker under thirty could still quote a decade later.',
     status: 'locked',
+    front: '/cards/hacking/007-loyd-blankenship-front.png',
+    back: '/cards/hacking/007-loyd-blankenship-back.png',
   },
   {
     number: 8,
@@ -212,6 +222,8 @@ export const hackers: Hacker[] = [
       'Threw a going-away party for a friend in Las Vegas in 1993 and accidentally founded DEF CON, now the largest hacker gathering on earth. Also founded Black Hat, served on the US Homeland Security Advisory Council, and spent years translating between the underground and the institutions that fear it.',
     note: 'Every other legend in this set has stood on a stage he built.',
     status: 'locked',
+    front: '/cards/hacking/008-jeff-moss-front.png',
+    back: '/cards/hacking/008-jeff-moss-back.png',
   },
   {
     number: 9,
@@ -232,6 +244,8 @@ export const hackers: Hacker[] = [
       'Found a flaw that let an attacker poison DNS caches and quietly redirect any name on the internet. Instead of publishing, he organized a secret multi-vendor patch effort and got the whole internet fixed on one coordinated day in July 2008. Died in 2021 at 42, and the industry has not stopped talking about him since.',
     note: 'Proof that the biggest bug of your career is a responsibility, not a trophy.',
     status: 'locked',
+    front: '/cards/hacking/009-dan-kaminsky-front.png',
+    back: '/cards/hacking/009-dan-kaminsky-back.png',
   },
   {
     number: 10,
@@ -252,6 +266,8 @@ export const hackers: Hacker[] = [
       'Chased a 75-cent accounting error at Lawrence Berkeley Lab all the way to Markus Hess, a West German hacker selling US military data to the KGB. His logbooks and homemade tripwires invented network intrusion detection by hand, and The Cuckoo’s Egg is still the best on-ramp anyone ever wrote.',
     note: 'The first documented cyber-espionage case, solved by an astronomer with a printer.',
     status: 'locked',
+    front: '/cards/hacking/010-cliff-stoll-front.png',
+    back: '/cards/hacking/010-cliff-stoll-back.png',
   },
   {
     number: 11,
@@ -272,6 +288,8 @@ export const hackers: Hacker[] = [
       'Computational physicist at San Diego Supercomputer Center whose own machines were broken into on Christmas Day 1994. His analysis of the IP-spoofing and TCP sequence-prediction attack, and the cell-tracking work that followed, led federal agents to Kevin Mitnick in Raleigh in February 1995.',
     note: 'Card 1’s opposite number. They belong in the same pack.',
     status: 'draft',
+    front: '/cards/hacking/011-tsutomu-shimomura-front.png',
+    back: '/cards/hacking/011-tsutomu-shimomura-back.png',
   },
   {
     number: 12,
@@ -316,6 +334,8 @@ export const hackers: Hacker[] = [
       'Ran in the same Los Angeles phreaking circles as Mitnick and Lewis De Payne and specialized in the human layer — pretext calls, trashed printouts, borrowed credentials. One of the very few women documented in the earliest scene, and she walked away from it entirely.',
     note: 'Written out of most retellings. This set puts her back in.',
     status: 'draft',
+    front: '/cards/hacking/013-susan-headley-front.png',
+    back: '/cards/hacking/013-susan-headley-back.png',
   },
   {
     number: 14,
@@ -337,6 +357,8 @@ export const hackers: Hacker[] = [
       'Broke into Microsoft, Yahoo and The New York Times from library terminals and coffee shops, usually telling the victim afterwards. In 2010 he reported Chelsea Manning to the authorities after she confided in him — a decision that split the community permanently. Died in 2018.',
     note: 'The most divisive card in the set, and it stays in. The history is the history.',
     status: 'draft',
+    front: '/cards/hacking/014-adrian-lamo-front.png',
+    back: '/cards/hacking/014-adrian-lamo-back.png',
   },
   {
     number: 15,
@@ -358,6 +380,8 @@ export const hackers: Hacker[] = [
       'Scanned US military and NASA networks for machines with blank administrator passwords and found plenty. US prosecutors called it the biggest military computer hack of all time; a decade-long extradition fight ended in 2012 when the UK Home Secretary blocked it on human-rights grounds.',
     note: 'Two words: no password. That is the whole exploit.',
     status: 'draft',
+    front: '/cards/hacking/015-gary-mckinnon-front.png',
+    back: '/cards/hacking/015-gary-mckinnon-back.png',
   },
   {
     number: 16,
@@ -379,6 +403,8 @@ export const hackers: Hacker[] = [
       'At fifteen, installed a backdoor on a Defense Threat Reduction Agency server and downloaded NASA software supporting the International Space Station. Sentenced in 2000 as the first juvenile incarcerated for cybercrime in the US. Died by suicide in 2008 while under investigation in an unrelated case he denied any part in.',
     note: 'A cautionary card. The set tells it straight or not at all.',
     status: 'draft',
+    front: '/cards/hacking/016-jonathan-james-front.png',
+    back: '/cards/hacking/016-jonathan-james-back.png',
   },
   {
     number: 17,
@@ -400,6 +426,8 @@ export const hackers: Hacker[] = [
       'One of the seven L0pht members who testified to the Senate in 1998. Spent the following decades turning ad-hoc bug reporting into a process the industry could live with, then co-founded Veracode to make application security something you can actually buy.',
     note: 'Half the reason a vendor takes your bug report seriously today.',
     status: 'draft',
+    front: '/cards/hacking/017-chris-wysopal-front.png',
+    back: '/cards/hacking/017-chris-wysopal-back.png',
   },
   {
     number: 18,
@@ -420,6 +448,8 @@ export const hackers: Hacker[] = [
       'Created Microsoft’s first bug bounty program, then ran Hack the Pentagon, the first bounty program in the history of the US federal government. Fought to keep defensive research from being criminalized under the Wassenaar Arrangement, and founded Luta Security.',
     note: 'Turned “we do not pay for bugs” into an industry standard line item.',
     status: 'draft',
+    front: '/cards/hacking/018-katie-moussouris-front.png',
+    back: '/cards/hacking/018-katie-moussouris-back.png',
   },
   {
     number: 19,
@@ -440,6 +470,8 @@ export const hackers: Hacker[] = [
       'Presented Blue Pill at Black Hat 2006, a rootkit that moved a running OS into a hypervisor beneath it, and coined the Evil Maid attack for machines left unattended. Then built the answer: Qubes OS, a desktop that assumes compromise and isolates by compartment.',
     note: 'Broke the platform, then shipped a better one. Very few do both.',
     status: 'draft',
+    front: '/cards/hacking/019-joanna-rutkowska-front.png',
+    back: '/cards/hacking/019-joanna-rutkowska-back.png',
   },
   {
     number: 20,
@@ -461,6 +493,8 @@ export const hackers: Hacker[] = [
       'Wrote afl, the coverage-guided fuzzer that found thousands of bugs across the software everyone depends on and reset the state of the art for everyone else. Author of Silence on the Wire and The Tangled Web, and a long-time browser security lead at Google.',
     note: 'The bug-finding tool with the highest body count in open source history.',
     status: 'draft',
+    front: '/cards/hacking/020-michal-zalewski-front.png',
+    back: '/cards/hacking/020-michal-zalewski-back.png',
   },
   {
     number: 21,
@@ -482,6 +516,8 @@ export const hackers: Hacker[] = [
       'Wrote John the Ripper, still the reference password cracker three decades on. Founded Openwall, pioneered non-executable stack patches for Linux, published early return-into-libc work, and runs the oss-security list where the industry argues about disclosure in public.',
     note: 'Runs the mailing list where your favorite CVE was first announced.',
     status: 'draft',
+    front: '/cards/hacking/021-solar-designer-front.png',
+    back: '/cards/hacking/021-solar-designer-back.png',
   },
   {
     number: 22,
@@ -502,6 +538,8 @@ export const hackers: Hacker[] = [
       'Released Metasploit in 2003 and turned exploit development from scattered one-off code into a shared, modular framework every penetration tester now learns first. Later ran internet-wide scanning projects that mapped just how much of the internet is quietly exposed.',
     note: 'Changed what a working exploit is worth by making them all free.',
     status: 'draft',
+    front: '/cards/hacking/022-hd-moore-front.png',
+    back: '/cards/hacking/022-hd-moore-back.png',
   },
   {
     number: 23,
@@ -522,6 +560,8 @@ export const hackers: Hacker[] = [
       'Walked onto the Black Hat 2010 stage, ran his Jackpotting demo, and made two ATMs pour out cash in front of the room. Then turned to insulin pumps and pacemakers, showing that implanted medical devices could be attacked wirelessly. Died in 2013, days before he was due to present that research.',
     note: 'The most theatrical demo in the history of the conference circuit.',
     status: 'draft',
+    front: '/cards/hacking/023-barnaby-jack-front.png',
+    back: '/cards/hacking/023-barnaby-jack-back.png',
   },
   {
     number: 24,
@@ -542,6 +582,8 @@ export const hackers: Hacker[] = [
       'Won Pwn2Own repeatedly, was the first to publicly exploit the iPhone, and then, with Chris Valasek, cut the transmission of a Jeep Cherokee on a live highway from a couch miles away. Chrysler recalled 1.4 million vehicles. Automotive security became a real discipline overnight.',
     note: 'One demo, 1.4 million recalled vehicles. Hard to argue with the receipts.',
     status: 'draft',
+    front: '/cards/hacking/024-charlie-miller-front.png',
+    back: '/cards/hacking/024-charlie-miller-back.png',
   },
   {
     number: 25,
@@ -562,6 +604,8 @@ export const hackers: Hacker[] = [
       'Reverse-engineered the internal networks of production vehicles and, with Miller, demonstrated full remote control of a Jeep Cherokee in 2015. Both went on to build security teams inside the autonomous-vehicle industry they had just put on notice.',
     note: 'Ships as a pair card with 24. Collectors will want both.',
     status: 'candidate',
+    front: '/cards/hacking/025-chris-valasek-front.png',
+    back: '/cards/hacking/025-chris-valasek-back.png',
   },
   {
     number: 26,
@@ -582,6 +626,8 @@ export const hackers: Hacker[] = [
       'Released a self-propagating cross-site scripting worm in 2005 that added over a million MySpace friends in under a day and took the site down. After his sentence he kept publishing: SkyJack, OwnStar, KeySweeper, and a long line of garage-door and car-key radio attacks explained on video for anyone.',
     note: 'The best explainer in the game. Half the set learned from his videos.',
     status: 'draft',
+    front: '/cards/hacking/026-samy-kamkar-front.png',
+    back: '/cards/hacking/026-samy-kamkar-back.png',
   },
   {
     number: 27,
@@ -603,6 +649,8 @@ export const hackers: Hacker[] = [
       'At seventeen, unlocked the original iPhone from its carrier. Then published PlayStation 3 root keys and was sued by Sony, in a case that became a rallying point for the right to modify hardware you own. Later founded comma.ai and worked on open self-driving.',
     note: 'The card about who actually owns the device in your pocket.',
     status: 'draft',
+    front: '/cards/hacking/027-george-hotz-front.png',
+    back: '/cards/hacking/027-george-hotz-back.png',
   },
   {
     number: 28,
@@ -624,6 +672,8 @@ export const hackers: Hacker[] = [
       'Reversing WannaCry as it tore through hospitals in May 2017, he spotted an unregistered domain in the code and bought it, unintentionally triggering the killswitch that halted the outbreak. Arrested months later over earlier banking-malware code he had written as a teenager; he pled guilty, was sentenced to time served, and now works in threat research.',
     note: 'Saved the NHS on a Friday and was arrested by August. Both halves are the card.',
     status: 'draft',
+    front: '/cards/hacking/028-marcus-hutchins-front.png',
+    back: '/cards/hacking/028-marcus-hutchins-back.png',
   },
   {
     number: 29,
@@ -644,6 +694,8 @@ export const hackers: Hacker[] = [
       'Cracked GSM’s A5/1 encryption with rainbow tables, showed millions of SIM cards could be hijacked over the air with a text message, broke Mifare smartcards, and with Jakob Lell released BadUSB — proof that any USB device’s firmware can be reprogrammed to lie about what it is.',
     note: 'If it has a radio and a chip, he has probably already read the datasheet.',
     status: 'draft',
+    front: '/cards/hacking/029-karsten-nohl-front.png',
+    back: '/cards/hacking/029-karsten-nohl-back.png',
   },
   {
     number: 30,
@@ -664,6 +716,8 @@ export const hackers: Hacker[] = [
       'Demonstrated SSLstrip and a run of attacks that exposed how fragile the certificate authority system really was. Then built Signal and the double-ratchet protocol behind it, which WhatsApp and others adopted — quietly putting end-to-end encryption in front of billions of people.',
     note: 'Attacked the transport layer, then rewrote it. The set’s highest-leverage card.',
     status: 'draft',
+    front: '/cards/hacking/030-moxie-marlinspike-front.png',
+    back: '/cards/hacking/030-moxie-marlinspike-back.png',
   },
 ];
 
