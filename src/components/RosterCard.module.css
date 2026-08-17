@@ -2,14 +2,12 @@
   --tier: var(--common);
   display: flex;
   flex-direction: column;
-  /* buttons get `align-items: center` from the UA sheet, which shrink-wraps every row */
   align-items: stretch;
   gap: 1.4rem;
   width: 100%;
   text-align: left;
   font: inherit;
   color: inherit;
-  cursor: pointer;
   background: var(--bg-elev);
   border: 1px solid var(--border);
   border-top: 2px solid var(--tier);
@@ -46,6 +44,16 @@
   letter-spacing: 0.14em;
   text-transform: uppercase;
   color: var(--tier);
+}
+
+.artLink {
+  display: block;
+  border-radius: var(--radius);
+}
+
+.artLink:focus-visible {
+  outline: 2px solid var(--tier);
+  outline-offset: 3px;
 }
 
 /* Placeholder where the portrait will go */
@@ -112,6 +120,11 @@
   font-weight: 800;
   letter-spacing: -0.02em;
   line-height: 1.2;
+  transition: color 0.15s ease;
+}
+
+.name:hover {
+  color: var(--tier);
 }
 
 .handle {
@@ -228,6 +241,63 @@
 }
 
 .more {
+  font: inherit;
+  font-size: 1.15rem;
   font-weight: 700;
   color: var(--tier);
+  background: none;
+  border: none;
+  padding: 0;
+  cursor: pointer;
+}
+
+.permalink {
+  font-weight: 700;
+  color: var(--text-dim);
+  white-space: nowrap;
+  transition: color 0.15s ease;
+}
+
+.permalink:hover {
+  color: var(--tier);
+}
+
+/* Sources for the historical claims, revealed with the full scouting report. */
+.sources {
+  margin-top: 1.4rem;
+  padding-top: 1.2rem;
+  border-top: 1px dashed var(--border-soft);
+}
+
+.sourcesHead {
+  display: block;
+  font-family: ui-monospace, "SF Mono", "JetBrains Mono", Menlo, Consolas, monospace;
+  font-size: 1.05rem;
+  letter-spacing: 0.22em;
+  text-transform: uppercase;
+  color: var(--text-dim);
+  margin-bottom: 0.8rem;
+}
+
+.sources ul {
+  display: grid;
+  gap: 0.5rem;
+  list-style: none;
+  font-size: 1.25rem;
+}
+
+.sources a {
+  color: var(--text-muted);
+  border-bottom: 1px solid var(--border);
+  overflow-wrap: anywhere;
+}
+
+.sources a:hover {
+  color: var(--tier);
+  border-bottom-color: var(--tier);
+}
+
+.sourceHost {
+  font-size: 1.05rem;
+  color: var(--text-dim);
 }

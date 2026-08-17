@@ -93,9 +93,43 @@
   color: #cdd3e0;
 }
 
+.specNotes {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 2.4rem;
+  margin-top: 3.2rem;
+}
+
+.specNotes article {
+  padding: 2.2rem;
+  border: 1px solid var(--border-soft);
+  border-radius: var(--radius);
+  background: rgba(255, 255, 255, 0.02);
+}
+
+.specNotes h3 {
+  font-size: 1.7rem;
+  font-weight: 700;
+  margin-bottom: 1rem;
+}
+
+.specNotes p {
+  font-size: 1.45rem;
+  color: var(--text-muted);
+  line-height: 1.7;
+}
+
+.specNotes .mono {
+  color: var(--crest);
+  font-size: 1.3rem;
+}
+
 @media (max-width: 900px) {
   .steps {
     grid-template-columns: repeat(2, 1fr);
+  }
+  .specNotes {
+    grid-template-columns: minmax(0, 1fr);
   }
 }
 

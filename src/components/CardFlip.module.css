@@ -1,3 +1,25 @@
+.tile {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.permalink {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.6rem;
+  align-self: center;
+  font-size: 1.3rem;
+  font-weight: 600;
+  color: var(--text-muted);
+  padding: 0.4rem 0.2rem;
+  transition: color 0.15s ease;
+}
+
+.permalink:hover {
+  color: var(--crest);
+}
+
 .scene {
   --accent: var(--iconic);
   display: block;
