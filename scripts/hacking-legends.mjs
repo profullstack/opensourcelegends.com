@@ -448,22 +448,26 @@ async function writeArtPaths(published) {
   const lines = (await fs.readFile(file, 'utf8')).split('\n');
   const wanted = new Map(published.map((h) => [h.number, h]));
   const out = [];
+  const inserted = new Set();
   let current = null;
   let changed = 0;
 
   for (const line of lines) {
     const num = line.match(/^ {4}number: (\d+),$/);
     if (num) current = Number(num[1]);
-    // Drop any previous art lines for a card we are about to rewrite.
-    if (current !== null && wanted.has(current) && /^ {4}(front|back): '.*',$/.test(line)) continue;
+    const rewriting = current !== null && wanted.has(current);
+    // Drop any previous art lines for a card we are about to rewrite. `current`
+    // has to stay set past the insert below, or existing lines sitting *after*
+    // `status:` slip through and the card ends up with duplicate keys.
+    if (rewriting && /^ {4}(front|back): '.*',$/.test(line)) continue;
     out.push(line);
-    if (current !== null && wanted.has(current) && /^ {4}status: '.*',$/.test(line)) {
+    if (rewriting && !inserted.has(current) && /^ {4}status: '.*',$/.test(line)) {
       const h = wanted.get(current);
       const stem = `/cards/hacking/${String(h.number).padStart(3, '0')}-${h.slug}`;
       out.push(`    front: '${stem}-front.png',`);
       out.push(`    back: '${stem}-back.png',`);
       changed++;
-      current = null;
+      inserted.add(current);
     }
   }
 
