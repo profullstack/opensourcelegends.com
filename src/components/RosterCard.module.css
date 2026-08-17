@@ -49,6 +49,20 @@
 }
 
 /* Placeholder where the portrait will go */
+/* Shown instead of .plate once a card has a rendered front. */
+.art {
+  display: block;
+  width: 100%;
+  border-radius: var(--radius);
+  overflow: hidden;
+}
+
+.art img {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
 .plate {
   position: relative;
   display: flex;
@@ -57,7 +71,9 @@
   justify-content: center;
   gap: 0.8rem;
   width: 100%;
-  aspect-ratio: 3 / 2;
+  /* Matches the published card faces (500x745) so illustrated and pending
+     entries occupy the same footprint and the grid stays even mid-series. */
+  aspect-ratio: 500 / 745;
   border-radius: var(--radius);
   border: 1px dashed var(--border);
   background:

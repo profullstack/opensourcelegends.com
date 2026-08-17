@@ -8,7 +8,10 @@
     "build": "next build",
     "start": "next start",
     "lint": "next lint",
-    "db:migrate": "node scripts/migrate.mjs"
+    "db:migrate": "node scripts/migrate.mjs",
+    "hacking": "node scripts/hacking-legends.mjs",
+    "hacking:validate": "node scripts/hacking-legends.mjs validate",
+    "hacking:render": "node scripts/hacking-legends.mjs render"
   },
   "dependencies": {
     "@libsql/client": "^0.17.4",
@@ -16,7 +19,8 @@
     "next": "^16.2.5",
     "pdf-lib": "^1.17.1",
     "react": "19.2.3",
-    "react-dom": "19.2.3"
+    "react-dom": "19.2.3",
+    "sharp": "^0.35.3"
   },
   "devDependencies": {
     "@types/node": "^20",

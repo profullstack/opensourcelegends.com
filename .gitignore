@@ -22,3 +22,8 @@ dist/html/
 assets/portraits-art/
 
 dist/enhanced/
+
+# Hacking Legends (Series Two) working dirs. The published faces under
+# public/cards/hacking/ are the committed record; these are intermediates.
+#   node scripts/hacking-legends.mjs all
+dist/hacking/

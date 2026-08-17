@@ -4,8 +4,8 @@ import type { Hacker } from '@/data/hacking';
 import { rarityLabel, statusLabel } from '@/data/hacking';
 import styles from './RosterCard.module.css';
 
-// Series Two has no artwork yet — this renders the card data as a proof so the
-// roster is reviewable before a single portrait is commissioned.
+// Series Two is illustrated card by card. Anyone with a rendered front shows it;
+// the rest fall back to a data-only proof so the whole roster stays reviewable.
 export default function RosterCard({ hacker }: { hacker: Hacker }) {
   const [open, setOpen] = useState(false);
   return (
@@ -24,12 +24,18 @@ export default function RosterCard({ hacker }: { hacker: Hacker }) {
         <span className={styles.rarity}>{rarityLabel[hacker.rarity]}</span>
       </span>
 
-      <span className={styles.plate} aria-hidden>
-        <span className={`${styles.glyph} mono`}>
-          {hacker.handle ? `~${hacker.handle.toLowerCase().replace(/\s+/g, '')}` : hacker.name.split(' ').map((w) => w[0]).join('')}
+      {hacker.front ? (
+        <span className={styles.art} aria-hidden>
+          <img src={hacker.front} alt="" loading="lazy" width={500} height={745} />
         </span>
-        <span className={styles.plateNote}>art pending</span>
-      </span>
+      ) : (
+        <span className={styles.plate} aria-hidden>
+          <span className={`${styles.glyph} mono`}>
+            {hacker.handle ? `~${hacker.handle.toLowerCase().replace(/\s+/g, '')}` : hacker.name.split(' ').map((w) => w[0]).join('')}
+          </span>
+          <span className={styles.plateNote}>art pending</span>
+        </span>
+      )}
 
       <span className={styles.body}>
         <span className={styles.name}>{hacker.name}</span>
