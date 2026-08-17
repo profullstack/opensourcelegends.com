@@ -23,6 +23,7 @@ export const metadata: Metadata = {
     url: `${site.url}/hacking-legends`,
     type: 'website',
   },
+  alternates: { canonical: '/hacking-legends' },
 };
 
 const CRITERIA = [
@@ -116,7 +117,7 @@ export default function HackingLegendsPage() {
             <ol className={styles.steps}>
               <li>Finish the remaining scouting reports and lock the stat lines.</li>
               <li>Close nominations and freeze the {totalPlanned}-card list.</li>
-              <li>Illustrate fronts and backs, same treatment as Series One.</li>
+              <li>Re-render any card whose copy or stat line changes in review.</li>
               <li>Print run and packs, alongside the open-licensed downloads.</li>
             </ol>
           </aside>
@@ -130,8 +131,9 @@ export default function HackingLegendsPage() {
             <span className="kicker">The working roster</span>
             <h2 className={styles.h2}>{hackers.length} names, so far</h2>
             <p className={styles.sub}>
-              Tap a card for the full scouting report. Nothing here is final until the set
-              is frozen — argue with any of it on GitHub.
+              Open the scouting report for the full write-up and the sources behind it, or
+              go to a card&apos;s own page. Nothing here is final until the set is frozen —
+              argue with any of it on GitHub.
             </p>
           </div>
 

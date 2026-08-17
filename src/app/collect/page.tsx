@@ -1,12 +1,14 @@
 import type { Metadata } from 'next';
 import Link from 'next/link';
 import { site } from '@/data/site';
+import { cards } from '@/data/cards';
 import WaitlistForm from '@/components/WaitlistForm';
 import styles from './page.module.css';
 
 export const metadata: Metadata = {
   title: 'Collect',
   description: 'Order physical foil packs, join the NFT mint list, or print your own Open Source Legends cards.',
+  alternates: { canonical: '/collect' },
 };
 
 const tiers = [
@@ -24,7 +26,12 @@ const tiers = [
     price: '$79',
     unit: 'full set',
     blurb: 'The complete Series One in a numbered display box. Every legend, no duplicates.',
-    features: ['All 16 cards', 'Numbered limited box', 'Premium foil set', 'Certificate of authenticity'],
+    features: [
+      `All ${cards.length} cards`,
+      'Numbered limited box',
+      'Premium foil set',
+      'Certificate of authenticity',
+    ],
     cta: 'Reserve a box',
     featured: true,
   },

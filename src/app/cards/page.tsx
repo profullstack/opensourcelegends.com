@@ -7,7 +7,8 @@ import styles from './page.module.css';
 
 export const metadata: Metadata = {
   title: 'The Set',
-  description: 'A preview of Open Source Legends Series One — 50 collectible cards.',
+  description: `Every card in Open Source Legends Series One — ${cards.length} collectible cards, each with its own page.`,
+  alternates: { canonical: '/cards' },
 };
 
 export default function CardsPage() {

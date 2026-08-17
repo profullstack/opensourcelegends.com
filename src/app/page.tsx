@@ -2,7 +2,7 @@ import Link from 'next/link';
 import CardFlip from '@/components/CardFlip';
 import AdUnit from '@/components/AdUnit';
 import { cards, featured } from '@/data/cards';
-import { hackers } from '@/data/hacking';
+import { hackers, illustratedCount, lockedCount } from '@/data/hacking';
 import { site } from '@/data/site';
 import styles from './page.module.css';
 
@@ -49,10 +49,10 @@ export default function Home() {
       <section className={styles.stats}>
         <div className={`container ${styles.statsInner}`}>
           {[
-            ['50', 'Legends in Series One'],
+            [String(cards.length), 'Legends in Series One'],
+            [String(hackers.length), 'On the Series Two roster'],
             ['CC BY-SA', 'Open-licensed art'],
             ['3', 'Ways to collect'],
-            ['∞', 'Community submissions'],
           ].map(([n, label]) => (
             <div key={label} className={styles.stat}>
               <span className={styles.statNum}>{n}</span>
@@ -91,8 +91,9 @@ export default function Home() {
               <p>
                 The next set covers the other half of the story: the phone phreaks, worm
                 authors, disclosure architects and defenders who found the holes in all of
-                this. {hackers.length} names on the working roster, no artwork yet, and
-                nominations are open.
+                this. {hackers.length} names on the working roster, {illustratedCount} of
+                them illustrated, {lockedCount} stat lines locked — and nominations are
+                still open.
               </p>
             </div>
             <div className={styles.bandActions}>
