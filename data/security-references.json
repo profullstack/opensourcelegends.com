@@ -1,0 +1,747 @@
+[
+  {
+    "number": 1,
+    "slug": "whitfield-diffie",
+    "name": "Whitfield Diffie",
+    "ref": {
+      "url": "https://upload.wikimedia.org/wikipedia/commons/0/0c/Whitfield_Diffie_Royal_Society.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
+      "credit": "Duncan.Hull",
+      "license": "CC BY-SA 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Whitfield_Diffie_Royal_Society.jpg",
+      "file": "Whitfield Diffie Royal Society.jpg",
+      "qid": "Q462089",
+      "via": "wikidata-p18"
+    },
+    "candidates": [],
+    "desc": "American cryptographer (born 1944)"
+  },
+  {
+    "number": 2,
+    "slug": "martin-hellman",
+    "name": "Martin Hellman",
+    "ref": {
+      "url": "https://upload.wikimedia.org/wikipedia/commons/d/d4/Martin-Hellman.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
+      "credit": "User .:Ajvol:. on en.wikipedia",
+      "license": "CC BY-SA 3.0",
+      "licenseUrl": "http://creativecommons.org/licenses/by-sa/3.0/",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Martin-Hellman.jpg",
+      "file": "Martin-Hellman.jpg",
+      "qid": "Q476466",
+      "via": "wikidata-p18"
+    },
+    "candidates": [],
+    "desc": "American cryptologist (born 1945)"
+  },
+  {
+    "number": 3,
+    "slug": "ron-rivest",
+    "name": "Ron Rivest",
+    "ref": {
+      "url": "https://upload.wikimedia.org/wikipedia/commons/0/0b/Rivest_cropped.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
+      "credit": "Sherman,_Rivest,_and_Chaum.jpg: carback1\nderivative work: Bonnifac (talk)",
+      "license": "CC BY-SA 3.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Rivest_cropped.jpg",
+      "file": "Rivest cropped.jpg",
+      "commonsFile": "Rivest cropped.jpg",
+      "via": "override"
+    },
+    "candidates": []
+  },
+  {
+    "number": 4,
+    "slug": "adi-shamir",
+    "name": "Adi Shamir",
+    "ref": {
+      "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/1/1e/Adi_Shamir_at_TU_Darmstadt_%282013%29.jpg/1280px-Adi_Shamir_at_TU_Darmstadt_%282013%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "credit": "Erik Tews",
+      "license": "CC BY-SA 3.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Adi_Shamir_at_TU_Darmstadt_(2013).jpg",
+      "file": "Adi Shamir at TU Darmstadt (2013).jpg",
+      "qid": "Q320624",
+      "via": "wikidata-p18"
+    },
+    "candidates": [],
+    "desc": "Israeli cryptographer (born 1952)"
+  },
+  {
+    "number": 5,
+    "slug": "leonard-adleman",
+    "name": "Leonard Adleman",
+    "ref": {
+      "url": "https://upload.wikimedia.org/wikipedia/commons/a/af/Len-mankin-pic.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
+      "credit": "len adlmen",
+      "license": "CC BY-SA 3.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Len-mankin-pic.jpg",
+      "file": "Len-mankin-pic.jpg",
+      "qid": "Q918650",
+      "via": "wikidata-p18"
+    },
+    "candidates": [],
+    "desc": "American computer scientist"
+  },
+  {
+    "number": 6,
+    "slug": "phil-zimmermann",
+    "name": "Phil Zimmermann",
+    "ref": {
+      "url": "https://upload.wikimedia.org/wikipedia/commons/8/85/Phil_zimmermann.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
+      "credit": "Phil Zimmermann, uploaded by Matt Crypto",
+      "license": "CC BY-SA 3.0",
+      "licenseUrl": "http://creativecommons.org/licenses/by-sa/3.0/",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Phil_zimmermann.jpg",
+      "file": "Phil zimmermann.jpg",
+      "qid": null,
+      "via": "commons-search"
+    },
+    "candidates": [
+      "Phil zimmermann.jpg"
+    ]
+  },
+  {
+    "number": 7,
+    "slug": "bruce-schneier",
+    "name": "Bruce Schneier",
+    "ref": {
+      "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/4/45/Bruce_Schneier_1.jpg/1280px-Bruce_Schneier_1.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "credit": "sfllaw",
+      "license": "CC BY-SA 2.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/2.0",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Bruce_Schneier_1.jpg",
+      "file": "Bruce Schneier 1.jpg",
+      "qid": "Q368328",
+      "via": "wikidata-p18"
+    },
+    "candidates": [],
+    "desc": "American computer scientist (born 1963)"
+  },
+  {
+    "number": 8,
+    "slug": "paul-kocher",
+    "name": "Paul Kocher",
+    "ref": {
+      "url": "https://upload.wikimedia.org/wikipedia/commons/a/ac/Paul_kocher_deepcrack.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
+      "credit": "https://www.oocities.org",
+      "license": "CC0",
+      "licenseUrl": "http://creativecommons.org/publicdomain/zero/1.0/deed.en",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Paul_kocher_deepcrack.jpg",
+      "file": "Paul kocher deepcrack.jpg",
+      "qid": "Q3371582",
+      "via": "wikidata-p18"
+    },
+    "candidates": [],
+    "desc": "American cryptographer"
+  },
+  {
+    "number": 9,
+    "slug": "dorothy-denning",
+    "name": "Dorothy E. Denning",
+    "ref": {
+      "url": "https://upload.wikimedia.org/wikipedia/commons/a/a9/Dorothy-Denning-Feb2013-head.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
+      "credit": "Unknown photographer, US Navy",
+      "license": "Public domain",
+      "licenseUrl": "",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Dorothy-Denning-Feb2013-head.jpg",
+      "file": "Dorothy-Denning-Feb2013-head.jpg",
+      "qid": "Q11542",
+      "via": "wikidata-p18"
+    },
+    "candidates": [],
+    "desc": "American information security researcher"
+  },
+  {
+    "number": 10,
+    "slug": "gene-spafford",
+    "name": "Gene Spafford",
+    "ref": {
+      "url": "https://upload.wikimedia.org/wikipedia/commons/9/9d/Gene-spafford.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
+      "credit": "Chlor at English Wikipedia",
+      "license": "CC BY-SA 3.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Gene-spafford.jpg",
+      "file": "Gene-spafford.jpg",
+      "qid": "Q5531458",
+      "via": "wikidata-p18"
+    },
+    "candidates": [],
+    "desc": "American computer scientist"
+  },
+  {
+    "number": 11,
+    "slug": "ross-anderson",
+    "name": "Ross Anderson",
+    "ref": {
+      "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/b/b3/Ross_Anderson_%28security_researcher%29.jpg/1280px-Ross_Anderson_%28security_researcher%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "credit": "Markus Kuhn",
+      "license": "CC BY 3.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by/3.0",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Ross_Anderson_(security_researcher).jpg",
+      "file": "Ross Anderson (security researcher).jpg",
+      "qid": "Q110901283",
+      "via": "commons-search"
+    },
+    "candidates": [
+      "Ross Anderson (security researcher).jpg",
+      "Ross Anderson (7862797770).jpg",
+      "Ross Anderson (7862798682).jpg",
+      "Ross Anderson 15 June 2018 IMG 4317.jpg",
+      "Ross Anderson (Men of affairs, 1914).png"
+    ]
+  },
+  {
+    "number": 12,
+    "slug": "matt-blaze",
+    "name": "Matt Blaze",
+    "ref": {
+      "url": "https://upload.wikimedia.org/wikipedia/commons/c/c6/Matt_Blaze_DEF_CON_20.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
+      "credit": "DEFCONConference",
+      "license": "CC BY 3.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by/3.0",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Matt_Blaze_DEF_CON_20.jpg",
+      "file": "Matt Blaze DEF CON 20.jpg",
+      "qid": null,
+      "via": "commons-search"
+    },
+    "candidates": [
+      "Matt Blaze DEF CON 20.jpg"
+    ]
+  },
+  {
+    "number": 13,
+    "slug": "radia-perlman",
+    "name": "Radia Perlman",
+    "ref": {
+      "url": "https://upload.wikimedia.org/wikipedia/commons/a/af/Radia_Perlman_2009.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
+      "credit": "Scientist-100 at English Wikipedia",
+      "license": "Public domain",
+      "licenseUrl": "",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Radia_Perlman_2009.jpg",
+      "file": "Radia Perlman 2009.jpg",
+      "qid": "Q7558",
+      "via": "wikidata-p18"
+    },
+    "candidates": [],
+    "desc": "American software designer and network engineer (born 1951)"
+  },
+  {
+    "number": 14,
+    "slug": "steven-bellovin",
+    "name": "Steven M. Bellovin",
+    "ref": {
+      "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/9/95/Steven_M_Bellovin_2016.jpg/1280px-Steven_M_Bellovin_2016.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "credit": "New America",
+      "license": "CC BY 2.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by/2.0",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Steven_M_Bellovin_2016.jpg",
+      "file": "Steven M Bellovin 2016.jpg",
+      "qid": "Q1485905",
+      "via": "wikidata-p18"
+    },
+    "candidates": [],
+    "desc": "American computer scientist"
+  },
+  {
+    "number": 15,
+    "slug": "william-cheswick",
+    "name": "William Cheswick",
+    "ref": {
+      "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/f/fc/William_Cheswick_2024.jpg/1280px-William_Cheswick_2024.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "credit": "Kevin Payravi",
+      "license": "CC BY-SA 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:William_Cheswick_2024.jpg",
+      "file": "William Cheswick 2024.jpg",
+      "qid": "Q8006762",
+      "via": "wikidata-p18"
+    },
+    "candidates": [],
+    "desc": "American engineer"
+  },
+  {
+    "number": 16,
+    "slug": "marcus-ranum",
+    "name": "Marcus J. Ranum",
+    "ref": {
+      "url": "https://upload.wikimedia.org/wikipedia/commons/1/12/Mjr-portrait-picture-mid.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
+      "credit": "Marcus Ranum (per discussion on ticket)",
+      "license": "CC BY 3.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by/3.0",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Mjr-portrait-picture-mid.jpg",
+      "file": "Mjr-portrait-picture-mid.jpg",
+      "qid": "Q3846688",
+      "via": "wikidata-p18"
+    },
+    "candidates": [],
+    "desc": "researcher"
+  },
+  {
+    "number": 17,
+    "slug": "wietse-venema",
+    "name": "Wietse Venema",
+    "ref": {
+      "url": "https://live.staticflickr.com/104/276434076_581ed1215d_b.jpg",
+      "credit": "Alexandre Dulaunoy",
+      "license": "CC BY-SA 2.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/2.0/",
+      "sourceUrl": "https://www.flickr.com/photos/31797858@N00/276434076",
+      "note": "hack.lu 2006. Supersedes the Wikidata P18 file, which shows a different man.",
+      "via": "override"
+    },
+    "candidates": []
+  },
+  {
+    "number": 18,
+    "slug": "dan-farmer",
+    "name": "Dan Farmer",
+    "ref": {
+      "url": "https://upload.wikimedia.org/wikipedia/commons/9/99/Dan_Farmer_in_2007.JPG?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
+      "credit": "Ian Manka",
+      "license": "CC BY-SA 3.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Dan_Farmer_in_2007.JPG",
+      "file": "Dan Farmer in 2007.JPG",
+      "qid": "Q5213467",
+      "via": "wikidata-p18"
+    },
+    "candidates": [],
+    "desc": "American computer programmer, computer security researcher and businessman"
+  },
+  {
+    "number": 19,
+    "slug": "gordon-lyon",
+    "name": "Gordon Lyon",
+    "ref": {
+      "url": "https://upload.wikimedia.org/wikipedia/commons/f/fc/Fyodor_Hope6_Appelbaum_1100x1100.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
+      "credit": "Jacob Appelbaum",
+      "license": "CC BY-SA 2.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/2.0",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Fyodor_Hope6_Appelbaum_1100x1100.jpg",
+      "file": "Fyodor Hope6 Appelbaum 1100x1100.jpg",
+      "qid": "Q3091346",
+      "via": "wikidata-p18"
+    },
+    "candidates": [],
+    "desc": "American network security expert, open source programmer, writer, and a hacker"
+  },
+  {
+    "number": 20,
+    "slug": "martin-roesch",
+    "name": "Martin Roesch",
+    "ref": {
+      "url": "https://media.kasperskycontenthub.com/wp-content/uploads/sites/103/2013/07/07043722/sourcefire.jpg",
+      "credit": "Sourcefire press photo",
+      "license": "supplied",
+      "sourceUrl": "https://threatpost.com/",
+      "note": "Sourcefire-era press photograph. Supersedes the Commons files, which are a different Martin.",
+      "via": "override"
+    },
+    "candidates": []
+  },
+  {
+    "number": 21,
+    "slug": "gerald-combs",
+    "name": "Gerald Combs",
+    "ref": null,
+    "candidates": []
+  },
+  {
+    "number": 22,
+    "slug": "renaud-deraison",
+    "name": "Renaud Deraison",
+    "ref": {
+      "url": "https://live.staticflickr.com/122/276307114_f29f0a38ec_b.jpg",
+      "credit": "Alexandre Dulaunoy",
+      "license": "CC BY-SA 2.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/2.0/",
+      "sourceUrl": "https://www.flickr.com/photos/31797858@N00/276307114",
+      "note": "hack.lu 2006 opening speech.",
+      "via": "override"
+    },
+    "candidates": []
+  },
+  {
+    "number": 23,
+    "slug": "paul-vixie",
+    "name": "Paul Vixie",
+    "ref": {
+      "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/d/d6/Paul_Vixie_-_2014.jpg/1280px-Paul_Vixie_-_2014.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "credit": "ImaginingtheInternet",
+      "license": "CC BY 3.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by/3.0",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Paul_Vixie_-_2014.jpg",
+      "file": "Paul Vixie - 2014.jpg",
+      "qid": "Q92777",
+      "via": "wikidata-p18"
+    },
+    "candidates": [],
+    "desc": "American internet pioneer"
+  },
+  {
+    "number": 24,
+    "slug": "niels-provos",
+    "name": "Niels Provos",
+    "ref": {
+      "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/d/dc/Niels_provos.jpg/1280px-Niels_provos.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "credit": "NonAlphabetic",
+      "license": "CC BY-SA 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Niels_provos.jpg",
+      "file": "Niels provos.jpg",
+      "qid": "Q7031568",
+      "via": "wikidata-p18"
+    },
+    "candidates": [],
+    "desc": "cryptographer"
+  },
+  {
+    "number": 25,
+    "slug": "jeremiah-grossman",
+    "name": "Jeremiah Grossman",
+    "ref": {
+      "url": "https://cdn.prod.website-files.com/62deb8a5505ca121b1665bbe/63cf05d85cad9419bfa83096_Photo%20Oct%2003%202022%2C%206%2054%2000%20AM-p-800.jpg",
+      "credit": "Jeremiah Grossman",
+      "license": "supplied",
+      "sourceUrl": "https://www.jeremiahgrossman.com/",
+      "note": "Publicity photo from his own site, supplied by the site owner as reference.",
+      "via": "override"
+    },
+    "candidates": []
+  },
+  {
+    "number": 26,
+    "slug": "robert-hansen",
+    "name": "Robert Hansen",
+    "ref": null,
+    "candidates": [
+      "Robert Hansen ex libris.jpg",
+      "Robert Hansen Jr 180425.jpg"
+    ]
+  },
+  {
+    "number": 27,
+    "slug": "mark-curphey",
+    "name": "Mark Curphey",
+    "ref": {
+      "url": "https://user-images.githubusercontent.com/143776/193322138-009524de-bae1-4190-989d-2d729ad0beb8.png",
+      "credit": "Mark Curphey",
+      "license": "supplied",
+      "sourceUrl": "https://www.crash-override.com/",
+      "note": "Portrait published by his own company.",
+      "via": "override"
+    },
+    "candidates": []
+  },
+  {
+    "number": 28,
+    "slug": "jeff-williams",
+    "name": "Jeff Williams",
+    "ref": null,
+    "candidates": [],
+    "rejected": "\"Jeff Williams photo.jpg\" is one of several unrelated Jeff Williamses. Cannot confirm it is the Contrast Security founder."
+  },
+  {
+    "number": 29,
+    "slug": "gary-mcgraw",
+    "name": "Gary McGraw",
+    "ref": null,
+    "candidates": [],
+    "rejected": "Only candidate is a group briefing shot with audience heads across the frame; the other Commons hits are unrelated US Navy photographs."
+  },
+  {
+    "number": 30,
+    "slug": "michael-howard",
+    "name": "Michael Howard",
+    "ref": null,
+    "candidates": [],
+    "rejected": "Every Commons hit is a different Michael Howard — the British politician, or a young man with no connection to the Microsoft SDL author."
+  },
+  {
+    "number": 31,
+    "slug": "adam-shostack",
+    "name": "Adam Shostack",
+    "ref": {
+      "url": "https://shostack.org/img/site/Adam-Shostack-headshot.png",
+      "credit": "Adam Shostack",
+      "license": "supplied",
+      "sourceUrl": "https://shostack.org/about/adam",
+      "note": "Headshot published on his own site.",
+      "via": "override"
+    },
+    "candidates": []
+  },
+  {
+    "number": 32,
+    "slug": "ivan-ristic",
+    "name": "Ivan Ristić",
+    "ref": null,
+    "candidates": []
+  },
+  {
+    "number": 33,
+    "slug": "mark-dowd",
+    "name": "Mark Dowd",
+    "ref": null,
+    "candidates": []
+  },
+  {
+    "number": 34,
+    "slug": "halvar-flake",
+    "name": "Thomas Dullien",
+    "ref": null,
+    "candidates": []
+  },
+  {
+    "number": 35,
+    "slug": "alex-sotirov",
+    "name": "Alex Sotirov",
+    "ref": {
+      "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/c/c5/Alex_Sotirov.jpg/1280px-Alex_Sotirov.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "credit": "Alexander Klink",
+      "license": "CC BY 3.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by/3.0",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Alex_Sotirov.jpg",
+      "file": "Alex Sotirov.jpg",
+      "qid": null,
+      "via": "commons-search"
+    },
+    "candidates": [
+      "Alex Sotirov.jpg"
+    ]
+  },
+  {
+    "number": 36,
+    "slug": "thomas-ptacek",
+    "name": "Thomas Ptacek",
+    "ref": {
+      "url": "https://live.staticflickr.com/2733/4302617844_52625091af_b.jpg",
+      "credit": "cfournie",
+      "license": "CC BY 2.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by/2.0/",
+      "sourceUrl": "https://www.flickr.com/photos/37932109@N05/4302617844",
+      "via": "override"
+    },
+    "candidates": []
+  },
+  {
+    "number": 37,
+    "slug": "matthew-green",
+    "name": "Matthew D. Green",
+    "ref": {
+      "url": "https://upload.wikimedia.org/wikipedia/commons/d/da/Matthew_Green.jpeg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
+      "credit": "Calhbca",
+      "license": "CC BY-SA 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Matthew_Green.jpeg",
+      "file": "Matthew Green.jpeg",
+      "qid": "Q16729426",
+      "via": "wikidata-p18"
+    },
+    "candidates": [],
+    "desc": "American cryptographer and researcher"
+  },
+  {
+    "number": 38,
+    "slug": "j-alex-halderman",
+    "name": "J. Alex Halderman",
+    "ref": {
+      "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/b/b2/J._Alex_Halderman_-_2018.jpg/1280px-J._Alex_Halderman_-_2018.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "credit": "media.ccc.de",
+      "license": "CC BY 3.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by/3.0",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:J._Alex_Halderman_-_2018.jpg",
+      "file": "J. Alex Halderman - 2018.jpg",
+      "qid": "Q130974774",
+      "via": "commons-search"
+    },
+    "candidates": [
+      "J. Alex Halderman - 2018.jpg"
+    ]
+  },
+  {
+    "number": 39,
+    "slug": "nadia-heninger",
+    "name": "Nadia Heninger",
+    "ref": {
+      "url": "https://upload.wikimedia.org/wikipedia/commons/5/5a/Nadia_Heninger_2013_at_Chaos_Communication_Congress_30C3_DJB_03.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
+      "credit": "Ordercrazy",
+      "license": "CC0",
+      "licenseUrl": "http://creativecommons.org/publicdomain/zero/1.0/deed.en",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Nadia_Heninger_2013_at_Chaos_Communication_Congress_30C3_DJB_03.jpg",
+      "file": "Nadia Heninger 2013 at Chaos Communication Congress 30C3 DJB 03.jpg",
+      "qid": "Q56678255",
+      "via": "wikidata-p18"
+    },
+    "candidates": [],
+    "desc": "American cryptographer, computer security expert"
+  },
+  {
+    "number": 40,
+    "slug": "troy-hunt",
+    "name": "Troy Hunt",
+    "ref": {
+      "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/1/11/Troy_Hunt.jpg/1280px-Troy_Hunt.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "credit": "Troy Hunt",
+      "license": "CC BY-SA 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Troy_Hunt.jpg",
+      "file": "Troy Hunt.jpg",
+      "qid": "Q23308064",
+      "via": "wikidata-p18"
+    },
+    "candidates": [],
+    "desc": "Australian web security expert"
+  },
+  {
+    "number": 41,
+    "slug": "window-snyder",
+    "name": "Window Snyder",
+    "ref": {
+      "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/4/42/Window_Snyder_Web_Summit_2017_cropped.jpg/1280px-Window_Snyder_Web_Summit_2017_cropped.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "credit": "Web Summit",
+      "license": "CC BY 2.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by/2.0",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Window_Snyder_Web_Summit_2017_cropped.jpg",
+      "file": "Window Snyder Web Summit 2017 cropped.jpg",
+      "qid": "Q8024355",
+      "via": "wikidata-p18"
+    },
+    "candidates": [],
+    "desc": "Computer security expert"
+  },
+  {
+    "number": 42,
+    "slug": "heather-adkins",
+    "name": "Heather Adkins",
+    "ref": null,
+    "candidates": []
+  },
+  {
+    "number": 43,
+    "slug": "parisa-tabriz",
+    "name": "Parisa Tabriz",
+    "ref": {
+      "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/6/67/Parisa_Tabriz_Blackhat%2717_profile.jpg/1280px-Parisa_Tabriz_Blackhat%2717_profile.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "credit": "mrisher",
+      "license": "CC BY-SA 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Parisa_Tabriz_Blackhat%2717_profile.jpg",
+      "file": "Parisa Tabriz Blackhat'17 profile.jpg",
+      "qid": "Q17496835",
+      "via": "wikidata-p18"
+    },
+    "candidates": [],
+    "desc": "American/Iranian computer security expert"
+  },
+  {
+    "number": 44,
+    "slug": "alex-stamos",
+    "name": "Alex Stamos",
+    "ref": {
+      "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/6/6a/Alex_Stamos_at_Web_Summit_2015_-_Dublin%2C_Ireland.jpg/1280px-Alex_Stamos_at_Web_Summit_2015_-_Dublin%2C_Ireland.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "credit": "Web Summit",
+      "license": "CC BY 2.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by/2.0",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Alex_Stamos_at_Web_Summit_2015_-_Dublin,_Ireland.jpg",
+      "file": "Alex Stamos at Web Summit 2015 - Dublin, Ireland.jpg",
+      "qid": "Q50822408",
+      "via": "wikidata-p18"
+    },
+    "candidates": [],
+    "desc": "American computer scientist and academic, former chief security officer at Facebook"
+  },
+  {
+    "number": 45,
+    "slug": "dan-geer",
+    "name": "Dan Geer",
+    "ref": {
+      "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/4/4d/Dan_Geer_-_Freedom_to_Connect_2015_%2816109600123%29.jpg/1280px-Dan_Geer_-_Freedom_to_Connect_2015_%2816109600123%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "credit": "Doc Searls from Santa Barbara, USA",
+      "license": "CC BY 2.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by/2.0",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Dan_Geer_-_Freedom_to_Connect_2015_(16109600123).jpg",
+      "file": "Dan Geer - Freedom to Connect 2015 (16109600123).jpg",
+      "qid": "Q5213551",
+      "via": "wikidata-p18"
+    },
+    "candidates": [],
+    "desc": "American computer scientist"
+  },
+  {
+    "number": 46,
+    "slug": "kevin-mandia",
+    "name": "Kevin Mandia",
+    "ref": {
+      "url": "https://ballisticventures.com/wp-content/uploads/2024/06/Kevin-Mandia.png",
+      "credit": "Ballistic Ventures",
+      "license": "supplied",
+      "sourceUrl": "https://www.ballisticventures.com/team/kevin-mandia",
+      "note": "Partner bio photo.",
+      "via": "override"
+    },
+    "candidates": []
+  },
+  {
+    "number": 47,
+    "slug": "mikko-hypponen",
+    "name": "Mikko Hyppönen",
+    "ref": {
+      "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/c/ce/Mikko_Hypp%C3%B6nen_-_2021_%28cropped%29.jpg/1280px-Mikko_Hypp%C3%B6nen_-_2021_%28cropped%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "credit": "Ville Erkkilä",
+      "license": "CC BY-SA 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Mikko_Hypp%C3%B6nen_-_2021_(cropped).jpg",
+      "file": "Mikko Hyppönen - 2021 (cropped).jpg",
+      "qid": "Q2489610",
+      "via": "wikidata-p18"
+    },
+    "candidates": [],
+    "desc": "Finnish computer security expert"
+  },
+  {
+    "number": 48,
+    "slug": "robert-m-lee",
+    "name": "Robert M. Lee",
+    "ref": {
+      "url": "https://upload.wikimedia.org/wikipedia/commons/9/92/Robert_M._Lee_at_World_Economic_Forum_Davos_2022.png?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
+      "credit": "World Economic Forum",
+      "license": "CC BY 3.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by/3.0",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Robert_M._Lee_at_World_Economic_Forum_Davos_2022.png",
+      "file": "Robert M. Lee at World Economic Forum Davos 2022.png",
+      "qid": null,
+      "via": "commons-search"
+    },
+    "candidates": [
+      "Robert M. Lee at World Economic Forum Davos 2022.png"
+    ]
+  },
+  {
+    "number": 49,
+    "slug": "lesley-carhart",
+    "name": "Lesley Carhart",
+    "ref": {
+      "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/7/70/Lesley_Carhart_-_What_Can_We_Learn_About_Cybersecurity_Trashfires.jpg/1280px-Lesley_Carhart_-_What_Can_We_Learn_About_Cybersecurity_Trashfires.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "credit": "TechCrunch",
+      "license": "CC BY 2.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by/2.0",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Lesley_Carhart_-_What_Can_We_Learn_About_Cybersecurity_Trashfires.jpg",
+      "file": "Lesley Carhart - What Can We Learn About Cybersecurity Trashfires.jpg",
+      "qid": null,
+      "via": "commons-search"
+    },
+    "candidates": [
+      "Lesley Carhart - What Can We Learn About Cybersecurity Trashfires.jpg",
+      "Lesley Carhart - What Can We Learn About Cybersecurity Trashfires (cropped).jpg"
+    ]
+  },
+  {
+    "number": 50,
+    "slug": "katie-nickels",
+    "name": "Katie Nickels",
+    "ref": null,
+    "candidates": []
+  }
+]
