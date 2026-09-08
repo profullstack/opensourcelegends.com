@@ -1,0 +1,248 @@
+/* Hero */
+.hero {
+  padding: 8rem 0 5rem;
+  background:
+    radial-gradient(70rem 34rem at 20% -20%, rgba(37, 194, 110, 0.10), transparent 65%),
+    transparent;
+}
+
+.kicker {
+  display: inline-flex;
+  align-items: center;
+  gap: 1rem;
+  margin-bottom: 2rem;
+}
+
+.wip {
+  font-size: 1.05rem;
+  letter-spacing: 0.16em;
+  color: var(--rare);
+  border: 1px solid color-mix(in srgb, var(--rare) 45%, var(--border));
+  border-radius: 999px;
+  padding: 0.3rem 0.9rem;
+}
+
+.title {
+  font-size: clamp(3.6rem, 6.5vw, 7rem);
+  font-weight: 800;
+  letter-spacing: -0.035em;
+  margin-bottom: 2rem;
+}
+
+.lede {
+  font-size: 1.8rem;
+  color: var(--text-muted);
+  max-width: 68rem;
+  margin-bottom: 1.8rem;
+}
+
+.warning {
+  font-size: 1.4rem;
+  color: var(--text-dim);
+  max-width: 68rem;
+  border-left: 2px solid var(--crest);
+  padding-left: 1.6rem;
+  margin-bottom: 3rem;
+}
+
+.actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1.2rem;
+}
+
+/* Progress strip */
+.progress {
+  border-top: 1px solid var(--border-soft);
+  border-bottom: 1px solid var(--border-soft);
+  background: var(--bg-deep);
+}
+
+.progressInner {
+  display: grid;
+  grid-template-columns: 1.3fr 1fr;
+  gap: 4rem;
+  padding-top: 4rem;
+  padding-bottom: 4rem;
+}
+
+.bars {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  align-self: center;
+}
+
+.barRow {
+  display: grid;
+  grid-template-columns: 16rem 1fr 6rem;
+  align-items: center;
+  gap: 1.6rem;
+}
+
+.barLabel {
+  font-size: 1.35rem;
+  color: var(--text-muted);
+}
+
+.barTrack {
+  height: 0.6rem;
+  border-radius: 999px;
+  background: var(--bg-elev-2);
+  overflow: hidden;
+}
+
+.barFill {
+  display: block;
+  height: 100%;
+  border-radius: 999px;
+  background: linear-gradient(90deg, var(--crest-deep), var(--crest));
+}
+
+.barVal {
+  font-size: 1.3rem;
+  font-weight: 700;
+  color: var(--crest);
+  text-align: right;
+}
+
+.aside {
+  background: var(--bg-elev);
+  border: 1px solid var(--border);
+  border-radius: var(--radius-lg);
+  padding: 2.6rem;
+}
+
+.asideHead {
+  font-size: 1.7rem;
+  font-weight: 800;
+  margin-bottom: 1.4rem;
+}
+
+.steps {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  padding-left: 2rem;
+  font-size: 1.4rem;
+  color: var(--text-muted);
+}
+
+/* Sections */
+.head {
+  max-width: 70rem;
+  margin-bottom: 3.6rem;
+}
+
+.h2 {
+  font-size: clamp(2.8rem, 3.5vw, 4rem);
+  font-weight: 800;
+  margin-top: 1rem;
+}
+
+.sub {
+  font-size: 1.5rem;
+  color: var(--text-muted);
+  margin-top: 1.2rem;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(30rem, 1fr));
+  gap: 2.2rem;
+  align-items: start;
+}
+
+/* Criteria */
+.criteria {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 2.2rem;
+}
+
+.criterion {
+  background: var(--bg-elev);
+  border: 1px solid var(--border);
+  border-radius: var(--radius-lg);
+  padding: 2.8rem;
+}
+
+.criterionTag {
+  display: inline-block;
+  font-size: 1.05rem;
+  font-weight: 700;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  color: var(--crest);
+  border: 1px solid var(--border);
+  border-radius: 999px;
+  padding: 0.4rem 1rem;
+  margin-bottom: 1.8rem;
+}
+
+.criterion h3 {
+  font-size: 2rem;
+  font-weight: 800;
+  margin-bottom: 1rem;
+}
+
+.criterion p {
+  font-size: 1.45rem;
+  color: var(--text-muted);
+}
+
+/* Band */
+.band {
+  padding: 4rem 0 8rem;
+}
+
+.bandInner {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 3rem;
+  background:
+    radial-gradient(80% 140% at 100% 0%, rgba(37, 194, 110, 0.10), transparent 60%),
+    var(--bg-elev);
+  border: 1px solid var(--border);
+  border-radius: var(--radius-lg);
+  padding: 4rem;
+}
+
+.bandInner p {
+  color: var(--text-muted);
+  font-size: 1.5rem;
+  max-width: 56rem;
+  margin-top: 1rem;
+}
+
+.bandActions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1.2rem;
+}
+
+@media (max-width: 980px) {
+  .progressInner {
+    grid-template-columns: 1fr;
+    gap: 3rem;
+  }
+  .criteria {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media (max-width: 680px) {
+  .barRow {
+    grid-template-columns: 1fr 5rem;
+    row-gap: 0.8rem;
+  }
+  .barLabel {
+    grid-column: 1 / -1;
+  }
+  .bandInner {
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 2.8rem;
+  }
+}

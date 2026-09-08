@@ -3,6 +3,7 @@ import CardFlip from '@/components/CardFlip';
 import AdUnit from '@/components/AdUnit';
 import { cards, featured } from '@/data/cards';
 import { hackers, illustratedCount, lockedCount } from '@/data/hacking';
+import { pros, totalPlanned as proTotal } from '@/data/security';
 import { site } from '@/data/site';
 import styles from './page.module.css';
 
@@ -98,6 +99,29 @@ export default function Home() {
             </div>
             <div className={styles.bandActions}>
               <Link href="/hacking-legends" className="btn-primary">See the roster →</Link>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* Series Three teaser */}
+      <section className="section">
+        <div className="container">
+          <div className={styles.bandInner}>
+            <div>
+              <span className="kicker">Series Three · In progress</span>
+              <h2 className={styles.h2}>Security Professionals</h2>
+              <p>
+                And the half that had to clean up: cryptographers, firewall builders,
+                incident responders, tool authors and the security chiefs who answered for
+                the breach. {pros.length} of {proTotal} names drafted, art not started, and
+                the cuts are still up for argument.
+              </p>
+            </div>
+            <div className={styles.bandActions}>
+              <Link href="/security-professionals" className="btn-primary">
+                See the roster →
+              </Link>
             </div>
           </div>
         </div>
