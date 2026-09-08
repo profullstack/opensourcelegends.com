@@ -1,0 +1,796 @@
+[
+  {
+    "number": 1,
+    "slug": "ada-lovelace",
+    "name": "Ada Lovelace",
+    "ref": {
+      "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/8/87/Ada_Lovelace.jpg/1280px-Ada_Lovelace.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "credit": "Margaret Sarah Carpenter",
+      "license": "Public domain",
+      "licenseUrl": "",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Ada_Lovelace.jpg",
+      "file": "Ada Lovelace.jpg",
+      "qid": "Q7259",
+      "via": "wikidata-p18"
+    },
+    "candidates": [],
+    "desc": "English mathematician (1815–1852)"
+  },
+  {
+    "number": 2,
+    "slug": "grace-hopper",
+    "name": "Grace Hopper",
+    "ref": {
+      "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/a/ad/Commodore_Grace_M._Hopper%2C_USN_%28covered%29.jpg/1280px-Commodore_Grace_M._Hopper%2C_USN_%28covered%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "credit": "James S. Davis",
+      "license": "Public domain",
+      "licenseUrl": "",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Commodore_Grace_M._Hopper,_USN_(covered).jpg",
+      "file": "Commodore Grace M. Hopper, USN (covered).jpg",
+      "qid": "Q11641",
+      "via": "wikidata-p18"
+    },
+    "candidates": [],
+    "desc": "American computer scientist and United States Navy officer (1906–1992)"
+  },
+  {
+    "number": 3,
+    "slug": "margaret-hamilton",
+    "name": "Margaret Hamilton",
+    "ref": {
+      "url": "https://upload.wikimedia.org/wikipedia/commons/2/21/Margaret_Hamilton_1966.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
+      "credit": "Press-materials are presumed to have been authored by the producers of the Broadway production of Goldilocks.",
+      "license": "Public domain",
+      "licenseUrl": "",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Margaret_Hamilton_1966.jpg",
+      "file": "Margaret Hamilton 1966.jpg",
+      "qid": "Q257756",
+      "via": "wikidata-p18"
+    },
+    "candidates": [],
+    "desc": "American film character actress (1902–1985)"
+  },
+  {
+    "number": 4,
+    "slug": "katherine-johnson",
+    "name": "Katherine Johnson",
+    "ref": {
+      "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/6/6d/Katherine_Johnson_1983.jpg/1280px-Katherine_Johnson_1983.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "credit": "NASA",
+      "license": "Public domain",
+      "licenseUrl": "",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Katherine_Johnson_1983.jpg",
+      "file": "Katherine Johnson 1983.jpg",
+      "qid": "Q11740",
+      "via": "wikidata-p18"
+    },
+    "candidates": [],
+    "desc": "African-American mathematician"
+  },
+  {
+    "number": 5,
+    "slug": "dorothy-vaughan",
+    "name": "Dorothy Vaughan",
+    "ref": {
+      "url": "https://upload.wikimedia.org/wikipedia/commons/b/b6/Dorothy_Johnson_Vaughan.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
+      "credit": "Unknown authorUnknown author",
+      "license": "Public domain",
+      "licenseUrl": "",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Dorothy_Johnson_Vaughan.jpg",
+      "file": "Dorothy Johnson Vaughan.jpg",
+      "qid": "Q22915129",
+      "via": "wikidata-p18"
+    },
+    "candidates": [],
+    "desc": "African-American mathematician"
+  },
+  {
+    "number": 6,
+    "slug": "jean-bartik",
+    "name": "Jean Bartik",
+    "ref": null,
+    "candidates": [],
+    "rejected": "Wikidata P18 is \"Two women operating ENIAC\", a wide room shot where no face is legible. Conditioning on it would invent one."
+  },
+  {
+    "number": 7,
+    "slug": "betty-holberton",
+    "name": "Betty Holberton",
+    "ref": null,
+    "candidates": [],
+    "rejected": "The only Commons photograph is a small, low-resolution profile at the ENIAC panels. Not enough face to paint a likeness from without guessing."
+  },
+  {
+    "number": 8,
+    "slug": "kathleen-booth",
+    "name": "Kathleen Booth",
+    "ref": null,
+    "candidates": [],
+    "rejected": "No freely licensed photograph found. Wikipedia carries no portrait."
+  },
+  {
+    "number": 9,
+    "slug": "mary-allen-wilkes",
+    "name": "Mary Allen Wilkes",
+    "ref": {
+      "url": "https://upload.wikimedia.org/wikipedia/commons/b/be/Mary_Allen_Wilkes_Portrait.jpeg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
+      "credit": "unknown (work for hire)",
+      "license": "CC0",
+      "licenseUrl": "http://creativecommons.org/publicdomain/zero/1.0/deed.en",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Mary_Allen_Wilkes_Portrait.jpeg",
+      "file": "Mary Allen Wilkes Portrait.jpeg",
+      "qid": "Q16484",
+      "via": "wikidata-p18"
+    },
+    "candidates": [],
+    "desc": "American computer scientist"
+  },
+  {
+    "number": 10,
+    "slug": "erna-schneider-hoover",
+    "name": "Erna Schneider Hoover",
+    "ref": {
+      "url": "https://upload.wikimedia.org/wikipedia/commons/9/9a/Erna_Schneider_1944_yearbook_photo.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
+      "credit": "Unknown authorUnknown author",
+      "license": "Public domain",
+      "licenseUrl": "",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Erna_Schneider_1944_yearbook_photo.jpg",
+      "file": "Erna Schneider 1944 yearbook photo.jpg",
+      "qid": "Q41624",
+      "via": "wikidata-p18"
+    },
+    "candidates": [],
+    "desc": "American mathematician"
+  },
+  {
+    "number": 11,
+    "slug": "elizabeth-feinler",
+    "name": "Elizabeth Feinler",
+    "ref": {
+      "url": "https://upload.wikimedia.org/wikipedia/commons/6/6d/ElizabethFeinler-2011.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
+      "credit": "Elizabeth Feinler",
+      "license": "CC BY-SA 3.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:ElizabethFeinler-2011.jpg",
+      "file": "ElizabethFeinler-2011.jpg",
+      "qid": "Q7534",
+      "via": "wikidata-p18"
+    },
+    "candidates": [],
+    "desc": "American information scientist (born 1931)"
+  },
+  {
+    "number": 12,
+    "slug": "stephanie-shirley",
+    "name": "Stephanie Shirley",
+    "ref": {
+      "url": "https://upload.wikimedia.org/wikipedia/commons/e/e1/Dame_Stephanie_Shirley_-_2013.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
+      "credit": "Lynn Hart",
+      "license": "CC BY 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by/4.0",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Dame_Stephanie_Shirley_-_2013.jpg",
+      "file": "Dame Stephanie Shirley - 2013.jpg",
+      "qid": "Q214661",
+      "via": "wikidata-p18"
+    },
+    "candidates": [],
+    "desc": "British businesswoman and philanthropist (1933–2025)"
+  },
+  {
+    "number": 13,
+    "slug": "joan-clarke",
+    "name": "Joan Clarke",
+    "ref": null,
+    "candidates": [],
+    "rejected": "Commons search returned a photograph of the house at 193 Rosendale Road that carries her blue plaque. Her Bletchley-era portraits are not freely licensed."
+  },
+  {
+    "number": 14,
+    "slug": "elizebeth-smith-friedman",
+    "name": "Elizebeth Smith Friedman",
+    "ref": {
+      "url": "https://upload.wikimedia.org/wikipedia/commons/1/13/E_friedman_pic.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
+      "credit": "Unknown",
+      "license": "Public domain",
+      "licenseUrl": "",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:E_friedman_pic.jpg",
+      "file": "E friedman pic.jpg",
+      "qid": "Q276090",
+      "via": "wikidata-p18"
+    },
+    "candidates": [],
+    "desc": "American cryptanalyst and author (1892-1980)"
+  },
+  {
+    "number": 15,
+    "slug": "hedy-lamarr",
+    "name": "Hedy Lamarr",
+    "ref": {
+      "url": "https://upload.wikimedia.org/wikipedia/commons/8/83/Hedy_Lamarr_Publicity_Photo_for_The_Heavenly_Body_1944.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
+      "credit": "Unknown authorUnknown author",
+      "license": "Public domain",
+      "licenseUrl": "",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Hedy_Lamarr_Publicity_Photo_for_The_Heavenly_Body_1944.jpg",
+      "file": "Hedy Lamarr Publicity Photo for The Heavenly Body 1944.jpg",
+      "qid": "Q49034",
+      "via": "wikidata-p18"
+    },
+    "candidates": [],
+    "desc": "Austrian-American actress and co-inventor of an early technique for spread spectrum communications and frequency hopping (1914-2000)"
+  },
+  {
+    "number": 16,
+    "slug": "frances-allen",
+    "name": "Frances Allen",
+    "ref": {
+      "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/1/15/Allen_mg_2528-3750K-b.jpg/1280px-Allen_mg_2528-3750K-b.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "credit": "Rama",
+      "license": "CC BY-SA 2.0 fr",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/2.0/fr/deed.en",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Allen_mg_2528-3750K-b.jpg",
+      "file": "Allen mg 2528-3750K-b.jpg",
+      "qid": "Q9602",
+      "via": "wikidata-p18"
+    },
+    "candidates": [],
+    "desc": "American computer scientist (1932–2020)"
+  },
+  {
+    "number": 17,
+    "slug": "barbara-liskov",
+    "name": "Barbara Liskov",
+    "ref": {
+      "url": "https://upload.wikimedia.org/wikipedia/commons/c/cc/Turing_Centenary_Celebration_Liskov.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
+      "credit": "Dennis Hamilton from Seattle, Washington, USA",
+      "license": "CC BY 2.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by/2.0",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Turing_Centenary_Celebration_Liskov.jpg",
+      "file": "Turing Centenary Celebration Liskov.jpg",
+      "qid": "Q16080922",
+      "via": "wikidata-p18"
+    },
+    "candidates": [],
+    "desc": "American computer scientist"
+  },
+  {
+    "number": 18,
+    "slug": "shafi-goldwasser",
+    "name": "Shafi Goldwasser",
+    "ref": {
+      "url": "https://upload.wikimedia.org/wikipedia/commons/8/84/Shafi_Goldwasser.JPG?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
+      "credit": "Weizmann Institute of Science",
+      "license": "Public domain",
+      "licenseUrl": "",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Shafi_Goldwasser.JPG",
+      "file": "Shafi Goldwasser.JPG",
+      "qid": "Q11609",
+      "via": "wikidata-p18"
+    },
+    "candidates": [],
+    "desc": "American computer scientist"
+  },
+  {
+    "number": 19,
+    "slug": "karen-sparck-jones",
+    "name": "Karen Spärck Jones",
+    "ref": {
+      "url": "https://upload.wikimedia.org/wikipedia/commons/a/af/Karen_Sp%C3%A4rck.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
+      "credit": "en:user:Markus Kuhn",
+      "license": "CC BY 2.5",
+      "licenseUrl": "https://creativecommons.org/licenses/by/2.5",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Karen_Sp%C3%A4rck.jpg",
+      "file": "Karen Spärck.jpg",
+      "qid": "Q14254",
+      "via": "wikidata-p18"
+    },
+    "candidates": [],
+    "desc": "British computer scientist (1935–2007)"
+  },
+  {
+    "number": 20,
+    "slug": "cynthia-dwork",
+    "name": "Cynthia Dwork",
+    "ref": {
+      "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/6/6a/Cynthia_Dwork_lectures_at_Harvard_Kennedy_School.jpg/1280px-Cynthia_Dwork_lectures_at_Harvard_Kennedy_School.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "credit": "Edmond J.  Safra Center for Ethics",
+      "license": "CC BY 2.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by/2.0",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Cynthia_Dwork_lectures_at_Harvard_Kennedy_School.jpg",
+      "file": "Cynthia Dwork lectures at Harvard Kennedy School.jpg",
+      "qid": "Q11580",
+      "via": "wikidata-p18"
+    },
+    "candidates": [],
+    "desc": "American computer scientist"
+  },
+  {
+    "number": 21,
+    "slug": "anita-borg",
+    "name": "Anita Borg",
+    "ref": null,
+    "candidates": [],
+    "rejected": "Commons search returned a screenshot of her Wikidata item structure, a diagram."
+  },
+  {
+    "number": 22,
+    "slug": "lynn-conway",
+    "name": "Lynn Conway",
+    "ref": {
+      "url": "https://upload.wikimedia.org/wikipedia/commons/5/50/Lynn_Conway_July_2006.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
+      "credit": "Charles Rogers",
+      "license": "CC BY-SA 2.5",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/2.5",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Lynn_Conway_July_2006.jpg",
+      "file": "Lynn Conway July 2006.jpg",
+      "qid": "Q11490",
+      "via": "wikidata-p18"
+    },
+    "candidates": [],
+    "desc": "American computer scientist and electrical engineer (1938–2024)"
+  },
+  {
+    "number": 23,
+    "slug": "sophie-wilson",
+    "name": "Sophie Wilson",
+    "ref": {
+      "url": "https://upload.wikimedia.org/wikipedia/commons/b/b3/Sophie_Wilson.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
+      "credit": "Chris Monk",
+      "license": "CC BY 2.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by/2.0",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Sophie_Wilson.jpg",
+      "file": "Sophie Wilson.jpg",
+      "qid": "Q16489",
+      "via": "wikidata-p18"
+    },
+    "candidates": [],
+    "desc": "British computer scientist (born 1957)"
+  },
+  {
+    "number": 24,
+    "slug": "adele-goldberg",
+    "name": "Adele Goldberg",
+    "ref": {
+      "url": "https://upload.wikimedia.org/wikipedia/commons/3/36/Adele_Goldberg_at_PyCon_2007.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
+      "credit": "Terry Hancock",
+      "license": "CC BY-SA 2.5",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/2.5",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Adele_Goldberg_at_PyCon_2007.jpg",
+      "file": "Adele Goldberg at PyCon 2007.jpg",
+      "qid": "Q11605",
+      "via": "wikidata-p18"
+    },
+    "candidates": [],
+    "desc": "American computer scientist (born 1945)"
+  },
+  {
+    "number": 25,
+    "slug": "susan-kare",
+    "name": "Susan Kare",
+    "ref": {
+      "url": "https://upload.wikimedia.org/wikipedia/commons/8/88/SusanKare2019photo.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
+      "credit": "Cooper Hewitt",
+      "license": "CC BY 3.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by/3.0",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:SusanKare2019photo.jpg",
+      "file": "SusanKare2019photo.jpg",
+      "qid": "Q48971",
+      "via": "wikidata-p18"
+    },
+    "candidates": [],
+    "desc": "American artist and graphic designer (born 1954)"
+  },
+  {
+    "number": 26,
+    "slug": "limor-fried",
+    "name": "Limor Fried",
+    "ref": {
+      "url": "https://upload.wikimedia.org/wikipedia/commons/a/af/Limor_Fried_TC2013.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
+      "credit": "TechCrunch",
+      "license": "CC BY 2.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by/2.0",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Limor_Fried_TC2013.jpg",
+      "file": "Limor Fried TC2013.jpg",
+      "qid": "Q538651",
+      "via": "wikidata-p18"
+    },
+    "candidates": [],
+    "desc": "electrical engineer"
+  },
+  {
+    "number": 27,
+    "slug": "mitchell-baker",
+    "name": "Mitchell Baker",
+    "ref": {
+      "url": "https://upload.wikimedia.org/wikipedia/commons/8/8a/Mitchell_Baker.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
+      "credit": "James Duncan Davidson/O'Reilly Media",
+      "license": "CC BY 2.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by/2.0",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Mitchell_Baker.jpg",
+      "file": "Mitchell Baker.jpg",
+      "qid": null,
+      "via": "commons-search"
+    },
+    "candidates": [
+      "Mitchell Baker.jpg",
+      "Mitchell Baker-20081018.jpg",
+      "Mitchell Baker (1).jpg",
+      "Mitchell Baker (2).jpg",
+      "Mitchell Baker (3).jpg",
+      "Mitchell Baker (4).jpg",
+      "Mitchell Baker, Jonathan Schwartz (50185854).jpg",
+      "Mitchell Baker (50185859).jpg",
+      "Mitchell Baker 2009 crop.png",
+      "Mitchell Baker Michele Jawondo UNCTAD eWeek – 5 December 2023 04.jpg"
+    ]
+  },
+  {
+    "number": 28,
+    "slug": "audrey-tang",
+    "name": "Audrey Tang",
+    "ref": {
+      "url": "https://upload.wikimedia.org/wikipedia/commons/d/d3/AudreyTang060527.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
+      "credit": "AudreyTang",
+      "license": "CC0",
+      "licenseUrl": "http://creativecommons.org/publicdomain/zero/1.0/deed.en",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:AudreyTang060527.jpg",
+      "file": "AudreyTang060527.jpg",
+      "qid": "Q15025",
+      "via": "wikidata-p18"
+    },
+    "candidates": [],
+    "desc": "Taiwanese activist, politician and free software programmer"
+  },
+  {
+    "number": 29,
+    "slug": "karen-sandler",
+    "name": "Karen Sandler",
+    "ref": {
+      "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/a/a6/Karen_Sandler_-_Swathanthra_2017_-_DSC_9737.jpg/1280px-Karen_Sandler_-_Swathanthra_2017_-_DSC_9737.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "credit": "Ranjithsiji",
+      "license": "CC BY-SA 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Karen_Sandler_-_Swathanthra_2017_-_DSC_9737.jpg",
+      "file": "Karen Sandler - Swathanthra 2017 - DSC 9737.jpg",
+      "qid": "Q6370015",
+      "via": "wikidata-p18"
+    },
+    "candidates": [],
+    "desc": "Executive Director of Software Freedom Conservancy and American lawyer"
+  },
+  {
+    "number": 30,
+    "slug": "danese-cooper",
+    "name": "Danese Cooper",
+    "ref": {
+      "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/b/bf/Wikimedia_Foundation_Danese_Cooper_Sept_2010.jpg/1280px-Wikimedia_Foundation_Danese_Cooper_Sept_2010.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "credit": "Lane Hartwell",
+      "license": "CC BY-SA 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Wikimedia_Foundation_Danese_Cooper_Sept_2010.jpg",
+      "file": "Wikimedia Foundation Danese Cooper Sept 2010.jpg",
+      "qid": "Q11493",
+      "via": "wikidata-p18"
+    },
+    "candidates": [],
+    "desc": "American advocate of open source software"
+  },
+  {
+    "number": 31,
+    "slug": "allison-randal",
+    "name": "Allison Randal",
+    "ref": {
+      "url": "https://upload.wikimedia.org/wikipedia/commons/1/16/Allison_Randal.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
+      "credit": "The original uploader was Cjcollier at English Wikipedia.",
+      "license": "CC BY-SA 2.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/2.0",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Allison_Randal.jpg",
+      "file": "Allison Randal.jpg",
+      "qid": "Q3296638",
+      "via": "wikidata-p18"
+    },
+    "candidates": [],
+    "desc": "Computer writer"
+  },
+  {
+    "number": 32,
+    "slug": "valerie-aurora",
+    "name": "Valerie Aurora",
+    "ref": {
+      "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/f/f5/Valerie_Aurora_headshot.jpg/1280px-Valerie_Aurora_headshot.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "credit": "Photographer unknown, commissioned by Valerie Aurora",
+      "license": "CC BY 3.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by/3.0",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Valerie_Aurora_headshot.jpg",
+      "file": "Valerie Aurora headshot.jpg",
+      "qid": "Q7536",
+      "via": "wikidata-p18"
+    },
+    "candidates": [],
+    "desc": "American computer scientist and activist"
+  },
+  {
+    "number": 33,
+    "slug": "coraline-ada-ehmke",
+    "name": "Coraline Ada Ehmke",
+    "ref": {
+      "url": "https://upload.wikimedia.org/wikipedia/commons/a/af/Coraline_Ada_Ehmke.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
+      "credit": "Coraline Ada Ehmke",
+      "license": "CC BY-SA 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Coraline_Ada_Ehmke.jpg",
+      "file": "Coraline Ada Ehmke.jpg",
+      "qid": "Q24192535",
+      "via": "wikidata-p18"
+    },
+    "candidates": [],
+    "desc": "software developer and open source community activist"
+  },
+  {
+    "number": 34,
+    "slug": "sumana-harihareswara",
+    "name": "Sumana Harihareswara",
+    "ref": {
+      "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/9/92/Sumana_Harihareswara_021_-_Berlin_2011.jpg/1280px-Sumana_Harihareswara_021_-_Berlin_2011.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "credit": "Guillaume Paumier",
+      "license": "CC BY 3.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by/3.0",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Sumana_Harihareswara_021_-_Berlin_2011.jpg",
+      "file": "Sumana Harihareswara 021 - Berlin 2011.jpg",
+      "qid": null,
+      "via": "commons-search"
+    },
+    "candidates": [
+      "Sumana Harihareswara 021 - Berlin 2011.jpg",
+      "Sumana Harihareswara.jpg",
+      "Sumana Harihareswara 5302765.JPG",
+      "Sumana Harihareswara speaking at WikiConference USA in 2014.JPG"
+    ]
+  },
+  {
+    "number": 35,
+    "slug": "latanya-sweeney",
+    "name": "Latanya Sweeney",
+    "ref": {
+      "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/b/b6/Latanya_Arvette_Sweeney.jpg/1280px-Latanya_Arvette_Sweeney.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "credit": "'arcticpenguin'",
+      "license": "CC BY 2.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by/2.0",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Latanya_Arvette_Sweeney.jpg",
+      "file": "Latanya Arvette Sweeney.jpg",
+      "qid": "Q16499775",
+      "via": "wikidata-p18"
+    },
+    "candidates": [],
+    "desc": "computer scientist"
+  },
+  {
+    "number": 36,
+    "slug": "jessica-mckellar",
+    "name": "Jessica McKellar",
+    "ref": {
+      "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/d/d1/Jessica_McKellar_selfportrait_BW.jpeg/1280px-Jessica_McKellar_selfportrait_BW.jpeg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "credit": "Jessica McKellar",
+      "license": "CC BY-SA 3.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Jessica_McKellar_selfportrait_BW.jpeg",
+      "file": "Jessica McKellar selfportrait BW.jpeg",
+      "qid": "Q19667922",
+      "via": "wikidata-p18"
+    },
+    "candidates": [],
+    "desc": "American software developer, engineering manager, and author"
+  },
+  {
+    "number": 37,
+    "slug": "carol-willing",
+    "name": "Carol Willing",
+    "ref": {
+      "url": "https://avatars.githubusercontent.com/u/2680980?v=4&s=460",
+      "credit": "Carol Willing",
+      "license": "supplied",
+      "sourceUrl": "https://github.com/willingc",
+      "note": "Profile photograph; account verified against their real name.",
+      "via": "override"
+    },
+    "candidates": []
+  },
+  {
+    "number": 38,
+    "slug": "julia-evans",
+    "name": "Julia Evans",
+    "ref": null,
+    "candidates": [],
+    "rejected": "Commons search returned \"Julia Evans Reed.jpg\", a different person, and her GitHub avatar is a cartoon star rather than a photograph."
+  },
+  {
+    "number": 39,
+    "slug": "rachel-andrew",
+    "name": "Rachel Andrew",
+    "ref": {
+      "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/c/cd/Rachel_Andrew.jpg/1280px-Rachel_Andrew.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "credit": "Drew McLellan",
+      "license": "CC BY-SA 2.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/2.0",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Rachel_Andrew.jpg",
+      "file": "Rachel Andrew.jpg",
+      "qid": null,
+      "via": "commons-search"
+    },
+    "candidates": [
+      "Rachel Andrew.jpg",
+      "Rachel Andrew- CSS Grid Layout at -AEASF 2015.jpg",
+      "Rachel Andrew talks.jpg"
+    ]
+  },
+  {
+    "number": 40,
+    "slug": "jen-simmons",
+    "name": "Jen Simmons",
+    "ref": {
+      "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/0/06/Jen_Simmons_AEACHI_%28cropped%29.jpeg/1280px-Jen_Simmons_AEACHI_%28cropped%29.jpeg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "credit": "Jeffrey Zeldman",
+      "license": "CC BY 2.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by/2.0",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Jen_Simmons_AEACHI_(cropped).jpeg",
+      "file": "Jen Simmons AEACHI (cropped).jpeg",
+      "qid": "Q47171897",
+      "via": "wikidata-p18"
+    },
+    "candidates": [],
+    "desc": "web designer and developer"
+  },
+  {
+    "number": 41,
+    "slug": "lea-verou",
+    "name": "Lea Verou",
+    "ref": {
+      "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/e/e2/Lea_Verou%2C_speaking_at_the_Fonteers_2011_conference.jpg/1280px-Lea_Verou%2C_speaking_at_the_Fonteers_2011_conference.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "credit": "OutofTheBoxThinker",
+      "license": "CC BY-SA 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Lea_Verou,_speaking_at_the_Fonteers_2011_conference.jpg",
+      "file": "Lea Verou, speaking at the Fonteers 2011 conference.jpg",
+      "qid": null,
+      "via": "commons-search"
+    },
+    "candidates": [
+      "Lea Verou, speaking at the Fonteers 2011 conference.jpg",
+      "Lea-verou.jpg"
+    ]
+  },
+  {
+    "number": 42,
+    "slug": "sarah-drasner",
+    "name": "Sarah Drasner",
+    "ref": {
+      "url": "https://avatars.githubusercontent.com/u/2281088?v=4&s=460",
+      "credit": "Sarah Drasner",
+      "license": "supplied",
+      "sourceUrl": "https://github.com/sdras",
+      "note": "Profile photograph; account verified against their real name.",
+      "via": "override"
+    },
+    "candidates": []
+  },
+  {
+    "number": 43,
+    "slug": "leonie-watson",
+    "name": "Léonie Watson",
+    "ref": null,
+    "candidates": [],
+    "rejected": "Her GitHub avatar is the tink logo and her about page serves no photograph."
+  },
+  {
+    "number": 44,
+    "slug": "charity-majors",
+    "name": "Charity Majors",
+    "ref": {
+      "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/e/e7/Charity_Majors.png/1280px-Charity_Majors.png?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "credit": "Attribution: CityTV.nl",
+      "license": "CC BY 3.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by/3.0",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Charity_Majors.png",
+      "file": "Charity Majors.png",
+      "qid": "Q108913571",
+      "via": "wikidata-p18"
+    },
+    "candidates": [],
+    "desc": "American software engineer"
+  },
+  {
+    "number": 45,
+    "slug": "liz-fong-jones",
+    "name": "Liz Fong-Jones",
+    "ref": {
+      "url": "https://upload.wikimedia.org/wikipedia/commons/6/64/Liz_Fong-Jones_at_All_Things_Open_workshop.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
+      "credit": "All Things Open",
+      "license": "CC BY 3.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by/3.0",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Liz_Fong-Jones_at_All_Things_Open_workshop.jpg",
+      "file": "Liz Fong-Jones at All Things Open workshop.jpg",
+      "qid": "Q88326140",
+      "via": "wikidata-p18"
+    },
+    "candidates": [],
+    "desc": "American site reliability engineer and developer advocate"
+  },
+  {
+    "number": 46,
+    "slug": "jessie-frazelle",
+    "name": "Jessie Frazelle",
+    "ref": {
+      "url": "https://avatars.githubusercontent.com/u/1445228?v=4&s=460",
+      "credit": "Jess Frazelle",
+      "license": "supplied",
+      "sourceUrl": "https://github.com/jessfraz",
+      "note": "Profile photograph; account verified against their real name.",
+      "via": "override"
+    },
+    "candidates": []
+  },
+  {
+    "number": 47,
+    "slug": "camille-fournier",
+    "name": "Camille Fournier",
+    "ref": {
+      "url": "https://avatars.githubusercontent.com/u/607890?v=4&s=460",
+      "credit": "Camille Fournier",
+      "license": "supplied",
+      "sourceUrl": "https://github.com/skamille",
+      "note": "Profile photograph; account verified against their real name.",
+      "via": "override"
+    },
+    "candidates": []
+  },
+  {
+    "number": 48,
+    "slug": "timnit-gebru",
+    "name": "Timnit Gebru",
+    "ref": {
+      "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/6/6d/Timnit_Gebru_crop.jpg/1280px-Timnit_Gebru_crop.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "credit": "TechCrunch",
+      "license": "CC BY 2.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by/2.0",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Timnit_Gebru_crop.jpg",
+      "file": "Timnit Gebru crop.jpg",
+      "qid": "Q59753117",
+      "via": "wikidata-p18"
+    },
+    "candidates": [],
+    "desc": "computer scientist, specialising in AI ethics"
+  },
+  {
+    "number": 49,
+    "slug": "joy-buolamwini",
+    "name": "Joy Buolamwini",
+    "ref": {
+      "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/c/c0/Joy_Buolamwini%2C_2018_%28cropped%29.jpg/1280px-Joy_Buolamwini%2C_2018_%28cropped%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "credit": "Niccolò Caranti",
+      "license": "CC BY-SA 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Joy_Buolamwini,_2018_(cropped).jpg",
+      "file": "Joy Buolamwini, 2018 (cropped).jpg",
+      "qid": "Q31359093",
+      "via": "wikidata-p18"
+    },
+    "candidates": [],
+    "desc": "American computer scientist and digital activist"
+  },
+  {
+    "number": 50,
+    "slug": "margaret-mitchell",
+    "name": "Margaret Mitchell",
+    "ref": {
+      "url": "https://upload.wikimedia.org/wikipedia/commons/7/75/MargaretMitchell2022.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
+      "credit": "AI4LAM",
+      "license": "CC BY 3.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by/3.0",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:MargaretMitchell2022.jpg",
+      "file": "MargaretMitchell2022.jpg",
+      "qid": "Q50346871",
+      "via": "wikidata-p18"
+    },
+    "candidates": [],
+    "desc": "researcher, natural language processing"
+  }
+]

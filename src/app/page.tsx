@@ -5,6 +5,7 @@ import { cards, featured } from '@/data/cards';
 import { hackers, illustratedCount, lockedCount } from '@/data/hacking';
 import { pros, totalPlanned as proTotal } from '@/data/security';
 import { architects, illustratedCount as aiIllustrated, totalPlanned as aiTotal } from '@/data/ai';
+import { builders, illustratedCount as wIllustrated, totalPlanned as wTotal } from '@/data/women';
 import { site } from '@/data/site';
 import styles from './page.module.css';
 
@@ -145,6 +146,28 @@ export default function Home() {
             </div>
             <div className={styles.bandActions}>
               <Link href="/gods-of-ai" className="btn-primary">See the roster →</Link>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* Series Five teaser */}
+      <section className="section">
+        <div className="container">
+          <div className={styles.bandInner}>
+            <div>
+              <span className="kicker">Series Five · In progress</span>
+              <h2 className={styles.h2}>Women in Tech</h2>
+              <p>
+                One hundred and eighty years of it: the first compiler, the first assembler,
+                the ARM instruction set, the Apollo guidance software, and the code of
+                conduct in your repository. {builders.length} cards, {wIllustrated} of{' '}
+                {wTotal} illustrated from real photographs. Series One has forty-seven cards
+                and no women on any of them, which is the reason this set exists.
+              </p>
+            </div>
+            <div className={styles.bandActions}>
+              <Link href="/women-in-tech" className="btn-primary">See the roster →</Link>
             </div>
           </div>
         </div>

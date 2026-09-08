@@ -44,3 +44,7 @@ assets/references/
 # Gods of AI (Series Four) working dirs.
 #   node scripts/gods-cards.mjs all
 dist/gods/
+
+# Women in Tech (Series Five) working dirs.
+#   node scripts/women-cards.mjs all
+dist/women/
