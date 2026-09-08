@@ -6,8 +6,10 @@ import { site } from '@/data/site';
 
 type Params = { params: Promise<{ slug: string }> };
 
+// Only illustrated cards get a page — an entry with no face has nothing to show,
+// and listing it here would prerender 404s.
 export function generateStaticParams() {
-  return pros.map((p) => ({ slug: p.slug }));
+  return pros.filter((p) => p.front).map((p) => ({ slug: p.slug }));
 }
 
 export async function generateMetadata({ params }: Params): Promise<Metadata> {
@@ -37,8 +39,8 @@ export default async function ProPage({ params }: Params) {
   const prev = i > 0 ? pros[i - 1] : undefined;
   const next = i < pros.length - 1 ? pros[i + 1] : undefined;
 
-  // Art is published for the whole set, but keep the page honest if a face is
-  // ever missing rather than rendering a broken image.
+  // A card page exists only once its art does. While the set is unillustrated this
+  // is every slug, which is intended — better a 404 than a page with no card on it.
   if (!p.front || !p.back) notFound();
 
   const jsonLd = {
