@@ -87,8 +87,30 @@ pnpm security all 1 5 12       # ...only these card numbers
 pnpm security render           # re-render faces from the template, no API calls
 ```
 
-Same stages and the same resumability as Series Two, with one deliberate
-difference: **`all` does not run `enhance`.** On Series Two that image-to-image
+Portraits are painted **from a real photograph of the person**:
+
+```bash
+node scripts/security-refs.mjs resolve   # find + verify a reference photo per card
+node scripts/security-refs.mjs fetch     # download them (gitignored)
+node scripts/security-refs.mjs report    # who still has no face
+```
+
+The first art pass generated faces from text prompts alone and produced an
+invented stranger for every name. That art was withdrawn. Generation is now
+image-to-image off `assets/references/security-pros/`, and **a card with no
+verified reference photo gets no face** — the front renders a plate saying so.
+40 of 50 currently have one; `data/security-references.json` records the source,
+photographer and licence for each, and the card page prints the credit.
+
+Identity is verified, not assumed. A name search returns humans, not the right
+human: "Michael Howard" resolves to the British politician, "Robert M. Lee" to a
+Confederate general, "Mark Dowd" to a Liverpool councillor. The resolver requires
+a surname match, rejects pre-1950 photographs, requires a Commons filename to
+*open* with the person's full name, and carries an explicit reject list with
+reasons. Everything it accepts was still checked by eye.
+
+The same stages and resumability as Series Two, with one deliberate difference:
+**`all` does not run `enhance`.** On Series Two that image-to-image
 finish pass rewrote text on the card faces despite the prompt forbidding it — it
 fabricated quotes attributed to living people, invented stat panels that were not
 on the card, and misspelled a name. Nothing in the pipeline catches that, because

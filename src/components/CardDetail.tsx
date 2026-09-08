@@ -9,6 +9,18 @@ const CARD_VERSION = 'g1';
 export type DetailStat = { label: string; value: number };
 export type DetailSource = { label: string; url: string };
 
+/**
+ * The photograph a portrait was painted from. Most are CC BY or CC BY-SA, which
+ * oblige us to name the photographer — and a conditioned portrait is a derivative
+ * work, so the obligation travels with the card.
+ */
+export type DetailPortraitCredit = {
+  credit: string;
+  license: string;
+  licenseUrl?: string;
+  sourceUrl?: string;
+};
+
 export type DetailNeighbour = { slug: string; name: string; front: string };
 
 export type CardDetailProps = {
@@ -38,6 +50,7 @@ export type CardDetailProps = {
   /** Secondary stat bars. Series Two prints four; Series One has none. */
   stats?: DetailStat[];
   sources?: DetailSource[];
+  portraitCredit?: DetailPortraitCredit;
   statusLabel?: string;
   front: string;
   back: string;
@@ -76,6 +89,7 @@ export default function CardDetail(props: CardDetailProps) {
     noteLabel = 'Collector’s note',
     stats,
     sources,
+    portraitCredit,
     statusLabel,
     front,
     back,
@@ -226,6 +240,37 @@ export default function CardDetail(props: CardDetailProps) {
               <div className={styles.block}>
                 <h2 className={styles.blockHead}>{noteLabel}</h2>
                 <p className={styles.note}>{note}</p>
+              </div>
+            )}
+
+            {portraitCredit && (
+              <div className={styles.block}>
+                <h2 className={styles.blockHead}>Portrait</h2>
+                <p className={styles.note}>
+                  Painted from a photograph of {name} by{' '}
+                  {portraitCredit.sourceUrl ? (
+                    <a href={portraitCredit.sourceUrl} target="_blank" rel="noreferrer nofollow">
+                      {portraitCredit.credit}
+                    </a>
+                  ) : (
+                    portraitCredit.credit
+                  )}
+                  {portraitCredit.license === 'supplied' ? (
+                    ', supplied by the subject.'
+                  ) : (
+                    <>
+                      , licensed{' '}
+                      {portraitCredit.licenseUrl ? (
+                        <a href={portraitCredit.licenseUrl} target="_blank" rel="noreferrer nofollow">
+                          {portraitCredit.license}
+                        </a>
+                      ) : (
+                        portraitCredit.license
+                      )}
+                      .
+                    </>
+                  )}
+                </p>
               </div>
             )}
 

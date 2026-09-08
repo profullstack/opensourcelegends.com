@@ -85,7 +85,7 @@ const shell = (accent) => `${FONTS}
   .crest { display:flex; align-items:center; gap:7px; }
   .crest .t { font-family:'Oswald'; color:#fff; font-weight:700; font-size:11px; letter-spacing:.6px; line-height:1.05; }`;
 
-export function buildFront(pro, portraitDataUri) {
+export function buildFront(pro, portraitDataUri, ref) {
   const accent = accentOf(pro);
   const kw = traits(pro).join('&nbsp;&nbsp;·&nbsp;&nbsp;');
   const alias = pro.handle
@@ -98,6 +98,13 @@ export function buildFront(pro, portraitDataUri) {
      invented text. The caption band is now sized to what it actually holds. */
   .portrait { position:absolute; left:14px; right:14px; top:14px; height:72%; border-radius:16px; overflow:hidden; box-shadow:inset 0 0 0 2px ${accent}55; }
   .portrait img { width:100%; height:100%; object-fit:cover; object-position:center 18%; }
+  /* A card with no verified reference photo says so, rather than carrying an
+     invented face. This is a deliberate, visible gap. */
+  .nolikeness { width:100%; height:100%; display:flex; flex-direction:column; align-items:center; justify-content:center; gap:16px;
+    background:radial-gradient(90% 70% at 50% 35%, #171d26 0%, #0c1016 70%); }
+  .nolikeness .wm { opacity:.12; position:absolute; }
+  .nolikeness .initials { font-family:'Oswald'; font-weight:700; font-size:96px; letter-spacing:6px; color:${accent}; opacity:.85; z-index:1; }
+  .nolikeness .nlnote { font-family:'JetBrains Mono',monospace; font-size:15px; line-height:1.5; color:#8b93a5; text-align:center; letter-spacing:.6px; z-index:1; }
   .portrait::after { content:''; position:absolute; left:0; right:0; bottom:0; height:34%; background:linear-gradient(180deg,transparent,rgba(11,15,17,.94)); }
   .num { position:absolute; top:18px; left:20px; z-index:4; font-family:'Oswald'; font-weight:700; font-size:40px; line-height:1; padding:2px 14px 4px; background:${accent}; color:#0a0810; border-radius:0 0 12px 0; clip-path:polygon(0 0,100% 0,84% 100%,0 100%); }
   .crestbox { position:absolute; top:20px; right:20px; z-index:4; }
@@ -110,7 +117,13 @@ export function buildFront(pro, portraitDataUri) {
   .kw { font-family:'Oswald'; flex:1; text-align:center; color:#cfd2dc; font-weight:600; font-size:15px; letter-spacing:1.2px; }
   </style></head><body>
   <div class="card">
-    <div class="portrait"><img src="${portraitDataUri}"></div>
+    <div class="portrait">${
+      portraitDataUri
+        ? `<img src="${portraitDataUri}">`
+        : `<span class="nolikeness"><span class="wm">${emblem(accent, 150)}</span><span class="initials">${esc(
+            pro.name.split(/\s+/).map((w) => w[0]).join('')
+          )}</span><span class="nlnote">no freely-licensed photograph<br>of this person was found</span></span>`
+    }</div>
     <div class="num">${pad2(pro.number)}</div>
     <div class="crestbox"><span class="crest">${emblem(accent, 24)}<span class="t">SECURITY<br>PROFESSIONALS</span></span></div>
     <div class="info"><div class="name">${esc(pro.name)}</div>${alias}<div class="title">${esc(pro.title)}</div></div>
@@ -118,7 +131,7 @@ export function buildFront(pro, portraitDataUri) {
   </div></body></html>`;
 }
 
-export function buildBack(pro) {
+export function buildBack(pro, ref) {
   const accent = accentOf(pro);
   const rarity = String(pro.rarity).toUpperCase();
   const domains = (pro.domains || []).slice(0, 5).map((d) => `<li>${esc(d)}</li>`).join('');
@@ -167,6 +180,9 @@ export function buildBack(pro) {
   .foot { border-top:1px solid ${accent}55; padding-top:11px; color:#9a9ead; font-size:11px; letter-spacing:.3px; }
   .foot .r { display:flex; justify-content:space-between; align-items:center; }
   .foot b { color:#d7d9e2; }
+  /* CC BY and CC BY-SA reference photos oblige us to name the photographer, and
+     a conditioned portrait is a derivative work. */
+  .credit { color:#7f8698; font-size:10px; letter-spacing:.2px; }
   </style></head><body>
   <div class="card">
     <div class="head">
@@ -189,6 +205,13 @@ export function buildBack(pro) {
     <div class="foot">
       <div class="r"><span>ERA <b>${esc(pro.era)}</b></span><span>NATIONALITY <b>${esc(pro.nationality)}</b></span></div>
       <div class="r" style="margin-top:5px"><span>KNOWN FOR <b>${esc(pro.knownFor)}</b></span>${lockGlyph(accent, 18)}</div>
+      ${
+        ref
+          ? `<div class="r" style="margin-top:5px"><span class="credit">PORTRAIT AFTER A PHOTOGRAPH BY <b>${esc(
+              ref.credit
+            )}</b>${ref.license && ref.license !== 'supplied' ? ` · ${esc(ref.license)}` : ''}</span></div>`
+          : ''
+      }
     </div>
   </div></body></html>`;
 }

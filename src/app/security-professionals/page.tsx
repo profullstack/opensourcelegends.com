@@ -42,6 +42,11 @@ const CRITERIA = [
     head: 'Nobody appears twice',
     body: 'Series Two documents the people who broke things. This one documents the people whose job was to hold. A name in Hacking Legends cannot also be here.',
   },
+  {
+    tag: 'Real faces',
+    head: 'No invented likenesses',
+    body: 'A portrait is painted from an identified photograph of that person, credited to the photographer. Where no properly licensed photo exists, the card carries no face. An earlier version of this set generated faces from text alone; those were fabrications and they were withdrawn.',
+  },
 ];
 
 export default function SecurityProfessionalsPage() {
@@ -65,15 +70,11 @@ export default function SecurityProfessionalsPage() {
             line rather than crossing it.
           </p>
           <p className={styles.warning}>
-            {illustratedCount >= totalPlanned
-              ? `All ${totalPlanned} cards are illustrated. The set was built in public and the
-                 roster stays open to argument — every stat line and scouting report is a pull
-                 request away from changing.`
-              : `This set is being built in public. Copy is drafted, stats are in flux, and ${
-                  illustratedCount === 0
-                    ? 'not a single portrait has been illustrated yet'
-                    : `${illustratedCount} of ${totalPlanned} cards are illustrated so far`
-                }. What you see below is the working roster.`}
+            Every portrait here is painted from a real, identified photograph of the person,
+            and the photographer is credited on the card. {totalPlanned - illustratedCount} of
+            the {totalPlanned} have no freely-licensed photograph we could find, so those cards
+            carry no face rather than an invented one. If you can point us at a properly
+            licensed photo of someone, that is the single most useful thing you can contribute.
           </p>
           <div className={styles.actions}>
             <a href={site.github} target="_blank" rel="noreferrer" className="btn-primary">
@@ -106,7 +107,7 @@ export default function SecurityProfessionalsPage() {
               <span className={`${styles.barVal} mono`}>{lockedCount}/{totalPlanned}</span>
             </div>
             <div className={styles.barRow}>
-              <span className={styles.barLabel}>Artwork rendered</span>
+              <span className={styles.barLabel}>Portraits from a verified photo</span>
               <span className={styles.barTrack}>
                 <span
                   className={styles.barFill}
@@ -120,20 +121,13 @@ export default function SecurityProfessionalsPage() {
           <aside className={styles.aside}>
             <h2 className={styles.asideHead}>What ships next</h2>
             <ol className={styles.steps}>
-              {illustratedCount >= totalPlanned ? (
-                <>
-                  <li>Take nominations and re-cut any slot the argument goes against.</li>
-                  <li>Re-render any card whose copy or stat line changes in review.</li>
-                  <li>Print run and packs, alongside the open-licensed downloads.</li>
-                </>
-              ) : (
-                <>
-                  <li>Take nominations on the {totalPlanned} names and settle the disputed slots.</li>
-                  <li>Lock the stat lines and freeze the list.</li>
-                  <li>Illustrate fronts and backs, same treatment as Series One and Two.</li>
-                  <li>Card pages, print run and packs, alongside the open-licensed downloads.</li>
-                </>
-              )}
+              <li>
+                Find licensed photographs for the {totalPlanned - illustratedCount} cards with
+                no face. Pull requests welcome, and so are pointers.
+              </li>
+              <li>Take nominations and re-cut any slot the argument goes against.</li>
+              <li>Re-render any card whose copy or stat line changes in review.</li>
+              <li>Print run and packs, alongside the open-licensed downloads.</li>
             </ol>
           </aside>
         </div>

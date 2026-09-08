@@ -25,6 +25,17 @@
   therefore opt-in only and never part of `all`. Running it means accepting that
   every affected face must be checked by eye before publish.
 
+  PORTRAITS ARE CONDITIONED ON A REAL PHOTOGRAPH
+  ----------------------------------------------
+  The first pass generated faces from text prompts alone, so every portrait was an
+  invented stranger. Generation now takes a verified reference photo as input (see
+  scripts/security-refs.mjs), and a card with no verified photo gets NO FACE — the
+  front renders a plate saying so. We do not invent a likeness of a real person.
+
+  The reference photo's photographer is credited: most are CC BY / CC BY-SA, and a
+  conditioned portrait is a derivative work. data/security-references.json carries
+  the provenance and the card page prints it.
+
   The roster is src/data/security.ts, imported directly (Node strips the types),
   so there is no second copy of the data to keep in sync.
 
@@ -71,6 +82,9 @@ process.emitWarning = (warning, ...rest) => {
   if (code === 'MODULE_TYPELESS_PACKAGE_JSON') return;
   return emitWarning(warning, ...rest);
 };
+
+const REFS_DIR = path.join(ROOT, 'assets', 'references', 'security-pros');
+const REF_MANIFEST = path.join(ROOT, 'data', 'security-references.json');
 
 const DIRS = {
   approvedArt: path.join(ROOT, 'assets', 'portraits', 'security-pros'),
@@ -207,6 +221,40 @@ async function editImage(pngBuffer, prompt, { size = '1024x1536' } = {}) {
 
 // -------------------------------------------------------------- prompts ----
 
+function referenceFor(h) {
+  const p = path.join(REFS_DIR, `${cardId(h.number)}.jpg`);
+  return fssync.existsSync(p) ? p : null;
+}
+
+let refManifest = null;
+function refInfo(slug) {
+  if (!refManifest) {
+    refManifest = fssync.existsSync(REF_MANIFEST)
+      ? JSON.parse(fssync.readFileSync(REF_MANIFEST, 'utf8'))
+      : [];
+  }
+  return refManifest.find((r) => r.slug === slug)?.ref || null;
+}
+
+/**
+ * Image-to-image instruction. The reference photograph is the subject; the model's
+ * job is to restyle it, not to reimagine who it is. Says so several ways, because
+ * the failure we are guarding against is precisely a plausible different face.
+ */
+function likenessPrompt(h) {
+  const motif = (h.domains || []).slice(0, 2).join(' and ') || 'computer security';
+  return [
+    'Repaint this photograph as a realistic semi-painterly portrait for a premium collectible trading card.',
+    'CRITICAL: keep the SAME PERSON. Preserve the exact facial structure, likeness, age, hairstyle, facial hair,',
+    'glasses, skin tone and expression of the person in the photograph. Do not beautify, do not de-age,',
+    'do not substitute a different face. The result must be recognisable as the same individual.',
+    'Head and shoulders, facing the viewer, warm cinematic studio lighting with a cool rim light,',
+    'detailed painted realism, dignified and serious.',
+    `Replace the background with a dark background carrying subtle faint motifs of ${motif}.`,
+    'No text, no letters, no logos, no border, no card frame, no watermark.',
+  ].join(' ');
+}
+
 function portraitPrompt(h) {
   const motif = (h.domains || []).slice(0, 2).join(' and ') || 'computer security';
   const era = h.era ? ` Period-accurate to ${h.era}.` : '';
@@ -331,9 +379,20 @@ async function pool(items, label, task) {
 async function portraits(roster) {
   await ensureDirs();
   console.log(`portraits: ${provider()} / ${provider() === 'openai' ? OPENAI_MODEL() : GEMINI_MODEL()}`);
-  return pool(roster, 'portraits', async (h) => {
+  const withRef = roster.filter((h) => referenceFor(h));
+  const without = roster.filter((h) => !referenceFor(h));
+  if (without.length) {
+    console.log(
+      `portraits: ${without.length} have no verified reference photo and will get no face ` +
+        `(${without.map((h) => h.number).join(', ')}). Run scripts/security-refs.mjs to look again.`
+    );
+  }
+  return pool(withRef, 'portraits', async (h) => {
     if (portraitFor(h)) return 'skip';
-    const buf = await withRetry(cardId(h.number), () => generateImage(portraitPrompt(h)));
+    // Image-to-image off the real photograph. Never generateImage() — a text-only
+    // prompt is what produced the invented faces this pipeline exists to prevent.
+    const ref = await fs.readFile(referenceFor(h));
+    const buf = await withRetry(cardId(h.number), () => editImage(ref, likenessPrompt(h), { size: '1024x1024' }));
     await fs.writeFile(path.join(DIRS.workingArt, `${cardId(h.number)}.png`), buf);
   });
 }
@@ -367,10 +426,11 @@ async function render(roster) {
     const id = cardId(h.number);
     try {
       const art = portraitFor(h);
-      if (!art) throw new Error('no portrait art — run `portraits` first');
-      const uri = `data:image/png;base64,${(await fs.readFile(art)).toString('base64')}`;
-      await shoot(buildFront(h, uri), id, 'front');
-      await shoot(buildBack(h), id, 'back');
+      // No art is a legitimate outcome: nobody with no verified reference photo
+      // gets an invented face. buildFront renders a "no likeness" plate instead.
+      const uri = art ? `data:image/png;base64,${(await fs.readFile(art)).toString('base64')}` : null;
+      await shoot(buildFront(h, uri, refInfo(h.slug)), id, 'front');
+      await shoot(buildBack(h, refInfo(h.slug)), id, 'back');
       ok++;
       console.log(`✓ ${String(h.number).padStart(2, '0')} ${h.name} (${h.rarity})`);
     } catch (err) {

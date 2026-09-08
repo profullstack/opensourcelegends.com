@@ -32,3 +32,11 @@ dist/hacking/
 # faces under public/cards/security/ are the committed record.
 #   node scripts/security-pros.mjs all
 dist/security/
+
+# Reference photographs the portraits are painted from. NOT committed: several are
+# ordinary all-rights-reserved bio photos used with permission as references, and
+# redistributing them in the repo is a different act from painting from them.
+# data/security-references.json records where each came from, and
+#   node scripts/security-refs.mjs fetch
+# re-downloads the lot.
+assets/references/
