@@ -37,7 +37,7 @@ signups into the `waitlist` table.
 
 ## Card production
 
-Four decks, one per series. Approved portrait art lives under
+Five decks, one per series. Approved portrait art lives under
 `assets/portraits/<set>/` — see [assets/portraits/README.md](assets/portraits/README.md).
 
 **Series One — Open Source Legends** (`data/roster.locked.json`, complete):
@@ -151,6 +151,33 @@ matching accepted a blue wolf statue outside a brewery for "Thomas Wolf" and a
 Bulgarian basketball player for "Georgi Gerganov". And a reference whose subject's
 head is cropped out of frame, or whose avatar is a felt sculpture, makes the model
 invent a face — which is why François Chollet has no portrait.
+
+**Series Five — Women in Tech** (`src/data/women.ts`, 50 cards):
+
+```bash
+pnpm women:refs                # find + verify a reference photo per card
+pnpm women all                 # portraits -> render -> publish
+```
+
+180 years, from Lovelace to the people auditing models now. Rated on `technical`,
+`pioneering`, `openness`, `influence`. 43 of 50 have a verified photograph.
+
+**The date guard had to come out for this set.** Series Three rejects any reference
+photograph dated before 1950, because an old plate meant the search had found a
+historical namesake. Here the historical figures ARE the subject, so that guard
+would have silently deleted Lovelace, Hopper and every ENIAC and Bletchley entry.
+`women-refs.mjs` has no date or birth-year floor. Read the comment before copying
+the resolver to a sixth set.
+
+What the review caught this time: a photograph of the **house** carrying Joan
+Clarke's blue plaque, a **screenshot of a Wikidata item** for Anita Borg, a
+**different Julia Evans**, a **French astronaut** named Camille Fournier, and two
+ENIAC room shots where no face is legible. Léonie Watson's avatar is her logo and
+Julia Evans' is a cartoon star, which is the Chollet failure again: give the model
+a reference with no face and it will invent one rather than fail.
+
+Nobody appears in more than one series, so the fifteen women already carded in
+Series Two to Four are linked from the roster page instead of repeated.
 
 ## Project layout
 

@@ -18,7 +18,11 @@
     "gods": "node scripts/gods-cards.mjs",
     "gods:validate": "node scripts/gods-cards.mjs validate",
     "gods:render": "node scripts/gods-cards.mjs render",
-    "gods:refs": "node scripts/gods-refs.mjs"
+    "gods:refs": "node scripts/gods-refs.mjs",
+    "women": "node scripts/women-cards.mjs",
+    "women:validate": "node scripts/women-cards.mjs validate",
+    "women:render": "node scripts/women-cards.mjs render",
+    "women:refs": "node scripts/women-refs.mjs"
   },
   "dependencies": {
     "@libsql/client": "^0.17.4",
