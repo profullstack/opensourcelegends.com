@@ -1,7 +1,7 @@
 import type { Metadata } from 'next';
 import { notFound } from 'next/navigation';
 import CardDetail from '@/components/CardDetail';
-import { pros, getPro, rarityLabel, statusLabel } from '@/data/security';
+import { pros, getPro, rarityLabel, statusLabel, getPortraitCredit } from '@/data/security';
 import { site } from '@/data/site';
 
 type Params = { params: Promise<{ slug: string }> };
@@ -94,6 +94,7 @@ export default async function ProPage({ params }: Params) {
           { label: 'Influence', value: p.influence },
         ]}
         sources={p.sources}
+        portraitCredit={getPortraitCredit(p.slug)}
         front={p.front}
         back={p.back}
         prev={prev?.front ? { slug: prev.slug, name: prev.name, front: prev.front } : undefined}
