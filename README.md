@@ -179,6 +179,38 @@ a reference with no face and it will invent one rather than fail.
 Nobody appears in more than one series, so the fifteen women already carded in
 Series Two to Four are linked from the roster page instead of repeated.
 
+**Series Six — Tech CEOs** (`src/data/ceos.ts`, 50 cards):
+
+```bash
+pnpm ceos:refs                 # find + verify a reference photo per card
+pnpm ceos all                  # portraits -> render -> publish
+pnpm ceos:render               # re-render faces from the template, no API calls
+```
+
+The people who ran the companies, ordered roughly by when they took charge. The
+axes the other sets use do not travel — rating a chief executive on technical depth
+mostly measures how long ago they stopped writing code — so this set rates
+`product`, `operating`, `openness` and `influence`.
+
+`openness` is the reason a CEO set belongs on this site at all: Gerstner's billion
+dollars behind Linux, Java under the GPL, Nvidia's GPU kernel modules, the GitHub
+acquisition. It is also why the set prints the bad decisions. Gates is carded with
+the Open Letter to Hobbyists and the Sherman Act ruling on the same card.
+
+The date guard stays out, for a different reason than Series Five. The earliest
+person here was born in 1912, so a 1950s photograph of Packard or Watson is exactly
+right; namesakes are caught by the surname and description tests in `looksRight()`,
+which are specific rather than chronological. The `FIELD` regex is wider on the
+business side than the other sets, because Wikidata describes these people as
+"business magnate" and "chief executive officer" rather than "computer scientist".
+
+49 of 50 resolved to a verified photograph on the first pass, the highest rate of
+any set — public-company CEOs are photographed at conferences by people who upload
+to Commons. The exception is Sid Sijbrandij: no Commons file, no Wikidata P18, and
+the obvious fallback avatar is served by an account whose API record has a null name
+and a recent numeric id, so it cannot be tied to him the way the Series Four and
+Five avatar overrides were. That card ships with no face.
+
 ## Project layout
 
 ```

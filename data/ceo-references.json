@@ -1,0 +1,851 @@
+[
+  {
+    "number": 1,
+    "slug": "david-packard",
+    "name": "David Packard",
+    "ref": {
+      "url": "https://upload.wikimedia.org/wikipedia/commons/6/6e/David-Packard-DepSecDef.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
+      "credit": "Department of Defense Historical Office Public Affairs",
+      "license": "Public domain",
+      "licenseUrl": "",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:David-Packard-DepSecDef.jpg",
+      "file": "David-Packard-DepSecDef.jpg",
+      "qid": "Q380484",
+      "via": "wikidata-p18"
+    },
+    "candidates": [],
+    "desc": "American electrical engineer, businessman, and philanthropist (1912–1996)"
+  },
+  {
+    "number": 2,
+    "slug": "akio-morita",
+    "name": "Akio Morita",
+    "ref": {
+      "url": "https://upload.wikimedia.org/wikipedia/commons/2/23/Morita_Akio.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
+      "credit": "プレジデント社　撮影者不明",
+      "license": "Public domain",
+      "licenseUrl": "",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Morita_Akio.jpg",
+      "file": "Morita Akio.jpg",
+      "qid": "Q310845",
+      "via": "wikidata-p18"
+    },
+    "candidates": [],
+    "desc": "Japanese businessman (1921-1999)"
+  },
+  {
+    "number": 3,
+    "slug": "thomas-watson-jr",
+    "name": "Thomas J. Watson Jr.",
+    "ref": {
+      "url": "https://upload.wikimedia.org/wikipedia/commons/8/87/ThomasJWatsonJr.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
+      "credit": "U.S. State department",
+      "license": "Public domain",
+      "licenseUrl": "",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:ThomasJWatsonJr.jpg",
+      "file": "ThomasJWatsonJr.jpg",
+      "qid": "Q46000",
+      "via": "wikidata-p18"
+    },
+    "candidates": [],
+    "desc": "American businessman and diplomat (1914-1993)"
+  },
+  {
+    "number": 4,
+    "slug": "ken-olsen",
+    "name": "Ken Olsen",
+    "ref": {
+      "url": "https://upload.wikimedia.org/wikipedia/commons/6/68/Kenneth_Olsen%2C_RIT_NandE_Vol18Num4_1986_Oct23_Complete_%28cropped%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
+      "credit": "Rochester Institute of Technology",
+      "license": "Public domain",
+      "licenseUrl": "",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Kenneth_Olsen,_RIT_NandE_Vol18Num4_1986_Oct23_Complete_(cropped).jpg",
+      "file": "Kenneth Olsen, RIT NandE Vol18Num4 1986 Oct23 Complete (cropped).jpg",
+      "qid": "Q454315",
+      "via": "wikidata-p18"
+    },
+    "candidates": [],
+    "desc": "American engineer and businessman (1926–2011)"
+  },
+  {
+    "number": 5,
+    "slug": "robert-noyce",
+    "name": "Robert Noyce",
+    "ref": {
+      "url": "https://upload.wikimedia.org/wikipedia/commons/8/82/Robert_Noyce_with_Motherboard_1959.png?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
+      "credit": "Intel Free Press",
+      "license": "CC BY-SA 2.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/2.0",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Robert_Noyce_with_Motherboard_1959.png",
+      "file": "Robert Noyce with Motherboard 1959.png",
+      "qid": "Q241735",
+      "via": "wikidata-p18"
+    },
+    "candidates": [],
+    "desc": "American physicist, engineer and entrepreneur (1927–1990), co-founder of  Fairchild Semiconductor and Intel"
+  },
+  {
+    "number": 6,
+    "slug": "gordon-moore",
+    "name": "Gordon Moore",
+    "ref": {
+      "url": "https://upload.wikimedia.org/wikipedia/commons/1/1d/Former_Intel_CEO_Gordon_Moore_in_his_cubicle.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
+      "credit": "Intel Free Press",
+      "license": "CC BY-SA 2.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/2.0",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Former_Intel_CEO_Gordon_Moore_in_his_cubicle.jpg",
+      "file": "Former Intel CEO Gordon Moore in his cubicle.jpg",
+      "qid": "Q243969",
+      "via": "wikidata-p18"
+    },
+    "candidates": [],
+    "desc": "American businessman, co-founder of Intel Corporation (1929–2023)"
+  },
+  {
+    "number": 7,
+    "slug": "bill-gates",
+    "name": "Bill Gates",
+    "ref": {
+      "url": "https://upload.wikimedia.org/wikipedia/commons/8/88/Bill_Gates_at_the_European_Commission_-_2025_-_P067383-987995_%28cropped%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
+      "credit": "Bogdan Hoyaux / European Union",
+      "license": "CC BY 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by/4.0",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Bill_Gates_at_the_European_Commission_-_2025_-_P067383-987995_(cropped).jpg",
+      "file": "Bill Gates at the European Commission - 2025 - P067383-987995 (cropped).jpg",
+      "qid": "Q5284",
+      "via": "wikidata-p18"
+    },
+    "candidates": [],
+    "desc": "American businessman, investor, and philanthropist (born 1955)"
+  },
+  {
+    "number": 8,
+    "slug": "steve-jobs",
+    "name": "Steve Jobs",
+    "ref": {
+      "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/f/f5/Steve_Jobs_Headshot_2010-CROP2.jpg/1280px-Steve_Jobs_Headshot_2010-CROP2.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "credit": "MetalGearLiquid, based on File:Steve_Jobs_Headshot_2010-CROP.jpg made by Matt Yohe",
+      "license": "CC BY-SA 3.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Steve_Jobs_Headshot_2010-CROP2.jpg",
+      "file": "Steve Jobs Headshot 2010-CROP2.jpg",
+      "qid": "Q19837",
+      "via": "wikidata-p18"
+    },
+    "candidates": [],
+    "desc": "American entrepreneur; co-founder of Apple Inc. (1955–2011)"
+  },
+  {
+    "number": 9,
+    "slug": "larry-ellison",
+    "name": "Larry Ellison",
+    "ref": {
+      "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/0/00/Larry_Ellison_picture.png/1280px-Larry_Ellison_picture.png?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "credit": "Oracle PR Hartmann Studios",
+      "license": "CC BY 2.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by/2.0",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Larry_Ellison_picture.png",
+      "file": "Larry Ellison picture.png",
+      "qid": "Q92759",
+      "via": "wikidata-p18"
+    },
+    "candidates": [],
+    "desc": "American internet entrepreneur and businessman (born 1944)"
+  },
+  {
+    "number": 10,
+    "slug": "narayana-murthy",
+    "name": "N. R. Narayana Murthy",
+    "ref": {
+      "url": "https://upload.wikimedia.org/wikipedia/commons/1/11/Narayana_Murthy_CIF_%28cropped%29.JPG?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
+      "credit": "ps482207",
+      "license": "CC BY-SA 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Narayana_Murthy_CIF_(cropped).JPG",
+      "file": "Narayana Murthy CIF (cropped).JPG",
+      "qid": "Q1398708",
+      "via": "wikidata-p18"
+    },
+    "candidates": [],
+    "desc": "Indian businessman"
+  },
+  {
+    "number": 11,
+    "slug": "masayoshi-son",
+    "name": "Masayoshi Son",
+    "ref": {
+      "url": "https://upload.wikimedia.org/wikipedia/commons/5/58/Masayoshi_Son_%28P066533-522034%2C_cropped%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
+      "credit": "European Communities, 2025 / EC - Audiovisual Service",
+      "license": "CC BY 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by/4.0",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Masayoshi_Son_(P066533-522034,_cropped).jpg",
+      "file": "Masayoshi Son (P066533-522034, cropped).jpg",
+      "qid": "Q717038",
+      "via": "wikidata-p18"
+    },
+    "candidates": [],
+    "desc": "Japanese businessman"
+  },
+  {
+    "number": 12,
+    "slug": "michael-dell",
+    "name": "Michael Dell",
+    "ref": {
+      "url": "https://upload.wikimedia.org/wikipedia/commons/c/ce/Michael_Dell_2010.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
+      "credit": "mikeandryan",
+      "license": "CC BY 2.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by/2.0",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Michael_Dell_2010.jpg",
+      "file": "Michael Dell 2010.jpg",
+      "qid": "Q218630",
+      "via": "wikidata-p18"
+    },
+    "candidates": [],
+    "desc": "American businessman and CEO (born 1965)"
+  },
+  {
+    "number": 13,
+    "slug": "scott-mcnealy",
+    "name": "Scott McNealy",
+    "ref": {
+      "url": "https://upload.wikimedia.org/wikipedia/commons/f/f5/ScottMcNealy_Cropped.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
+      "credit": "Global X",
+      "license": "CC BY 2.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by/2.0",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:ScottMcNealy_Cropped.jpg",
+      "file": "ScottMcNealy Cropped.jpg",
+      "qid": "Q1668164",
+      "via": "wikidata-p18"
+    },
+    "candidates": [],
+    "desc": "American businessman"
+  },
+  {
+    "number": 14,
+    "slug": "morris-chang",
+    "name": "Morris Chang",
+    "ref": {
+      "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/6/61/Morris_Chang_2021APEC.jpg/1280px-Morris_Chang_2021APEC.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "credit": "總統府",
+      "license": "CC BY 2.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by/2.0",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Morris_Chang_2021APEC.jpg",
+      "file": "Morris Chang 2021APEC.jpg",
+      "qid": "Q4745214",
+      "via": "wikidata-p18"
+    },
+    "candidates": [],
+    "desc": "American businessperson (born 1931)"
+  },
+  {
+    "number": 15,
+    "slug": "andy-grove",
+    "name": "Andrew Grove",
+    "ref": {
+      "url": "https://upload.wikimedia.org/wikipedia/commons/5/51/Andrew_Grove.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
+      "credit": "World Economic Forum from Cologny, Switzerland",
+      "license": "CC BY-SA 2.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/2.0",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Andrew_Grove.jpg",
+      "file": "Andrew Grove.jpg",
+      "qid": "Q432929",
+      "via": "wikidata-p18"
+    },
+    "candidates": [],
+    "desc": "Hungarian-born American businessman, engineer and author (1936–2016)"
+  },
+  {
+    "number": 16,
+    "slug": "ren-zhengfei",
+    "name": "Ren Zhengfei",
+    "ref": {
+      "url": "https://upload.wikimedia.org/wikipedia/commons/d/d8/Ren_Zhengfei_%282016%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
+      "credit": "Georges Boulougouris",
+      "license": "CC BY 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by/4.0",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Ren_Zhengfei_(2016).jpg",
+      "file": "Ren Zhengfei (2016).jpg",
+      "qid": "Q712802",
+      "via": "wikidata-p18"
+    },
+    "candidates": [],
+    "desc": "Chinese businessman"
+  },
+  {
+    "number": 17,
+    "slug": "lou-gerstner",
+    "name": "Lou Gerstner",
+    "ref": {
+      "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/7/71/Lou_Gerstner_IBM_CEO_1995.jpg/1280px-Lou_Gerstner_IBM_CEO_1995.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "credit": "Kenneth C. Zirkel",
+      "license": "CC BY-SA 3.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Lou_Gerstner_IBM_CEO_1995.jpg",
+      "file": "Lou Gerstner IBM CEO 1995.jpg",
+      "qid": "Q1363852",
+      "via": "wikidata-p18"
+    },
+    "candidates": [],
+    "desc": "American businessman (1942-2025)"
+  },
+  {
+    "number": 18,
+    "slug": "jensen-huang",
+    "name": "Jensen Huang",
+    "ref": {
+      "url": "https://upload.wikimedia.org/wikipedia/commons/e/e6/Jen-Hsun_Huang_2025.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
+      "credit": "The White House",
+      "license": "Public domain",
+      "licenseUrl": "",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Jen-Hsun_Huang_2025.jpg",
+      "file": "Jen-Hsun Huang 2025.jpg",
+      "qid": "Q305177",
+      "via": "wikidata-p18"
+    },
+    "candidates": [],
+    "desc": "American entrepreneur and businessman; founder and CEO of Nvidia"
+  },
+  {
+    "number": 19,
+    "slug": "bob-young",
+    "name": "Bob Young",
+    "ref": {
+      "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/9/94/BobYoungJI1.jpg/1280px-BobYoungJI1.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "credit": "Joi",
+      "license": "CC BY 2.5",
+      "licenseUrl": "https://creativecommons.org/licenses/by/2.5",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:BobYoungJI1.jpg",
+      "file": "BobYoungJI1.jpg",
+      "qid": "Q2717411",
+      "via": "wikidata-p18"
+    },
+    "candidates": [],
+    "desc": "Canadian entrepreneur"
+  },
+  {
+    "number": 20,
+    "slug": "jeff-bezos",
+    "name": "Jeff Bezos",
+    "ref": {
+      "url": "https://upload.wikimedia.org/wikipedia/commons/6/6c/Jeff_Bezos_at_Amazon_Spheres_Grand_Opening_in_Seattle_-_2018_%2839074799225%29_%28cropped%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
+      "credit": "Seattle City Council from Seattle",
+      "license": "CC BY 2.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by/2.0",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Jeff_Bezos_at_Amazon_Spheres_Grand_Opening_in_Seattle_-_2018_(39074799225)_(cropped).jpg",
+      "file": "Jeff Bezos at Amazon Spheres Grand Opening in Seattle - 2018 (39074799225) (cropped).jpg",
+      "qid": "Q312556",
+      "via": "wikidata-p18"
+    },
+    "candidates": [],
+    "desc": "American business magnate (born 1964)"
+  },
+  {
+    "number": 21,
+    "slug": "reed-hastings",
+    "name": "Reed Hastings",
+    "ref": {
+      "url": "https://upload.wikimedia.org/wikipedia/commons/9/91/Reed_Hastings%2C_Web_2.0_Conference.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
+      "credit": "Unknown",
+      "license": "CC BY 2.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by/2.0",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Reed_Hastings,_Web_2.0_Conference.jpg",
+      "file": "Reed Hastings, Web 2.0 Conference.jpg",
+      "qid": "Q7306657",
+      "via": "wikidata-p18"
+    },
+    "candidates": [],
+    "desc": "American entrepreneur and education philanthropist"
+  },
+  {
+    "number": 22,
+    "slug": "meg-whitman",
+    "name": "Meg Whitman",
+    "ref": {
+      "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/5/58/Meg_Whitman%2C_U.S._Ambassador.jpg/1280px-Meg_Whitman%2C_U.S._Ambassador.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "credit": "United States Department of State",
+      "license": "Public domain",
+      "licenseUrl": "",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Meg_Whitman,_U.S._Ambassador.jpg",
+      "file": "Meg Whitman, U.S. Ambassador.jpg",
+      "qid": "Q55174",
+      "via": "wikidata-p18"
+    },
+    "candidates": [],
+    "desc": "American business executive"
+  },
+  {
+    "number": 23,
+    "slug": "diane-greene",
+    "name": "Diane Greene",
+    "ref": {
+      "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/4/47/Diane_Greene_-_TechCrunch_Disrupt_SF_2016_-_Day_2_%2829036999614%29.jpg/1280px-Diane_Greene_-_TechCrunch_Disrupt_SF_2016_-_Day_2_%2829036999614%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "credit": "TechCrunch",
+      "license": "CC BY 2.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by/2.0",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Diane_Greene_-_TechCrunch_Disrupt_SF_2016_-_Day_2_(29036999614).jpg",
+      "file": "Diane Greene - TechCrunch Disrupt SF 2016 - Day 2 (29036999614).jpg",
+      "qid": "Q11614",
+      "via": "wikidata-p18"
+    },
+    "candidates": [],
+    "desc": "American computer scientist"
+  },
+  {
+    "number": 24,
+    "slug": "larry-page",
+    "name": "Larry Page",
+    "ref": {
+      "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/2/26/Larry_Page_in_the_European_Parliament%2C_17.06.2009.jpg/1280px-Larry_Page_in_the_European_Parliament%2C_17.06.2009.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "credit": "Marcin Mycielski, European Parliament (Stansfield)",
+      "license": "CC BY-SA 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Larry_Page_in_the_European_Parliament,_17.06.2009.jpg",
+      "file": "Larry Page in the European Parliament, 17.06.2009.jpg",
+      "qid": "Q4934",
+      "via": "wikidata-p18"
+    },
+    "candidates": [],
+    "desc": "American computer scientist and Internet entrepreneur (born 1973)"
+  },
+  {
+    "number": 25,
+    "slug": "marc-benioff",
+    "name": "Marc Benioff",
+    "ref": {
+      "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/1/19/Marc_Benioff.jpg/1280px-Marc_Benioff.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "credit": "Salesforce.",
+      "license": "CC BY-SA 2.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/2.0",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Marc_Benioff.jpg",
+      "file": "Marc Benioff.jpg",
+      "qid": "Q1521908",
+      "via": "wikidata-p18"
+    },
+    "candidates": [],
+    "desc": "American internet entrepreneur and philanthropist"
+  },
+  {
+    "number": 26,
+    "slug": "jack-ma",
+    "name": "Jack Ma",
+    "ref": {
+      "url": "https://upload.wikimedia.org/wikipedia/commons/a/a9/Enabling_eCommerce-_Small_Enterprises%2C_Global_Players_%2839008130265%29_%28cropped%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
+      "credit": "Foundations World Economic Forum",
+      "license": "CC BY 2.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by/2.0",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Enabling_eCommerce-_Small_Enterprises,_Global_Players_(39008130265)_(cropped).jpg",
+      "file": "Enabling eCommerce- Small Enterprises, Global Players (39008130265) (cropped).jpg",
+      "qid": "Q1137062",
+      "via": "wikidata-p18"
+    },
+    "candidates": [],
+    "desc": "Chinese businessman"
+  },
+  {
+    "number": 27,
+    "slug": "marten-mickos",
+    "name": "Mårten Mickos",
+    "ref": {
+      "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/4/43/Marten_Mickos_2010-03.jpg/1280px-Marten_Mickos_2010-03.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "credit": "Andrew Smart of AC Cooper",
+      "license": "CC BY 3.0 us",
+      "licenseUrl": "https://creativecommons.org/licenses/by/3.0/us/deed.en",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Marten_Mickos_2010-03.jpg",
+      "file": "Marten Mickos 2010-03.jpg",
+      "qid": "Q330874",
+      "via": "wikidata-p18"
+    },
+    "candidates": [],
+    "desc": "Finnish businessman"
+  },
+  {
+    "number": 28,
+    "slug": "eric-schmidt",
+    "name": "Eric Schmidt",
+    "ref": {
+      "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/e/e5/Eric_Schmidt_at_the_37th_G8_Summit_in_Deauville_037.jpg/1280px-Eric_Schmidt_at_the_37th_G8_Summit_in_Deauville_037.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "credit": "Guillaume Paumier",
+      "license": "CC BY 3.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by/3.0",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Eric_Schmidt_at_the_37th_G8_Summit_in_Deauville_037.jpg",
+      "file": "Eric Schmidt at the 37th G8 Summit in Deauville 037.jpg",
+      "qid": "Q92747",
+      "via": "wikidata-p18"
+    },
+    "candidates": [],
+    "desc": "software engineer, businessman, former Google CEO"
+  },
+  {
+    "number": 29,
+    "slug": "mark-zuckerberg",
+    "name": "Mark Zuckerberg",
+    "ref": {
+      "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/1/18/Mark_Zuckerberg_F8_2019_Keynote_%2832830578717%29_%28cropped%29.jpg/1280px-Mark_Zuckerberg_F8_2019_Keynote_%2832830578717%29_%28cropped%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "credit": "Anthony Quintano from Westminster, United States",
+      "license": "CC BY 2.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by/2.0",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Mark_Zuckerberg_F8_2019_Keynote_(32830578717)_(cropped).jpg",
+      "file": "Mark Zuckerberg F8 2019 Keynote (32830578717) (cropped).jpg",
+      "qid": "Q36215",
+      "via": "wikidata-p18"
+    },
+    "candidates": [],
+    "desc": "American Internet entrepreneur"
+  },
+  {
+    "number": 30,
+    "slug": "tobias-lutke",
+    "name": "Tobias Lütke",
+    "ref": {
+      "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/2/28/Tobias_L%C3%BCtke%2C_Shopify.jpg/1280px-Tobias_L%C3%BCtke%2C_Shopify.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "credit": "Union Eleven",
+      "license": "CC BY-SA 3.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Tobias_L%C3%BCtke,_Shopify.jpg",
+      "file": "Tobias Lütke, Shopify.jpg",
+      "qid": "Q20684647",
+      "via": "wikidata-p18"
+    },
+    "candidates": [],
+    "desc": "German entrepreneur and software developer"
+  },
+  {
+    "number": 31,
+    "slug": "elon-musk",
+    "name": "Elon Musk",
+    "ref": {
+      "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/0/0e/Elon_Musk_%2854816836217%29_%28cropped_2%29_%28b%29.jpg/1280px-Elon_Musk_%2854816836217%29_%28cropped_2%29_%28b%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "credit": "Gage Skidmore",
+      "license": "CC BY-SA 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Elon_Musk_(54816836217)_(cropped_2)_(b).jpg",
+      "file": "Elon Musk (54816836217) (cropped 2) (b).jpg",
+      "qid": "Q317521",
+      "via": "wikidata-p18"
+    },
+    "candidates": [],
+    "desc": "American businessman (born 1971)"
+  },
+  {
+    "number": 32,
+    "slug": "daniel-ek",
+    "name": "Daniel Ek",
+    "ref": {
+      "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/3/39/Daniel_Ek_EC_2025_%28cropped%29.jpg/1280px-Daniel_Ek_EC_2025_%28cropped%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "credit": "Lukasz Kobus/European Commission",
+      "license": "CC BY 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by/4.0",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Daniel_Ek_EC_2025_(cropped).jpg",
+      "file": "Daniel Ek EC 2025 (cropped).jpg",
+      "qid": "Q901670",
+      "via": "wikidata-p18"
+    },
+    "candidates": [],
+    "desc": "Swedish businessman (born 1983)"
+  },
+  {
+    "number": 33,
+    "slug": "andy-jassy",
+    "name": "Andy Jassy",
+    "ref": {
+      "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/0/07/Andy_Jassy.jpg/1280px-Andy_Jassy.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "credit": "Lisi Mezistrano Wolf",
+      "license": "CC BY-SA 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Andy_Jassy.jpg",
+      "file": "Andy Jassy.jpg",
+      "qid": "Q41812531",
+      "via": "wikidata-p18"
+    },
+    "candidates": [],
+    "desc": "American businessman"
+  },
+  {
+    "number": 34,
+    "slug": "chris-wanstrath",
+    "name": "Chris Wanstrath",
+    "ref": {
+      "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/6/6a/Chris_Wanstrath_2023.jpg/1280px-Chris_Wanstrath_2023.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "credit": "Idawholou",
+      "license": "CC BY-SA 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Chris_Wanstrath_2023.jpg",
+      "file": "Chris Wanstrath 2023.jpg",
+      "qid": "Q27940879",
+      "via": "wikidata-p18"
+    },
+    "candidates": [],
+    "desc": "American technology entrepreneur and programmer"
+  },
+  {
+    "number": 35,
+    "slug": "jim-whitehurst",
+    "name": "Jim Whitehurst",
+    "ref": {
+      "url": "https://upload.wikimedia.org/wikipedia/commons/5/56/Jim_Whitehurst_Keynote_1.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
+      "credit": "Red Hat",
+      "license": "CC BY-SA 2.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/2.0",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Jim_Whitehurst_Keynote_1.jpg",
+      "file": "Jim Whitehurst Keynote 1.jpg",
+      "qid": "Q6198907",
+      "via": "wikidata-p18"
+    },
+    "candidates": [],
+    "desc": "American businessman (*1967)"
+  },
+  {
+    "number": 36,
+    "slug": "matthew-prince",
+    "name": "Matthew Prince",
+    "ref": {
+      "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/5/54/TechCrunch_Disrupt_SF_2015_-_Day_Two_-_001_%2821643811351%29.jpg/1280px-TechCrunch_Disrupt_SF_2015_-_Day_Two_-_001_%2821643811351%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "credit": "TechCrunch",
+      "license": "CC BY 2.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by/2.0",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:TechCrunch_Disrupt_SF_2015_-_Day_Two_-_001_(21643811351).jpg",
+      "file": "577181505RR106 TechCrunch D.jpg",
+      "qid": "Q51665553",
+      "via": "wikidata-p18"
+    },
+    "candidates": [],
+    "desc": "American businessman and entrepreneur"
+  },
+  {
+    "number": 37,
+    "slug": "patrick-collison",
+    "name": "Patrick Collison",
+    "ref": {
+      "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/8/87/Patrick_Collison.jpg/1280px-Patrick_Collison.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "credit": "JD Lasica",
+      "license": "CC BY 2.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by/2.0",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Patrick_Collison.jpg",
+      "file": "Patrick Collison.jpg",
+      "qid": "Q7146257",
+      "via": "wikidata-p18"
+    },
+    "candidates": [],
+    "desc": "Irish entrepreneur"
+  },
+  {
+    "number": 38,
+    "slug": "tim-cook",
+    "name": "Tim Cook",
+    "ref": {
+      "url": "https://upload.wikimedia.org/wikipedia/commons/8/88/Tim_Cook_March_2026_%28cropped%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
+      "credit": "Tessa Bury",
+      "license": "CC BY 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by/4.0",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Tim_Cook_March_2026_(cropped).jpg",
+      "file": "Tim Cook March 2026 (cropped).jpg",
+      "qid": "Q265852",
+      "via": "wikidata-p18"
+    },
+    "candidates": [],
+    "desc": "American business executive, former Apple executive chairman"
+  },
+  {
+    "number": 39,
+    "slug": "ginni-rometty",
+    "name": "Ginni Rometty",
+    "ref": {
+      "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/a/ab/Ginni_Rometty_at_the_Fortune_MPW_Summit_in_2011.jpg/1280px-Ginni_Rometty_at_the_Fortune_MPW_Summit_in_2011.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "credit": "Asa Mathat / Fortune Live Media",
+      "license": "CC BY 2.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by/2.0",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Ginni_Rometty_at_the_Fortune_MPW_Summit_in_2011.jpg",
+      "file": "Ginni Rometty at the Fortune MPW Summit in 2011.jpg",
+      "qid": "Q49971",
+      "via": "wikidata-p18"
+    },
+    "candidates": [],
+    "desc": "American business executive"
+  },
+  {
+    "number": 40,
+    "slug": "pat-gelsinger",
+    "name": "Pat Gelsinger",
+    "ref": {
+      "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/a/ad/Pat_Gelsinger.jpg/1280px-Pat_Gelsinger.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "credit": "[Web Summit https://www.flickr.com/people/74711243@N06]",
+      "license": "CC BY 2.5",
+      "licenseUrl": "https://creativecommons.org/licenses/by/2.5",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Pat_Gelsinger.jpg",
+      "file": "Pat Gelsinger.jpg",
+      "qid": "Q7143480",
+      "via": "wikidata-p18"
+    },
+    "candidates": [],
+    "desc": "American businessperson; former CEO of Intel"
+  },
+  {
+    "number": 41,
+    "slug": "satya-nadella",
+    "name": "Satya Nadella",
+    "ref": {
+      "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/7/78/MS-Exec-Nadella-Satya-2017-08-31-22_%28cropped%29.jpg/1280px-MS-Exec-Nadella-Satya-2017-08-31-22_%28cropped%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "credit": "Brian Smale and Microsoft",
+      "license": "CC BY-SA 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:MS-Exec-Nadella-Satya-2017-08-31-22_(cropped).jpg",
+      "file": "MS-Exec-Nadella-Satya-2017-08-31-22 (cropped).jpg",
+      "qid": "Q7426870",
+      "via": "wikidata-p18"
+    },
+    "candidates": [],
+    "desc": "Indian-American business executive and CEO of Microsoft"
+  },
+  {
+    "number": 42,
+    "slug": "lisa-su",
+    "name": "Lisa Su",
+    "ref": {
+      "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/d/dd/SXSW-2024-alih-OB7A0861-Lisa_Su.jpg/1280px-SXSW-2024-alih-OB7A0861-Lisa_Su.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "credit": "Fuzheado",
+      "license": "CC BY 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by/4.0",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:SXSW-2024-alih-OB7A0861-Lisa_Su.jpg",
+      "file": "SXSW-2024-alih-OB7A0861-Lisa Su.jpg",
+      "qid": "Q18207172",
+      "via": "wikidata-p18"
+    },
+    "candidates": [],
+    "desc": "American business executive and electrical engineer"
+  },
+  {
+    "number": 43,
+    "slug": "susan-wojcicki",
+    "name": "Susan Wojcicki",
+    "ref": {
+      "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/0/0b/Susan_Wojcicki_%2829393944130%29_%28cropped%29.jpg/1280px-Susan_Wojcicki_%2829393944130%29_%28cropped%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "credit": "TechCrunch",
+      "license": "CC BY 2.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by/2.0",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Susan_Wojcicki_(29393944130)_(cropped).jpg",
+      "file": "Susan Wojcicki (29393944130) (cropped).jpg",
+      "qid": "Q55183",
+      "via": "wikidata-p18"
+    },
+    "candidates": [],
+    "desc": "American business executive (1968–2024)"
+  },
+  {
+    "number": 44,
+    "slug": "sid-sijbrandij",
+    "name": "Sid Sijbrandij",
+    "ref": null,
+    "candidates": []
+  },
+  {
+    "number": 45,
+    "slug": "jay-kreps",
+    "name": "Jay Kreps",
+    "ref": {
+      "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/3/36/Jay_Kreps.jpg/1280px-Jay_Kreps.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "credit": "Oleg Yunakov",
+      "license": "CC BY-SA 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Jay_Kreps.jpg",
+      "file": "Jay Kreps.jpg",
+      "qid": null,
+      "via": "commons-search"
+    },
+    "candidates": [
+      "Jay Kreps.jpg"
+    ]
+  },
+  {
+    "number": 46,
+    "slug": "sundar-pichai",
+    "name": "Sundar Pichai",
+    "ref": {
+      "url": "https://upload.wikimedia.org/wikipedia/commons/c/c3/Sundar_Pichai_-_2023_%28cropped%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
+      "credit": "Photographer: Lukasz Kobus (European Commission)",
+      "license": "CC BY 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by/4.0",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Sundar_Pichai_-_2023_(cropped).jpg",
+      "file": "Sundar Pichai - 2023 (cropped).jpg",
+      "qid": "Q3503829",
+      "via": "wikidata-p18"
+    },
+    "candidates": [],
+    "desc": "Indian-American business executive, CEO of Google LLC & Alphabet Inc."
+  },
+  {
+    "number": 47,
+    "slug": "guillermo-rauch",
+    "name": "Guillermo Rauch",
+    "ref": {
+      "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/e/eb/Guillermo_Rauch_photo.jpg/1280px-Guillermo_Rauch_photo.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "credit": "Oynickj",
+      "license": "CC BY-SA 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Guillermo_Rauch_photo.jpg",
+      "file": "Guillermo Rauch photo.jpg",
+      "qid": "Q108496693",
+      "via": "wikidata-p18"
+    },
+    "candidates": [],
+    "desc": "founder and CEO of Vercel"
+  },
+  {
+    "number": 48,
+    "slug": "ali-ghodsi",
+    "name": "Ali Ghodsi",
+    "ref": {
+      "url": "https://upload.wikimedia.org/wikipedia/commons/5/52/Wake_up_People-_AI_is_eating_at_all_of_your_jobs_%2839392994925%29_%28cropped%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
+      "credit": "Steve Jurvetson from Menlo Park, USA",
+      "license": "CC BY 2.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by/2.0",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Wake_up_People-_AI_is_eating_at_all_of_your_jobs_(39392994925)_(cropped).jpg",
+      "file": "Wake up People- AI is eating at all of your jobs (39392994925) (cropped).jpg",
+      "qid": "Q23016890",
+      "via": "wikidata-p18"
+    },
+    "candidates": [],
+    "desc": "Iranian-Swedish computer scientist"
+  },
+  {
+    "number": 49,
+    "slug": "nat-friedman",
+    "name": "Nat Friedman",
+    "ref": {
+      "url": "https://upload.wikimedia.org/wikipedia/commons/b/bd/Nat_Friedman%2C_2005.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
+      "credit": "David Sifry",
+      "license": "CC BY 2.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by/2.0",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Nat_Friedman,_2005.jpg",
+      "file": "Nat Friedman, 2005.jpg",
+      "qid": "Q92955",
+      "via": "wikidata-p18"
+    },
+    "candidates": [],
+    "desc": "American computer programmer"
+  },
+  {
+    "number": 50,
+    "slug": "sam-altman",
+    "name": "Sam Altman",
+    "ref": {
+      "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/a/a2/Sam_Altman_TechCrunch_SF_2019_Day_2_Oct_3_%28cropped%29.jpg/1280px-Sam_Altman_TechCrunch_SF_2019_Day_2_Oct_3_%28cropped%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "credit": "TechCrunch",
+      "license": "CC BY 2.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by/2.0",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Sam_Altman_TechCrunch_SF_2019_Day_2_Oct_3_(cropped).jpg",
+      "file": "Sam Altman TechCrunch SF 2019 Day 2 Oct 3 (cropped).jpg",
+      "qid": null,
+      "via": "commons-search"
+    },
+    "candidates": [
+      "Sam Altman TechCrunch SF 2019 Day 2 Oct 3 (cropped).jpg",
+      "Sam Altman in 2009 (cropped).jpg",
+      "Sam Altman TechCrunch SF 2019 Day 2 Oct 3 (cropped) (cropped).jpg",
+      "Sam Altman CropEdit James Tamim.jpg",
+      "Sam Altman November 2022.jpg",
+      "Sam Altman speaking at TED (cropped).jpg",
+      "“Sam Altman” by Village Global (Cropped).jpg",
+      "“Sam Altman” by Village Global.jpg"
+    ]
+  }
+]

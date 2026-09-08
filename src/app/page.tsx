@@ -6,6 +6,7 @@ import { hackers, illustratedCount, lockedCount } from '@/data/hacking';
 import { pros, totalPlanned as proTotal } from '@/data/security';
 import { architects, illustratedCount as aiIllustrated, totalPlanned as aiTotal } from '@/data/ai';
 import { builders, illustratedCount as wIllustrated, totalPlanned as wTotal } from '@/data/women';
+import { executives, illustratedCount as cIllustrated, totalPlanned as cTotal } from '@/data/ceos';
 import { site } from '@/data/site';
 import styles from './page.module.css';
 
@@ -168,6 +169,28 @@ export default function Home() {
             </div>
             <div className={styles.bandActions}>
               <Link href="/women-in-tech" className="btn-primary">See the roster →</Link>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* Series Six teaser */}
+      <section className="section">
+        <div className="container">
+          <div className={styles.bandInner}>
+            <div>
+              <span className="kicker">Series Six · In progress</span>
+              <h2 className={styles.h2}>Tech CEOs</h2>
+              <p>
+                Every other set here cards the person who wrote the thing. This one cards the
+                person who decided it would be built, and whether it would be given away:
+                the billion dollars IBM put behind Linux, Java under the GPL, the GitHub
+                acquisition. {executives.length} cards, {cIllustrated} of {cTotal}{' '}
+                illustrated from real photographs.
+              </p>
+            </div>
+            <div className={styles.bandActions}>
+              <Link href="/tech-ceos" className="btn-primary">See the roster →</Link>
             </div>
           </div>
         </div>
