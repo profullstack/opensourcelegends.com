@@ -65,11 +65,15 @@ export default function SecurityProfessionalsPage() {
             line rather than crossing it.
           </p>
           <p className={styles.warning}>
-            This set is being built in public. Copy is drafted, stats are in flux, and{' '}
-            {illustratedCount === 0
-              ? 'not a single portrait has been illustrated yet'
-              : `${illustratedCount} of ${totalPlanned} cards are illustrated so far`}
-            . What you see below is the working roster.
+            {illustratedCount >= totalPlanned
+              ? `All ${totalPlanned} cards are illustrated. The set was built in public and the
+                 roster stays open to argument — every stat line and scouting report is a pull
+                 request away from changing.`
+              : `This set is being built in public. Copy is drafted, stats are in flux, and ${
+                  illustratedCount === 0
+                    ? 'not a single portrait has been illustrated yet'
+                    : `${illustratedCount} of ${totalPlanned} cards are illustrated so far`
+                }. What you see below is the working roster.`}
           </p>
           <div className={styles.actions}>
             <a href={site.github} target="_blank" rel="noreferrer" className="btn-primary">
@@ -116,10 +120,20 @@ export default function SecurityProfessionalsPage() {
           <aside className={styles.aside}>
             <h2 className={styles.asideHead}>What ships next</h2>
             <ol className={styles.steps}>
-              <li>Take nominations on the {totalPlanned} names and settle the disputed slots.</li>
-              <li>Lock the stat lines and freeze the list.</li>
-              <li>Illustrate fronts and backs, same treatment as Series One and Two.</li>
-              <li>Card pages, print run and packs, alongside the open-licensed downloads.</li>
+              {illustratedCount >= totalPlanned ? (
+                <>
+                  <li>Take nominations and re-cut any slot the argument goes against.</li>
+                  <li>Re-render any card whose copy or stat line changes in review.</li>
+                  <li>Print run and packs, alongside the open-licensed downloads.</li>
+                </>
+              ) : (
+                <>
+                  <li>Take nominations on the {totalPlanned} names and settle the disputed slots.</li>
+                  <li>Lock the stat lines and freeze the list.</li>
+                  <li>Illustrate fronts and backs, same treatment as Series One and Two.</li>
+                  <li>Card pages, print run and packs, alongside the open-licensed downloads.</li>
+                </>
+              )}
             </ol>
           </aside>
         </div>
@@ -132,9 +146,9 @@ export default function SecurityProfessionalsPage() {
             <span className="kicker">The working roster</span>
             <h2 className={styles.h2}>{pros.length} names, ordered by set number</h2>
             <p className={styles.sub}>
-              Open the scouting report for the sources behind each claim. Card pages go up
-              once the art does. Nothing here is final until the set is frozen — argue with
-              any of it on GitHub.
+              Open the scouting report for the sources behind each claim, or go to a
+              card&apos;s own page. Nothing here is final until the set is frozen — argue
+              with any of it on GitHub.
             </p>
           </div>
 

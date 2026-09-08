@@ -6,6 +6,10 @@
     "skipLibCheck": true,
     "strict": true,
     "noEmit": true,
+    // The data modules are imported by the card pipelines under `node --strip-types`,
+    // which cannot resolve an extensionless relative specifier. So they import
+    // "./roster.ts" explicitly, which needs this flag. Legal because noEmit is set.
+    "allowImportingTsExtensions": true,
     "esModuleInterop": true,
     "module": "esnext",
     "moduleResolution": "bundler",
