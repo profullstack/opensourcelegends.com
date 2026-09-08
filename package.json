@@ -22,7 +22,11 @@
     "women": "node scripts/women-cards.mjs",
     "women:validate": "node scripts/women-cards.mjs validate",
     "women:render": "node scripts/women-cards.mjs render",
-    "women:refs": "node scripts/women-refs.mjs"
+    "women:refs": "node scripts/women-refs.mjs",
+    "ceos": "node scripts/ceo-cards.mjs",
+    "ceos:validate": "node scripts/ceo-cards.mjs validate",
+    "ceos:render": "node scripts/ceo-cards.mjs render",
+    "ceos:refs": "node scripts/ceo-refs.mjs"
   },
   "dependencies": {
     "@libsql/client": "^0.17.4",

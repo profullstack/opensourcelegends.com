@@ -4,6 +4,7 @@ import { hackers } from '@/data/hacking';
 import { pros } from '@/data/security';
 import { architects } from '@/data/ai';
 import { builders } from '@/data/women';
+import { executives } from '@/data/ceos';
 import { site } from '@/data/site';
 
 // Small enough to stay a single sitemap — the static pages plus one per illustrated card.
@@ -17,6 +18,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
     '/security-professionals',
     '/gods-of-ai',
     '/women-in-tech',
+    '/tech-ceos',
     '/collect',
     '/contribute',
   ].map(
@@ -65,5 +67,21 @@ export default function sitemap(): MetadataRoute.Sitemap {
       priority: 0.6,
     }));
 
-  return [...staticPages, ...cardPages, ...hackerPages, ...proPages, ...aiPages, ...womenPages];
+  const ceoPages = executives
+    .filter((e) => e.front)
+    .map((e) => ({
+      url: `${site.url}/tech-ceos/${e.slug}`,
+      changeFrequency: 'monthly' as const,
+      priority: 0.6,
+    }));
+
+  return [
+    ...staticPages,
+    ...cardPages,
+    ...hackerPages,
+    ...proPages,
+    ...aiPages,
+    ...womenPages,
+    ...ceoPages,
+  ];
 }

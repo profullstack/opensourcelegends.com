@@ -17,6 +17,7 @@ export const nav = [
   { label: "Security Pros", href: "/security-professionals" },
   { label: "Gods of AI", href: "/gods-of-ai" },
   { label: "Women in Tech", href: "/women-in-tech" },
+  { label: "Tech CEOs", href: "/tech-ceos" },
   { label: "Collect", href: "/collect" },
   { label: "Contribute", href: "/contribute" },
 ] as const;

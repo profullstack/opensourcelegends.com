@@ -48,3 +48,7 @@ dist/gods/
 # Women in Tech (Series Five) working dirs.
 #   node scripts/women-cards.mjs all
 dist/women/
+
+# Tech CEOs (Series Six) working dirs.
+#   node scripts/ceo-cards.mjs all
+dist/ceos/
