@@ -14,7 +14,11 @@
     "hacking:render": "node scripts/hacking-legends.mjs render",
     "security": "node scripts/security-pros.mjs",
     "security:validate": "node scripts/security-pros.mjs validate",
-    "security:render": "node scripts/security-pros.mjs render"
+    "security:render": "node scripts/security-pros.mjs render",
+    "gods": "node scripts/gods-cards.mjs",
+    "gods:validate": "node scripts/gods-cards.mjs validate",
+    "gods:render": "node scripts/gods-cards.mjs render",
+    "gods:refs": "node scripts/gods-refs.mjs"
   },
   "dependencies": {
     "@libsql/client": "^0.17.4",

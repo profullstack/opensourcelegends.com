@@ -1,0 +1,706 @@
+[
+  {
+    "number": 1,
+    "slug": "geoffrey-hinton",
+    "name": "Geoffrey Hinton",
+    "ref": {
+      "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/8/82/Geoffrey_Hinton_in_2026.jpg/1280px-Geoffrey_Hinton_in_2026.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "credit": "Cmichel67",
+      "license": "CC BY-SA 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Geoffrey_Hinton_in_2026.jpg",
+      "file": "Geoffrey Hinton in 2026.jpg",
+      "qid": "Q92894",
+      "via": "wikidata-p18"
+    },
+    "candidates": [],
+    "desc": "British-Canadian computer scientist and psychologist"
+  },
+  {
+    "number": 2,
+    "slug": "yann-lecun",
+    "name": "Yann LeCun",
+    "ref": {
+      "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/e/e2/Yann_LeCun_-_2025_%28cropped%29.jpg/1280px-Yann_LeCun_-_2025_%28cropped%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "credit": "Ecole  polytechnique from Paris",
+      "license": "CC BY-SA 2.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/2.0",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Yann_LeCun_-_2025_(cropped).jpg",
+      "file": "Yann LeCun - 2025 (cropped).jpg",
+      "qid": "Q3571662",
+      "via": "wikidata-p18"
+    },
+    "candidates": [],
+    "desc": "French computer scientist (born 1960)"
+  },
+  {
+    "number": 3,
+    "slug": "yoshua-bengio",
+    "name": "Yoshua Bengio",
+    "ref": {
+      "url": "https://upload.wikimedia.org/wikipedia/commons/1/1e/Yoshua_Bengio_2019_cropped.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
+      "credit": "Maryse Boyce",
+      "license": "CC BY 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by/4.0",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Yoshua_Bengio_2019_cropped.jpg",
+      "file": "Yoshua Bengio 2019 cropped.jpg",
+      "qid": "Q3572699",
+      "via": "wikidata-p18"
+    },
+    "candidates": [],
+    "desc": "Canadian computer scientist (born 1964)"
+  },
+  {
+    "number": 4,
+    "slug": "jurgen-schmidhuber",
+    "name": "Jürgen Schmidhuber",
+    "ref": {
+      "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/b/b8/J%C3%BCrgen_Schmidhuber%2C_2017_%28cropped%29.jpg/1280px-J%C3%BCrgen_Schmidhuber%2C_2017_%28cropped%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "credit": "ITU/R.Farrell",
+      "license": "CC BY 2.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by/2.0",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:J%C3%BCrgen_Schmidhuber,_2017_(cropped).jpg",
+      "file": "Jürgen Schmidhuber, 2017 (cropped).jpg",
+      "qid": "Q92735",
+      "via": "wikidata-p18"
+    },
+    "candidates": [],
+    "desc": "German computer scientist and artificial intelligence researcher"
+  },
+  {
+    "number": 5,
+    "slug": "rich-sutton",
+    "name": "Richard S. Sutton",
+    "ref": {
+      "url": "https://upload.wikimedia.org/wikipedia/commons/d/d3/Richard_Sutton_2021_%28cropped%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
+      "credit": "Numenta",
+      "license": "CC BY 3.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by/3.0",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Richard_Sutton_2021_(cropped).jpg",
+      "file": "Richard Sutton 2021 (cropped).jpg",
+      "qid": "Q7328833",
+      "via": "wikidata-p18"
+    },
+    "candidates": [],
+    "desc": "Canadian computer scientist"
+  },
+  {
+    "number": 6,
+    "slug": "andrew-barto",
+    "name": "Andrew Barto",
+    "ref": null,
+    "candidates": []
+  },
+  {
+    "number": 7,
+    "slug": "judea-pearl",
+    "name": "Judea Pearl",
+    "ref": {
+      "url": "https://upload.wikimedia.org/wikipedia/commons/1/1a/Judea_Pearl_at_NIPS_2013_%2811781981594%29_%28cropped%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
+      "credit": "Better Than Bacon",
+      "license": "CC BY 2.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by/2.0",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Judea_Pearl_at_NIPS_2013_(11781981594)_(cropped).jpg",
+      "file": "Judea Pearl at NIPS 2013 (11781981594) (cropped).jpg",
+      "qid": "Q92824",
+      "via": "wikidata-p18"
+    },
+    "candidates": [],
+    "desc": "Israeli-American computer scientist (born 1936)"
+  },
+  {
+    "number": 8,
+    "slug": "fei-fei-li",
+    "name": "Fei-Fei Li",
+    "ref": {
+      "url": "https://upload.wikimedia.org/wikipedia/commons/c/c7/Fei-Fei_Li_at_AI_for_Good_2017.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
+      "credit": "ITU Pictures",
+      "license": "CC BY 2.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by/2.0",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Fei-Fei_Li_at_AI_for_Good_2017.jpg",
+      "file": "Fei-Fei Li at AI for Good 2017.jpg",
+      "qid": "Q18686107",
+      "via": "wikidata-p18"
+    },
+    "candidates": [],
+    "desc": "American computer scientist"
+  },
+  {
+    "number": 9,
+    "slug": "ashish-vaswani",
+    "name": "Ashish Vaswani",
+    "ref": null,
+    "candidates": []
+  },
+  {
+    "number": 10,
+    "slug": "noam-shazeer",
+    "name": "Noam Shazeer",
+    "ref": null,
+    "candidates": []
+  },
+  {
+    "number": 11,
+    "slug": "lukasz-kaiser",
+    "name": "Łukasz Kaiser",
+    "ref": {
+      "url": "https://avatars.githubusercontent.com/u/684901?v=4&s=460",
+      "credit": "Lukasz Kaiser",
+      "license": "supplied",
+      "sourceUrl": "https://github.com/lukaszkaiser",
+      "note": "GitHub profile photograph; account verified against their real name.",
+      "via": "override"
+    },
+    "candidates": []
+  },
+  {
+    "number": 12,
+    "slug": "aidan-gomez",
+    "name": "Aidan Gomez",
+    "ref": {
+      "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/4/46/Aidan_Gomez_at_%22ALL_IN%22_2025_06.jpg/1280px-Aidan_Gomez_at_%22ALL_IN%22_2025_06.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "credit": "Gabriel Hutchinson",
+      "license": "CC BY-SA 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Aidan_Gomez_at_%22ALL_IN%22_2025_06.jpg",
+      "file": "Aidan Gomez at \"ALL IN\" 2025 06.jpg",
+      "qid": "Q110864219",
+      "via": "wikidata-p18"
+    },
+    "candidates": [],
+    "desc": "artificial intelligence researcher"
+  },
+  {
+    "number": 13,
+    "slug": "alex-krizhevsky",
+    "name": "Alex Krizhevsky",
+    "ref": null,
+    "candidates": []
+  },
+  {
+    "number": 14,
+    "slug": "ilya-sutskever",
+    "name": "Ilya Sutskever",
+    "ref": {
+      "url": "https://upload.wikimedia.org/wikipedia/commons/d/d4/Ilya_Sutskever_and_Sam_Altman_in_TAU_%28cropped%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
+      "credit": "Eladkarmel",
+      "license": "CC BY-SA 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Ilya_Sutskever_and_Sam_Altman_in_TAU_(cropped).jpg",
+      "file": "Ilya Sutskever and Sam Altman in TAU (cropped).jpg",
+      "qid": "Q21712134",
+      "via": "wikidata-p18"
+    },
+    "candidates": [],
+    "desc": "Canadian-Israeli AI researcher"
+  },
+  {
+    "number": 15,
+    "slug": "ian-goodfellow",
+    "name": "Ian Goodfellow",
+    "ref": {
+      "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/f/fe/Ian_Goodfellow.jpg/1280px-Ian_Goodfellow.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "credit": "Ian Goodfellow",
+      "license": "CC BY-SA 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Ian_Goodfellow.jpg",
+      "file": "Ian Goodfellow.jpg",
+      "qid": "Q28379682",
+      "via": "commons-search"
+    },
+    "candidates": [
+      "Ian Goodfellow.jpg",
+      "Ian Goodfellow (cropped).jpg"
+    ]
+  },
+  {
+    "number": 16,
+    "slug": "tri-dao",
+    "name": "Tri Dao",
+    "ref": {
+      "url": "https://avatars.githubusercontent.com/u/5616128?v=4&s=460",
+      "credit": "Tri Dao",
+      "license": "supplied",
+      "sourceUrl": "https://github.com/tridao",
+      "note": "GitHub profile photograph; account verified against their real name.",
+      "via": "override"
+    },
+    "candidates": []
+  },
+  {
+    "number": 17,
+    "slug": "albert-gu",
+    "name": "Albert Gu",
+    "ref": null,
+    "candidates": [],
+    "rejected": "GitHub avatar is a default identicon, not a photograph."
+  },
+  {
+    "number": 18,
+    "slug": "alec-radford",
+    "name": "Alec Radford",
+    "ref": {
+      "url": "https://avatars.githubusercontent.com/u/2515289?v=4&s=460",
+      "credit": "Alec Radford",
+      "license": "supplied",
+      "sourceUrl": "https://github.com/Newmu",
+      "note": "GitHub profile photograph; account verified against their real name.",
+      "via": "override"
+    },
+    "candidates": []
+  },
+  {
+    "number": 19,
+    "slug": "david-silver",
+    "name": "David Silver",
+    "ref": {
+      "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/0/0a/David_Silver.jpg/1280px-David_Silver.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "credit": "David Silver",
+      "license": "CC BY-SA 2.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/2.0",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:David_Silver.jpg",
+      "file": "David Silver.jpg",
+      "qid": "Q133265134",
+      "via": "commons-search"
+    },
+    "candidates": [
+      "David Silver.jpg"
+    ]
+  },
+  {
+    "number": 20,
+    "slug": "oriol-vinyals",
+    "name": "Oriol Vinyals",
+    "ref": null,
+    "candidates": [],
+    "rejected": "GitHub avatar is a default identicon, not a photograph."
+  },
+  {
+    "number": 21,
+    "slug": "john-jumper",
+    "name": "John Jumper",
+    "ref": null,
+    "candidates": [
+      "John Jumper.jpg",
+      "John Jumper, 2024 Nobel Prize Laureate in Chemistry.jpg",
+      "John Jumper at 2024 Nobel Prize Conference 3.jpg",
+      "John Jumper at 2024 Nobel Prize Conference 2.jpg",
+      "John Jumper at 2024 Nobel Prize Conference 4.jpg",
+      "John Jumper at 2024 Nobel Prize Conference 5.jpg"
+    ]
+  },
+  {
+    "number": 22,
+    "slug": "shane-legg",
+    "name": "Shane Legg",
+    "ref": {
+      "url": "https://upload.wikimedia.org/wikipedia/commons/4/4c/Shane_Legg.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
+      "credit": "Libor.burian",
+      "license": "CC BY-SA 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Shane_Legg.jpg",
+      "file": "Shane Legg.jpg",
+      "qid": "Q22278829",
+      "via": "wikidata-p18"
+    },
+    "candidates": [],
+    "desc": "machine learning researcher"
+  },
+  {
+    "number": 23,
+    "slug": "demis-hassabis",
+    "name": "Demis Hassabis",
+    "ref": {
+      "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/2/2b/Demis_Hassabis%2C_2024_Nobel_Prize_Laureate_in_Chemistry_7_%28cropped%29.jpg/1280px-Demis_Hassabis%2C_2024_Nobel_Prize_Laureate_in_Chemistry_7_%28cropped%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "credit": "John Sears",
+      "license": "CC BY-SA 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Demis_Hassabis,_2024_Nobel_Prize_Laureate_in_Chemistry_7_(cropped).jpg",
+      "file": "Demis Hassabis, 2024 Nobel Prize Laureate in Chemistry 7 (cropped).jpg",
+      "qid": "Q3022141",
+      "via": "wikidata-p18"
+    },
+    "candidates": [],
+    "desc": "British artificial intelligence researcher (born 1976)"
+  },
+  {
+    "number": 24,
+    "slug": "pieter-abbeel",
+    "name": "Pieter Abbeel",
+    "ref": {
+      "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/6/6d/Pieter_Abbeel_pictured_at_CovariantHQ_in_November_2017.jpg/1280px-Pieter_Abbeel_pictured_at_CovariantHQ_in_November_2017.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "credit": "Pieterabbeel",
+      "license": "CC BY-SA 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Pieter_Abbeel_pictured_at_CovariantHQ_in_November_2017.jpg",
+      "file": "Pieter Abbeel pictured at CovariantHQ in November 2017.jpg",
+      "qid": "Q33374357",
+      "via": "wikidata-p18"
+    },
+    "candidates": [],
+    "desc": "machine learning researcher at UC Berkeley"
+  },
+  {
+    "number": 25,
+    "slug": "andrej-karpathy",
+    "name": "Andrej Karpathy",
+    "ref": {
+      "url": "https://upload.wikimedia.org/wikipedia/commons/c/c0/Andrej_Karpathy%2C_OpenAI.png?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
+      "credit": "Gladwin Analytics",
+      "license": "CC BY 3.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by/3.0",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Andrej_Karpathy,_OpenAI.png",
+      "file": "Andrej Karpathy, OpenAI.png",
+      "qid": "Q56037405",
+      "via": "wikidata-p18"
+    },
+    "candidates": [],
+    "desc": "Slovakian-Canadian AI researcher (born 1986)"
+  },
+  {
+    "number": 26,
+    "slug": "jeff-dean",
+    "name": "Jeff Dean",
+    "ref": {
+      "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/1/1f/Jeff_Dean_in_2025_x.jpg/1280px-Jeff_Dean_in_2025_x.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "credit": "Cmichel67",
+      "license": "CC BY-SA 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Jeff_Dean_in_2025_x.jpg",
+      "file": "Jeff Dean in 2025 x.jpg",
+      "qid": "Q6173703",
+      "via": "wikidata-p18"
+    },
+    "candidates": [],
+    "desc": "American computer scientist"
+  },
+  {
+    "number": 27,
+    "slug": "rajat-monga",
+    "name": "Rajat Monga",
+    "ref": null,
+    "candidates": []
+  },
+  {
+    "number": 28,
+    "slug": "soumith-chintala",
+    "name": "Soumith Chintala",
+    "ref": {
+      "url": "https://avatars.githubusercontent.com/u/1310570?v=4&s=460",
+      "credit": "Soumith Chintala",
+      "license": "supplied",
+      "sourceUrl": "https://github.com/soumith",
+      "note": "GitHub profile photograph; account verified against their real name.",
+      "via": "override"
+    },
+    "candidates": []
+  },
+  {
+    "number": 29,
+    "slug": "adam-paszke",
+    "name": "Adam Paszke",
+    "ref": {
+      "url": "https://avatars.githubusercontent.com/u/4583066?v=4&s=460",
+      "credit": "Adam Paszke",
+      "license": "supplied",
+      "sourceUrl": "https://github.com/apaszke",
+      "note": "GitHub profile photograph; account verified against their real name.",
+      "via": "override"
+    },
+    "candidates": []
+  },
+  {
+    "number": 30,
+    "slug": "tianqi-chen",
+    "name": "Tianqi Chen",
+    "ref": {
+      "url": "https://avatars.githubusercontent.com/u/2577440?v=4&s=460",
+      "credit": "Tianqi Chen",
+      "license": "supplied",
+      "sourceUrl": "https://github.com/tqchen",
+      "note": "GitHub profile photograph; account verified against their real name.",
+      "via": "override"
+    },
+    "candidates": []
+  },
+  {
+    "number": 31,
+    "slug": "yangqing-jia",
+    "name": "Yangqing Jia",
+    "ref": {
+      "url": "https://avatars.githubusercontent.com/u/551151?v=4&s=460",
+      "credit": "Yangqing Jia",
+      "license": "supplied",
+      "sourceUrl": "https://github.com/Yangqing",
+      "note": "GitHub profile photograph; account verified against their real name.",
+      "via": "override"
+    },
+    "candidates": []
+  },
+  {
+    "number": 32,
+    "slug": "francois-chollet",
+    "name": "François Chollet",
+    "ref": null,
+    "candidates": [],
+    "rejected": "Wikidata P18 is a body shot with his head cropped out of frame, and his GitHub avatar is a felt sculpture. Conditioning on either produced an invented face."
+  },
+  {
+    "number": 33,
+    "slug": "thomas-wolf",
+    "name": "Thomas Wolf",
+    "ref": {
+      "url": "https://avatars.githubusercontent.com/u/7353373?v=4&s=460",
+      "credit": "Thomas Wolf",
+      "license": "supplied",
+      "sourceUrl": "https://github.com/thomwolf",
+      "note": "GitHub profile photograph; account verified against their real name.",
+      "via": "override"
+    },
+    "candidates": []
+  },
+  {
+    "number": 34,
+    "slug": "clement-delangue",
+    "name": "Clément Delangue",
+    "ref": {
+      "url": "https://upload.wikimedia.org/wikipedia/commons/6/67/Cl%C3%A9ment_Delangue_on_SiliconANGLE_theCUBE.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
+      "credit": "SiliconANGLE theCUBE",
+      "license": "CC BY 3.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by/3.0",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Cl%C3%A9ment_Delangue_on_SiliconANGLE_theCUBE.jpg",
+      "file": "Clément Delangue on SiliconANGLE theCUBE.jpg",
+      "qid": "Q140527842",
+      "via": "wikidata-p18"
+    },
+    "candidates": [],
+    "desc": "French data scientist"
+  },
+  {
+    "number": 35,
+    "slug": "georgi-gerganov",
+    "name": "Georgi Gerganov",
+    "ref": {
+      "url": "https://avatars.githubusercontent.com/u/1991296?v=4&s=460",
+      "credit": "Georgi Gerganov",
+      "license": "supplied",
+      "sourceUrl": "https://github.com/ggerganov",
+      "note": "GitHub profile photograph; account verified against their real name.",
+      "via": "override"
+    },
+    "candidates": []
+  },
+  {
+    "number": 36,
+    "slug": "tim-dettmers",
+    "name": "Tim Dettmers",
+    "ref": {
+      "url": "https://avatars.githubusercontent.com/u/5260050?v=4&s=460",
+      "credit": "Tim Dettmers",
+      "license": "supplied",
+      "sourceUrl": "https://github.com/TimDettmers",
+      "note": "GitHub profile photograph; account verified against their real name.",
+      "via": "override"
+    },
+    "candidates": []
+  },
+  {
+    "number": 37,
+    "slug": "jeremy-howard",
+    "name": "Jeremy Howard",
+    "ref": {
+      "url": "https://upload.wikimedia.org/wikipedia/commons/5/52/Jeremy_Howard.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
+      "credit": "Hr0207",
+      "license": "CC0",
+      "licenseUrl": "http://creativecommons.org/publicdomain/zero/1.0/deed.en",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Jeremy_Howard.jpg",
+      "file": "Jeremy Howard.jpg",
+      "qid": "Q6181501",
+      "via": "wikidata-p18"
+    },
+    "candidates": [],
+    "desc": "Australian data scientist (b. 1973)"
+  },
+  {
+    "number": 38,
+    "slug": "stella-biderman",
+    "name": "Stella Biderman",
+    "ref": {
+      "url": "https://avatars.githubusercontent.com/u/15899312?v=4&s=460",
+      "credit": "Stella Biderman",
+      "license": "supplied",
+      "sourceUrl": "https://github.com/StellaAthena",
+      "note": "GitHub profile photograph; account verified against their real name.",
+      "via": "override"
+    },
+    "candidates": []
+  },
+  {
+    "number": 39,
+    "slug": "justine-tunney",
+    "name": "Justine Tunney",
+    "ref": {
+      "url": "https://upload.wikimedia.org/wikipedia/commons/1/1e/Justine_Tunney.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
+      "credit": "Justine Tunney",
+      "license": "CC BY-SA 3.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Justine_Tunney.jpg",
+      "file": "Justine Tunney.jpg",
+      "qid": "Q17605436",
+      "via": "wikidata-p18"
+    },
+    "candidates": [],
+    "desc": "software developer from the USA"
+  },
+  {
+    "number": 40,
+    "slug": "guillaume-lample",
+    "name": "Guillaume Lample",
+    "ref": null,
+    "candidates": [],
+    "rejected": "GitHub avatar is a default identicon, not a photograph."
+  },
+  {
+    "number": 41,
+    "slug": "arthur-mensch",
+    "name": "Arthur Mensch",
+    "ref": {
+      "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/2/27/Arthur_Mensch.png/1280px-Arthur_Mensch.png?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "credit": "Jan2342342423",
+      "license": "CC0",
+      "licenseUrl": "http://creativecommons.org/publicdomain/zero/1.0/deed.en",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Arthur_Mensch.png",
+      "file": "Arthur Mensch.png",
+      "qid": "Q123758735",
+      "via": "wikidata-p18"
+    },
+    "candidates": [],
+    "desc": "French artificial intelligence researcher"
+  },
+  {
+    "number": 42,
+    "slug": "robin-rombach",
+    "name": "Robin Rombach",
+    "ref": null,
+    "candidates": [],
+    "rejected": "GitHub avatar is a distant landscape shot with no discernible face."
+  },
+  {
+    "number": 43,
+    "slug": "patrick-esser",
+    "name": "Patrick Esser",
+    "ref": {
+      "url": "https://avatars.githubusercontent.com/u/2175508?v=4&s=460",
+      "credit": "Patrick Esser",
+      "license": "supplied",
+      "sourceUrl": "https://github.com/pesser",
+      "note": "GitHub profile photograph; account verified against their real name.",
+      "via": "override"
+    },
+    "candidates": []
+  },
+  {
+    "number": 44,
+    "slug": "christoph-schuhmann",
+    "name": "Christoph Schuhmann",
+    "ref": {
+      "url": "https://avatars.githubusercontent.com/u/22318853?v=4&s=460",
+      "credit": "Christoph Schuhmann",
+      "license": "supplied",
+      "sourceUrl": "https://github.com/christophschuhmann",
+      "note": "GitHub profile photograph; account verified against their real name.",
+      "via": "override"
+    },
+    "candidates": []
+  },
+  {
+    "number": 45,
+    "slug": "joelle-pineau",
+    "name": "Joelle Pineau",
+    "ref": {
+      "url": "https://upload.wikimedia.org/wikipedia/commons/b/bf/Jo%C3%ABlle_Pineau_at_the_Canada_Science_and_Technology_Museum.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
+      "credit": "Canada Science and Technology Museum",
+      "license": "CC BY 3.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by/3.0",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Jo%C3%ABlle_Pineau_at_the_Canada_Science_and_Technology_Museum.jpg",
+      "file": "Joëlle Pineau at the Canada Science and Technology Museum.jpg",
+      "qid": "Q44741969",
+      "via": "wikidata-p18"
+    },
+    "candidates": [],
+    "desc": "Canadian computer scientist"
+  },
+  {
+    "number": 46,
+    "slug": "chris-olah",
+    "name": "Chris Olah",
+    "ref": null,
+    "candidates": [],
+    "rejected": "GitHub avatar is a fractal, not a photograph."
+  },
+  {
+    "number": 47,
+    "slug": "paul-christiano",
+    "name": "Paul Christiano",
+    "ref": null,
+    "candidates": [],
+    "rejected": "GitHub avatar is a line drawing, not a photograph."
+  },
+  {
+    "number": 48,
+    "slug": "jan-leike",
+    "name": "Jan Leike",
+    "ref": {
+      "url": "https://avatars.githubusercontent.com/u/7199668?v=4&s=460",
+      "credit": "Jan Leike",
+      "license": "supplied",
+      "sourceUrl": "https://github.com/janleike",
+      "note": "GitHub profile photograph; account verified against their real name.",
+      "via": "override"
+    },
+    "candidates": []
+  },
+  {
+    "number": 49,
+    "slug": "stuart-russell",
+    "name": "Stuart Russell",
+    "ref": {
+      "url": "https://upload.wikimedia.org/wikipedia/commons/6/66/Stuart_Russell.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
+      "credit": "Unknown authorUnknown author",
+      "license": "CC BY-SA 3.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Stuart_Russell.jpg",
+      "file": "Stuart Russell.jpg",
+      "qid": "Q3656334",
+      "via": "wikidata-p18"
+    },
+    "candidates": [],
+    "desc": "British computer scientist (1962-)"
+  },
+  {
+    "number": 50,
+    "slug": "dario-amodei",
+    "name": "Dario Amodei",
+    "ref": {
+      "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/9/9e/Dario_Amodei_in_2023.jpg/1280px-Dario_Amodei_in_2023.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "credit": "UK Prime Minister",
+      "license": "CC BY 2.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by/2.0",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Dario_Amodei_in_2023.jpg",
+      "file": "Dario Amodei in 2023.jpg",
+      "qid": null,
+      "via": "commons-search"
+    },
+    "candidates": [
+      "Dario Amodei in 2023.jpg",
+      "Dario Amodei at TechCrunch Disrupt 2023 03.jpg",
+      "Dario Amodei at TechCrunch Disrupt 2023 01.jpg",
+      "Dario Amodei at TechCrunch Disrupt 2023 02.jpg",
+      "Dario Amodei at TechCrunch Disrupt 2023 04.jpg",
+      "Dario Amodei at TechCrunch Disrupt 2023 05.jpg",
+      "Dario Amodei at TechCrunch Disrupt 2023 06.jpg",
+      "Dario Amodei at TechCrunch Disrupt 2023 08.jpg",
+      "Dario Amodei at TechCrunch Disrupt 2023 07.jpg"
+    ]
+  }
+]

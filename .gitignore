@@ -40,3 +40,7 @@ dist/security/
 #   node scripts/security-refs.mjs fetch
 # re-downloads the lot.
 assets/references/
+
+# Gods of AI (Series Four) working dirs.
+#   node scripts/gods-cards.mjs all
+dist/gods/
