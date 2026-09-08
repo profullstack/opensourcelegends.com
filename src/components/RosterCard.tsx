@@ -1,8 +1,9 @@
 'use client';
 import { useState } from 'react';
+import type { ReactNode } from 'react';
 import Link from 'next/link';
-import type { Hacker } from '@/data/hacking';
-import { rarityLabel, statusLabel } from '@/data/hacking';
+import type { RosterEntry } from '@/data/roster';
+import { rarityLabel, statusLabel } from '@/data/roster';
 import styles from './RosterCard.module.css';
 
 function host(url: string) {
@@ -13,13 +14,46 @@ function host(url: string) {
   }
 }
 
-// Series Two is illustrated card by card. Anyone with a rendered front shows it;
-// the rest fall back to a data-only proof so the whole roster stays reviewable.
+function ArtWrap({
+  href,
+  className,
+  label,
+  children,
+}: {
+  href?: string;
+  className: string;
+  label: string;
+  children: ReactNode;
+}) {
+  if (!href) {
+    return <span className={className}>{children}</span>;
+  }
+  return (
+    <Link href={href} className={className} aria-label={label}>
+      {children}
+    </Link>
+  );
+}
+
+// Shared by every hand-curated series. A set is illustrated card by card: anyone
+// with a rendered front shows it, the rest fall back to a data-only proof so the
+// whole roster stays reviewable before a single portrait is commissioned.
+// Card pages only exist once art does, so an un-illustrated entry renders its own
+// name as plain text rather than linking somewhere that would 404.
 // The root is an <article>, not a <button>, because the expanded report carries
 // real links (the card permalink and the sources behind the claims).
-export default function RosterCard({ hacker }: { hacker: Hacker }) {
+export default function RosterCard({
+  entry,
+  basePath,
+}: {
+  entry: RosterEntry;
+  /** Series index route, e.g. "/hacking-legends". Card pages hang off it. */
+  basePath: string;
+}) {
   const [open, setOpen] = useState(false);
-  const href = `/hacking-legends/${hacker.slug}`;
+  const hacker = entry;
+  const hasPage = Boolean(hacker.front);
+  const href = `${basePath}/${hacker.slug}`;
 
   return (
     <article className={`${styles.card} ${open ? styles.open : ''}`} data-rarity={hacker.rarity}>
@@ -28,7 +62,11 @@ export default function RosterCard({ hacker }: { hacker: Hacker }) {
         <span className={styles.rarity}>{rarityLabel[hacker.rarity]}</span>
       </div>
 
-      <Link href={href} className={styles.artLink} aria-label={`${hacker.name} — ${hacker.title}`}>
+      <ArtWrap
+        href={hasPage ? href : undefined}
+        className={styles.artLink}
+        label={`${hacker.name} — ${hacker.title}`}
+      >
         {hacker.front ? (
           <span className={styles.art}>
             {/* eslint-disable-next-line @next/next/no-img-element */}
@@ -44,12 +82,16 @@ export default function RosterCard({ hacker }: { hacker: Hacker }) {
             <span className={styles.plateNote}>art pending</span>
           </span>
         )}
-      </Link>
+      </ArtWrap>
 
       <div className={styles.body}>
-        <Link href={href} className={styles.name}>
-          {hacker.name}
-        </Link>
+        {hasPage ? (
+          <Link href={href} className={styles.name}>
+            {hacker.name}
+          </Link>
+        ) : (
+          <span className={styles.name}>{hacker.name}</span>
+        )}
         {hacker.handle && <span className={`${styles.handle} mono`}>“{hacker.handle}”</span>}
         <span className={styles.title}>{hacker.title}</span>
         <span className={styles.known}>{hacker.knownFor}</span>
@@ -99,9 +141,11 @@ export default function RosterCard({ hacker }: { hacker: Hacker }) {
         <button type="button" className={styles.more} onClick={() => setOpen((o) => !o)}>
           {open ? 'Hide report' : 'Scouting report'}
         </button>
-        <Link href={href} className={styles.permalink}>
-          Card page <span aria-hidden>→</span>
-        </Link>
+        {hasPage && (
+          <Link href={href} className={styles.permalink}>
+            Card page <span aria-hidden>→</span>
+          </Link>
+        )}
       </div>
     </article>
   );

@@ -14,6 +14,7 @@ export const site = {
 export const nav = [
   { label: "Series One", href: "/cards" },
   { label: "Hacking Legends", href: "/hacking-legends" },
+  { label: "Security Pros", href: "/security-professionals" },
   { label: "Collect", href: "/collect" },
   { label: "Contribute", href: "/contribute" },
 ] as const;

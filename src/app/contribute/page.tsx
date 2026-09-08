@@ -71,10 +71,15 @@ export default function ContributePage() {
             <span className="kicker">The card spec</span>
             <h2 className={styles.h2}>One legend, one record</h2>
             <p className={styles.specSub}>
-              Series Two is the set currently taking nominations. Its roster is
-              hand-curated in <span className="mono">src/data/hacking.ts</span>, and that
-              file is the source of truth — the pipeline reads it directly, so there is no
-              second copy to keep in sync.
+              Series Two and Series Three are both taking nominations. Each roster is
+              hand-curated in one file — <span className="mono">src/data/hacking.ts</span>{' '}
+              for Hacking Legends, <span className="mono">src/data/security.ts</span> for
+              Security Professionals — and that file is the source of truth: the pipeline
+              reads it directly, so there is no second copy to keep in sync. Series Three
+              swaps the <span className="mono">social</span> and{' '}
+              <span className="mono">notoriety</span> bars for{' '}
+              <span className="mono">defense</span> and{' '}
+              <span className="mono">research</span>, and no name may appear in two sets.
             </p>
           </div>
           <pre className={styles.code}>

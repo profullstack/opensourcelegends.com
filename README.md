@@ -37,7 +37,7 @@ signups into the `waitlist` table.
 
 ## Card production
 
-Two decks, one per series. Approved portrait art lives under
+Three decks, one per series. Approved portrait art lives under
 `assets/portraits/<set>/` — see [assets/portraits/README.md](assets/portraits/README.md).
 
 **Series One — Open Source Legends** (`data/roster.locked.json`, complete):
@@ -78,35 +78,55 @@ Chromium — set `CHROME_PATH` if it is not on the usual paths.
 `dist/hacking/` is gitignored, so the full-resolution faces are local only.
 Archive them before wiping the directory if you want print masters.
 
+**Series Three — Security Professionals** (`src/data/security.ts`, roster only):
+
+50 hand-curated cards for the defensive side of the field. Copy and sources are
+written; no art pipeline exists yet, so the set renders as a data-only roster at
+`/security-professionals` and its cards have no `front`/`back` and no card pages.
+When art starts, copy `scripts/hacking-legends.mjs` — the data module already
+carries every field that pipeline reads.
+
+Nobody appears in more than one series; `src/data/roster.ts` holds the shared card
+vocabulary that Series Two and Three both render through.
+
 ## Project layout
 
 ```
 src/
   app/
-    page.tsx            # landing page
-    cards/              # the full set gallery
-    collect/            # physical packs · NFT mint · print-your-own
-    contribute/         # how to nominate / add a legend
-    globals.css         # design tokens + utilities
-    layout.tsx          # header/footer shell + metadata
+    page.tsx                  # landing page
+    cards/                    # Series One gallery + card pages
+    hacking-legends/          # Series Two roster + card pages
+    security-professionals/   # Series Three roster
+    collect/                  # physical packs · NFT mint · print-your-own
+    contribute/               # how to nominate / add a legend
+    globals.css               # design tokens + utilities
+    layout.tsx                # header/footer shell + metadata
   components/
-    LegendCard.tsx      # the trading-card component (matches the print design)
-    Header / Footer / WaitlistForm
+    CardFlip.tsx              # Series One flip card
+    RosterCard.tsx            # shared roster tile for Series Two and Three
+    CardDetail.tsx            # the card page body
+    Header / Footer / WaitlistForm / AdUnit
   data/
-    legends.ts          # the card data — one typed record per legend
-    site.ts             # site config (name, links, license)
+    roster.ts                 # shared card vocabulary (rarity, status, sources)
+    cards.ts                  # Series One — generated from the locked roster
+    hacking.ts                # Series Two — hand-curated
+    security.ts               # Series Three — hand-curated
+    site.ts                   # site config (name, links, license)
 public/
-  crest.svg             # the Open Source Legends crest
-  cards/                # optional portrait art: /cards/<slug>.jpg
-docs/                   # print proofs / design references
+  crest.svg                   # the Open Source Legends crest
+  cards/                      # rendered card faces, one directory per series
+docs/                         # print proofs / design references
 ```
 
 ## Add a legend
 
-Append a typed record to `src/data/legends.ts` (see the spec on the
-`/contribute` page) and, optionally, drop portrait art at
-`public/cards/<slug>.jpg`. Cards with no portrait render a monogram fallback.
-Then open a pull request.
+Append a typed record to the data module for the series — `src/data/hacking.ts`
+for Series Two, `src/data/security.ts` for Series Three (see the spec on the
+`/contribute` page). Every entry needs at least one public source for the claims
+in its scouting report, and no name may appear in more than one series. Art is
+generated later by the publish step, so leave `front`/`back` off. Then open a
+pull request.
 
 ## License
 

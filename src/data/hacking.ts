@@ -5,22 +5,13 @@
 // keep scouting reports factual and neutral — this set documents history, it does not
 // endorse crimes. No invented quotes: the `note` field is editorial voice, not attribution.
 
-export type Rarity = 'iconic' | 'legendary' | 'epic' | 'rare';
+import type { RosterEntry, Rarity, Status, Source } from './roster';
+import { rarityLabel, statusLabel } from './roster';
 
-// locked    = name, stats and copy final
-// draft     = copy written, still under review
-// candidate = nominated, not yet accepted into the set
-export type Status = 'locked' | 'draft' | 'candidate';
+export type { Rarity, Status, Source };
+export { rarityLabel, statusLabel };
 
-export type Hacker = {
-  number: number;
-  slug: string;
-  name: string;
-  handle?: string;
-  title: string;
-  knownFor: string;
-  rarity: Rarity;
-  impact: number;
+export type Hacker = RosterEntry & {
   /**
    * Skill stack for the card back. Editorial ratings on the same 0-100 scale as
    * `impact`, scoped to this series — Series One rates code/community work, which
@@ -30,27 +21,7 @@ export type Hacker = {
   social: number;
   notoriety: number;
   influence: number;
-  nationality: string;
-  era: string;
-  domains: string[];
-  scouting: string;
   note: string;
-  status: Status;
-  /**
-   * Public references for the claims in `scouting`. Rendered on the card page and
-   * in the expanded roster report, so a reader can check the history rather than
-   * take our word for it. Every card in the set must carry at least one.
-   */
-  sources: Source[];
-  /** Public paths to the rendered card faces. Written by the publish step. */
-  front?: string;
-  back?: string;
-};
-
-export type Source = {
-  /** What the reader is clicking through to, not the bare URL. */
-  label: string;
-  url: string;
 };
 
 export const hackers: Hacker[] = [
@@ -867,19 +838,6 @@ export const hackers: Hacker[] = [
 ];
 
 export const totalPlanned = 30;
-
-export const rarityLabel: Record<Rarity, string> = {
-  iconic: 'Iconic',
-  legendary: 'Legendary',
-  epic: 'Epic',
-  rare: 'Rare',
-};
-
-export const statusLabel: Record<Status, string> = {
-  locked: 'Locked in',
-  draft: 'Copy drafted',
-  candidate: 'Nominated',
-};
 
 export const lockedCount = hackers.filter((h) => h.status === 'locked').length;
 export const draftedCount = hackers.filter((h) => h.status !== 'candidate').length;
