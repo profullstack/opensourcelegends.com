@@ -4,6 +4,7 @@ import AdUnit from '@/components/AdUnit';
 import { cards, featured } from '@/data/cards';
 import { hackers, illustratedCount, lockedCount } from '@/data/hacking';
 import { pros, totalPlanned as proTotal } from '@/data/security';
+import { architects, illustratedCount as aiIllustrated, totalPlanned as aiTotal } from '@/data/ai';
 import { site } from '@/data/site';
 import styles from './page.module.css';
 
@@ -122,6 +123,28 @@ export default function Home() {
               <Link href="/security-professionals" className="btn-primary">
                 See the roster →
               </Link>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* Series Four teaser */}
+      <section className="section">
+        <div className="container">
+          <div className={styles.bandInner}>
+            <div>
+              <span className="kicker">Series Four · In progress</span>
+              <h2 className={styles.h2}>Gods of AI</h2>
+              <p>
+                The architects of machine learning: backpropagation, attention and
+                reinforcement learning, plus the people who wrote the frameworks, kernels
+                and quantisers the field runs on. {architects.length} cards, scored
+                explicitly on how much they gave away, {aiIllustrated} of {aiTotal}{' '}
+                illustrated from real photographs.
+              </p>
+            </div>
+            <div className={styles.bandActions}>
+              <Link href="/gods-of-ai" className="btn-primary">See the roster →</Link>
             </div>
           </div>
         </div>

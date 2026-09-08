@@ -37,7 +37,7 @@ signups into the `waitlist` table.
 
 ## Card production
 
-Three decks, one per series. Approved portrait art lives under
+Four decks, one per series. Approved portrait art lives under
 `assets/portraits/<set>/` — see [assets/portraits/README.md](assets/portraits/README.md).
 
 **Series One — Open Source Legends** (`data/roster.locked.json`, complete):
@@ -127,6 +127,30 @@ holds instead of leaving a third of the card empty.
 
 Nobody appears in more than one series; `src/data/roster.ts` holds the shared card
 vocabulary that Series Two and Three both render through.
+
+**Series Four — Gods of AI** (`src/data/ai.ts`, 50 cards):
+
+```bash
+pnpm gods:refs                 # find + verify a reference photo per card
+pnpm gods validate             # roster checks
+pnpm gods all                  # portraits -> render -> publish
+pnpm gods:render               # re-render faces from the template, no API calls
+```
+
+The architects of machine learning, scored explicitly on how much they gave away —
+`research`, `systems`, `openness`, `influence`. Same likeness rule as Series Three:
+portraits are painted from an identified photograph and a card with no verified
+photo gets no face. 37 of 50 have one.
+
+For this set GitHub profile photographs are a strong source: the account is the
+person's own and the API reports their real name to check against. That is not a
+free licence, so those are recorded as `supplied`.
+
+Two traps worth knowing, both caught by eye rather than by code. Commons filename
+matching accepted a blue wolf statue outside a brewery for "Thomas Wolf" and a
+Bulgarian basketball player for "Georgi Gerganov". And a reference whose subject's
+head is cropped out of frame, or whose avatar is a felt sculpture, makes the model
+invent a face — which is why François Chollet has no portrait.
 
 ## Project layout
 

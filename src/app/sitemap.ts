@@ -2,6 +2,7 @@ import type { MetadataRoute } from 'next';
 import { cards } from '@/data/cards';
 import { hackers } from '@/data/hacking';
 import { pros } from '@/data/security';
+import { architects } from '@/data/ai';
 import { site } from '@/data/site';
 
 // Small enough to stay a single sitemap — the static pages plus one per illustrated card.
@@ -13,6 +14,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
     '/cards',
     '/hacking-legends',
     '/security-professionals',
+    '/gods-of-ai',
     '/collect',
     '/contribute',
   ].map(
@@ -45,5 +47,13 @@ export default function sitemap(): MetadataRoute.Sitemap {
       priority: 0.6,
     }));
 
-  return [...staticPages, ...cardPages, ...hackerPages, ...proPages];
+  const aiPages = architects
+    .filter((a) => a.front)
+    .map((a) => ({
+      url: `${site.url}/gods-of-ai/${a.slug}`,
+      changeFrequency: 'monthly' as const,
+      priority: 0.6,
+    }));
+
+  return [...staticPages, ...cardPages, ...hackerPages, ...proPages, ...aiPages];
 }
