@@ -78,13 +78,30 @@ Chromium — set `CHROME_PATH` if it is not on the usual paths.
 `dist/hacking/` is gitignored, so the full-resolution faces are local only.
 Archive them before wiping the directory if you want print masters.
 
-**Series Three — Security Professionals** (`src/data/security.ts`, roster only):
+**Series Three — Security Professionals** (`src/data/security.ts`, 50 cards):
 
-50 hand-curated cards for the defensive side of the field. Copy and sources are
-written; no art pipeline exists yet, so the set renders as a data-only roster at
-`/security-professionals` and its cards have no `front`/`back` and no card pages.
-When art starts, copy `scripts/hacking-legends.mjs` — the data module already
-carries every field that pipeline reads.
+```bash
+pnpm security validate         # roster checks, reports what art is missing
+pnpm security all              # portraits -> render -> publish
+pnpm security all 1 5 12       # ...only these card numbers
+pnpm security render           # re-render faces from the template, no API calls
+```
+
+Same stages and the same resumability as Series Two, with one deliberate
+difference: **`all` does not run `enhance`.** On Series Two that image-to-image
+finish pass rewrote text on the card faces despite the prompt forbidding it — it
+fabricated quotes attributed to living people, invented stat panels that were not
+on the card, and misspelled a name. Nothing in the pipeline catches that, because
+there is no OCR step. Since this set's whole premise is documented, sourced
+history, an invented quote is the worst defect it can carry, so the pass is
+opt-in: it refuses to run unless `ENHANCE_I_WILL_CHECK_EVERY_FACE=1` is set, and
+running it means checking every face by eye before publish.
+
+Two template changes follow from the same finding. The curator's note renders as a
+labelled panel rather than wrapped in quote marks, because on Series Two backs the
+quoted note reads as something the subject said — the field is editorial voice.
+And the front's portrait window is taller, so the caption band is sized to what it
+holds instead of leaving a third of the card empty.
 
 Nobody appears in more than one series; `src/data/roster.ts` holds the shared card
 vocabulary that Series Two and Three both render through.

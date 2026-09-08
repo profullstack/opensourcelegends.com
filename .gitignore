@@ -27,3 +27,8 @@ dist/enhanced/
 # public/cards/hacking/ are the committed record; these are intermediates.
 #   node scripts/hacking-legends.mjs all
 dist/hacking/
+
+# Security Professionals (Series Three) working dirs. Same deal — the published
+# faces under public/cards/security/ are the committed record.
+#   node scripts/security-pros.mjs all
+dist/security/

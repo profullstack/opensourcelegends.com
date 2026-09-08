@@ -11,7 +11,10 @@
     "db:migrate": "node scripts/migrate.mjs",
     "hacking": "node scripts/hacking-legends.mjs",
     "hacking:validate": "node scripts/hacking-legends.mjs validate",
-    "hacking:render": "node scripts/hacking-legends.mjs render"
+    "hacking:render": "node scripts/hacking-legends.mjs render",
+    "security": "node scripts/security-pros.mjs",
+    "security:validate": "node scripts/security-pros.mjs validate",
+    "security:render": "node scripts/security-pros.mjs render"
   },
   "dependencies": {
     "@libsql/client": "^0.17.4",

@@ -5,8 +5,8 @@
 // keep scouting reports factual and neutral — this set documents history, it does not
 // endorse crimes. No invented quotes: the `note` field is editorial voice, not attribution.
 
-import type { RosterEntry, Rarity, Status, Source } from './roster';
-import { rarityLabel, statusLabel } from './roster';
+import type { RosterEntry, Rarity, Status, Source } from './roster.ts';
+import { rarityLabel, statusLabel } from './roster.ts';
 
 export type { Rarity, Status, Source };
 export { rarityLabel, statusLabel };
