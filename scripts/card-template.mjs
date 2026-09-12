@@ -14,6 +14,7 @@ export function accentHexOf(card) {
 }
 const accentOf = (card) => '#' + accentHexOf(card);
 export const rarityOf = (n) => (n >= 95 ? 'iconic' : n >= 90 ? 'legendary' : n >= 85 ? 'epic' : 'rare');
+const STARS = { iconic: '★★★★★', legendary: '★★★★☆', epic: '★★★☆☆', rare: '★★☆☆☆' };
 const pad2 = (n) => String(n).padStart(2, '0');
 const esc = (s) => String(s ?? '').replace(/[&<>]/g, (c) => ({ '&': '&amp;', '<': '&lt;', '>': '&gt;' }[c]));
 
@@ -48,12 +49,16 @@ export function buildFront(card, portraitDataUri) {
   const accent = accentOf(card);
   const kw = traits(card).join('&nbsp;&nbsp;·&nbsp;&nbsp;');
   return `<!doctype html><html><head><meta charset="utf-8"><style>${shell(accent)}
-  .portrait { position:absolute; left:14px; right:14px; top:14px; height:58%; border-radius:16px; overflow:hidden; box-shadow:inset 0 0 0 2px ${accent}55; }
+  /* 72%, not the original 58%. At 58% the caption band held only a name and a
+     title and left a dead quarter of the card above the keyword bar — which is the
+     region the finish pass filled with brushed metal on every shipped face. The
+     band is now sized to what it actually holds, as on Series Three onwards. */
+  .portrait { position:absolute; left:14px; right:14px; top:14px; height:72%; border-radius:16px; overflow:hidden; box-shadow:inset 0 0 0 2px ${accent}55; }
   .portrait img { width:100%; height:100%; object-fit:cover; object-position:center 18%; }
   .portrait::after { content:''; position:absolute; left:0; right:0; bottom:0; height:34%; background:linear-gradient(180deg,transparent,rgba(14,13,21,.92)); }
   .num { position:absolute; top:18px; left:20px; z-index:4; font-family:'Oswald'; font-weight:700; color:#fff; font-size:40px; line-height:1; padding:2px 14px 4px; background:${accent}; color:#0a0810; border-radius:0 0 12px 0; clip-path:polygon(0 0,100% 0,84% 100%,0 100%); }
   .crestbox { position:absolute; top:20px; right:20px; z-index:4; }
-  .info { position:absolute; left:24px; right:24px; top:60%; bottom:78px; z-index:3; display:flex; flex-direction:column; align-items:center; justify-content:flex-start; }
+  .info { position:absolute; left:24px; right:24px; top:73%; bottom:78px; z-index:3; display:flex; flex-direction:column; align-items:center; justify-content:center; }
   .name { font-family:'Oswald'; color:#fff; font-weight:700; font-size:42px; letter-spacing:1px; text-transform:uppercase; text-align:center; line-height:1; }
   .title { color:${accent}; font-weight:700; font-size:17px; letter-spacing:2px; margin-top:10px; text-transform:uppercase; font-family:'Oswald'; text-align:center; }
   .kwbar { position:absolute; left:24px; right:24px; bottom:22px; z-index:4; display:flex; align-items:center; gap:12px; border-top:1px solid ${accent}55; padding-top:14px; }
@@ -101,9 +106,16 @@ export function buildBack(card) {
   .impact .score { font-family:'Oswald'; color:${accent}; font-weight:700; font-size:66px; line-height:.85; }
   .impact .rar { color:#fff; font-weight:700; font-size:13px; letter-spacing:2px; font-family:'Oswald'; }
   .impact .stars { color:${accent}; font-size:15px; letter-spacing:2px; margin-top:5px; }
-  .spacer { flex:1; min-height:8px; }
-  .quote { color:#d7d9e2; font-style:italic; font-size:15px; line-height:1.4; margin:10px 0 16px; }
-  .quote .q { color:${accent}; font-size:26px; font-weight:700; margin-right:4px; vertical-align:-6px; font-family:Georgia,serif; }
+  /* This region used to be an empty spacer, and the finish pass filled it with a
+     smear of flat leather on every shipped back. Claim it with the set emblem so
+     the backs stay uniform and nothing is left for a model to invent. */
+  .mark { flex:1; min-height:8px; position:relative; display:flex; flex-direction:column; align-items:center; justify-content:center; }
+  .mark .wm { opacity:.08; }
+  /* The collector note is editorial voice, not a quotation from the subject, so
+     it is labelled as such rather than wrapped in quote marks. */
+  .note { margin:10px 0 16px; border-left:3px solid ${accent}; padding-left:12px; }
+  .note .lab { display:block; font-family:'Oswald'; color:${accent}; font-size:10px; letter-spacing:2.4px; font-weight:700; margin-bottom:4px; }
+  .note p { color:#d7d9e2; font-size:15px; line-height:1.4; }
   .foot { border-top:1px solid ${accent}55; padding-top:11px; color:#9a9ead; font-size:11px; letter-spacing:.3px; }
   .foot .r { display:flex; justify-content:space-between; align-items:center; }
   .foot b { color:#d7d9e2; }
@@ -120,10 +132,10 @@ export function buildBack(card) {
     </div>
     <div class="stack">
       <div class="skill"><h4>SKILL STACK</h4>${bars(card, accent)}</div>
-      <div class="impact"><span class="lab">IMPACT</span><span class="score">${card.impact_rating}</span><span class="rar">${rarity}</span><span class="stars">★★★★★</span></div>
+      <div class="impact"><span class="lab">IMPACT</span><span class="score">${card.impact_rating}</span><span class="rar">${rarity}</span><span class="stars">${STARS[rarityOf(card.impact_rating)]}</span></div>
     </div>
-    <div class="spacer"></div>
-    <div class="quote"><span class="q">“</span>${esc(card.collector_note)}”</div>
+    <div class="mark"><span class="wm">${emblem(accent, 190)}</span></div>
+    <div class="note"><span class="lab">CURATOR&rsquo;S NOTE</span><p>${esc(card.collector_note)}</p></div>
     <div class="foot">
       <div class="r"><span>BORN <b>${esc(card.birth_date)}</b></span><span>NATIONALITY <b>${esc(card.nationality)}</b></span></div>
       <div class="r" style="margin-top:5px"><span>KNOWN FOR <b>${esc(card.known_for)}</b></span>${codeGlyph(accent, 18)}</div>
