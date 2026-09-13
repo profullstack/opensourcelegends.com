@@ -1,4 +1,6 @@
-import { artPrompt, matchRecords, safeURL, validateSVG } from './core.mjs';
+import fs from 'node:fs/promises';
+import path from 'node:path';
+import { artPrompt, atomicWrite, hash, matchRecords, safeURL, validateSVG } from './core.mjs';
 
 export async function requestJSON(url, init = {}, { fetcher = fetch, retries = 3, timeout = 240_000, pause = (ms) => new Promise((r) => setTimeout(r, ms)) } = {}) {
   for (let attempt = 0; ; attempt++) {
@@ -46,9 +48,41 @@ export async function researchCard(card, options, deps = {}) {
 }
 
 function openAI(options, endpoint, body, deps) {
+  if (endpoint === 'responses' && options.background) return backgroundResponse(options, body, deps);
   return requestJSON(`${options.apiBase}/${endpoint}`, {
     method: 'POST', headers: { Authorization: `Bearer ${options.apiKey}`, 'Content-Type': 'application/json' }, body: JSON.stringify(body),
   }, deps);
+}
+
+// Persist the remote request before polling, so a restart retrieves the same
+// paid generation. These working files never enter the published release.
+export async function backgroundResponse(options, body, deps = {}) {
+  const request = { ...body, background: true, store: true };
+  const file = path.join(options.out, '.requests', `${hash({ apiBase: options.apiBase, request })}.json`);
+  let saved;
+  try { if (!options.force) saved = JSON.parse(await fs.readFile(file, 'utf8')); }
+  catch (error) { if (error.code !== 'ENOENT') throw error; }
+  let response = saved?.response;
+  if (response && !/^resp_[a-zA-Z0-9_-]+$/.test(response.id ?? '')) throw new Error('Invalid background response checkpoint');
+  if (!response) {
+    response = await requestJSON(`${options.apiBase}/responses`, {
+      method: 'POST', headers: { Authorization: `Bearer ${options.apiKey}`, 'Content-Type': 'application/json' }, body: JSON.stringify(request),
+    }, { ...deps, timeout: 60_000, retries: 0 });
+    if (!/^resp_[a-zA-Z0-9_-]+$/.test(response.id ?? '')) throw new Error('Background API returned no valid response ID');
+    await atomicWrite(file, { response });
+    console.log(`Submitted background artwork ${response.id}`);
+  }
+  const pause = deps.pause ?? ((ms) => new Promise((resolve) => setTimeout(resolve, ms)));
+  const started = Date.now();
+  while (['queued', 'in_progress'].includes(response.status)) {
+    if (Date.now() - started > 30 * 60_000) throw new Error(`Artwork ${response.id} is still running; re-run to resume polling`);
+    await pause(5000);
+    response = await requestJSON(`${options.apiBase}/responses/${encodeURIComponent(response.id)}`, {
+      headers: { Authorization: `Bearer ${options.apiKey}` },
+    }, { ...deps, timeout: 60_000 });
+    await atomicWrite(file, { response });
+  }
+  return response;
 }
 function responseText(response) {
   if (response.status !== 'completed') throw new Error(`Astra response ${response.status ?? 'missing status'}: ${response.incomplete_details?.reason ?? 'not completed'}`);

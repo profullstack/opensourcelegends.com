@@ -19,13 +19,13 @@ pnpm release:v2 --dry-run
 
 # Set OPENAI_API_KEY through your environment/secret manager first.
 # Build one proof before spending on the full edition.
-pnpm release:v2 --series legends --only 2 --out dist/releases/v2-proof
+pnpm release:v2 --series legends --only 2 --background --out dist/releases/v2-proof
 
 # Open dist/releases/v2-proof/index.html and inspect both sides and sources.
 pnpm release:v2 validate --out dist/releases/v2-proof
 
 # Build the whole edition. Re-run this exact command after an interruption.
-pnpm release:v2 --png-copies
+pnpm release:v2 --png-copies --background --concurrency 8
 pnpm release:v2 validate
 
 # After reviewing dist/releases/v2/index.html, activate the completed files locally.
@@ -152,9 +152,25 @@ directory. If the process is killed, verify it has stopped before removing its
 stale lock file and resuming.
 
 Requests have timeouts and bounded retries for transient failures. Generation is
-sequential to make stopping, recovery and rate-limit handling predictable. The
-script reports actual API usage when returned, but does not estimate spending or
-promise API model access: your account must have access to the configured models.
+sequential by default; `--concurrency N` permits 1–16 cards at once while preserving
+roster order and serializing manifest writes. Adjust concurrency to your account's
+rate limits. Changing concurrency does not invalidate artwork checkpoints.
+
+Use `--background` for Astra requests that can exceed the foreground request's
+four-minute timeout. It submits `background: true, store: true` and saves the
+response ID in the staging directory's `.requests/` folder before polling. A
+restart retrieves that same request and reuses completed output, including when
+SVG validation needs a repair. Background responses are explicitly stored on
+OpenAI for recovery; they contain the public roster text and generated artwork.
+These working response files are not copied into the public release. Submission
+is not automatically retried after an ambiguous network failure. Polling stops
+after 30 minutes; re-run the command to continue polling the saved request.
+`--force` intentionally bypasses saved requests as well as artwork checkpoints.
+Background mode changes transport only, so existing artwork remains reusable.
+See the [OpenAI background mode documentation](https://developers.openai.com/api/docs/guides/background).
+
+The script reports actual API usage when returned, but does not estimate spending
+or promise API model access: your account must have access to the configured models.
 No paid API generation is necessary for the mocked automated tests.
 
 ```bash
