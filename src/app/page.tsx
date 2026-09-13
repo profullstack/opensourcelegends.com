@@ -163,8 +163,8 @@ export default function Home() {
                 One hundred and eighty years of it: the first compiler, the first assembler,
                 the ARM instruction set, the Apollo guidance software, and the code of
                 conduct in your repository. {builders.length} cards, {wIllustrated} of{' '}
-                {wTotal} illustrated with original artwork inspired by their contributions. Series One has forty-seven cards
-                and no women on any of them, which is the reason this set exists.
+                {wTotal} illustrated with original artwork inspired by their contributions.
+                Series One has forty-seven cards and no women on any of them, which is the reason this set exists.
               </p>
             </div>
             <div className={styles.bandActions}>

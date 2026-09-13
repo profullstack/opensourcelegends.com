@@ -22,8 +22,8 @@ export const cards: Card[]=[
     ],
     "scouting": "Richard Stallman is a pivotal figure in the free software movement. He advocates for user freedoms in software usage, study, and modification. His initiatives have shaped the landscape of software distribution and rights.",
     "quote": "Freedom is a matter of choice.",
-    "front": "/cards/001-richard-stallman-front.png",
-    "back": "/cards/001-richard-stallman-back.png"
+    "front": "/releases/v2/legends/001-richard-stallman/front.svg",
+    "back": "/releases/v2/legends/001-richard-stallman/back.svg"
   },
   {
     "number": 2,
@@ -41,8 +41,8 @@ export const cards: Card[]=[
     ],
     "scouting": "Linus Torvalds revolutionizes software development with the Linux kernel and Git. His contributions foster a global open source community, driving innovation and collaboration across industries.",
     "quote": "Linus brings freedom and collaboration to software.",
-    "front": "/cards/002-linus-torvalds-front.png",
-    "back": "/cards/002-linus-torvalds-back.png"
+    "front": "/releases/v2/legends/002-linus-torvalds/front.svg",
+    "back": "/releases/v2/legends/002-linus-torvalds/back.svg"
   },
   {
     "number": 3,
@@ -62,8 +62,8 @@ export const cards: Card[]=[
     ],
     "scouting": "Aaron Swartz is a pivotal figure in internet activism and programming. He significantly contributed to various projects that shaped the web, advocating for open access and civic engagement. His legacy inspires many in the tech community.",
     "quote": "A prodigy who fought for freedom.",
-    "front": "/cards/003-aaron-swartz-front.png",
-    "back": "/cards/003-aaron-swartz-back.png"
+    "front": "/releases/v2/legends/003-aaron-swartz/front.svg",
+    "back": "/releases/v2/legends/003-aaron-swartz/back.svg"
   },
   {
     "number": 4,
@@ -83,8 +83,8 @@ export const cards: Card[]=[
     ],
     "scouting": "TJ Holowaychuk is a pivotal figure in the Node.js community, known for his innovative frameworks and modules. His work has significantly shaped web development practices and tools, making him a respected leader in open source.",
     "quote": "A master of Node.js frameworks.",
-    "front": "/cards/004-tj-holowaychuk-front.png",
-    "back": "/cards/004-tj-holowaychuk-back.png"
+    "front": "/releases/v2/legends/004-tj-holowaychuk/front.svg",
+    "back": "/releases/v2/legends/004-tj-holowaychuk/back.svg"
   },
   {
     "number": 5,
@@ -101,8 +101,8 @@ export const cards: Card[]=[
     ],
     "scouting": "Guido van Rossum is a pivotal figure in programming, known for creating Python. His leadership as BDFL shaped the language's development and community, influencing countless developers worldwide.",
     "quote": "Guido's Python has empowered generations of coders.",
-    "front": "/cards/005-guido-van-rossum-front.png",
-    "back": "/cards/005-guido-van-rossum-back.png"
+    "front": "/releases/v2/legends/005-guido-van-rossum/front.svg",
+    "back": "/releases/v2/legends/005-guido-van-rossum/back.svg"
   },
   {
     "number": 6,
@@ -121,8 +121,8 @@ export const cards: Card[]=[
     ],
     "scouting": "Yukihiro Matsumoto, known as Matz, is the creator of Ruby. He emphasizes simplicity and productivity in programming. His work inspires a vibrant community that values creativity and collaboration.",
     "quote": "Matz believes programming should be enjoyable.",
-    "front": "/cards/006-yukihiro-matsumoto-front.png",
-    "back": "/cards/006-yukihiro-matsumoto-back.png"
+    "front": "/releases/v2/legends/006-yukihiro-matsumoto/front.svg",
+    "back": "/releases/v2/legends/006-yukihiro-matsumoto/back.svg"
   },
   {
     "number": 7,
@@ -141,8 +141,8 @@ export const cards: Card[]=[
     ],
     "scouting": "Larry Wall is a prominent figure in open source, known for creating Perl, a highly versatile programming language. His contributions to software development and community engagement have made a lasting impact on the tech landscape.",
     "quote": "Perl: The duct tape of the Internet.",
-    "front": "/cards/007-larry-wall-front.png",
-    "back": "/cards/007-larry-wall-back.png"
+    "front": "/releases/v2/legends/007-larry-wall/front.svg",
+    "back": "/releases/v2/legends/007-larry-wall/back.svg"
   },
   {
     "number": 8,
@@ -161,8 +161,8 @@ export const cards: Card[]=[
     ],
     "scouting": "Brendan Eich is a pivotal figure in web development, known for creating JavaScript. He co-founded Mozilla, championing open-source principles and fostering innovation in web browsers. His work continues to influence how we interact with the internet today.",
     "quote": "The man who brought interactivity to the web.",
-    "front": "/cards/008-brendan-eich-front.png",
-    "back": "/cards/008-brendan-eich-back.png"
+    "front": "/releases/v2/legends/008-brendan-eich/front.svg",
+    "back": "/releases/v2/legends/008-brendan-eich/back.svg"
   },
   {
     "number": 9,
@@ -181,8 +181,8 @@ export const cards: Card[]=[
     ],
     "scouting": "Rasmus Lerdorf is a pivotal figure in web development, best known for creating PHP. His work enables dynamic web applications and has influenced countless developers worldwide. He continues to advocate for open source principles.",
     "quote": "Rasmus Lerdorf transformed web programming forever.",
-    "front": "/cards/009-rasmus-lerdorf-front.png",
-    "back": "/cards/009-rasmus-lerdorf-back.png"
+    "front": "/releases/v2/legends/009-rasmus-lerdorf/front.svg",
+    "back": "/releases/v2/legends/009-rasmus-lerdorf/back.svg"
   },
   {
     "number": 10,
@@ -201,8 +201,8 @@ export const cards: Card[]=[
     ],
     "scouting": "David Heinemeier Hansson transforms web development with Ruby on Rails, emphasizing simplicity and productivity. As a co-founder of Basecamp, he champions remote work and efficient project management.",
     "quote": "Simplicity is the ultimate sophistication.",
-    "front": "/cards/010-david-heinemeier-hansson-front.png",
-    "back": "/cards/010-david-heinemeier-hansson-back.png"
+    "front": "/releases/v2/legends/010-david-heinemeier-hansson/front.svg",
+    "back": "/releases/v2/legends/010-david-heinemeier-hansson/back.svg"
   },
   {
     "number": 11,
@@ -220,8 +220,8 @@ export const cards: Card[]=[
     ],
     "scouting": "Ryan Dahl revolutionizes web development with Node.js, enabling JavaScript to run server-side. His work emphasizes efficiency and scalability, shaping modern web applications and influencing countless developers worldwide.",
     "quote": "Ryan Dahl turns JavaScript into a powerful server tool.",
-    "front": "/cards/011-ryan-dahl-front.png",
-    "back": "/cards/011-ryan-dahl-back.png"
+    "front": "/releases/v2/legends/011-ryan-dahl/front.svg",
+    "back": "/releases/v2/legends/011-ryan-dahl/back.svg"
   },
   {
     "number": 12,
@@ -240,8 +240,8 @@ export const cards: Card[]=[
     ],
     "scouting": "Evan You is a prominent figure in web development, known for creating Vue.js. His framework emphasizes simplicity and flexibility, making it popular among developers. He actively engages with the community, continuously enhancing the framework's capabilities.",
     "quote": "Evan's vision reshapes how we build interfaces.",
-    "front": "/cards/012-evan-you-front.png",
-    "back": "/cards/012-evan-you-back.png"
+    "front": "/releases/v2/legends/012-evan-you/front.svg",
+    "back": "/releases/v2/legends/012-evan-you/back.svg"
   },
   {
     "number": 13,
@@ -260,8 +260,8 @@ export const cards: Card[]=[
     ],
     "scouting": "Rich Harris is a leading figure in modern web development. He creates tools that streamline coding processes and improve application performance. His work on Svelte revolutionizes how developers build user interfaces.",
     "quote": "Transforming the way we code for the web.",
-    "front": "/cards/013-rich-harris-front.png",
-    "back": "/cards/013-rich-harris-back.png"
+    "front": "/releases/v2/legends/013-rich-harris/front.svg",
+    "back": "/releases/v2/legends/013-rich-harris/back.svg"
   },
   {
     "number": 14,
@@ -280,8 +280,8 @@ export const cards: Card[]=[
     ],
     "scouting": "Jordan Walke revolutionizes front-end development with React, a library that simplifies building user interfaces. His work emphasizes performance and usability, making it a favorite among developers worldwide.",
     "quote": "Transforming how we build user interfaces.",
-    "front": "/cards/014-jordan-walke-front.png",
-    "back": "/cards/014-jordan-walke-back.png"
+    "front": "/releases/v2/legends/014-jordan-walke/front.svg",
+    "back": "/releases/v2/legends/014-jordan-walke/back.svg"
   },
   {
     "number": 15,
@@ -300,8 +300,8 @@ export const cards: Card[]=[
     ],
     "scouting": "Dan Abramov is a leading figure in the JavaScript community, known for his work on Redux and Create React App. His contributions significantly enhance the development experience for React developers worldwide.",
     "quote": "Dan's tools empower developers to build better apps.",
-    "front": "/cards/015-dan-abramov-front.png",
-    "back": "/cards/015-dan-abramov-back.png"
+    "front": "/releases/v2/legends/015-dan-abramov/front.svg",
+    "back": "/releases/v2/legends/015-dan-abramov/back.svg"
   },
   {
     "number": 16,
@@ -320,8 +320,8 @@ export const cards: Card[]=[
     ],
     "scouting": "Sebastian McKenzie is a pivotal figure in JavaScript development. He creates Babel, a tool that allows developers to use the latest JavaScript features while ensuring compatibility with older browsers.",
     "quote": "Babel: bridging the gap in JavaScript.",
-    "front": "/cards/016-sebastian-mckenzie-front.png",
-    "back": "/cards/016-sebastian-mckenzie-back.png"
+    "front": "/releases/v2/legends/016-sebastian-mckenzie/front.svg",
+    "back": "/releases/v2/legends/016-sebastian-mckenzie/back.svg"
   },
   {
     "number": 17,
@@ -339,8 +339,8 @@ export const cards: Card[]=[
     ],
     "scouting": "Isaac Z. Schlueter revolutionizes JavaScript development with npm, the world's largest software registry. His work fosters collaboration and innovation, making it easier for developers to share and reuse code.",
     "quote": "Empowering developers, one package at a time.",
-    "front": "/cards/017-isaac-z-schlueter-front.png",
-    "back": "/cards/017-isaac-z-schlueter-back.png"
+    "front": "/releases/v2/legends/017-isaac-z-schlueter/front.svg",
+    "back": "/releases/v2/legends/017-isaac-z-schlueter/back.svg"
   },
   {
     "number": 18,
@@ -359,8 +359,8 @@ export const cards: Card[]=[
     ],
     "scouting": "Matt Mullenweg is a key figure in web development, known for co-founding WordPress. He champions open-source principles and has significantly influenced online publishing and content management systems.",
     "quote": "Empowering creators through open-source innovation.",
-    "front": "/cards/018-matt-mullenweg-front.png",
-    "back": "/cards/018-matt-mullenweg-back.png"
+    "front": "/releases/v2/legends/018-matt-mullenweg/front.svg",
+    "back": "/releases/v2/legends/018-matt-mullenweg/back.svg"
   },
   {
     "number": 19,
@@ -378,8 +378,8 @@ export const cards: Card[]=[
     ],
     "scouting": "Dries Buytaert is a pivotal figure in open source, known for creating Drupal, a leading content management system. He champions community-driven development and continues to influence the web landscape through his work at Acquia.",
     "quote": "Empowering the web, one site at a time.",
-    "front": "/cards/019-dries-buytaert-front.png",
-    "back": "/cards/019-dries-buytaert-back.png"
+    "front": "/releases/v2/legends/019-dries-buytaert/front.svg",
+    "back": "/releases/v2/legends/019-dries-buytaert/back.svg"
   },
   {
     "number": 20,
@@ -398,8 +398,8 @@ export const cards: Card[]=[
     ],
     "scouting": "Brian Behlendorf is a pivotal figure in open source, known for co-founding the Apache Software Foundation. His leadership in developing the Apache HTTP Server has significantly shaped the web landscape, promoting collaboration and innovation in software development.",
     "quote": "Brian champions the spirit of open collaboration.",
-    "front": "/cards/020-brian-behlendorf-front.png",
-    "back": "/cards/020-brian-behlendorf-back.png"
+    "front": "/releases/v2/legends/020-brian-behlendorf/front.svg",
+    "back": "/releases/v2/legends/020-brian-behlendorf/back.svg"
   },
   {
     "number": 21,
@@ -418,8 +418,8 @@ export const cards: Card[]=[
     ],
     "scouting": "Roy Fielding is a pivotal figure in web architecture, known for his creation of REST. His work on HTTP and the Apache HTTP Server has profoundly influenced how modern web applications are designed and interact.",
     "quote": "Fielding's REST principles revolutionized web communication.",
-    "front": "/cards/021-roy-fielding-front.png",
-    "back": "/cards/021-roy-fielding-back.png"
+    "front": "/releases/v2/legends/021-roy-fielding/front.svg",
+    "back": "/releases/v2/legends/021-roy-fielding/back.svg"
   },
   {
     "number": 22,
@@ -438,8 +438,8 @@ export const cards: Card[]=[
     ],
     "scouting": "Eric S. Raymond is a prominent figure in the open source movement. He advocates for transparency in software development and has authored influential works that shape modern programming practices.",
     "quote": "Raymond's insights revolutionized software development.",
-    "front": "/cards/022-eric-s-raymond-front.png",
-    "back": "/cards/022-eric-s-raymond-back.png"
+    "front": "/releases/v2/legends/022-eric-s-raymond/front.svg",
+    "back": "/releases/v2/legends/022-eric-s-raymond/back.svg"
   },
   {
     "number": 23,
@@ -458,8 +458,8 @@ export const cards: Card[]=[
     ],
     "scouting": "Bruce Perens is a pivotal figure in the open source movement. He co-founded the Open Source Initiative and authored the Open Source Definition, which shapes software licensing today. His advocacy continues to influence software development worldwide.",
     "quote": "Open source is a philosophy, not just a license.",
-    "front": "/cards/023-bruce-perens-front.png",
-    "back": "/cards/023-bruce-perens-back.png"
+    "front": "/releases/v2/legends/023-bruce-perens/front.svg",
+    "back": "/releases/v2/legends/023-bruce-perens/back.svg"
   },
   {
     "number": 24,
@@ -477,8 +477,8 @@ export const cards: Card[]=[
     ],
     "scouting": "Ian Murdock is a pivotal figure in open source, known for founding the Debian Project. His vision for a collaborative operating system has influenced countless distributions and fostered a strong community ethos.",
     "quote": "Debian: a legacy of freedom and collaboration.",
-    "front": "/cards/024-ian-murdock-front.png",
-    "back": "/cards/024-ian-murdock-back.png"
+    "front": "/releases/v2/legends/024-ian-murdock/front.svg",
+    "back": "/releases/v2/legends/024-ian-murdock/back.svg"
   },
   {
     "number": 25,
@@ -496,8 +496,8 @@ export const cards: Card[]=[
     ],
     "scouting": "Mark Shuttleworth is a visionary entrepreneur and philanthropist. He founded Ubuntu, which revolutionized Linux accessibility. His commitment to open source fosters innovation and community engagement worldwide.",
     "quote": "Shuttleworth believes in the power of freedom through software.",
-    "front": "/cards/025-mark-shuttleworth-front.png",
-    "back": "/cards/025-mark-shuttleworth-back.png"
+    "front": "/releases/v2/legends/025-mark-shuttleworth/front.svg",
+    "back": "/releases/v2/legends/025-mark-shuttleworth/back.svg"
   },
   {
     "number": 26,
@@ -516,8 +516,8 @@ export const cards: Card[]=[
     ],
     "scouting": "Theo de Raadt leads the OpenBSD project, emphasizing security and code correctness. His work on OpenSSH has transformed secure communications globally. He is a prominent figure in the open-source community.",
     "quote": "Security and simplicity define his legacy.",
-    "front": "/cards/026-theo-de-raadt-front.png",
-    "back": "/cards/026-theo-de-raadt-back.png"
+    "front": "/releases/v2/legends/026-theo-de-raadt/front.svg",
+    "back": "/releases/v2/legends/026-theo-de-raadt/back.svg"
   },
   {
     "number": 27,
@@ -536,8 +536,8 @@ export const cards: Card[]=[
     ],
     "scouting": "D. Richard Hipp is a prominent software developer known for creating SQLite, a lightweight database widely used in applications. His work on Fossil and Tcl further showcases his versatility and impact in the open-source community.",
     "quote": "SQLite: the database that fits everywhere.",
-    "front": "/cards/027-d-richard-hipp-front.png",
-    "back": "/cards/027-d-richard-hipp-back.png"
+    "front": "/releases/v2/legends/027-d-richard-hipp/front.svg",
+    "back": "/releases/v2/legends/027-d-richard-hipp/back.svg"
   },
   {
     "number": 28,
@@ -556,8 +556,8 @@ export const cards: Card[]=[
     ],
     "scouting": "Fabrice Bellard is a prominent figure in open source software, known for his groundbreaking work in emulation and programming languages. His projects, especially QEMU and FFmpeg, have significantly influenced the tech landscape.",
     "quote": "A pioneer in emulation and multimedia.",
-    "front": "/cards/028-fabrice-bellard-front.png",
-    "back": "/cards/028-fabrice-bellard-back.png"
+    "front": "/releases/v2/legends/028-fabrice-bellard/front.svg",
+    "back": "/releases/v2/legends/028-fabrice-bellard/back.svg"
   },
   {
     "number": 29,
@@ -576,8 +576,8 @@ export const cards: Card[]=[
     ],
     "scouting": "Andrew Tridgell is a key figure in open-source software, known for creating Samba and rsync. His work enables seamless file sharing across different operating systems, making him a vital contributor to the open-source community.",
     "quote": "Tridgell bridges systems with open-source innovation.",
-    "front": "/cards/029-andrew-tridgell-front.png",
-    "back": "/cards/029-andrew-tridgell-back.png"
+    "front": "/releases/v2/legends/029-andrew-tridgell/front.svg",
+    "back": "/releases/v2/legends/029-andrew-tridgell/back.svg"
   },
   {
     "number": 30,
@@ -596,8 +596,8 @@ export const cards: Card[]=[
     ],
     "scouting": "Bram Moolenaar is a prominent figure in software development, known for creating Vim, a highly configurable text editor. His work emphasizes efficiency and productivity, making Vim a staple among programmers worldwide.",
     "quote": "Vim: The editor that keeps on giving.",
-    "front": "/cards/030-bram-moolenaar-front.png",
-    "back": "/cards/030-bram-moolenaar-back.png"
+    "front": "/releases/v2/legends/030-bram-moolenaar/front.svg",
+    "back": "/releases/v2/legends/030-bram-moolenaar/back.svg"
   },
   {
     "number": 31,
@@ -616,8 +616,8 @@ export const cards: Card[]=[
     ],
     "scouting": "Brian Fox is a pivotal figure in the open source community, known for creating GNU Bash, a widely used command-line shell. His work has significantly influenced the development of free software and the GNU Project, promoting software freedom.",
     "quote": "Brian Fox's legacy lives on in every terminal.",
-    "front": "/cards/031-brian-fox-front.png",
-    "back": "/cards/031-brian-fox-back.png"
+    "front": "/releases/v2/legends/031-brian-fox/front.svg",
+    "back": "/releases/v2/legends/031-brian-fox/back.svg"
   },
   {
     "number": 32,
@@ -635,8 +635,8 @@ export const cards: Card[]=[
     ],
     "scouting": "Werner Koch is a pivotal figure in free software, known for his work on GnuPG. His contributions enhance digital security and privacy for users worldwide. He actively promotes free software principles through his leadership roles.",
     "quote": "Koch champions freedom in digital security.",
-    "front": "/cards/032-werner-koch-front.png",
-    "back": "/cards/032-werner-koch-back.png"
+    "front": "/releases/v2/legends/032-werner-koch/front.svg",
+    "back": "/releases/v2/legends/032-werner-koch/back.svg"
   },
   {
     "number": 33,
@@ -655,8 +655,8 @@ export const cards: Card[]=[
     ],
     "scouting": "Miguel de Icaza is a key figure in free software, driving innovation with GNOME and Mono. His work empowers developers and enhances user experiences across platforms.",
     "quote": "A true champion of open source software.",
-    "front": "/cards/033-miguel-de-icaza-front.png",
-    "back": "/cards/033-miguel-de-icaza-back.png"
+    "front": "/releases/v2/legends/033-miguel-de-icaza/front.svg",
+    "back": "/releases/v2/legends/033-miguel-de-icaza/back.svg"
   },
   {
     "number": 34,
@@ -674,8 +674,8 @@ export const cards: Card[]=[
     ],
     "scouting": "Federico Mena Quintero is a pivotal figure in open-source software, known for co-creating the GNOME desktop environment. His work enhances user experience across various Linux distributions, making technology accessible and user-friendly.",
     "quote": "Transforming the Linux desktop experience.",
-    "front": "/cards/034-federico-mena-quintero-front.png",
-    "back": "/cards/034-federico-mena-quintero-back.png"
+    "front": "/releases/v2/legends/034-federico-mena-quintero/front.svg",
+    "back": "/releases/v2/legends/034-federico-mena-quintero/back.svg"
   },
   {
     "number": 35,
@@ -695,8 +695,8 @@ export const cards: Card[]=[
     ],
     "scouting": "Havoc Pennington drives innovation in desktop environments, enhancing user experience with GNOME and D-Bus. His work supports seamless communication between applications, making software more accessible and efficient.",
     "quote": "A key figure in the free software movement.",
-    "front": "/cards/035-havoc-pennington-front.png",
-    "back": "/cards/035-havoc-pennington-back.png"
+    "front": "/releases/v2/legends/035-havoc-pennington/front.svg",
+    "back": "/releases/v2/legends/035-havoc-pennington/back.svg"
   },
   {
     "number": 36,
@@ -713,8 +713,8 @@ export const cards: Card[]=[
     ],
     "scouting": "Keith Packard is a prominent software developer recognized for his significant contributions to the X Window System, which revolutionized graphical interfaces in computing. His work continues to impact open source software development today.",
     "quote": "A pioneer in graphical interface innovation.",
-    "front": "/cards/036-keith-packard-front.png",
-    "back": "/cards/036-keith-packard-back.png"
+    "front": "/releases/v2/legends/036-keith-packard/front.svg",
+    "back": "/releases/v2/legends/036-keith-packard/back.svg"
   },
   {
     "number": 37,
@@ -733,8 +733,8 @@ export const cards: Card[]=[
     ],
     "scouting": "Lennart Poettering is a pivotal figure in modern Linux systems. He revolutionizes how services are managed with systemd, impacting boot processes and service management across distributions. His work on audio and service discovery further enhances user experience.",
     "quote": "Revolutionizing Linux with innovative technologies.",
-    "front": "/cards/037-lennart-poettering-front.png",
-    "back": "/cards/037-lennart-poettering-back.png"
+    "front": "/releases/v2/legends/037-lennart-poettering/front.svg",
+    "back": "/releases/v2/legends/037-lennart-poettering/back.svg"
   },
   {
     "number": 38,
@@ -753,8 +753,8 @@ export const cards: Card[]=[
     ],
     "scouting": "Greg Kroah-Hartman is a pivotal figure in Linux kernel development, ensuring its stability and performance. His work on driver backports and Ksplice enhances system reliability, making him a respected leader in the open source community.",
     "quote": "A guardian of the Linux kernel.",
-    "front": "/cards/038-greg-kroah-hartman-front.png",
-    "back": "/cards/038-greg-kroah-hartman-back.png"
+    "front": "/releases/v2/legends/038-greg-kroah-hartman/front.svg",
+    "back": "/releases/v2/legends/038-greg-kroah-hartman/back.svg"
   },
   {
     "number": 39,
@@ -773,8 +773,8 @@ export const cards: Card[]=[
     ],
     "scouting": "Alan Cox is a prominent figure in the Linux community, known for his extensive contributions to the Linux kernel. He plays a crucial role in maintaining kernel releases and enhancing networking capabilities, solidifying his legacy in open source software.",
     "quote": "A key architect of Linux's evolution.",
-    "front": "/cards/039-alan-cox-front.png",
-    "back": "/cards/039-alan-cox-back.png"
+    "front": "/releases/v2/legends/039-alan-cox/front.svg",
+    "back": "/releases/v2/legends/039-alan-cox/back.svg"
   },
   {
     "number": 40,
@@ -793,8 +793,8 @@ export const cards: Card[]=[
     ],
     "scouting": "Chris Lattner is a pivotal figure in programming language design and compiler technology. His work on LLVM revolutionizes how software is compiled, while Swift has transformed iOS development, making it more accessible and efficient.",
     "quote": "A visionary in compilers and programming languages.",
-    "front": "/cards/040-chris-lattner-front.png",
-    "back": "/cards/040-chris-lattner-back.png"
+    "front": "/releases/v2/legends/040-chris-lattner/front.svg",
+    "back": "/releases/v2/legends/040-chris-lattner/back.svg"
   },
   {
     "number": 41,
@@ -812,8 +812,8 @@ export const cards: Card[]=[
     ],
     "scouting": "Graydon Hoare is a prominent software engineer known for creating Rust. His work emphasizes safety and concurrency, making a significant impact on modern programming practices. He continues to influence the open source community.",
     "quote": "Graydon's vision redefines how we think about safety in programming.",
-    "front": "/cards/041-graydon-hoare-front.png",
-    "back": "/cards/041-graydon-hoare-back.png"
+    "front": "/releases/v2/legends/041-graydon-hoare/front.svg",
+    "back": "/releases/v2/legends/041-graydon-hoare/back.svg"
   },
   {
     "number": 42,
@@ -832,8 +832,8 @@ export const cards: Card[]=[
     ],
     "scouting": "Steve Klabnik is a prominent figure in the Rust community, known for his advocacy of open source software. He plays a crucial role in enhancing Rust's documentation and fostering a welcoming environment for developers.",
     "quote": "Steve champions the spirit of open source.",
-    "front": "/cards/042-steve-klabnik-front.png",
-    "back": "/cards/042-steve-klabnik-back.png"
+    "front": "/releases/v2/legends/042-steve-klabnik/front.svg",
+    "back": "/releases/v2/legends/042-steve-klabnik/back.svg"
   },
   {
     "number": 43,
@@ -851,8 +851,8 @@ export const cards: Card[]=[
     ],
     "scouting": "Salvatore Sanfilippo, known as antirez, is the creator of Redis, a powerful in-memory data structure store. His work has revolutionized data handling and caching in modern applications, making him a key figure in open source software.",
     "quote": "Redis: Fast, reliable, and open source.",
-    "front": "/cards/043-salvatore-sanfilippo-front.png",
-    "back": "/cards/043-salvatore-sanfilippo-back.png"
+    "front": "/releases/v2/legends/043-salvatore-sanfilippo/front.svg",
+    "back": "/releases/v2/legends/043-salvatore-sanfilippo/back.svg"
   },
   {
     "number": 44,
@@ -871,8 +871,8 @@ export const cards: Card[]=[
     ],
     "scouting": "Michael 'Monty' Widenius revolutionizes data management with MySQL, a leading open-source database. His commitment to community-driven development continues through MariaDB, ensuring robust alternatives in database technology.",
     "quote": "Monty believes in open-source freedom.",
-    "front": "/cards/044-michael-widenius-front.png",
-    "back": "/cards/044-michael-widenius-back.png"
+    "front": "/releases/v2/legends/044-michael-widenius/front.svg",
+    "back": "/releases/v2/legends/044-michael-widenius/back.svg"
   },
   {
     "number": 45,
@@ -891,8 +891,8 @@ export const cards: Card[]=[
     ],
     "scouting": "Brad Fitzpatrick is a key figure in social networking and open source. He creates impactful projects like LiveJournal and Memcached, which have influenced web development and community building.",
     "quote": "Innovator of social platforms and caching solutions.",
-    "front": "/cards/045-brad-fitzpatrick-front.png",
-    "back": "/cards/045-brad-fitzpatrick-back.png"
+    "front": "/releases/v2/legends/045-brad-fitzpatrick/front.svg",
+    "back": "/releases/v2/legends/045-brad-fitzpatrick/back.svg"
   },
   {
     "number": 46,
@@ -910,8 +910,8 @@ export const cards: Card[]=[
     ],
     "scouting": "Solomon Hykes revolutionizes software deployment with Docker, enabling developers to create, deploy, and manage applications in containers. His work fosters innovation in cloud computing and microservices, making it easier for teams to collaborate and scale.",
     "quote": "Hykes transforms how we think about applications.",
-    "front": "/cards/046-solomon-hykes-front.png",
-    "back": "/cards/046-solomon-hykes-back.png"
+    "front": "/releases/v2/legends/046-solomon-hykes/front.svg",
+    "back": "/releases/v2/legends/046-solomon-hykes/back.svg"
   },
   {
     "number": 47,
@@ -931,8 +931,8 @@ export const cards: Card[]=[
     ],
     "scouting": "Mitchell Hashimoto is a leading figure in infrastructure automation. He co-founds HashiCorp and creates tools that simplify cloud management. His work empowers developers to streamline workflows and enhance productivity.",
     "quote": "Transforming infrastructure management, one tool at a time.",
-    "front": "/cards/047-mitchell-hashimoto-front.png",
-    "back": "/cards/047-mitchell-hashimoto-back.png"
+    "front": "/releases/v2/legends/047-mitchell-hashimoto/front.svg",
+    "back": "/releases/v2/legends/047-mitchell-hashimoto/back.svg"
   }
 ];
 

@@ -46,7 +46,7 @@ const CRITERIA = [
   {
     tag: 'Original art',
     head: 'Inspired by the work',
-    body: 'Edition 2 uses original illustrations inspired by each person’s contributions. The art interprets their work; names, biographies and sources remain separately typeset and documented.',
+    body: 'Edition 2 uses original illustrations inspired by each person’s contributions. Each card pairs an interpretation of their work with a documented biography and sources.',
   },
 ];
 
