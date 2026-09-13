@@ -9,6 +9,8 @@
     "start": "next start",
     "lint": "next lint",
     "db:migrate": "node scripts/migrate.mjs",
+    "release:v2": "node scripts/release-v2.mjs",
+    "release:v2:test": "node --test scripts/v2/release.test.mjs",
     "hacking": "node scripts/hacking-legends.mjs",
     "hacking:validate": "node scripts/hacking-legends.mjs validate",
     "hacking:render": "node scripts/hacking-legends.mjs render",
@@ -41,6 +43,7 @@
     "@types/node": "^20",
     "@types/react": "^19",
     "@types/react-dom": "^19",
+    "@xmldom/xmldom": "^0.9.12",
     "playwright-core": "^1.61.0",
     "typescript": "^5"
   },

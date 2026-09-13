@@ -243,7 +243,20 @@ export default function CardDetail(props: CardDetailProps) {
               </div>
             )}
 
-            {portraitCredit && (
+            {front.startsWith('/releases/v2/') && (
+              <div className={styles.block}>
+                <h2 className={styles.blockHead}>Edition 2 artwork</h2>
+                <p className={styles.note}>
+                  Original artwork inspired by {name}’s contributions.{' '}
+                  <a href={`/releases/v2/index.html#${front.replace('/releases/v2/', '').replace(/\/front\.(svg|png)$/, '')}`}>
+                    View the artwork and sources
+                  </a>
+                  .
+                </p>
+              </div>
+            )}
+
+            {portraitCredit && !front.startsWith('/releases/v2/') && (
               <div className={styles.block}>
                 <h2 className={styles.blockHead}>Portrait</h2>
                 <p className={styles.note}>

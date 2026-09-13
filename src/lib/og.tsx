@@ -1,6 +1,7 @@
 import { readFile } from 'node:fs/promises';
 import path from 'node:path';
 import { ImageResponse } from 'next/og';
+import sharp from 'sharp';
 
 // Social previews want landscape. The cards are 500x745 portrait, which X and
 // LinkedIn refuse to render large, so every card gets a 1200x630 composite with
@@ -19,7 +20,11 @@ const RARITY_COLOR: Record<string, string> = {
 async function embed(publicPath: string) {
   const abs = path.join(process.cwd(), 'public', publicPath.replace(/^\//, ''));
   const bytes = await readFile(abs);
-  return `data:image/png;base64,${bytes.toString('base64')}`;
+  // Keep social previews as PNG even when the edition's master is native SVG.
+  const png = path.extname(abs).toLowerCase() === '.svg'
+    ? await sharp(bytes).resize({ width: 712 }).png().toBuffer()
+    : bytes;
+  return `data:image/png;base64,${png.toString('base64')}`;
 }
 
 export type OgCard = {
