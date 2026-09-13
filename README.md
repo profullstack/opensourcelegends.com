@@ -258,17 +258,18 @@ A [Profullstack](https://profullstack.com) project.
 
 ## Artwork and card data v2
 
-The complete 277-card edition is published in `public/releases/v2/`: native SVG
-artwork, SVG and PNG card faces, the card-data catalog, a proof gallery and the
-release manifest. All six site rosters use these versioned faces.
-
-Build a new edition with native SVG artwork by default, Astra 6 at `xhigh`,
-NicheDB metadata and optional GPT Image 2 PNG output:
+Edition 2 uses the existing approved portrait PNGs in `assets/portraits/`.
+The 277-card roster has 246 portraits and 31 explicit portrait-pending cards.
+Faces, portrait files, source credits, card data and a review gallery are published
+in `public/releases/v2/`. The portrait pixels are preserved; names and factual
+copy are typeset separately.
 
 ```bash
 pnpm release:v2 --dry-run
-pnpm release:v2 --series legends --only 2 --background --out dist/releases/v2-proof
+pnpm release:v2 --series legends --only 2 --offline --out dist/releases/v2-proof
 ```
 
-See [the v2 workflow](docs/artwork-v2.md) for full-edition builds, PNG fallback,
-resume behavior, visual review, validation and local activation.
+The release builder makes no image-generation calls. `--offline` also skips
+NicheDB, so the entire build can run without credentials or network access.
+See [the v2 workflow](docs/artwork-v2.md) for the source mapping, build, review,
+validation and activation steps.

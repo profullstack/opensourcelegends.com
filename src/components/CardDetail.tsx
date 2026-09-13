@@ -247,7 +247,7 @@ export default function CardDetail(props: CardDetailProps) {
               <div className={styles.block}>
                 <h2 className={styles.blockHead}>Edition 2 artwork</h2>
                 <p className={styles.note}>
-                  Original artwork inspired by {name}’s contributions.{' '}
+                  Portrait artwork from the collection’s existing sources, in the edition 2 card layout.{' '}
                   <a href={`/releases/v2/index.html#${front.replace('/releases/v2/', '').replace(/\/front\.(svg|png)$/, '')}`}>
                     View the artwork and sources
                   </a>
@@ -256,7 +256,7 @@ export default function CardDetail(props: CardDetailProps) {
               </div>
             )}
 
-            {portraitCredit && !front.startsWith('/releases/v2/') && (
+            {portraitCredit && (
               <div className={styles.block}>
                 <h2 className={styles.blockHead}>Portrait</h2>
                 <p className={styles.note}>

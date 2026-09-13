@@ -7,33 +7,29 @@ import { parseArgs } from 'node:util';
 import sharp from 'sharp';
 import ts from 'typescript';
 import { SERIES, PIPELINE_VERSION, atomicWrite, hash, json, loadCards, renderFaces, validateSVG, escapeXML, safeURL } from './v2/core.mjs';
-import { researchCard, generateArt, enrichCard } from './v2/providers.mjs';
+import { researchCard, enrichCard } from './v2/providers.mjs';
+import { loadPortrait } from './v2/portraits.mjs';
 
 const ROOT = path.resolve(path.dirname(fileURLToPath(import.meta.url)), '..');
-const HELP = `Open Source Legends v2 — native SVG art and sourced NicheDB metadata
+const HELP = `Open Source Legends v2 — approved portrait artwork and sourced NicheDB metadata
 
 node scripts/release-v2.mjs [build|validate|activate] [options]
 
   --dry-run                  Print the exact roster/config; no writes or API calls
-  --background               Persist and poll long-running Astra requests
   --concurrency N            Cards to build at once (1–64; default 1)
   --series all|legends|hacking|security|gods|women|ceos (comma-separated)
   --only 1,2                 Card numbers, with exactly one series
   --limit N                  Build a proof subset (requires --allow-partial to activate)
-  --format svg|png           Default svg; PNG uses GPT Image 2
-  --png-fallback             Use Image 2 only if SVG remains invalid after repair
+  --format svg|png           Card face format; default png. Portrait pixels are preserved.
   --png-copies               Also export raster copies of SVG card faces
-  --offline                  Skip NicheDB; still generates new artwork through OpenAI
+  --offline                  Skip NicheDB; render entirely from local portrait files
   --allow-missing-metadata   Record NicheDB failures instead of failing the card
-  --force                    Rebuild checkpoints (can incur API charges again)
+  --force                    Re-render from the approved portrait files
   --out PATH                 Default dist/releases/v2
   --allow-partial            Permit activation of a completed proof subset
   --help
 
-Environment: OPENAI_API_KEY; OPENAI_TEXT_MODEL=gpt-6-astra;
-OPENAI_REASONING_EFFORT=xhigh; OPENAI_IMAGE_MODEL=gpt-image-2;
-OPENAI_BASE_URL=https://api.openai.com/v1; OPENAI_MAX_OUTPUT_TOKENS=48000;
-NICHEDB_API_BASE=https://nichedb.dev/api/v1; NICHEDB_API_KEY (optional).
+Environment: NICHEDB_API_BASE=https://nichedb.dev/api/v1; NICHEDB_API_KEY (optional).
 
 Build is resumable and staged. Activate updates local site assets and face paths;
 it does not create a git tag, GitHub release, merge, or deploy the site.
@@ -41,8 +37,8 @@ it does not create a git tag, GitHub release, merge, or deploy the site.
 
 export function optionsFrom(argv, env = process.env, root = ROOT) {
   const { values, positionals } = parseArgs({ args: argv, allowPositionals: true, options: {
-    series: { type: 'string', default: 'all' }, only: { type: 'string' }, limit: { type: 'string' }, format: { type: 'string', default: 'svg' }, out: { type: 'string' },
-    'dry-run': { type: 'boolean' }, background: { type: 'boolean' }, concurrency: { type: 'string', default: '1' }, 'png-fallback': { type: 'boolean' }, 'png-copies': { type: 'boolean' }, offline: { type: 'boolean' },
+    series: { type: 'string', default: 'all' }, only: { type: 'string' }, limit: { type: 'string' }, format: { type: 'string', default: 'png' }, out: { type: 'string' },
+    'dry-run': { type: 'boolean' }, concurrency: { type: 'string', default: '1' }, 'png-copies': { type: 'boolean' }, offline: { type: 'boolean' },
     'allow-missing-metadata': { type: 'boolean' }, force: { type: 'boolean' }, 'allow-partial': { type: 'boolean' }, help: { type: 'boolean' },
   } });
   const command = positionals[0] ?? 'build';
@@ -56,24 +52,19 @@ export function optionsFrom(argv, env = process.env, root = ROOT) {
   const concurrency = Number(values.concurrency);
   if (!Number.isSafeInteger(concurrency) || concurrency < 1 || concurrency > 64) throw new Error('--concurrency must be an integer from 1 to 64');
   if (!['svg', 'png'].includes(values.format)) throw new Error('--format must be svg or png');
-  const effort = env.OPENAI_REASONING_EFFORT ?? 'xhigh';
-  if (!['low', 'medium', 'high', 'xhigh', 'max'].includes(effort)) throw new Error('Invalid OPENAI_REASONING_EFFORT (extra-high is xhigh)');
-  const apiBase = (env.OPENAI_BASE_URL ?? 'https://api.openai.com/v1').replace(/\/$/, '');
   const nicheBase = (env.NICHEDB_API_BASE ?? 'https://nichedb.dev/api/v1').replace(/\/$/, '');
-  for (const base of [apiBase, nicheBase]) {
+  for (const base of [nicheBase]) {
     const u = safeURL(base) && new URL(base);
     if (!u || u.search || u.hash || (u.protocol !== 'https:' && !['localhost', '127.0.0.1', '[::1]'].includes(u.hostname))) throw new Error('API bases must be HTTPS URLs (or local test servers), without credentials/query/fragment');
   }
-  const maxOutputTokens = Number(env.OPENAI_MAX_OUTPUT_TOKENS ?? 48000);
-  if (!Number.isSafeInteger(maxOutputTokens) || maxOutputTokens < 1024 || maxOutputTokens > 128000) throw new Error('OPENAI_MAX_OUTPUT_TOKENS must be 1024–128000');
   return { root, command, help: values.help, series, only, limit, format: values.format, out: path.resolve(root, values.out ?? 'dist/releases/v2'),
-    dryRun: !!values['dry-run'], background: !!values.background, concurrency, pngFallback: !!values['png-fallback'], pngCopies: !!values['png-copies'], offline: !!values.offline,
+    dryRun: !!values['dry-run'], concurrency, pngCopies: !!values['png-copies'], offline: !!values.offline,
     allowMissingMetadata: !!values['allow-missing-metadata'], force: !!values.force, allowPartial: !!values['allow-partial'],
-    apiKey: env.OPENAI_API_KEY, nicheKey: env.NICHEDB_API_KEY, textModel: env.OPENAI_TEXT_MODEL ?? 'gpt-6-astra', imageModel: env.OPENAI_IMAGE_MODEL ?? 'gpt-image-2', effort, apiBase, nicheBase, maxOutputTokens };
+    nicheKey: env.NICHEDB_API_KEY, nicheBase };
 }
 export function publicConfig(options) {
-  const { format, pngFallback, pngCopies, offline, allowMissingMetadata, textModel, imageModel, effort, apiBase, nicheBase, maxOutputTokens } = options;
-  return { pipeline: PIPELINE_VERSION, format, pngFallback, pngCopies, offline, allowMissingMetadata, textModel, imageModel, effort, apiBase, nicheBase, maxOutputTokens };
+  const { format, pngCopies, offline, allowMissingMetadata, nicheBase } = options;
+  return { pipeline: PIPELINE_VERSION, artworkSource: 'approved-portrait', format, pngCopies, offline, allowMissingMetadata, nicheBase };
 }
 const exists = async (file) => fs.access(file).then(() => true, () => false);
 function inside(root, relative) {
@@ -92,9 +83,10 @@ async function checkFiles(out, files) {
 }
 async function buildCard(baseCard, options, deps) {
   const config = publicConfig(options);
-  // Activation changes only these two paths; it must not invalidate paid art.
+  // Activation changes only these paths. Source pixel/credit changes invalidate the checkpoint.
   const { front: oldFront, back: oldBack, ...sourceCard } = baseCard;
-  const fingerprint = hash({ sourceCard, config });
+  const portrait = deps.art ? null : await loadPortrait(baseCard, options.root);
+  const fingerprint = hash({ sourceCard, portrait: portrait?.source, config });
   const dir = inside(options.out, baseCard.id);
   const recordFile = path.join(dir, 'record.json');
   if (!options.force && await exists(recordFile)) {
@@ -119,9 +111,8 @@ async function buildCard(baseCard, options, deps) {
     } catch { /* missing checkpoint asset: regenerate */ }
   }
   if (!art) {
-    if (!options.apiKey) throw new Error('Set OPENAI_API_KEY to generate artwork (or use --dry-run)');
-    art = await (deps.art ?? generateArt)(card, checkpoint.research, options, deps);
-    if (!['svg', 'png'].includes(art.format)) throw new Error('Unknown generated artwork format');
+    art = deps.art ? await deps.art(card, checkpoint.research, options, deps) : portrait;
+    if (!['svg', 'png'].includes(art.format)) throw new Error('Unknown artwork format');
     if (art.format === 'svg') art.bytes = Buffer.from(await validateSVG(art.bytes.toString()));
     const { bytes, ...provenance } = art;
     checkpoint.art = { ...provenance, sha256: hash(bytes), generatedAt: new Date().toISOString() };
@@ -133,28 +124,30 @@ async function buildCard(baseCard, options, deps) {
     const metadata = await sharp(art.bytes).metadata();
     if (metadata.format !== 'png' || metadata.width > 4096 || metadata.height > 4096) throw new Error('Invalid PNG artwork');
   }
+  if (art.source) card.portrait = art.source;
+  const faceFormat = options.format;
   const faces = renderFaces(card, art.bytes, art.format);
   const files = { [`${card.id}/artwork.${art.format}`]: hash(art.bytes) };
   for (const [side, svg] of Object.entries(faces)) {
     // The deterministic layout keeps all factual text outside image generation.
     const raster = await sharp(Buffer.from(svg)).resize(1000, 1490).png().toBuffer();
-    const content = art.format === 'svg' ? svg : raster;
-    const relative = `${card.id}/${side}.${art.format}`;
+    const content = faceFormat === 'svg' ? svg : raster;
+    const relative = `${card.id}/${side}.${faceFormat}`;
     await atomicWrite(inside(options.out, relative), content); files[relative] = hash(content);
-    if (options.pngCopies && art.format === 'svg') {
+    if (options.pngCopies && faceFormat === 'svg') {
       const pngPath = `${card.id}/${side}.png`;
       await atomicWrite(inside(options.out, pngPath), raster); files[pngPath] = hash(raster);
     }
   }
   const prefix = `/releases/v2/${card.id}`;
-  const record = { fingerprint, card: { ...card, edition: 2, front: `${prefix}/front.${art.format}`, back: `${prefix}/back.${art.format}`, artwork: `${prefix}/artwork.${art.format}`, artworkFormat: art.format },
+  const record = { fingerprint, card: { ...card, edition: 2, front: `${prefix}/front.${faceFormat}`, back: `${prefix}/back.${faceFormat}`, faceFormat, artwork: `${prefix}/artwork.${art.format}`, artworkFormat: art.format },
     art: checkpoint.art, files, builtAt: new Date().toISOString() };
   await atomicWrite(recordFile, record);
   return record;
 }
 
 function reviewHTML(cards) {
-  return `<!doctype html><html lang="en"><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Open Source Legends — v2 proof</title><style>body{background:#10141c;color:#fff;font:16px system-ui;margin:32px}h1{font-weight:500}main{display:grid;grid-template-columns:repeat(auto-fit,minmax(310px,1fr));gap:24px}article{border-top:1px solid #475467;padding-top:16px}img{width:49%;height:auto}a{color:#64efb4}small{color:#abb8ca}</style><h1>Open Source Legends / Edition 2</h1><p>Review the artwork, original card copy and sourced metadata before activating this edition. <a href="cards.json">Card data</a> · <a href="manifest.json">Release manifest</a></p><main>${cards.map((c) => `<article id="${escapeXML(c.id)}"><h2>${escapeXML(c.name)}</h2><img loading="lazy" src="${escapeXML(c.id)}/front.${c.artworkFormat}" alt="${escapeXML(c.name)} front"><img loading="lazy" src="${escapeXML(c.id)}/back.${c.artworkFormat}" alt="${escapeXML(c.name)} back"><p><small>${escapeXML(c.series)} · ${c.artworkFormat.toUpperCase()} · NicheDB: ${escapeXML(c.research.status)}</small></p><ul>${c.research.matches.map((m) => `<li><a href="${escapeXML(m.url)}">${escapeXML(m.title)}</a> — ${escapeXML(m.summary)}</li>`).join('')}</ul></article>`).join('')}</main></html>`;
+  return `<!doctype html><html lang="en"><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Open Source Legends — v2 proof</title><style>body{background:#10141c;color:#fff;font:16px system-ui;margin:32px}h1{font-weight:500}main{display:grid;grid-template-columns:repeat(auto-fit,minmax(310px,1fr));gap:24px}article{border-top:1px solid #475467;padding-top:16px}img{width:49%;height:auto}a{color:#64efb4}small{color:#abb8ca}</style><h1>Open Source Legends / Edition 2</h1><p>Review the artwork, original card copy and sourced metadata before activating this edition. <a href="cards.json">Card data</a> · <a href="manifest.json">Release manifest</a></p><main>${cards.map((c) => `<article id="${escapeXML(c.id)}"><h2>${escapeXML(c.name)}</h2><img loading="lazy" src="${escapeXML(c.id)}/front.${c.faceFormat ?? c.artworkFormat}" alt="${escapeXML(c.name)} front"><img loading="lazy" src="${escapeXML(c.id)}/back.${c.faceFormat ?? c.artworkFormat}" alt="${escapeXML(c.name)} back"><p><small>${escapeXML(c.series)} · ${(c.faceFormat ?? c.artworkFormat).toUpperCase()} · ${c.portrait?.status === 'pending' ? 'Portrait pending' : 'Existing portrait artwork'} · NicheDB: ${escapeXML(c.research.status)}</small></p>${c.portrait?.reference ? `<p>Portrait source: ${escapeXML(c.portrait.reference.credit)} · ${escapeXML(c.portrait.reference.license)}${safeURL(c.portrait.reference.sourceUrl) ? ` · <a href="${escapeXML(c.portrait.reference.sourceUrl)}">Source photograph</a>` : ''}</p>` : ''}<ul>${c.research.matches.map((m) => `<li><a href="${escapeXML(m.url)}">${escapeXML(m.title)}</a> — ${escapeXML(m.summary)}</li>`).join('')}</ul></article>`).join('')}</main></html>`;
 }
 export async function buildRelease(options, deps = {}) {
   const all = await (deps.load ?? loadCards)(options.root, options.series);
@@ -226,11 +219,15 @@ export async function validateRelease(out) {
     if (!SERIES[c.series] || !/^[a-z0-9-]+$/.test(c.slug) || c.id !== `${c.series}/${String(c.number).padStart(3, '0')}-${c.slug}`) throw new Error('Invalid card identity');
     await checkFiles(out, record.files);
     for (const field of ['front', 'back', 'artwork']) {
-      const relative = `${c.id}/${field === 'artwork' ? 'artwork' : field}.${c.artworkFormat}`;
+      const relative = `${c.id}/${field === 'artwork' ? 'artwork' : field}.${field === 'artwork' ? c.artworkFormat : (c.faceFormat ?? c.artworkFormat)}`;
       if (c[field] !== `/releases/v2/${relative}` || !record.files[relative]) throw new Error('Card face/artwork path is missing from manifest');
     }
     if (c.artworkFormat === 'svg') await validateSVG(await fs.readFile(inside(out, `${c.id}/artwork.svg`), 'utf8'));
     else if (c.artworkFormat !== 'png') throw new Error('Unsupported artwork format');
+    if (c.portrait) {
+      if (!['approved', 'pending'].includes(c.portrait.status) || hash(c.portrait) !== hash(record.art.source)) throw new Error('Portrait provenance does not match');
+      if (c.portrait.status === 'approved' && c.portrait.sha256 !== record.files[`${c.id}/artwork.png`]) throw new Error('Artwork differs from approved portrait pixels');
+    }
   }
   return manifest;
 }
@@ -273,6 +270,7 @@ export function updateFacePaths(source, exportName, records) {
 }
 export async function activateRelease(options) {
   const manifest = await validateRelease(options.out);
+  if (manifest.config.artworkSource !== 'approved-portrait' || manifest.records.some((r) => !r.card.portrait)) throw new Error('Only a release built from approved portrait sources can be activated');
   if (manifest.scope.partial && !options.allowPartial) throw new Error('This is a proof subset; use --allow-partial to activate it intentionally');
   const updates = [];
   for (const series of manifest.scope.series) {

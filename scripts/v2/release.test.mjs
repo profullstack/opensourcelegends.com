@@ -7,7 +7,8 @@ import sharp from 'sharp';
 import ts from 'typescript';
 import { fileURLToPath } from 'node:url';
 import { hash, loadCards, matchRecords, renderFaces, validateSVG } from './core.mjs';
-import { requestJSON, researchCard, generateArt } from './providers.mjs';
+import { requestJSON, researchCard } from './providers.mjs';
+import { loadPortrait } from './portraits.mjs';
 import { optionsFrom, publicConfig, buildRelease, validateRelease, activateRelease, updateFacePaths } from '../release-v2.mjs';
 
 const ROOT = path.resolve(path.dirname(fileURLToPath(import.meta.url)), '../..');
@@ -15,18 +16,58 @@ const VECTOR = '<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 1000">
 const CARD = { id: 'legends/002-linus-torvalds', series: 'legends', number: 2, slug: 'linus-torvalds', name: 'Linus Torvalds', title: 'Creator of Linux', knownFor: 'Linux and Git', scouting: 'Created Linux and Git.', projects: ['Linux Kernel', 'Git'], rarity: 'iconic', impact: 99, sources: [{ label: 'Reference', url: 'https://en.wikipedia.org/wiki/Linus_Torvalds' }] };
 const RESEARCH = { status: 'not-found', searchedAt: '2026-09-13T00:00:00Z', matches: [], rejectedCount: 0 };
 const reply = (body, status = 200, headers = {}) => new Response(JSON.stringify(body), { status, headers: { 'content-type': 'application/json', ...headers } });
-const textReply = (svg) => reply({ id: 'resp_test', status: 'completed', output: [{ type: 'message', content: [{ type: 'output_text', text: JSON.stringify({ svg }) }] }] });
 async function temp(t) { const dir = await fs.mkdtemp(path.join(os.tmpdir(), 'legends-v2-')); t.after(() => fs.rm(dir, { recursive: true, force: true })); return dir; }
-function options(out, args = [], env = {}) { return optionsFrom(['--out', out, '--series', 'legends', ...args], { OPENAI_API_KEY: 'test-not-a-real-key', ...env }, ROOT); }
-const art = async () => ({ bytes: Buffer.from(VECTOR), format: 'svg', model: 'test-fixture' });
+function options(out, args = [], env = {}) { return optionsFrom(['--out', out, '--series', 'legends', '--format', 'svg', ...args], { OPENAI_API_KEY: 'test-not-a-real-key', ...env }, ROOT); }
+const art = async () => ({ bytes: Buffer.from(VECTOR), format: 'svg', model: 'test-fixture', source: { status: 'pending' } });
 const dependencies = { load: async () => [CARD], research: async () => RESEARCH, art };
+
+test('portrait release preserves source PNG bytes, uses no image service, and refreshes when the source changes', async (t) => {
+  const root = await temp(t);
+  const file = path.join(root, 'assets/portraits/legends/card_002.png');
+  await fs.mkdir(path.dirname(file), { recursive: true });
+  const original = await sharp(Buffer.from(VECTOR)).png().toBuffer();
+  await fs.writeFile(file, original);
+  const out = path.join(root, 'release');
+  const o = { ...options(out, ['--format', 'png', '--offline']), root };
+  const deps = { load: async () => [CARD], fetcher: async () => { throw new Error('Unexpected remote call'); } };
+  let result = await buildRelease(o, deps);
+  const artwork = path.join(out, CARD.id, 'artwork.png');
+  assert.deepEqual(await fs.readFile(artwork), original);
+  assert.equal(result.records[0].card.portrait.sha256, hash(original));
+  assert.equal(result.records[0].card.portrait.status, 'approved');
+  const face = await sharp(path.join(out, CARD.id, 'front.png')).metadata();
+  assert.equal(face.width, 1000); assert.equal(face.height, 1490);
+  const changed = await sharp(original).flip().png().toBuffer();
+  await fs.writeFile(file, changed);
+  result = await buildRelease(o, deps);
+  assert.deepEqual(await fs.readFile(artwork), changed);
+  assert.equal(result.records[0].card.portrait.sha256, hash(changed));
+});
+
+test('missing portraits get an explicit pending plate; source credit must match the same person', async (t) => {
+  const root = await temp(t);
+  const pending = await loadPortrait(CARD, root);
+  assert.equal(pending.source.status, 'pending');
+  assert.equal((await sharp(pending.bytes).metadata()).format, 'png');
+  const c = { ...CARD, series: 'security' };
+  const portrait = path.join(root, 'assets/portraits/security-pros/card_002.png');
+  await fs.mkdir(path.dirname(portrait), { recursive: true });
+  await fs.writeFile(portrait, await sharp(Buffer.from(VECTOR)).png().toBuffer());
+  await fs.mkdir(path.join(root, 'data'));
+  const file = path.join(root, 'data/security-references.json');
+  const ref = { credit: 'Photographer', sourceUrl: 'https://example.com/portrait', license: 'CC BY-SA 4.0' };
+  await fs.writeFile(file, JSON.stringify([{ number: 2, slug: 'wrong-person', ref }]));
+  await assert.rejects(loadPortrait(c, root), /matching source credit/);
+  await fs.writeFile(file, JSON.stringify([{ number: 2, slug: c.slug, ref }]));
+  assert.deepEqual((await loadPortrait(c, root)).source.reference, ref);
+});
 
 test('CLI defaults and identifiers; rejects typos, unsafe bases and invalid scope', () => {
   const o = options('/tmp/example');
-  assert.equal(o.format, 'svg'); assert.equal(o.textModel, 'gpt-6-astra'); assert.equal(o.effort, 'xhigh'); assert.equal(o.imageModel, 'gpt-image-2');
+  assert.equal(optionsFrom([], {}).format, 'png'); assert.equal(publicConfig(o).artworkSource, 'approved-portrait');
   assert.ok(!JSON.stringify(publicConfig(o)).includes('test-not-a-real-key'));
   for (const args of [['--concurrency', '0'], ['--concurrency', '65'], ['--concurrency', '1.5'], ['--limit', '0'], ['--format', 'pdf'], ['--seriez', 'legends'], ['--only', 'no'], ['--series', 'all', '--only', '2']]) assert.throws(() => options('/tmp/example', args));
-  assert.throws(() => options('/tmp/example', [], { OPENAI_BASE_URL: 'http://example.com/v1' }));
+  assert.throws(() => options('/tmp/example', [], { NICHEDB_API_BASE: 'http://example.com/v1' }));
 });
 test('NicheDB requires person identity plus corroboration, excluding mixed search results', () => {
   const base = { id: 7, title: 'Linus Torvalds', kind: 'person', url: CARD.sources[0].url, summary: 'A profile', tags: [] };
@@ -57,56 +98,6 @@ test('SVG validation parses XML, rejects active content and raster wrappers, ren
   assert.match(await validateSVG(VECTOR), /viewBox="0 0 1000 1000"/);
   const insert = (tag) => VECTOR.replace('</svg>', `${tag}</svg>`);
   for (const unsafe of [insert('<image href="data:image/png;base64,AAAA"/>'), insert('<script>alert(1)</script>'), insert('<foreignObject/>'), VECTOR.replace('fill="#ad9cff"', 'fill="url(&#104;ttps://evil.test/x)"'), VECTOR.replace('fill="#ad9cff"', 'onload="x()"'), '<!DOCTYPE svg>' + VECTOR, VECTOR.replace('</svg>', ''), VECTOR.replace('1000 1000', '999999 999999'), insert('<path style="fill:red"/>'), insert('<text>Fake quote</text>')]) await assert.rejects(validateSVG(unsafe));
-});
-test('Astra request uses xhigh/Responses; native SVG never calls Images API', async () => {
-  const calls = [];
-  const result = await generateArt(CARD, RESEARCH, options('/tmp/example'), { fetcher: async (url, init) => { calls.push(url); const body = JSON.parse(init.body); assert.equal(body.model, 'gpt-6-astra'); assert.deepEqual(body.reasoning, { effort: 'xhigh' }); assert.equal(body.text.format.type, 'json_schema'); return textReply(VECTOR); } });
-  assert.equal(result.format, 'svg'); assert.equal(calls.length, 1); assert.match(calls[0], /\/responses$/);
-});
-test('PNG fallback is opt-in, runs after failed SVG repair, and does not retry a refusal through images', async () => {
-  const png = await sharp({ create: { width: 1000, height: 1000, channels: 3, background: '#64efb4' } }).png().toBuffer();
-  const o = options('/tmp/example', ['--png-fallback']);
-  const calls = [];
-  const fetcher = async (url, init) => { calls.push(url); if (url.endsWith('/responses')) return textReply('<svg/>'); const b = JSON.parse(init.body); assert.equal(b.model, 'gpt-image-2'); assert.equal(b.output_format, 'png'); return reply({ data: [{ b64_json: png.toString('base64') }] }); };
-  const result = await generateArt(CARD, RESEARCH, o, { fetcher });
-  assert.equal(result.format, 'png'); assert.equal(calls.length, 3); assert.ok(result.fallbackReason);
-  await assert.rejects(generateArt(CARD, RESEARCH, { ...o, pngFallback: false }, { fetcher }), /after repair/);
-  let refused = 0;
-  await assert.rejects(generateArt(CARD, RESEARCH, o, { fetcher: async () => { refused++; return reply({ status: 'completed', output: [{ content: [{ type: 'refusal' }] }] }); } }), /declined/);
-  assert.equal(refused, 1);
-});
-test('background generation resumes the same paid request after polling fails and caches completed output', async (t) => {
-  const out = await temp(t);
-  const o = options(out, ['--background']);
-  let posts = 0; let gets = 0; let unavailable = true;
-  const deps = { pause: async () => {}, fetcher: async (url, init) => {
-    if (init.method === 'POST') {
-      posts++;
-      const body = JSON.parse(init.body);
-      assert.equal(body.background, true); assert.equal(body.store, true);
-      assert.equal(body.model, 'gpt-6-astra'); assert.equal(body.reasoning.effort, 'xhigh');
-      return reply({ id: 'resp_test', status: 'queued' });
-    }
-    gets++; assert.match(url, /\/responses\/resp_test$/);
-    return unavailable ? reply({}, 503) : textReply(VECTOR);
-  } };
-  await assert.rejects(generateArt(CARD, RESEARCH, o, deps), /HTTP 503/);
-  assert.equal(posts, 1);
-  unavailable = false;
-  assert.equal((await generateArt(CARD, RESEARCH, o, deps)).format, 'svg');
-  assert.equal(posts, 1);
-  const polled = gets;
-  await generateArt(CARD, RESEARCH, o, deps);
-  assert.equal(posts, 1); assert.equal(gets, polled);
-  await generateArt(CARD, RESEARCH, { ...o, force: true }, deps);
-  assert.equal(posts, 2);
-});
-test('background submission does not retry an ambiguous network failure', async (t) => {
-  let posts = 0;
-  await assert.rejects(generateArt(CARD, RESEARCH, options(await temp(t), ['--background']), {
-    fetcher: async () => { posts++; throw new TypeError('network disconnected'); }, pause: async () => {},
-  }), /Request failed/);
-  assert.equal(posts, 1);
 });
 test('concurrent builds preserve roster order and resume only failed cards', async (t) => {
   const out = await temp(t); let active = 0; let peak = 0; let fail = true;
@@ -147,7 +138,7 @@ test('build, validate, resume, asset recovery, missing credentials on resume and
   await buildRelease(opts, deps); // recover the face from the paid art checkpoint
   assert.equal(generations, 1); await validateRelease(out);
 });
-test('failed card leaves an incomplete release; successful cards are not billed again on resume', async (t) => {
+test('failed card leaves an incomplete release; successful cards are not rendered again on resume', async (t) => {
   const out = await temp(t); let fail = true; const calls = [];
   const other = { ...CARD, id: 'legends/003-other-person', number: 3, slug: 'other-person', name: 'Other Person' };
   const deps = { ...dependencies, load: async () => [CARD, other], art: async (c) => { calls.push(c.id); if (c.number === 3 && fail) throw new Error('simulated failure'); return art(); } };
