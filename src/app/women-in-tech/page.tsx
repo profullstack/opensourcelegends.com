@@ -44,14 +44,15 @@ const CRITERIA = [
     body: 'Every card links the artefact behind the claim. Several of these careers were classified, uncredited or attributed to someone else at the time, which is noted where it applies.',
   },
   {
-    tag: 'Original art',
-    head: 'Inspired by the work',
-    body: 'Edition 2 uses original illustrations inspired by each person’s contributions. Each card pairs an interpretation of their work with a documented biography and sources.',
+    tag: 'Real faces',
+    head: 'No invented likenesses',
+    body: 'A portrait is painted from an identified photograph, credited to its source. Where no usable photograph exists the card carries no face. That rule costs this set six portraits.',
   },
 ];
 
 export default function WomenInTechPage() {
   const pct = Math.round((draftedCount / totalPlanned) * 100);
+  const faceless = totalPlanned - illustratedCount;
 
   return (
     <>
@@ -105,7 +106,7 @@ export default function WomenInTechPage() {
               <span className={`${styles.barVal} mono`}>{lockedCount}/{totalPlanned}</span>
             </div>
             <div className={styles.barRow}>
-              <span className={styles.barLabel}>Artwork rendered</span>
+              <span className={styles.barLabel}>Portraits from a verified photo</span>
               <span className={styles.barTrack}>
                 <span
                   className={styles.barFill}
@@ -119,7 +120,12 @@ export default function WomenInTechPage() {
           <aside className={styles.aside}>
             <h2 className={styles.asideHead}>What ships next</h2>
             <ol className={styles.steps}>
-              <li>Review the new artwork and the sources behind each contribution.</li>
+              {faceless > 0 && (
+                <li>
+                  Find usable photographs for the {faceless} cards with no face. For the
+                  wartime and ENIAC entries this may not be possible at all.
+                </li>
+              )}
               <li>Take nominations and re-cut any slot the argument goes against.</li>
               <li>Re-render any card whose copy or stat line changes in review.</li>
               <li>Print run and packs, alongside the open-licensed downloads.</li>

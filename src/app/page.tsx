@@ -142,7 +142,7 @@ export default function Home() {
                 reinforcement learning, plus the people who wrote the frameworks, kernels
                 and quantisers the field runs on. {architects.length} cards, scored
                 explicitly on how much they gave away, {aiIllustrated} of {aiTotal}{' '}
-                illustrated with original artwork inspired by their contributions.
+                illustrated from real photographs.
               </p>
             </div>
             <div className={styles.bandActions}>
@@ -163,8 +163,8 @@ export default function Home() {
                 One hundred and eighty years of it: the first compiler, the first assembler,
                 the ARM instruction set, the Apollo guidance software, and the code of
                 conduct in your repository. {builders.length} cards, {wIllustrated} of{' '}
-                {wTotal} illustrated with original artwork inspired by their contributions.
-                Series One has forty-seven cards and no women on any of them, which is the reason this set exists.
+                {wTotal} illustrated from real photographs. Series One has forty-seven cards
+                and no women on any of them, which is the reason this set exists.
               </p>
             </div>
             <div className={styles.bandActions}>
@@ -186,7 +186,7 @@ export default function Home() {
                 person who decided it would be built, and whether it would be given away:
                 the billion dollars IBM put behind Linux, Java under the GPL, the GitHub
                 acquisition. {executives.length} cards, {cIllustrated} of {cTotal}{' '}
-                illustrated with original artwork inspired by their contributions.
+                illustrated from real photographs.
               </p>
             </div>
             <div className={styles.bandActions}>
