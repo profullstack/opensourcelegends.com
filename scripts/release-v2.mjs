@@ -16,7 +16,7 @@ node scripts/release-v2.mjs [build|validate|activate] [options]
 
   --dry-run                  Print the exact roster/config; no writes or API calls
   --background               Persist and poll long-running Astra requests
-  --concurrency N            Cards to build at once (1–16; default 1)
+  --concurrency N            Cards to build at once (1–64; default 1)
   --series all|legends|hacking|security|gods|women|ceos (comma-separated)
   --only 1,2                 Card numbers, with exactly one series
   --limit N                  Build a proof subset (requires --allow-partial to activate)
@@ -54,7 +54,7 @@ export function optionsFrom(argv, env = process.env, root = ROOT) {
   const limit = values.limit === undefined ? null : Number(values.limit);
   if (limit !== null && (!Number.isSafeInteger(limit) || limit < 1)) throw new Error('--limit must be a positive integer');
   const concurrency = Number(values.concurrency);
-  if (!Number.isSafeInteger(concurrency) || concurrency < 1 || concurrency > 16) throw new Error('--concurrency must be an integer from 1 to 16');
+  if (!Number.isSafeInteger(concurrency) || concurrency < 1 || concurrency > 64) throw new Error('--concurrency must be an integer from 1 to 64');
   if (!['svg', 'png'].includes(values.format)) throw new Error('--format must be svg or png');
   const effort = env.OPENAI_REASONING_EFFORT ?? 'xhigh';
   if (!['low', 'medium', 'high', 'xhigh', 'max'].includes(effort)) throw new Error('Invalid OPENAI_REASONING_EFFORT (extra-high is xhigh)');

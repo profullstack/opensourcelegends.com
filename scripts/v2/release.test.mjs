@@ -25,7 +25,7 @@ test('CLI defaults and identifiers; rejects typos, unsafe bases and invalid scop
   const o = options('/tmp/example');
   assert.equal(o.format, 'svg'); assert.equal(o.textModel, 'gpt-6-astra'); assert.equal(o.effort, 'xhigh'); assert.equal(o.imageModel, 'gpt-image-2');
   assert.ok(!JSON.stringify(publicConfig(o)).includes('test-not-a-real-key'));
-  for (const args of [['--concurrency', '0'], ['--concurrency', '17'], ['--concurrency', '1.5'], ['--limit', '0'], ['--format', 'pdf'], ['--seriez', 'legends'], ['--only', 'no'], ['--series', 'all', '--only', '2']]) assert.throws(() => options('/tmp/example', args));
+  for (const args of [['--concurrency', '0'], ['--concurrency', '65'], ['--concurrency', '1.5'], ['--limit', '0'], ['--format', 'pdf'], ['--seriez', 'legends'], ['--only', 'no'], ['--series', 'all', '--only', '2']]) assert.throws(() => options('/tmp/example', args));
   assert.throws(() => options('/tmp/example', [], { OPENAI_BASE_URL: 'http://example.com/v1' }));
 });
 test('NicheDB requires person identity plus corroboration, excluding mixed search results', () => {

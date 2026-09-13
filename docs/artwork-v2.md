@@ -152,7 +152,7 @@ directory. If the process is killed, verify it has stopped before removing its
 stale lock file and resuming.
 
 Requests have timeouts and bounded retries for transient failures. Generation is
-sequential by default; `--concurrency N` permits 1–16 cards at once while preserving
+sequential by default; `--concurrency N` permits 1–64 cards at once while preserving
 roster order and serializing manifest writes. Adjust concurrency to your account's
 rate limits. Changing concurrency does not invalidate artwork checkpoints.
 

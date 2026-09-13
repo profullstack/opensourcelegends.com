@@ -43,9 +43,9 @@ const CRITERIA = [
     body: 'Series Two documents the people who broke things. This one documents the people whose job was to hold. A name in Hacking Legends cannot also be here.',
   },
   {
-    tag: 'Real faces',
-    head: 'No invented likenesses',
-    body: 'A portrait is painted from an identified photograph of that person, credited to the photographer. Where no properly licensed photo exists, the card carries no face. An earlier version of this set generated faces from text alone; those were fabrications and they were withdrawn.',
+    tag: 'Original art',
+    head: 'Inspired by the work',
+    body: 'Edition 2 uses original illustrations inspired by each person’s contributions. The art interprets their work; names, biographies and sources remain separately typeset and documented.',
   },
 ];
 
@@ -70,11 +70,8 @@ export default function SecurityProfessionalsPage() {
             line rather than crossing it.
           </p>
           <p className={styles.warning}>
-            Every portrait here is painted from a real, identified photograph of the person,
-            and the photographer is credited on the card. {totalPlanned - illustratedCount} of
-            the {totalPlanned} have no freely-licensed photograph we could find, so those cards
-            carry no face rather than an invented one. If you can point us at a properly
-            licensed photo of someone, that is the single most useful thing you can contribute.
+            Edition 2 pairs each person with original artwork inspired by their contributions.
+            Explore the card pages for the illustrations, biographies and sources behind the set.
           </p>
           <div className={styles.actions}>
             <a href={site.github} target="_blank" rel="noreferrer" className="btn-primary">
@@ -107,7 +104,7 @@ export default function SecurityProfessionalsPage() {
               <span className={`${styles.barVal} mono`}>{lockedCount}/{totalPlanned}</span>
             </div>
             <div className={styles.barRow}>
-              <span className={styles.barLabel}>Portraits from a verified photo</span>
+              <span className={styles.barLabel}>Artwork rendered</span>
               <span className={styles.barTrack}>
                 <span
                   className={styles.barFill}
@@ -121,10 +118,7 @@ export default function SecurityProfessionalsPage() {
           <aside className={styles.aside}>
             <h2 className={styles.asideHead}>What ships next</h2>
             <ol className={styles.steps}>
-              <li>
-                Find licensed photographs for the {totalPlanned - illustratedCount} cards with
-                no face. Pull requests welcome, and so are pointers.
-              </li>
+              <li>Review the new artwork and the sources behind each contribution.</li>
               <li>Take nominations and re-cut any slot the argument goes against.</li>
               <li>Re-render any card whose copy or stat line changes in review.</li>
               <li>Print run and packs, alongside the open-licensed downloads.</li>
