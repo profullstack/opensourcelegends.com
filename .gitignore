@@ -52,3 +52,7 @@ dist/women/
 # Tech CEOs (Series Six) working dirs.
 #   node scripts/ceo-cards.mjs all
 dist/ceos/
+
+# V2 staging includes paid-art checkpoints. Keep this directory between runs;
+# activation copies the versioned deliverables to public/releases/v2/ for commit.
+dist/releases/

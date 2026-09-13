@@ -255,3 +255,16 @@ pull request.
 Card art and data are **CC BY-SA 4.0**. Code is MIT.
 
 A [Profullstack](https://profullstack.com) project.
+
+## Artwork and card data v2
+
+Build a new edition with native SVG artwork by default, Astra 6 at `xhigh`,
+NicheDB metadata and optional GPT Image 2 PNG output:
+
+```bash
+pnpm release:v2 --dry-run
+pnpm release:v2 --series legends --only 2 --out dist/releases/v2-proof
+```
+
+See [the v2 workflow](docs/artwork-v2.md) for full-edition builds, PNG fallback,
+resume behavior, visual review, validation and local activation.
