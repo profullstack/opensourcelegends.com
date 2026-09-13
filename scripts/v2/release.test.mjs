@@ -25,7 +25,7 @@ test('CLI defaults and identifiers; rejects typos, unsafe bases and invalid scop
   const o = options('/tmp/example');
   assert.equal(o.format, 'svg'); assert.equal(o.textModel, 'gpt-6-astra'); assert.equal(o.effort, 'xhigh'); assert.equal(o.imageModel, 'gpt-image-2');
   assert.ok(!JSON.stringify(publicConfig(o)).includes('test-not-a-real-key'));
-  for (const args of [['--limit', '0'], ['--format', 'pdf'], ['--seriez', 'legends'], ['--only', 'no'], ['--series', 'all', '--only', '2']]) assert.throws(() => options('/tmp/example', args));
+  for (const args of [['--concurrency', '0'], ['--concurrency', '65'], ['--concurrency', '1.5'], ['--limit', '0'], ['--format', 'pdf'], ['--seriez', 'legends'], ['--only', 'no'], ['--series', 'all', '--only', '2']]) assert.throws(() => options('/tmp/example', args));
   assert.throws(() => options('/tmp/example', [], { OPENAI_BASE_URL: 'http://example.com/v1' }));
 });
 test('NicheDB requires person identity plus corroboration, excluding mixed search results', () => {
@@ -74,6 +74,59 @@ test('PNG fallback is opt-in, runs after failed SVG repair, and does not retry a
   let refused = 0;
   await assert.rejects(generateArt(CARD, RESEARCH, o, { fetcher: async () => { refused++; return reply({ status: 'completed', output: [{ content: [{ type: 'refusal' }] }] }); } }), /declined/);
   assert.equal(refused, 1);
+});
+test('background generation resumes the same paid request after polling fails and caches completed output', async (t) => {
+  const out = await temp(t);
+  const o = options(out, ['--background']);
+  let posts = 0; let gets = 0; let unavailable = true;
+  const deps = { pause: async () => {}, fetcher: async (url, init) => {
+    if (init.method === 'POST') {
+      posts++;
+      const body = JSON.parse(init.body);
+      assert.equal(body.background, true); assert.equal(body.store, true);
+      assert.equal(body.model, 'gpt-6-astra'); assert.equal(body.reasoning.effort, 'xhigh');
+      return reply({ id: 'resp_test', status: 'queued' });
+    }
+    gets++; assert.match(url, /\/responses\/resp_test$/);
+    return unavailable ? reply({}, 503) : textReply(VECTOR);
+  } };
+  await assert.rejects(generateArt(CARD, RESEARCH, o, deps), /HTTP 503/);
+  assert.equal(posts, 1);
+  unavailable = false;
+  assert.equal((await generateArt(CARD, RESEARCH, o, deps)).format, 'svg');
+  assert.equal(posts, 1);
+  const polled = gets;
+  await generateArt(CARD, RESEARCH, o, deps);
+  assert.equal(posts, 1); assert.equal(gets, polled);
+  await generateArt(CARD, RESEARCH, { ...o, force: true }, deps);
+  assert.equal(posts, 2);
+});
+test('background submission does not retry an ambiguous network failure', async (t) => {
+  let posts = 0;
+  await assert.rejects(generateArt(CARD, RESEARCH, options(await temp(t), ['--background']), {
+    fetcher: async () => { posts++; throw new TypeError('network disconnected'); }, pause: async () => {},
+  }), /Request failed/);
+  assert.equal(posts, 1);
+});
+test('concurrent builds preserve roster order and resume only failed cards', async (t) => {
+  const out = await temp(t); let active = 0; let peak = 0; let fail = true;
+  const roster = Array.from({ length: 6 }, (_, i) => ({ ...CARD, id: `legends/00${i + 1}-person-${i + 1}`, number: i + 1, slug: `person-${i + 1}` }));
+  const calls = [];
+  const deps = { ...dependencies, load: async () => roster, art: async (c) => {
+    calls.push(c.id); active++; peak = Math.max(peak, active);
+    await new Promise((resolve) => setTimeout(resolve, (7 - c.number) * 5));
+    active--;
+    if (c.number === 2 && fail) throw new Error('temporary card failure');
+    return art();
+  } };
+  const o = options(out, ['--concurrency', '3']);
+  await assert.rejects(buildRelease(o, deps), /incomplete/);
+  assert.equal(peak, 3);
+  fail = false;
+  const release = await buildRelease(o, deps);
+  assert.deepEqual(release.records.map((r) => r.card.id), roster.map((c) => c.id));
+  assert.equal(calls.length, 7);
+  await validateRelease(out);
 });
 test('dry-run makes no writes or remote calls', async (t) => {
   const dir = await temp(t); const out = path.join(dir, 'does-not-exist');

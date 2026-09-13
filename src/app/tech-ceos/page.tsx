@@ -52,7 +52,6 @@ const CRITERIA = [
 
 export default function TechCeosPage() {
   const pct = Math.round((draftedCount / totalPlanned) * 100);
-  const faceless = totalPlanned - illustratedCount;
 
   return (
     <>
@@ -107,7 +106,7 @@ export default function TechCeosPage() {
               <span className={`${styles.barVal} mono`}>{lockedCount}/{totalPlanned}</span>
             </div>
             <div className={styles.barRow}>
-              <span className={styles.barLabel}>Portraits from a verified photo</span>
+              <span className={styles.barLabel}>Artwork rendered</span>
               <span className={styles.barTrack}>
                 <span
                   className={styles.barFill}
@@ -121,13 +120,7 @@ export default function TechCeosPage() {
           <aside className={styles.aside}>
             <h2 className={styles.asideHead}>What ships next</h2>
             <ol className={styles.steps}>
-              {faceless > 0 && (
-                <li>
-                  Find a verifiable photograph for the {faceless === 1 ? 'one card' : `${faceless} cards`} with
-                  no face. A profile picture on an account we cannot tie to a real name does
-                  not count.
-                </li>
-              )}
+              <li>Review the new artwork and the sources behind each contribution.</li>
               <li>Take nominations and re-cut any slot the argument goes against.</li>
               <li>Re-render any card whose copy or stat line changes in review.</li>
               <li>Print run and packs, alongside the open-licensed downloads.</li>

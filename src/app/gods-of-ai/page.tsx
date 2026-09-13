@@ -43,15 +43,14 @@ const CRITERIA = [
     body: 'Every card links the artefact behind the claim — the arXiv entry, the GitHub repository, the prize citation. If we cannot link it, it does not go on the card.',
   },
   {
-    tag: 'Real faces',
-    head: 'No invented likenesses',
-    body: 'A portrait is painted from an identified photograph of that person, credited to the photographer or the source. Where none exists, the card carries no face rather than a fabrication.',
+    tag: 'Original art',
+    head: 'Inspired by the work',
+    body: 'Edition 2 uses original illustrations inspired by each person’s contributions. Each card pairs an interpretation of their work with a documented biography and sources.',
   },
 ];
 
 export default function GodsOfAiPage() {
   const pct = Math.round((draftedCount / totalPlanned) * 100);
-  const faceless = totalPlanned - illustratedCount;
 
   return (
     <>
@@ -71,11 +70,8 @@ export default function GodsOfAiPage() {
             deliberately toward those who gave the work away.
           </p>
           <p className={styles.warning}>
-            Every portrait here is painted from a real, identified photograph, and the
-            source is credited on the card.{' '}
-            {faceless > 0
-              ? `${faceless} of the ${totalPlanned} have no photograph we could verify, so those cards carry no face rather than an invented one. Point us at a licensed photo and that changes.`
-              : 'All of them have one.'}
+            Edition 2 pairs each person with original artwork inspired by their contributions.
+            Explore the card pages for the illustrations, biographies and sources behind the set.
           </p>
           <div className={styles.actions}>
             <a href={site.github} target="_blank" rel="noreferrer" className="btn-primary">
@@ -108,7 +104,7 @@ export default function GodsOfAiPage() {
               <span className={`${styles.barVal} mono`}>{lockedCount}/{totalPlanned}</span>
             </div>
             <div className={styles.barRow}>
-              <span className={styles.barLabel}>Portraits from a verified photo</span>
+              <span className={styles.barLabel}>Artwork rendered</span>
               <span className={styles.barTrack}>
                 <span
                   className={styles.barFill}
@@ -122,12 +118,7 @@ export default function GodsOfAiPage() {
           <aside className={styles.aside}>
             <h2 className={styles.asideHead}>What ships next</h2>
             <ol className={styles.steps}>
-              {faceless > 0 && (
-                <li>
-                  Find licensed photographs for the {faceless} cards with no face. Pointers
-                  are as welcome as pull requests.
-                </li>
-              )}
+              <li>Review the new artwork and the sources behind each contribution.</li>
               <li>Take nominations and re-cut any slot the argument goes against.</li>
               <li>Re-render any card whose copy or stat line changes in review.</li>
               <li>Print run and packs, alongside the open-licensed downloads.</li>

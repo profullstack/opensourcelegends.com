@@ -15,6 +15,8 @@ const HELP = `Open Source Legends v2 — native SVG art and sourced NicheDB meta
 node scripts/release-v2.mjs [build|validate|activate] [options]
 
   --dry-run                  Print the exact roster/config; no writes or API calls
+  --background               Persist and poll long-running Astra requests
+  --concurrency N            Cards to build at once (1–64; default 1)
   --series all|legends|hacking|security|gods|women|ceos (comma-separated)
   --only 1,2                 Card numbers, with exactly one series
   --limit N                  Build a proof subset (requires --allow-partial to activate)
@@ -40,7 +42,7 @@ it does not create a git tag, GitHub release, merge, or deploy the site.
 export function optionsFrom(argv, env = process.env, root = ROOT) {
   const { values, positionals } = parseArgs({ args: argv, allowPositionals: true, options: {
     series: { type: 'string', default: 'all' }, only: { type: 'string' }, limit: { type: 'string' }, format: { type: 'string', default: 'svg' }, out: { type: 'string' },
-    'dry-run': { type: 'boolean' }, 'png-fallback': { type: 'boolean' }, 'png-copies': { type: 'boolean' }, offline: { type: 'boolean' },
+    'dry-run': { type: 'boolean' }, background: { type: 'boolean' }, concurrency: { type: 'string', default: '1' }, 'png-fallback': { type: 'boolean' }, 'png-copies': { type: 'boolean' }, offline: { type: 'boolean' },
     'allow-missing-metadata': { type: 'boolean' }, force: { type: 'boolean' }, 'allow-partial': { type: 'boolean' }, help: { type: 'boolean' },
   } });
   const command = positionals[0] ?? 'build';
@@ -51,6 +53,8 @@ export function optionsFrom(argv, env = process.env, root = ROOT) {
   if (values.only !== undefined && (series.length !== 1 || only.some((n) => !Number.isSafeInteger(n) || n < 1))) throw new Error('--only requires positive card numbers and one series');
   const limit = values.limit === undefined ? null : Number(values.limit);
   if (limit !== null && (!Number.isSafeInteger(limit) || limit < 1)) throw new Error('--limit must be a positive integer');
+  const concurrency = Number(values.concurrency);
+  if (!Number.isSafeInteger(concurrency) || concurrency < 1 || concurrency > 64) throw new Error('--concurrency must be an integer from 1 to 64');
   if (!['svg', 'png'].includes(values.format)) throw new Error('--format must be svg or png');
   const effort = env.OPENAI_REASONING_EFFORT ?? 'xhigh';
   if (!['low', 'medium', 'high', 'xhigh', 'max'].includes(effort)) throw new Error('Invalid OPENAI_REASONING_EFFORT (extra-high is xhigh)');
@@ -63,7 +67,7 @@ export function optionsFrom(argv, env = process.env, root = ROOT) {
   const maxOutputTokens = Number(env.OPENAI_MAX_OUTPUT_TOKENS ?? 48000);
   if (!Number.isSafeInteger(maxOutputTokens) || maxOutputTokens < 1024 || maxOutputTokens > 128000) throw new Error('OPENAI_MAX_OUTPUT_TOKENS must be 1024–128000');
   return { root, command, help: values.help, series, only, limit, format: values.format, out: path.resolve(root, values.out ?? 'dist/releases/v2'),
-    dryRun: !!values['dry-run'], pngFallback: !!values['png-fallback'], pngCopies: !!values['png-copies'], offline: !!values.offline,
+    dryRun: !!values['dry-run'], background: !!values.background, concurrency, pngFallback: !!values['png-fallback'], pngCopies: !!values['png-copies'], offline: !!values.offline,
     allowMissingMetadata: !!values['allow-missing-metadata'], force: !!values.force, allowPartial: !!values['allow-partial'],
     apiKey: env.OPENAI_API_KEY, nicheKey: env.NICHEDB_API_KEY, textModel: env.OPENAI_TEXT_MODEL ?? 'gpt-6-astra', imageModel: env.OPENAI_IMAGE_MODEL ?? 'gpt-image-2', effort, apiBase, nicheBase, maxOutputTokens };
 }
@@ -173,14 +177,29 @@ export async function buildRelease(options, deps = {}) {
     }
     const manifest = { ...plan, status: 'incomplete', startedAt: new Date().toISOString(), records: [], failures: [] };
     await atomicWrite(manifestFile, manifest);
-    for (const [index, card] of selected.entries()) {
-      try {
-        const { resumed, ...record } = await buildCard(card, options, deps);
-        manifest.records.push(record);
-        console.log(`[${index + 1}/${selected.length}] ${resumed ? 'resumed' : 'built'} ${card.id} (${record.art.format}; NicheDB ${record.card.research.status})`);
-      } catch (error) { manifest.failures.push({ id: card.id, error: error.message }); console.error(`${card.id}: ${error.message}`); }
-      await atomicWrite(manifestFile, manifest);
-    }
+    const records = new Array(selected.length);
+    let nextIndex = 0;
+    let writes = Promise.resolve();
+    const worker = async () => {
+      while (nextIndex < selected.length) {
+        const index = nextIndex++;
+        const card = selected[index];
+        try {
+          const { resumed, ...record } = await buildCard(card, options, deps);
+          records[index] = record;
+          console.log(`[${index + 1}/${selected.length}] ${resumed ? 'resumed' : 'built'} ${card.id} (${record.art.format}; NicheDB ${record.card.research.status})`);
+        } catch (error) { manifest.failures.push({ id: card.id, error: error.message }); console.error(`${card.id}: ${error.message}`); }
+        // Serialize manifest writes and preserve roster order despite completion order.
+        writes = writes.then(async () => {
+          manifest.records = records.filter(Boolean);
+          await atomicWrite(manifestFile, manifest);
+        });
+        await writes;
+      }
+    };
+    const workers = await Promise.allSettled(Array.from({ length: Math.min(options.concurrency ?? 1, selected.length) }, worker));
+    const failedWorker = workers.find((result) => result.status === 'rejected');
+    if (failedWorker) throw failedWorker.reason;
     const cards = manifest.records.map((r) => r.card);
     await atomicWrite(path.join(options.out, 'cards.json'), { schemaVersion: 2, edition: 2, cards });
     await atomicWrite(path.join(options.out, 'index.html'), reviewHTML(cards));
