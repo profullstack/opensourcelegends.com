@@ -12,9 +12,21 @@ export const PORTRAIT_SETS = {
   ceos: ['tech-ceos', 'ceo-references.json'],
 };
 
-// Reuse the approved pixels. Rendering a new card must never replace its person
-// with an invented face or a text-prompt interpretation of their contributions.
-export async function loadPortrait(card, root) {
+export async function loadPortraitEdits(file) {
+  const manifest = JSON.parse(await fs.readFile(file, 'utf8'));
+  if (manifest.schemaVersion !== 1 || manifest.status !== 'complete' || !manifest.expectedIds?.length ||
+      manifest.records?.length !== manifest.expectedIds.length ||
+      new Set(manifest.expectedIds).size !== manifest.expectedIds.length ||
+      new Set(manifest.records.map((r) => r.id)).size !== manifest.records.length ||
+      manifest.records.some((r) => !manifest.expectedIds.includes(r.id) || r.reviewed !== true)) {
+    throw new Error('Portrait edits must be complete, unique and visually reviewed');
+  }
+  return new Map(manifest.records.map((r) => [r.id, r]));
+}
+
+// A new painting must remain tied to the original source and its photo credit.
+// The renderer never commissions a face from a name or other text-only input.
+export async function loadPortrait(card, root, edits = null) {
   const set = PORTRAIT_SETS[card.series];
   if (!set || !Number.isSafeInteger(card.number) || card.number < 1) throw new Error('Invalid portrait identity');
   const relative = `assets/portraits/${set[0]}/card_${String(card.number).padStart(3, '0')}.png`;
@@ -34,5 +46,22 @@ export async function loadPortrait(card, root) {
     if (!entry?.ref) throw new Error(`Approved portrait has no matching source credit: ${card.id}`);
     reference = entry.ref;
   }
-  return { bytes, format: 'png', source: { status: 'approved', file: relative, sha256: hash(bytes), reference } };
+  const original = { status: 'approved', file: relative, sha256: hash(bytes), reference };
+  if (!edits) return { bytes, format: 'png', source: original };
+  const edit = edits.get(card.id);
+  if (!edit || edit.source !== relative || edit.sourceSHA256 !== original.sha256 || edit.reviewed !== true) {
+    throw new Error(`Missing, unreviewed or mismatched source portrait edit: ${card.id}`);
+  }
+  const expectedFile = `assets/portraits-v2/${card.id}.png`;
+  if (edit.file !== expectedFile) throw new Error(`Unexpected edited portrait path: ${card.id}`);
+  const edited = await fs.readFile(path.join(root, expectedFile));
+  const info = await sharp(edited).metadata();
+  if (info.format !== 'png' || info.width > 4096 || info.height > 4096 || hash(edited) !== edit.sha256 || edit.sha256 === original.sha256) {
+    throw new Error(`Invalid or unchanged portrait edit: ${card.id}`);
+  }
+  return { bytes: edited, format: 'png', source: {
+    status: 'approved', file: expectedFile, sha256: edit.sha256, reference,
+    method: 'image-edit', basis: { file: relative, sha256: original.sha256 },
+    edit: { tool: 'image_gen', prompt: edit.prompt, promptSHA256: edit.promptSHA256, generatedAt: edit.generatedAt, reviewed: true },
+  } };
 }

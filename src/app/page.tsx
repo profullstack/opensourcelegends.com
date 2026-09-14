@@ -42,7 +42,7 @@ export default function Home() {
             {fan.map((c, i) => (
               <div key={c.slug} className={styles.fanCard} data-pos={i}>
                 {/* eslint-disable-next-line @next/next/no-img-element */}
-                <img src={`${c.front}?v=g1`} alt="" className={styles.fanImg} loading="eager" />
+                <img src={`${c.front}?v=v2-painted-20260914`} alt="" className={styles.fanImg} loading="eager" />
               </div>
             ))}
           </div>

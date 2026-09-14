@@ -6,6 +6,9 @@ import type { RosterEntry } from '@/data/roster';
 import { rarityLabel, statusLabel } from '@/data/roster';
 import styles from './RosterCard.module.css';
 
+// Match CardFlip and CardDetail when the portrait artwork changes.
+const CARD_VERSION = 'v2-painted-20260914';
+
 function host(url: string) {
   try {
     return new URL(url).hostname.replace(/^www\./, '');
@@ -70,7 +73,7 @@ export default function RosterCard({
         {hacker.front ? (
           <span className={styles.art}>
             {/* eslint-disable-next-line @next/next/no-img-element */}
-            <img src={hacker.front} alt={`${hacker.name} card front`} loading="lazy" width={500} height={745} />
+            <img src={`${hacker.front}?v=${CARD_VERSION}`} alt={`${hacker.name} card front`} loading="lazy" width={500} height={745} />
           </span>
         ) : (
           <span className={styles.plate} aria-hidden>

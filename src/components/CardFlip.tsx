@@ -5,7 +5,7 @@ import type { Card } from '@/data/cards';
 import styles from './CardFlip.module.css';
 
 // bump on every card re-render to bust browser/CDN cache (filenames stay stable)
-const CARD_VERSION = 'g1';
+const CARD_VERSION = 'v2-painted-20260914';
 
 export default function CardFlip({ card }: { card: Card }) {
   const [flipped, setFlipped] = useState(false);

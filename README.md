@@ -258,15 +258,17 @@ A [Profullstack](https://profullstack.com) project.
 
 ## Artwork and card data v2
 
-Edition 2 uses the existing approved portrait PNGs in `assets/portraits/`.
+Edition 2 uses new painted portraits edited from the approved PNGs in
+`assets/portraits/`. The new artwork and input-image provenance are saved in
+`assets/portraits-v2/`.
 The 277-card roster has 246 portraits and 31 explicit portrait-pending cards.
 Faces, portrait files, source credits, card data and a review gallery are published
-in `public/releases/v2/`. The portrait pixels are preserved; names and factual
-copy are typeset separately.
+in `public/releases/v2/`. The original likeness and photo basis are preserved; names and factual copy
+are typeset separately.
 
 ```bash
 pnpm release:v2 --dry-run
-pnpm release:v2 --series legends --only 2 --offline --out dist/releases/v2-proof
+pnpm release:v2 --series legends --only 2 --offline --portrait-edits assets/portraits-v2/manifest.json --out dist/releases/v2-proof
 ```
 
 The release builder makes no image-generation calls. `--offline` also skips

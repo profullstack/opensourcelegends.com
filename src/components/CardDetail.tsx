@@ -4,7 +4,7 @@ import { site } from '@/data/site';
 import styles from './CardDetail.module.css';
 
 // Bumped alongside CardFlip so a re-render of the art shows up without a hard refresh.
-const CARD_VERSION = 'g1';
+const CARD_VERSION = 'v2-painted-20260914';
 
 export type DetailStat = { label: string; value: number };
 export type DetailSource = { label: string; url: string };
@@ -247,7 +247,7 @@ export default function CardDetail(props: CardDetailProps) {
               <div className={styles.block}>
                 <h2 className={styles.blockHead}>Edition 2 artwork</h2>
                 <p className={styles.note}>
-                  Portrait artwork from the collection’s existing sources, in the edition 2 card layout.{' '}
+                  Portrait artwork painted from the collection’s original portrait sources.{' '}
                   <a href={`/releases/v2/index.html#${front.replace('/releases/v2/', '').replace(/\/front\.(svg|png)$/, '')}`}>
                     View the artwork and sources
                   </a>

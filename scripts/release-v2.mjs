@@ -8,7 +8,7 @@ import sharp from 'sharp';
 import ts from 'typescript';
 import { SERIES, PIPELINE_VERSION, atomicWrite, hash, json, loadCards, renderFaces, validateSVG, escapeXML, safeURL } from './v2/core.mjs';
 import { researchCard, enrichCard } from './v2/providers.mjs';
-import { loadPortrait } from './v2/portraits.mjs';
+import { loadPortrait, loadPortraitEdits } from './v2/portraits.mjs';
 
 const ROOT = path.resolve(path.dirname(fileURLToPath(import.meta.url)), '..');
 const HELP = `Open Source Legends v2 — approved portrait artwork and sourced NicheDB metadata
@@ -22,6 +22,7 @@ node scripts/release-v2.mjs [build|validate|activate] [options]
   --limit N                  Build a proof subset (requires --allow-partial to activate)
   --format svg|png           Card face format; default png. Portrait pixels are preserved.
   --png-copies               Also export raster copies of SVG card faces
+  --portrait-edits PATH      Complete, reviewed edits tied to the original portraits
   --offline                  Skip NicheDB; render entirely from local portrait files
   --allow-missing-metadata   Record NicheDB failures instead of failing the card
   --force                    Re-render from the approved portrait files
@@ -39,7 +40,7 @@ export function optionsFrom(argv, env = process.env, root = ROOT) {
   const { values, positionals } = parseArgs({ args: argv, allowPositionals: true, options: {
     series: { type: 'string', default: 'all' }, only: { type: 'string' }, limit: { type: 'string' }, format: { type: 'string', default: 'png' }, out: { type: 'string' },
     'dry-run': { type: 'boolean' }, concurrency: { type: 'string', default: '1' }, 'png-copies': { type: 'boolean' }, offline: { type: 'boolean' },
-    'allow-missing-metadata': { type: 'boolean' }, force: { type: 'boolean' }, 'allow-partial': { type: 'boolean' }, help: { type: 'boolean' },
+    'allow-missing-metadata': { type: 'boolean' }, 'portrait-edits': { type: 'string' }, force: { type: 'boolean' }, 'allow-partial': { type: 'boolean' }, help: { type: 'boolean' },
   } });
   const command = positionals[0] ?? 'build';
   if (positionals.length > 1 || !['build', 'validate', 'activate'].includes(command)) throw new Error('Expected build, validate, or activate');
@@ -60,11 +61,12 @@ export function optionsFrom(argv, env = process.env, root = ROOT) {
   return { root, command, help: values.help, series, only, limit, format: values.format, out: path.resolve(root, values.out ?? 'dist/releases/v2'),
     dryRun: !!values['dry-run'], concurrency, pngCopies: !!values['png-copies'], offline: !!values.offline,
     allowMissingMetadata: !!values['allow-missing-metadata'], force: !!values.force, allowPartial: !!values['allow-partial'],
+    portraitEdits: values['portrait-edits'] ? path.resolve(root, values['portrait-edits']) : null,
     nicheKey: env.NICHEDB_API_KEY, nicheBase };
 }
 export function publicConfig(options) {
   const { format, pngCopies, offline, allowMissingMetadata, nicheBase } = options;
-  return { pipeline: PIPELINE_VERSION, artworkSource: 'approved-portrait', format, pngCopies, offline, allowMissingMetadata, nicheBase };
+  return { pipeline: PIPELINE_VERSION, artworkSource: options.portraitEdits ? 'source-portrait-edit' : 'approved-portrait', format, pngCopies, offline, allowMissingMetadata, nicheBase };
 }
 const exists = async (file) => fs.access(file).then(() => true, () => false);
 function inside(root, relative) {
@@ -85,7 +87,7 @@ async function buildCard(baseCard, options, deps) {
   const config = publicConfig(options);
   // Activation changes only these paths. Source pixel/credit changes invalidate the checkpoint.
   const { front: oldFront, back: oldBack, ...sourceCard } = baseCard;
-  const portrait = deps.art ? null : await loadPortrait(baseCard, options.root);
+  const portrait = deps.art ? null : await loadPortrait(baseCard, options.root, deps.portraitEdits);
   const fingerprint = hash({ sourceCard, portrait: portrait?.source, config });
   const dir = inside(options.out, baseCard.id);
   const recordFile = path.join(dir, 'record.json');
@@ -147,7 +149,7 @@ async function buildCard(baseCard, options, deps) {
 }
 
 function reviewHTML(cards) {
-  return `<!doctype html><html lang="en"><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Open Source Legends — v2 proof</title><style>body{background:#10141c;color:#fff;font:16px system-ui;margin:32px}h1{font-weight:500}main{display:grid;grid-template-columns:repeat(auto-fit,minmax(310px,1fr));gap:24px}article{border-top:1px solid #475467;padding-top:16px}img{width:49%;height:auto}a{color:#64efb4}small{color:#abb8ca}</style><h1>Open Source Legends / Edition 2</h1><p>Review the artwork, original card copy and sourced metadata before activating this edition. <a href="cards.json">Card data</a> · <a href="manifest.json">Release manifest</a></p><main>${cards.map((c) => `<article id="${escapeXML(c.id)}"><h2>${escapeXML(c.name)}</h2><img loading="lazy" src="${escapeXML(c.id)}/front.${c.faceFormat ?? c.artworkFormat}" alt="${escapeXML(c.name)} front"><img loading="lazy" src="${escapeXML(c.id)}/back.${c.faceFormat ?? c.artworkFormat}" alt="${escapeXML(c.name)} back"><p><small>${escapeXML(c.series)} · ${(c.faceFormat ?? c.artworkFormat).toUpperCase()} · ${c.portrait?.status === 'pending' ? 'Portrait pending' : 'Existing portrait artwork'} · NicheDB: ${escapeXML(c.research.status)}</small></p>${c.portrait?.reference ? `<p>Portrait source: ${escapeXML(c.portrait.reference.credit)} · ${escapeXML(c.portrait.reference.license)}${safeURL(c.portrait.reference.sourceUrl) ? ` · <a href="${escapeXML(c.portrait.reference.sourceUrl)}">Source photograph</a>` : ''}</p>` : ''}<ul>${c.research.matches.map((m) => `<li><a href="${escapeXML(m.url)}">${escapeXML(m.title)}</a> — ${escapeXML(m.summary)}</li>`).join('')}</ul></article>`).join('')}</main></html>`;
+  return `<!doctype html><html lang="en"><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Open Source Legends — v2 proof</title><style>body{background:#10141c;color:#fff;font:16px system-ui;margin:32px}h1{font-weight:500}main{display:grid;grid-template-columns:repeat(auto-fit,minmax(310px,1fr));gap:24px}article{border-top:1px solid #475467;padding-top:16px}img{width:49%;height:auto}a{color:#64efb4}small{color:#abb8ca}</style><h1>Open Source Legends / Edition 2</h1><p>Review the artwork, original card copy and sourced metadata before activating this edition. <a href="cards.json">Card data</a> · <a href="manifest.json">Release manifest</a></p><main>${cards.map((c) => `<article id="${escapeXML(c.id)}"><h2>${escapeXML(c.name)}</h2><img loading="lazy" src="${escapeXML(c.id)}/front.${c.faceFormat ?? c.artworkFormat}" alt="${escapeXML(c.name)} front"><img loading="lazy" src="${escapeXML(c.id)}/back.${c.faceFormat ?? c.artworkFormat}" alt="${escapeXML(c.name)} back"><p><small>${escapeXML(c.series)} · ${(c.faceFormat ?? c.artworkFormat).toUpperCase()} · ${c.portrait?.status === 'pending' ? 'Portrait pending' : c.portrait?.method === 'image-edit' ? 'New painting from the original portrait' : 'Existing portrait artwork'} · NicheDB: ${escapeXML(c.research.status)}</small></p>${c.portrait?.reference ? `<p>Portrait source: ${escapeXML(c.portrait.reference.credit)} · ${escapeXML(c.portrait.reference.license)}${safeURL(c.portrait.reference.sourceUrl) ? ` · <a href="${escapeXML(c.portrait.reference.sourceUrl)}">Source photograph</a>` : ''}</p>` : ''}<ul>${c.research.matches.map((m) => `<li><a href="${escapeXML(m.url)}">${escapeXML(m.title)}</a> — ${escapeXML(m.summary)}</li>`).join('')}</ul></article>`).join('')}</main></html>`;
 }
 export async function buildRelease(options, deps = {}) {
   const all = await (deps.load ?? loadCards)(options.root, options.series);
@@ -158,6 +160,7 @@ export async function buildRelease(options, deps = {}) {
   const config = publicConfig(options);
   const plan = { edition: 2, config, expectedIds: selected.map((c) => c.id), scope: { series: options.series, partial: selected.length < all.length, count: selected.length } };
   if (options.dryRun) { console.log(JSON.stringify({ ...plan, out: options.out }, null, 2)); return plan; }
+  if (options.portraitEdits) deps = { ...deps, portraitEdits: await loadPortraitEdits(options.portraitEdits) };
   await fs.mkdir(options.out, { recursive: true });
   const lockFile = path.join(options.out, '.build.lock');
   const lock = await fs.open(lockFile, 'wx').catch(() => { throw new Error(`Another build may be running. Inspect ${lockFile}; remove it only if that process has stopped.`); });
@@ -270,7 +273,9 @@ export function updateFacePaths(source, exportName, records) {
 }
 export async function activateRelease(options) {
   const manifest = await validateRelease(options.out);
-  if (manifest.config.artworkSource !== 'approved-portrait' || manifest.records.some((r) => !r.card.portrait)) throw new Error('Only a release built from approved portrait sources can be activated');
+  if (!['approved-portrait', 'source-portrait-edit'].includes(manifest.config.artworkSource) || manifest.records.some((r) => !r.card.portrait)) throw new Error('Only a release built from approved portrait sources can be activated');
+  if (manifest.config.artworkSource === 'source-portrait-edit' && manifest.records.some((r) => r.card.portrait.status !== 'pending' &&
+      (r.card.portrait.method !== 'image-edit' || !r.card.portrait.basis || r.card.portrait.edit?.reviewed !== true))) throw new Error('Every available portrait needs a reviewed source-based edit');
   if (manifest.scope.partial && !options.allowPartial) throw new Error('This is a proof subset; use --allow-partial to activate it intentionally');
   const updates = [];
   for (const series of manifest.scope.series) {

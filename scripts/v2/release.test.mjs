@@ -8,7 +8,7 @@ import ts from 'typescript';
 import { fileURLToPath } from 'node:url';
 import { hash, loadCards, matchRecords, renderFaces, validateSVG } from './core.mjs';
 import { requestJSON, researchCard } from './providers.mjs';
-import { loadPortrait } from './portraits.mjs';
+import { loadPortrait, loadPortraitEdits } from './portraits.mjs';
 import { optionsFrom, publicConfig, buildRelease, validateRelease, activateRelease, updateFacePaths } from '../release-v2.mjs';
 
 const ROOT = path.resolve(path.dirname(fileURLToPath(import.meta.url)), '../..');
@@ -20,6 +20,37 @@ async function temp(t) { const dir = await fs.mkdtemp(path.join(os.tmpdir(), 'le
 function options(out, args = [], env = {}) { return optionsFrom(['--out', out, '--series', 'legends', '--format', 'svg', ...args], { OPENAI_API_KEY: 'test-not-a-real-key', ...env }, ROOT); }
 const art = async () => ({ bytes: Buffer.from(VECTOR), format: 'svg', model: 'test-fixture', source: { status: 'pending' } });
 const dependencies = { load: async () => [CARD], research: async () => RESEARCH, art };
+
+test('new artwork remains tied to its original PNG and an explicitly reviewed edit', async (t) => {
+  const root = await temp(t);
+  const source = 'assets/portraits/legends/card_002.png';
+  const file = `assets/portraits-v2/${CARD.id}.png`;
+  await fs.mkdir(path.dirname(path.join(root, source)), { recursive: true });
+  await fs.mkdir(path.dirname(path.join(root, file)), { recursive: true });
+  const original = await sharp(Buffer.from(VECTOR)).png().toBuffer();
+  const edited = await sharp(original).flip().png().toBuffer();
+  await fs.writeFile(path.join(root, source), original);
+  await fs.writeFile(path.join(root, file), edited);
+  const record = { id: CARD.id, source, sourceSHA256: hash(original), file, sha256: hash(edited), reviewed: true };
+  const edits = new Map([[CARD.id, record]]);
+  const result = await loadPortrait(CARD, root, edits);
+  assert.deepEqual(result.bytes, edited);
+  assert.deepEqual(result.source.basis, { file: source, sha256: hash(original) });
+  assert.equal(result.source.method, 'image-edit');
+  assert.deepEqual(await fs.readFile(path.join(root, source)), original);
+  await assert.rejects(loadPortrait(CARD, root, new Map()), /Missing, unreviewed or mismatched/);
+  for (const change of [{ reviewed: false }, { sourceSHA256: hash('wrong source') }, { file: '../other.png' }, { sha256: hash(original) }]) {
+    await assert.rejects(loadPortrait(CARD, root, new Map([[CARD.id, { ...record, ...change }]])));
+  }
+  const out = path.join(root, 'edits.json');
+  const manifest = { schemaVersion: 1, status: 'complete', expectedIds: [CARD.id], records: [record] };
+  await fs.writeFile(out, JSON.stringify(manifest));
+  assert.equal((await loadPortraitEdits(out)).size, 1);
+  for (const change of [{ status: 'in-progress' }, { records: [] }, { records: [record, record], expectedIds: [CARD.id, CARD.id] }, { records: [{ ...record, reviewed: false }] }]) {
+    await fs.writeFile(out, JSON.stringify({ ...manifest, ...change }));
+    await assert.rejects(loadPortraitEdits(out), /complete, unique and visually reviewed/);
+  }
+});
 
 test('portrait release preserves source PNG bytes, uses no image service, and refreshes when the source changes', async (t) => {
   const root = await temp(t);

@@ -1,9 +1,10 @@
 # Artwork and card data v2
 
-V2 cards depict the people using the collection's existing approved portrait PNGs.
-The release builder preserves those files byte for byte and composes new card
-faces around them. It does not generate faces from names or substitute abstract
-illustrations. All names, biographies, ratings and factual copy remain curated.
+V2 features new painted portraits edited directly from the collection's existing
+approved portrait PNGs. Every new image retains the same person's likeness, pose,
+clothing and photo basis. Original inputs stay in `assets/portraits/`; the new
+paintings and their source records are in `assets/portraits-v2/`. Names, biographies,
+ratings and factual copy remain curated and are typeset separately.
 
 ## Build and review
 
@@ -14,11 +15,11 @@ pnpm install --frozen-lockfile
 pnpm release:v2 --dry-run
 
 # One portrait proof, entirely local and without API credentials.
-pnpm release:v2 --series legends --only 2 --offline --out dist/releases/v2-proof
+pnpm release:v2 --series legends --only 2 --offline --portrait-edits assets/portraits-v2/manifest.json --out dist/releases/v2-proof
 pnpm release:v2 validate --out dist/releases/v2-proof
 
 # Complete edition; offline skips NicheDB as well as all generation services.
-pnpm release:v2 --offline --concurrency 8 --out dist/releases/v2-portraits
+pnpm release:v2 --offline --concurrency 8 --portrait-edits assets/portraits-v2/manifest.json --out dist/releases/v2-portraits
 pnpm release:v2 validate --out dist/releases/v2-portraits
 
 # Inspect index.html before activating the complete edition.
@@ -41,7 +42,7 @@ Legacy abstract releases cannot be activated by the corrected builder.
 | Women in Tech | `assets/portraits/women-in-tech` | `data/women-references.json` | 43 / 50 |
 | Tech CEOs | `assets/portraits/tech-ceos` | `data/ceo-references.json` | 49 / 50 |
 
-The file is `card_NNN.png`, numbered within its series. Source credits must match
+The original file is `card_NNN.png`, numbered within its series. Source credits must match
 both the card number and slug. The catalog records the file path, SHA-256 and
 photographer/license/source information. The website and review gallery display
 the source credit. A missing portrait gets an explicit **Portrait pending** plate;
@@ -51,10 +52,29 @@ If a new portrait is commissioned, use the existing series workflow with an
 identified source photograph and review it before adding it to the approved
 directory. The v2 release renderer will pick up that file on the next build.
 
+## Creating the new paintings
+
+The built-in `image_gen` tool edits each original PNG separately. The prompts in
+`assets/portraits-v2/prompt.md` and `proof-prompt.md` constrain face, age, hair,
+expression, pose, clothing and scene content, and request refined painted detail.
+Generation never receives the complete card face or modifies its factual text.
+
+Each output is compared visually with its input before its record is marked
+reviewed. `assets/portraits-v2/manifest.json` records both image hashes, the exact
+source path, prompt file/hash and review result. The release builder requires a
+complete, unique, reviewed manifest, verifies the original input still matches,
+and rejects missing edits, changed inputs, corrupt output or an unchanged image
+being presented as new artwork. Cards without an approved portrait retain their
+pending plate. Photo credits follow each portrait into the new edition.
+
+The release renderer itself does not call an image service; it consumes the
+reviewed edits using `--portrait-edits assets/portraits-v2/manifest.json`.
+
 ## Formats and checkpoints
 
-The default outputs real PNG card faces at 1000 × 1490 plus the unchanged
-`artwork.png` source. `--format svg` emits SVG card layouts embedding the source
+The default outputs real PNG card faces at 1000 × 1490 plus the selected
+`artwork.png`. With `--portrait-edits`, this is the new painting; without that
+option, the renderer can still reproduce the original portrait edition. `--format svg` emits SVG card layouts embedding the source
 PNG; these are intentionally raster portraits inside vector layouts, not native
 vector redraws of the person. `--png-copies` also emits PNG copies of SVG faces.
 Portrait aspect ratios are preserved without cropping off heads.
@@ -80,8 +100,8 @@ Source records accompany the card; biographies are not replaced by search text.
 `NICHEDB_API_BASE` and optional `NICHEDB_API_KEY` configure that service.
 No OpenAI or other image-generation key is used by the release builder.
 
-The corrected published edition retains the metadata already collected for the
-previous release while replacing its artwork with the approved portrait sources.
+The published edition retains the metadata already collected for the previous
+release while updating the portrait paintings.
 
 ## Selection and validation
 
