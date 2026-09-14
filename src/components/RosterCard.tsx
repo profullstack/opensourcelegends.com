@@ -7,7 +7,7 @@ import { rarityLabel, statusLabel } from '@/data/roster';
 import styles from './RosterCard.module.css';
 
 // Match CardFlip and CardDetail when the portrait artwork changes.
-const CARD_VERSION = 'v2-painted-20260914';
+const CARD_VERSION = 'v2-ink-20260914';
 
 function host(url: string) {
   try {

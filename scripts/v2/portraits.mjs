@@ -52,8 +52,10 @@ export async function loadPortrait(card, root, edits = null) {
   if (!edit || edit.source !== relative || edit.sourceSHA256 !== original.sha256 || edit.reviewed !== true) {
     throw new Error(`Missing, unreviewed or mismatched source portrait edit: ${card.id}`);
   }
-  const expectedFile = `assets/portraits-v2/${card.id}.png`;
-  if (edit.file !== expectedFile) throw new Error(`Unexpected edited portrait path: ${card.id}`);
+  const expectedFile = edit.file;
+  if (typeof expectedFile !== 'string' || !/^assets\/portraits-v2(?:-[a-z0-9-]+)?\/[a-z0-9-]+\/[0-9]{3}-[a-z0-9-]+\.png$/.test(expectedFile) || expectedFile.includes('..')) {
+    throw new Error(`Unexpected edited portrait path: ${card.id}`);
+  }
   const edited = await fs.readFile(path.join(root, expectedFile));
   const info = await sharp(edited).metadata();
   if (info.format !== 'png' || info.width > 4096 || info.height > 4096 || hash(edited) !== edit.sha256 || edit.sha256 === original.sha256) {
