@@ -18,10 +18,10 @@ for (const record of oldManifest.records) {
   const output = path.join(root, relative);
   await fs.mkdir(path.dirname(output), { recursive: true });
   const base = sharp(input).resize({ width: 1200, height: 1500, fit: 'cover' });
-  const mono = await base.clone().grayscale().normalize().sharpen({ sigma: 1.4, m1: 1.2, m2: 2.8 }).png().toBuffer();
-  const color = await sharp(mono).tint('#b4474d').modulate({ brightness: 1.08, saturation: 0.72 }).png().toBuffer();
-  const edges = await sharp(mono).convolve({ width: 3, height: 3, kernel: [-1,-1,-1,-1,8,-1,-1,-1,-1] }).threshold(38).negate().png().toBuffer();
-  await sharp(color).composite([{ input: edges, blend: 'multiply', opacity: 0.62 }]).png().toFile(output);
+  const color = await base.clone().modulate({ saturation: 0.38, brightness: 1.12 }).sharpen({ sigma: 1.3, m1: 1.1, m2: 2.2 }).png().toBuffer();
+  const mono = await base.clone().grayscale().normalize().png().toBuffer();
+  const edges = await sharp(mono).convolve({ width: 3, height: 3, kernel: [-1,-1,-1,-1,8,-1,-1,-1,-1] }).threshold(62).negate().png().toBuffer();
+  await sharp(color).composite([{ input: edges, blend: 'multiply', opacity: 0.28 }]).png().toFile(output);
   const bytes = await fs.readFile(output);
   records.push({ ...record, file: relative, sha256: crypto.createHash('sha256').update(bytes).digest('hex'), generatedAt: new Date().toISOString(), reviewed: true, review: 'Reviewed as an identity-preserving ink screenprint based on the existing source-derived portrait; face, expression, hair, clothing, pose and crop remain fixed.', prompt, promptSHA256 });
 }
