@@ -18,7 +18,7 @@ for (const record of oldManifest.records) {
   const output = path.join(root, relative);
   await fs.mkdir(path.dirname(output), { recursive: true });
   const sourceBytes = await fs.readFile(input);
-  const color = await sharp(sourceBytes).modulate({ saturation: 0.28 }).linear(1.7, 25).sharpen({ sigma: 1.3, m1: 1.1, m2: 2.2 }).png().toBuffer();
+  const color = await sharp(sourceBytes).modulate({ saturation: 0.72, brightness: 0.92 }).linear(1.22, -14).sharpen({ sigma: 1.5, m1: 1.2, m2: 2.5 }).png().toBuffer();
   await sharp(color).png().toFile(output);
   const bytes = await fs.readFile(output);
   records.push({ ...record, file: relative, sha256: crypto.createHash('sha256').update(bytes).digest('hex'), generatedAt: new Date().toISOString(), reviewed: true, review: 'Reviewed as an identity-preserving ink screenprint based on the existing source-derived portrait; face, expression, hair, clothing, pose and crop remain fixed.', prompt, promptSHA256 });

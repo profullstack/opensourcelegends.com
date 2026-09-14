@@ -243,12 +243,12 @@ export default function CardDetail(props: CardDetailProps) {
               </div>
             )}
 
-            {front.startsWith('/releases/v2/') && (
+            {front.startsWith('/v2/') && (
               <div className={styles.block}>
                 <h2 className={styles.blockHead}>Edition 2 artwork</h2>
                 <p className={styles.note}>
                   Portrait artwork painted from the collection’s original portrait sources.{' '}
-                  <a href={`/v2/index.html#${front.replace('/releases/v2/', '').replace(/\/front\.(svg|png)$/, '')}`}>
+                  <a href={`/v2/index.html#${front.replace('/v2/', '').replace(/\/front\.(svg|png)$/, '')}`}>
                     View the artwork and sources
                   </a>
                   .
