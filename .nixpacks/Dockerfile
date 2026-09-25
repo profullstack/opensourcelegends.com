@@ -8,8 +8,8 @@ COPY .nixpacks/nixpkgs-ffeebf0acf3ae8b29f8c7049cd911b9636efd7e7.nix .nixpacks/ni
 RUN nix-env -if .nixpacks/nixpkgs-ffeebf0acf3ae8b29f8c7049cd911b9636efd7e7.nix && nix-collect-garbage -d
 
 
-ARG CI NIXPACKS_METADATA NODE_ENV NPM_CONFIG_PRODUCTION
-ENV CI=$CI NIXPACKS_METADATA=$NIXPACKS_METADATA NODE_ENV=$NODE_ENV NPM_CONFIG_PRODUCTION=$NPM_CONFIG_PRODUCTION
+ARG CI NIXPACKS_METADATA NIXPACKS_NODE_VERSION NODE_ENV NPM_CONFIG_PRODUCTION
+ENV CI=$CI NIXPACKS_METADATA=$NIXPACKS_METADATA NIXPACKS_NODE_VERSION=$NIXPACKS_NODE_VERSION NODE_ENV=$NODE_ENV NPM_CONFIG_PRODUCTION=$NPM_CONFIG_PRODUCTION
 
 # setup phase
 # noop
@@ -17,12 +17,12 @@ ENV CI=$CI NIXPACKS_METADATA=$NIXPACKS_METADATA NODE_ENV=$NODE_ENV NPM_CONFIG_PR
 # install phase
 ENV NIXPACKS_PATH=/app/node_modules/.bin:$NIXPACKS_PATH
 COPY . /app/.
-RUN --mount=type=cache,id=uLEwhua0Jfw-/root/local/share/pnpm/store/v3,target=/root/.local/share/pnpm/store/v3 npm install -g corepack@0.24.1 && corepack enable
-RUN --mount=type=cache,id=uLEwhua0Jfw-/root/local/share/pnpm/store/v3,target=/root/.local/share/pnpm/store/v3 pnpm i --frozen-lockfile
+RUN --mount=type=cache,id=u0v6We48HbY-/root/local/share/pnpm/store/v3,target=/root/.local/share/pnpm/store/v3 npm install -g corepack@0.24.1 && corepack enable
+RUN --mount=type=cache,id=u0v6We48HbY-/root/local/share/pnpm/store/v3,target=/root/.local/share/pnpm/store/v3 pnpm i --frozen-lockfile
 
 # build phase
 COPY . /app/.
-RUN --mount=type=cache,id=uLEwhua0Jfw-next/cache,target=/app/.next/cache --mount=type=cache,id=uLEwhua0Jfw-node_modules/cache,target=/app/node_modules/.cache pnpm run build
+RUN --mount=type=cache,id=u0v6We48HbY-next/cache,target=/app/.next/cache --mount=type=cache,id=u0v6We48HbY-node_modules/cache,target=/app/node_modules/.cache pnpm run build
 
 
 RUN printf '\nPATH=/app/node_modules/.bin:$PATH' >> /root/.profile
