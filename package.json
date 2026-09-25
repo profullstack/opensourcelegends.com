@@ -9,6 +9,7 @@
     "start": "next start",
     "lint": "next lint",
     "db:migrate": "node scripts/migrate.mjs",
+    "test": "node --test scripts/db/*.test.mjs",
     "release:v2": "node scripts/release-v2.mjs",
     "release:v2:test": "node --test scripts/v2/release.test.mjs",
     "hacking": "node scripts/hacking-legends.mjs",
@@ -31,7 +32,7 @@
     "ceos:refs": "node scripts/ceo-refs.mjs"
   },
   "dependencies": {
-    "@libsql/client": "^0.17.4",
+    "@profullstack/libsql-pg": "^0.1.0",
     "archiver": "^7.0.1",
     "next": "^16.2.5",
     "pdf-lib": "^1.17.1",
