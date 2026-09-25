@@ -16,24 +16,33 @@ pnpm build       # production build
 pnpm start       # serve the production build
 ```
 
-## Database (Turso / libSQL)
+## Database (Postgres)
 
-The waitlist is stored in [Turso](https://turso.tech) (SQLite). Configure two env
-vars — copy `.env.local.sample` to `.env.local` and fill in the token:
+The waitlist is stored in Postgres. Configure one env var (copy
+`.env.local.sample` to `.env.local`):
 
 ```bash
-TURSO_DATABASE_URL=libsql://opensourcelegendscom-profullstack.aws-us-west-2.turso.io
-TURSO_AUTH_TOKEN=...        # turso db tokens create opensourcelegendscom
+DATABASE_URL=postgres://user:pass@host:5432/opensourcelegends
 ```
 
 Create the schema once (and after schema changes):
 
 ```bash
-npm run db:migrate         # applies db/schema.sql
+pnpm db:migrate         # applies db/migrations-pg/0001_schema.sql (idempotent)
 ```
 
-Set the same two vars in the Railway service. `POST /api/waitlist` inserts email
-signups into the `waitlist` table.
+Set the same var on the server. `POST /api/waitlist` inserts email signups into
+the `waitlist` table. The query is still written in SQLite's dialect and
+translated by [`@profullstack/libsql-pg`](https://github.com/profullstack/libsql-pg);
+`db/schema.sql` is the original Turso schema, kept until the cutover is proven.
+`pnpm test` lints every statement through the same rewriter without a database.
+
+Moving the existing Turso database across:
+
+```bash
+DATABASE_URL=... pnpm db:migrate
+npx libsql-pg copy --from "$TURSO_DATABASE_URL" --token "$TURSO_AUTH_TOKEN" --to "$DATABASE_URL" --verify
+```
 
 ## Card production
 

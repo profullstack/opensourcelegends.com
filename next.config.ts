@@ -1,6 +1,9 @@
 import type { NextConfig } from "next";
 
 const nextConfig: NextConfig = {
+  // The Postgres client (pg) does a runtime require of its optional native
+  // binding; keep it and the adapter out of the server bundle.
+  serverExternalPackages: ['@profullstack/libsql-pg', 'pg'],
   async redirects() {
     return [
       { source: '/v1', destination: '/v1/', permanent: false },
