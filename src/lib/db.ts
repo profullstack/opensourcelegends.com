@@ -19,7 +19,7 @@ export function databaseUrl(env: NodeJS.ProcessEnv = process.env): string {
     const got = url ? `${url.split(':')[0]}:...` : 'nothing';
     throw new Error(
       `DATABASE_URL must be a postgres:// URL (got ${got}). The waitlist lives in Postgres only; ` +
-        'to move the Turso database across run `pnpm db:migrate` against it, then ' +
+        'to move the Turso database across run `bun run db:migrate` against it, then ' +
         'npx libsql-pg copy --from "$TURSO_DATABASE_URL" --token "$TURSO_AUTH_TOKEN" --to "$DATABASE_URL" --verify',
     );
   }

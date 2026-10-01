@@ -1,0 +1,41 @@
+name: ci
+
+on:
+  pull_request:
+    branches: [master]
+  push:
+    branches: [master]
+
+jobs:
+  build:
+    name: install, typecheck, test, build (Bun)
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      # The version comes from packageManager in package.json, the same Bun the
+      # image (.nixpacks/Dockerfile) pins.
+      - uses: oven-sh/setup-bun@v2
+        with:
+          bun-version-file: package.json
+      - run: bun install --frozen-lockfile
+      - run: bun run typecheck
+      - run: bun test
+      - run: bun run build
+      # The production server must boot under Bun and answer.
+      - name: Standalone server answers under Bun
+        run: |
+          cp -r public .next/standalone/
+          cp -r .next/static .next/standalone/.next/
+          (cd .next/standalone && PORT=3000 HOSTNAME=127.0.0.1 bun server.js > /tmp/server.log 2>&1 &)
+          for i in $(seq 1 30); do
+            code=$(curl -s -o /dev/null -w '%{http_code}' http://127.0.0.1:3000/ || true)
+            [ "$code" = 200 ] && break
+            sleep 1
+          done
+          [ "$code" = 200 ] || { cat /tmp/server.log; exit 1; }
+          echo "/ -> $code"
+          # OG images run sharp (native libvips) at request time; the standalone
+          # trace must have shipped the shared library.
+          og=$(curl -s -o og.png -w '%{http_code} %{content_type}' http://127.0.0.1:3000/hacking-legends/kevin-mitnick/opengraph-image)
+          echo "opengraph-image -> $og"
+          [ "$og" = "200 image/png" ] || { cat /tmp/server.log; exit 1; }
