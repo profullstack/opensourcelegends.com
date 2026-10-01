@@ -1,35 +1,46 @@
-FROM ghcr.io/railwayapp/nixpacks:ubuntu-1745885067
+# syntax=docker/dockerfile:1
+#
+# opensourcelegends.com, run on Bun.
+#
+# This file lives at .nixpacks/Dockerfile because that is the path dev2's compose
+# stack builds (cli-tools dev2/dev2-site provision records it per site, and
+# re-provisioning keeps it). It used to be nixpacks output (Node + pnpm); it is now
+# a hand-written Bun image, so do not regenerate it with nixpacks.
+#
+# Contract with /home/anthony/www/opensourcelegends.com on dev2, unchanged from the
+# Node image: listens on 3000 inside the container (compose maps 127.0.0.1:APP_PORT),
+# answers / for the deploy health check, reads DATABASE_URL from app.env at run time.
 
-ENTRYPOINT ["/bin/bash", "-l", "-c"]
-WORKDIR /app/
+FROM oven/bun:1.4.0-slim AS deps
+WORKDIR /app
+COPY package.json bun.lock ./
+RUN bun install --frozen-lockfile
 
+FROM deps AS build
+COPY . .
+ENV NEXT_TELEMETRY_DISABLED=1
+# `bun --bun next build` (the build script): Next runs on Bun, not Node.
+# The tracer copies all of public/ into the standalone output (src/lib/og.tsx reads
+# public files through process.cwd()); drop that copy so the runtime stage holds
+# public/ once, from the explicit COPY below.
+RUN bun run build && rm -rf .next/standalone/public
 
-COPY .nixpacks/nixpkgs-ffeebf0acf3ae8b29f8c7049cd911b9636efd7e7.nix .nixpacks/nixpkgs-ffeebf0acf3ae8b29f8c7049cd911b9636efd7e7.nix
-RUN nix-env -if .nixpacks/nixpkgs-ffeebf0acf3ae8b29f8c7049cd911b9636efd7e7.nix && nix-collect-garbage -d
-
-
-ARG CI NIXPACKS_METADATA NIXPACKS_NODE_VERSION NODE_ENV NPM_CONFIG_PRODUCTION
-ENV CI=$CI NIXPACKS_METADATA=$NIXPACKS_METADATA NIXPACKS_NODE_VERSION=$NIXPACKS_NODE_VERSION NODE_ENV=$NODE_ENV NPM_CONFIG_PRODUCTION=$NPM_CONFIG_PRODUCTION
-
-# setup phase
-# noop
-
-# install phase
-ENV NIXPACKS_PATH=/app/node_modules/.bin:$NIXPACKS_PATH
-COPY . /app/.
-RUN --mount=type=cache,id=u0v6We48HbY-/root/local/share/pnpm/store/v3,target=/root/.local/share/pnpm/store/v3 npm install -g corepack@0.24.1 && corepack enable
-RUN --mount=type=cache,id=u0v6We48HbY-/root/local/share/pnpm/store/v3,target=/root/.local/share/pnpm/store/v3 pnpm i --frozen-lockfile
-
-# build phase
-COPY . /app/.
-RUN --mount=type=cache,id=u0v6We48HbY-next/cache,target=/app/.next/cache --mount=type=cache,id=u0v6We48HbY-node_modules/cache,target=/app/node_modules/.cache pnpm run build
-
-
-RUN printf '\nPATH=/app/node_modules/.bin:$PATH' >> /root/.profile
-
-
-# start
-COPY . /app
-
-CMD ["pnpm run start"]
-
+FROM oven/bun:1.4.0-slim AS runtime
+WORKDIR /app
+ENV NODE_ENV=production
+ENV NEXT_TELEMETRY_DISABLED=1
+ENV PORT=3000
+# Docker sets HOSTNAME to the container id and Next's standalone server binds to it
+# literally; it must listen on every interface for the published port to reach it.
+ENV HOSTNAME=0.0.0.0
+# Standalone output: server.js plus only the dependencies it imports.
+COPY --from=build --chown=bun:bun /app/.next/standalone ./
+COPY --from=build --chown=bun:bun /app/.next/static ./.next/static
+COPY --from=build --chown=bun:bun /app/public ./public
+# The oven/bun image ships a non-root `bun` user.
+USER bun
+EXPOSE 3000
+# 127.0.0.1, not localhost: localhost resolves ::1 first and Next binds IPv4 only.
+HEALTHCHECK --interval=30s --timeout=5s --start-period=20s --retries=3 \
+  CMD bun -e "fetch('http://127.0.0.1:'+(process.env.PORT||3000)+'/').then(r=>process.exit(r.status<500?0:1)).catch(()=>process.exit(1))"
+CMD ["bun", "server.js"]

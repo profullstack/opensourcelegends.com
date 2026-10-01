@@ -10,10 +10,10 @@ Modules (no Tailwind).
 ## Develop
 
 ```bash
-pnpm install
-pnpm dev         # http://localhost:3000
-pnpm build       # production build
-pnpm start       # serve the production build
+bun install
+bun run dev         # http://localhost:3000
+bun run build       # production build
+bun run start       # serve the production build
 ```
 
 ## Database (Postgres)
@@ -28,19 +28,19 @@ DATABASE_URL=postgres://user:pass@host:5432/opensourcelegends
 Create the schema once (and after schema changes):
 
 ```bash
-pnpm db:migrate         # applies db/migrations-pg/0001_schema.sql (idempotent)
+bun run db:migrate         # applies db/migrations-pg/0001_schema.sql (idempotent)
 ```
 
 Set the same var on the server. `POST /api/waitlist` inserts email signups into
 the `waitlist` table. The query is still written in SQLite's dialect and
 translated by [`@profullstack/libsql-pg`](https://github.com/profullstack/libsql-pg);
 `db/schema.sql` is the original Turso schema, kept until the cutover is proven.
-`pnpm test` lints every statement through the same rewriter without a database.
+`bun run test` lints every statement through the same rewriter without a database.
 
 Moving the existing Turso database across:
 
 ```bash
-DATABASE_URL=... pnpm db:migrate
+DATABASE_URL=... bun run db:migrate
 npx libsql-pg copy --from "$TURSO_DATABASE_URL" --token "$TURSO_AUTH_TOKEN" --to "$DATABASE_URL" --verify
 ```
 
@@ -59,10 +59,10 @@ node scripts/open-source-legends.mjs all        # PNGs, per-card PDFs, batches, 
 **Series Two — Hacking Legends** (`src/data/hacking.ts`, in progress):
 
 ```bash
-pnpm hacking validate          # roster checks, reports what art is missing
-pnpm hacking all               # portraits -> render -> enhance -> publish
-pnpm hacking all 1 5 12        # ...only these card numbers
-pnpm hacking render            # re-render faces from the template, no API calls
+bun run hacking validate          # roster checks, reports what art is missing
+bun run hacking all               # portraits -> render -> enhance -> publish
+bun run hacking all 1 5 12        # ...only these card numbers
+bun run hacking render            # re-render faces from the template, no API calls
 ```
 
 The Series Two stages are:
@@ -90,10 +90,10 @@ Archive them before wiping the directory if you want print masters.
 **Series Three — Security Professionals** (`src/data/security.ts`, 50 cards):
 
 ```bash
-pnpm security validate         # roster checks, reports what art is missing
-pnpm security all              # portraits -> render -> publish
-pnpm security all 1 5 12       # ...only these card numbers
-pnpm security render           # re-render faces from the template, no API calls
+bun run security validate         # roster checks, reports what art is missing
+bun run security all              # portraits -> render -> publish
+bun run security all 1 5 12       # ...only these card numbers
+bun run security render           # re-render faces from the template, no API calls
 ```
 
 Portraits are painted **from a real photograph of the person**:
@@ -140,10 +140,10 @@ vocabulary that Series Two and Three both render through.
 **Series Four — Gods of AI** (`src/data/ai.ts`, 50 cards):
 
 ```bash
-pnpm gods:refs                 # find + verify a reference photo per card
-pnpm gods validate             # roster checks
-pnpm gods all                  # portraits -> render -> publish
-pnpm gods:render               # re-render faces from the template, no API calls
+bun run gods:refs                 # find + verify a reference photo per card
+bun run gods validate             # roster checks
+bun run gods all                  # portraits -> render -> publish
+bun run gods:render               # re-render faces from the template, no API calls
 ```
 
 The architects of machine learning, scored explicitly on how much they gave away —
@@ -164,8 +164,8 @@ invent a face — which is why François Chollet has no portrait.
 **Series Five — Women in Tech** (`src/data/women.ts`, 50 cards):
 
 ```bash
-pnpm women:refs                # find + verify a reference photo per card
-pnpm women all                 # portraits -> render -> publish
+bun run women:refs                # find + verify a reference photo per card
+bun run women all                 # portraits -> render -> publish
 ```
 
 180 years, from Lovelace to the people auditing models now. Rated on `technical`,
@@ -191,9 +191,9 @@ Series Two to Four are linked from the roster page instead of repeated.
 **Series Six — Tech CEOs** (`src/data/ceos.ts`, 50 cards):
 
 ```bash
-pnpm ceos:refs                 # find + verify a reference photo per card
-pnpm ceos all                  # portraits -> render -> publish
-pnpm ceos:render               # re-render faces from the template, no API calls
+bun run ceos:refs                 # find + verify a reference photo per card
+bun run ceos all                  # portraits -> render -> publish
+bun run ceos:render               # re-render faces from the template, no API calls
 ```
 
 The people who ran the companies, ordered roughly by when they took charge. The
@@ -276,8 +276,8 @@ in `public/releases/v2/`. The original likeness and photo basis are preserved; n
 are typeset separately.
 
 ```bash
-pnpm release:v2 --dry-run
-pnpm release:v2 --series legends --only 2 --offline --portrait-edits assets/portraits-v2/manifest.json --out dist/releases/v2-proof
+bun run release:v2 --dry-run
+bun run release:v2 --series legends --only 2 --offline --portrait-edits assets/portraits-v2/manifest.json --out dist/releases/v2-proof
 ```
 
 The release builder makes no image-generation calls. `--offline` also skips

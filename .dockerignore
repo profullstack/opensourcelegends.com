@@ -1,0 +1,13 @@
+# Not read by the app at build or request time: card sources, generated print
+# files, docs and the offline generator scripts. Keeping them out of the build
+# context is most of what took the image from 18 GB.
+.git
+.github
+.next
+node_modules
+.env*
+*.md
+assets
+dist
+docs
+scripts
