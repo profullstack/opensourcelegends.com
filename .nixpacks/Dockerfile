@@ -21,7 +21,10 @@ FROM deps AS build
 COPY . .
 ENV NEXT_TELEMETRY_DISABLED=1
 # `bun --bun next build` (the build script): Next runs on Bun, not Node.
-RUN bun run build
+# The tracer copies all of public/ (2.5 GB) into the standalone output, because
+# src/lib/og.tsx reads public files through process.cwd(). Drop that copy so the
+# runtime stage holds public/ once, from the explicit COPY below (5.8 GB -> ~3.2 GB).
+RUN bun run build && rm -rf .next/standalone/public
 
 FROM oven/bun:1.4.0-slim AS runtime
 WORKDIR /app
