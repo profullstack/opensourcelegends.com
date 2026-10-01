@@ -1,0 +1,10 @@
+.git
+.github
+.next
+node_modules
+.env*
+*.md
+# Card pipeline inputs and intermediates (GBs); the site serves public/ only.
+assets
+dist
+docs
