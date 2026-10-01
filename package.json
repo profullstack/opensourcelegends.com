@@ -35,7 +35,7 @@
   "dependencies": {
     "@profullstack/libsql-pg": "^0.1.0",
     "archiver": "^7.0.1",
-    "next": "^16.2.5",
+    "next": "16.3.8",
     "pdf-lib": "^1.17.1",
     "react": "19.2.3",
     "react-dom": "19.2.3",
