@@ -1,16 +1,13 @@
 import { NextResponse, type NextRequest } from 'next/server';
+import { canonicalRedirect } from './lib/redirects';
 
-// Redirect www.opensourcelegends.com -> opensourcelegends.com (apex), preserving
-// path + query. Next 16 "proxy" convention (formerly middleware.ts).
+// www -> apex, /v1 -> /v1/, and trailing-slash stripping, all built from the
+// public host so the server's own port never reaches a Location header. Next's
+// own trailing-slash redirect is off (skipTrailingSlashRedirect in
+// next.config.ts). Next 16 "proxy" convention (formerly middleware.ts).
 export function proxy(request: NextRequest) {
-  const host = request.headers.get('host') ?? '';
-
-  if (host.startsWith('www.')) {
-    const url = request.nextUrl.clone();
-    url.host = host.slice(4); // drop the leading "www."
-    return NextResponse.redirect(url, 308);
-  }
-
+  const target = canonicalRedirect(request.headers, request.nextUrl.pathname, request.nextUrl.search);
+  if (target) return NextResponse.redirect(target.location, target.status);
   return NextResponse.next();
 }
 
