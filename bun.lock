@@ -5,6 +5,7 @@
     "": {
       "name": "opensourcelegends.com",
       "dependencies": {
+        "@profullstack/footer": "latest",
         "@profullstack/libsql-pg": "^0.1.0",
         "archiver": "^7.0.1",
         "next": "16.3.8",
@@ -109,6 +110,8 @@
     "@pdf-lib/upng": ["@pdf-lib/upng@1.0.1", "", { "dependencies": { "pako": "1.0.11" } }, "sha512-dQK2FUMQtowVP00mtIksrlZhdFXQZPC+taih1q4CvPZ5vqdxR/LKBaFg0oAfzd1GlHZXXSPdQfzQnt+ViGvEIQ=="],
 
     "@pkgjs/parseargs": ["@pkgjs/parseargs@0.11.0", "", {}, "sha512-+1VkjdD0QBLPodGrJUeqarH8VAIvQODIbwh9XpP5Syisf7YoQgsJKPNFoqqLQlu+VQ/tVSshMR6loPMn8U+dPg=="],
+
+    "@profullstack/footer": ["@profullstack/footer@0.2.6", "", { "peerDependencies": { "react": ">=18" }, "optionalPeers": ["react"], "bin": { "profullstack-footer": "bin/profullstack-footer.js" } }, "sha512-BKwbDszAc7e0mYIBiPjgr/5WS8WyDt8IW718s/zW/8pCWOIB1BGwSNs6fmImRSo5kqIjQKUVbXp22jZQ5GEipA=="],
 
     "@profullstack/libsql-pg": ["@profullstack/libsql-pg@0.1.0", "", { "dependencies": { "pg": "8.23.0" }, "peerDependencies": { "@libsql/client": ">=0.5.0" }, "optionalPeers": ["@libsql/client"], "bin": { "libsql-pg": "bin/libsql-pg.js" } }, "sha512-qrFIqIMWuIMc2n/7nMuTL6RPUEU6BggHI6Vvqy9mn656QvMqAg72yL3K51jWduHNQaI05eR4zjVkKXT6nLzzkw=="],
 
