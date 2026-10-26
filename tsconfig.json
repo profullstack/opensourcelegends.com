@@ -4,6 +4,8 @@
     "lib": ["dom", "dom.iterable", "esnext"],
     "allowJs": true,
     "skipLibCheck": true,
+    // TypeScript 6 no longer loads every @types package by default.
+    "types": ["bun", "node"],
     "strict": true,
     "noEmit": true,
     // The data modules are imported by the card pipelines under `node --strip-types`,
