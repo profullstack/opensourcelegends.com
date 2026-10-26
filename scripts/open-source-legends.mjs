@@ -33,7 +33,7 @@ import crypto from 'node:crypto';
 import { fileURLToPath } from 'node:url';
 import { PDFDocument } from 'pdf-lib';
 import sharp from 'sharp';
-import archiver from 'archiver';
+import { ZipArchive } from 'archiver';
 
 const __filename = fileURLToPath(import.meta.url);
 const __dirname = path.dirname(__filename);
@@ -997,7 +997,7 @@ async function zipIndividualPdfs() {
   const zipPath = path.join(CONFIG.pdfDir, 'individual_card_pdfs.zip');
   await new Promise((resolve, reject) => {
     const output = fssync.createWriteStream(zipPath);
-    const archive = archiver('zip', { zlib: { level: 9 } });
+    const archive = new ZipArchive({ zlib: { level: 9 } });
     output.on('close', resolve);
     archive.on('error', reject);
     archive.pipe(output);
