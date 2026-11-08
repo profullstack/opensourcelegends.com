@@ -39,7 +39,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
         <Header />
         <main>{children}</main>
         <Footer />
-        <PfsFooter site="https://opensourcelegends.com/" since={2026} />
+        <PfsFooter site="https://opensourcelegends.pwa.pit.world/" since={2026} />
         <Script data-site="6e37a389-d4cc-46c3-8e7d-20e5c9fd8b42" src="https://crawlproof.com/stats.js" strategy="afterInteractive" />
         {/* Global CrawlProof ad loader — hydrates every <AdUnit /> ([data-cp-ad]) rendered in page content. */}
         <Script src="https://crawlproof.com/ad.js" strategy="afterInteractive" />

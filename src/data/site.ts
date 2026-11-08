@@ -3,7 +3,7 @@ export const site = {
   tagline: "Trading cards for the people who built the software the world runs on.",
   description:
     "A collectible card series celebrating the legends of open source. Open-licensed artwork, limited physical packs, and on-chain collectibles.",
-  url: "https://opensourcelegends.com",
+  url: "https://opensourcelegends.pwa.pit.world",
   github: "https://github.com/profullstack/opensourcelegends.com",
   twitter: "https://x.com/profullstackinc",
   pairux: "https://pairux.com/@profullstack",

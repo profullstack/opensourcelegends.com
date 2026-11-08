@@ -10,7 +10,7 @@
  * The URL is built from the public host (x-forwarded-host first, then Host)
  * with any port dropped. Cloning request.nextUrl and setting .host keeps the
  * port the standalone server listens on, which is how www.opensourcelegends.com
- * used to redirect to https://opensourcelegends.com:3000/.
+ * used to redirect to https://opensourcelegends.pwa.pit.world:3000/.
  */
 export function canonicalRedirect(
   headers: Headers,
